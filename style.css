@@ -296,7 +296,7 @@ header{
 }
 
 #contact{
-    min-height: 800px;
+    min-height: 700px;
 }
 
 .contact-me button{
@@ -389,3 +389,23 @@ header{
     outline: none !important;
     border:1px solid rgb(255, 255, 255);
 }
+
+
+.back-top-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#back-to-the-top{
+    margin-top: 0px;
+    padding-top: 0px;
+    right: 0;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+
+/* <div class="back-top-container">
+<div class="back-top">
+    <a href="#header" class="nav" id="back-to-the-top"><span>Back to the top</span></a>
+</div>
+</div> */
