@@ -35,7 +35,7 @@ header{
     margin: 20px 30px;
     text-decoration: none;
     font-family: 'Exo', sans-serif;
-  }
+}
   span{
     display: block;
     padding: 12.5px 40px;
@@ -264,10 +264,6 @@ header{
     color: rgb(148, 148, 148);
 }
 
-.launch-container .git-launch a{
-    /* font-size: 3.5em; */
-}
-
 .work{
     margin-bottom: 230px;
     display: flex;
@@ -296,7 +292,7 @@ header{
 }
 
 #contact{
-    min-height: 700px;
+    /* min-height: 700px; */
 }
 
 .contact-me button{
@@ -404,8 +400,137 @@ header{
     font-size: 1.5em;
 }
 
-/* <div class="back-top-container">
-<div class="back-top">
-    <a href="#header" class="nav" id="back-to-the-top"><span>Back to the top</span></a>
-</div>
-</div> */
+
+@media screen and (max-width: 1025px){
+
+    .contact-me a{
+        font-size: 15em;
+    }
+    
+    .contact-me button{
+        font-size:15em;
+    }
+
+
+    #phone-number-text{
+        font-size: 3em;
+    }
+
+    .muhammed, .qadan{
+        font-size: 6em;
+        font-family: 'Exo 2', sans-serif;
+    }
+  
+    .qadan{
+        transform: translateX(-100px)
+    }
+    .muhammed{
+      transform: translateX(100px)
+  }
+  .flip-card {
+      display: none;
+  }
+  #phone-number-text{
+    z-index: 2;
+}
+}
+
+
+@media screen and (max-width: 750px){
+    .about-container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 10px;
+        padding: 10px;
+        /* align-items: baseline; */
+    }
+
+    #about{
+        display: flex;
+        height: 2000px;
+        margin-top: 0px;
+        font-size: 1.3em;
+        justify-content: center;
+    }
+    .about-personal, .about-work, .about-fun{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+    .view-container{
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 727px){
+
+    .qadan{
+        transform: translateX(0px)
+    }
+    .muhammed{
+      transform: translateX(0px)
+  }
+
+}
+
+@media screen and (max-width: 680px){
+    .contact-me a{
+        font-size: 7em;
+    }
+    
+    .contact-me button{
+        font-size:7em;
+    }
+
+
+    #phone-number-text{
+        font-size: 2em;
+        z-index: 2;
+    }
+
+    .muhammed, .qadan{
+        font-size: 6em;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+}
+
+@media screen and (max-width: 625px){
+
+    .nav{
+        margin: 10px 15px;
+      }
+
+}
+
+@media screen and (max-width: 550px){
+
+
+    .view-container{
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .muhammed, .qadan{
+        font-size: 4em;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+}
