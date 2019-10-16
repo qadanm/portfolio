@@ -255,7 +255,6 @@ header{
     transform: rotateY(180deg);
   }
 
-
   .work-info-container{
       display: flex;
       flex-direction: column;
@@ -581,8 +580,8 @@ header{
 
     .nav{
         margin: 10px 15px;
+        border: none;
       }
-
 }
 
 @media screen and (max-width: 550px){
