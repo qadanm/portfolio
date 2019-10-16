@@ -36,6 +36,16 @@ header{
     from {transform: translateX(160px);}
     to   {transform: translateX(-160px);}
 }
+
+@keyframes slideinmuhammedMobile {
+    from {transform: translateX(-160px);}
+    to   {transform: translateX(0px);}
+}
+@keyframes slideinqadanMobile {
+    from {transform: translateX(160px);}
+    to   {transform: translateX(0px);}
+}
+
 @keyframes slidedownnav{
     from {transform: translateY(-150px);}
     to   {transform: translateY(0px);}
@@ -531,10 +541,12 @@ header{
 @media screen and (max-width: 727px){
 
     .qadan{
-        transform: translateX(0px)
+        transform: translateX(0px);
+        animation: slideinqadanMobile 2s;
     }
     .muhammed{
-      transform: translateX(0px)
+      transform: translateX(0px);
+      animation: slideinmuhammedMobile 2s;
   }
 
 }
