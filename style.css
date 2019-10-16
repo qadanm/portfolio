@@ -536,6 +536,10 @@ header{
         justify-content: center;
         align-items: center;
     }
+    .alert-text p{
+        font-size: 1em;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 727px){
