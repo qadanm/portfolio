@@ -27,6 +27,19 @@ header{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+@keyframes slideinmuhammed {
+    from {transform: translateX(-160px);}
+    to   {transform: translateX(160px);}
+}
+@keyframes slideinqadan {
+    from {transform: translateX(160px);}
+    to   {transform: translateX(-160px);}
+}
+@keyframes slidedownnav{
+    from {transform: translateY(-150px);}
+    to   {transform: translateY(0px);}
+}
 .nav{
     display: inline-block;
     position: relative;
@@ -39,6 +52,16 @@ header{
     text-decoration: none;
     font-family: 'Exo', sans-serif;
 }
+
+    #_1s{
+        animation: slidedownnav 1.5s;
+    }
+    #_2s{
+        animation: slidedownnav 2s;
+    }
+    #_3s{
+        animation: slidedownnav 3s;
+    }
   span{
     display: block;
     padding: 12.5px 40px;
@@ -113,10 +136,12 @@ header{
   .qadan{
       transform: translateX(-160px);
       animation: fadein 4.5s;
+      animation: slideinqadan 2s;
   }
   .muhammed{
     transform: translateX(160px);
     animation: fadein 3s;
+    animation: slideinmuhammed 2s;
 }
 
     #about{
