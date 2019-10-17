@@ -331,10 +331,6 @@ header{
     border:1px solid rgb(255, 255, 255);
 }
 
-#contact{
-    /* min-height: 700px; */
-}
-
 .contact-me button{
     background:none;
     border:none;
@@ -480,6 +476,9 @@ header{
     margin-left: 0px;
     margin: 5px;
     width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
   .work{
     margin-bottom: 100px;
