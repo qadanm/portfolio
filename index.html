@@ -1,395 +1,1497 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link href="data:image/x-icon;base64, 
-    AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAA
-    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    AAAAAAAAAAAAAAAAAAAAAP8kxAD/JMQC/yTERf8kw2//JMRk/yTEXv8kxF//JMRf/yTEXv8kxGT/
-    JMNv/yTERf8kxAL/JMQAAAAAAAAAAAD/JMMA/yTDAf8kxBb/J71m/yi6j/8ouY//KLmH/yi5h/8o
-    uY//KLqP/ye9Zv8kxBb/JMMB/yTDAAAAAAAAAAAAAAAAAAAAAAD/KbcA/ym3Bv8ptxr/La52/yyx
-    Ov8ssTr/La52/ym3Gv8ptwb/KbcAAAAAAAAAAAAAAAAA/ziYAP84mAT/OJYd/ziWIv84liH/OZQe
-    /zSddf82mjz/Npo8/zSddf84lBz/N5cf/zeXH/83lh3/N5cE/zeXAP86kQD/OpBG/zmUcP84ll7/
-    OJZg/ziWX/84lmv/OJZj/ziWY/84lmr/OZOC/zmTi/85kpH/OZN5/zqQRf86kQD/P4YA/z+FYP9A
-    glT/QYFh/0GBX/9BgWD/QYFe/0GCXf9Bgl3/QYFd/z+Egv8/hIv/P4SU/0CDXP8/hV//P4YA/0V4
-    AP9FeF//RHiG/0N8Pv9BgSD/QYEh/0N8L/9EeEP/RHhD/0N8L/9BgB//QYAe/0N8O/9EeIb/RXhf
-    /0V4AP9KawD/Smtf/0prg/9KayD/SmsA/01lBP9Lamb/SmyG/0pshv9Kamf/TWUE/0pqAP9KayD/
-    SmuD/0prX/9KawD/UF4A/1BeX/9QXoP/UF4g/1BeAP9QXgj/UF2G/1FckP9RXI//UF2T/1FaGv9R
-    XAD/UF4g/1Beg/9QXl//UF4A/1ZQAP9WUF//VlGD/19gJP8zEwD/VVEH/1VRe/9WUH7/VFNZ/1VT
-    Vv9WUEL/VlAA/1ZQIP9WUIP/VlBf/1ZQAP9bRAD/W0Rf/1pCgv+fj3L/wqU2/8LQAP9ZSDr/WkZ1
-    /1tDd/9cQ3T/WkYv/1tFAP9bQyD/W0OD/1tEX/9bRAD/YTYA/2E2X/9fNYT/k2B7/6hucf9tNSP/
-    ZCsd/2QuIf9hNjv/YTY7/2QvI/9kLR7/YjI8/2E2hv9hNl//YTYA/2coAP9mKVz/Zyl2/2Uog/9l
-    KIH/ZimD/2Ypg/9mKYP/ZymC/2cpgv9mKYP/ZimD/2Yphf9nKXb/Zylc/2coAP9qIQD/aiEd/2sf
-    XP9rH1//ax9f/2sfX/9rH1//ax9f/2sfX/9rH1//ax9f/2sfX/9rH1//ax9c/2oiHv9qIQAAAAAA
-    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    AAAA//8AAMADAADAAwAA8A8AAIABAACAAQAAgAEAAIABAACIEQAAiBEAAIgRAACEEQAAgAEAAIAB
-    AACAAQAA//8AAA==" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:100|Exo:300&display=swap" rel="stylesheet">
-    <title>Muhammed's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{ Qadan }</title>
+  <!-- Bootstrap CSS -->
+  <link href="data:image/x-icon;base64, 
+  AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAA
+  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  AAAAAAAAAAAAAAAAAAAAAP8kxAD/JMQC/yTERf8kw2//JMRk/yTEXv8kxF//JMRf/yTEXv8kxGT/
+  JMNv/yTERf8kxAL/JMQAAAAAAAAAAAD/JMMA/yTDAf8kxBb/J71m/yi6j/8ouY//KLmH/yi5h/8o
+  uY//KLqP/ye9Zv8kxBb/JMMB/yTDAAAAAAAAAAAAAAAAAAAAAAD/KbcA/ym3Bv8ptxr/La52/yyx
+  Ov8ssTr/La52/ym3Gv8ptwb/KbcAAAAAAAAAAAAAAAAA/ziYAP84mAT/OJYd/ziWIv84liH/OZQe
+  /zSddf82mjz/Npo8/zSddf84lBz/N5cf/zeXH/83lh3/N5cE/zeXAP86kQD/OpBG/zmUcP84ll7/
+  OJZg/ziWX/84lmv/OJZj/ziWY/84lmr/OZOC/zmTi/85kpH/OZN5/zqQRf86kQD/P4YA/z+FYP9A
+  glT/QYFh/0GBX/9BgWD/QYFe/0GCXf9Bgl3/QYFd/z+Egv8/hIv/P4SU/0CDXP8/hV//P4YA/0V4
+  AP9FeF//RHiG/0N8Pv9BgSD/QYEh/0N8L/9EeEP/RHhD/0N8L/9BgB//QYAe/0N8O/9EeIb/RXhf
+  /0V4AP9KawD/Smtf/0prg/9KayD/SmsA/01lBP9Lamb/SmyG/0pshv9Kamf/TWUE/0pqAP9KayD/
+  SmuD/0prX/9KawD/UF4A/1BeX/9QXoP/UF4g/1BeAP9QXgj/UF2G/1FckP9RXI//UF2T/1FaGv9R
+  XAD/UF4g/1Beg/9QXl//UF4A/1ZQAP9WUF//VlGD/19gJP8zEwD/VVEH/1VRe/9WUH7/VFNZ/1VT
+  Vv9WUEL/VlAA/1ZQIP9WUIP/VlBf/1ZQAP9bRAD/W0Rf/1pCgv+fj3L/wqU2/8LQAP9ZSDr/WkZ1
+  /1tDd/9cQ3T/WkYv/1tFAP9bQyD/W0OD/1tEX/9bRAD/YTYA/2E2X/9fNYT/k2B7/6hucf9tNSP/
+  ZCsd/2QuIf9hNjv/YTY7/2QvI/9kLR7/YjI8/2E2hv9hNl//YTYA/2coAP9mKVz/Zyl2/2Uog/9l
+  KIH/ZimD/2Ypg/9mKYP/ZymC/2cpgv9mKYP/ZimD/2Yphf9nKXb/Zylc/2coAP9qIQD/aiEd/2sf
+  XP9rH1//ax9f/2sfX/9rH1//ax9f/2sfX/9rH1//ax9f/2sfX/9rH1//ax9c/2oiHv9qIQAAAAAA
+  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  AAAA//8AAMADAADAAwAA8A8AAIABAACAAQAAgAEAAIABAACIEQAAiBEAAIgRAACEEQAAgAEAAIAB
+  AACAAQAA//8AAA==" rel="icon" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <script src="quotes.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Rajdhani:wght@500&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+
 </head>
 <body>
 
-    <header id="header">
+<!-- Navigation Bar -->
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#" data-aos="fade-down">
+      {Qadan |
+        
+        <span class="logo-ar" style="
+        font-size: large;
+    ">
+   
+         قعدان 
 
-        <div class="links-container">
-            <div class="links">
-                <a href="#about" class="nav" id="_1s"><span>About</span></a>
-                <a href="#work" class="nav" id="_2s"><span>Work</span></a>
-                <a href="#contact" class="nav" id="_3s"><span>Contact</span></a>
+
+
+
+</span> }</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto" data-aos="fade-down">
+          <li class="nav-item active">
+            <a class="nav-link" href="#la-info">Everything LA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+
+  <div class="container-fluid hero-container">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+        <h1 class="rainbow-text">UX Alchemist</h1>
+        <p class="lead">Multi-Platform Experience Architect</p>
+        <!-- White line here -->
+        <hr class="my-4 thicker-line">
+        <p class="lead">Developing Seamless Interfaces for:</p>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="lead">
+                    <i class="bi bi-laptop"></i> Desktop
+                    <i class="bi bi-check-circle text-success"></i>
+                </p>
+                <p class="lead">
+                    <i class="bi bi-tablet"></i> Tablet
+                    <i class="bi bi-check-circle text-success"></i>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p class="lead">
+                    <i class="bi bi-phone"></i> Mobile
+                    <i class="bi bi-check-circle text-success"></i>
+                </p>
+                <p class="lead">
+                    <i class="bi bi-tv"></i> TVOS
+                    <i class="bi bi-check-circle text-success"></i>
+                </p>
             </div>
         </div>
+        
+        <!-- Clickable text to start a conversation with the specified styles -->
+        <p class="mt-4">
+            <a href="#contact" class="qadan-btn qadan-btn-white">Let's start a conversation</a>
+        </p>
+    </div>
+</div>
 
-    </header>
 
-    <div class="view-container">
-        <div class="view-container-text-container">
-            <p class="muhammed">Muhammed</p>
-            <br>
-            <p class="qadan">Qadan</p>
+<!-- 
+
+<section class="parallax-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <h2 class="mb-4">Hey There!</h2>
+          <p class="about-content">
+            What's up! I'm Muhammed, a UX Engineer living it up in Los Angeles. I've got this knack for understanding how people and computers vibe together, and I use it to cook up digital experiences that not only look cool but are also super easy for anyone to dive into.
+          </p>
+          <p class="about-content">
+            My career in UX development is all about turning tricky concepts into smooth, enjoyable experiences. I'm on a mission to blend design and tech seamlessly, bringing you solutions that not only work but also make your user experience rock.
+          </p>
+          <p class="about-content">
+            Being in LA, with its crazy mix of cultures and vibes, totally fuels my creativity. I'm on the grind, exploring the wild world where design meets tech, and I'm pumped to add my flavor to the ever-changing game of user experience.
+          </p>
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+            <img src="pexels-roberto-nickson-3166785.jpg" alt="Los Angeles" class="city-image img-fluid">
+          </div>
+      </div>
+    </div>
+    <div class="container gblexp">
+        <h2 class="mb-4">Global Experience</h2>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p class="about-content">
+                    With a digital reach extending worldwide, I've had the privilege of collaborating with cross-functional teams in various corners of the globe. My experience includes working with teams in:
+                </p>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <p class="about-content"><span class="emoji">&#x1F1EC;&#x1F1E7;</span> London</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <p class="about-content"><span class="emoji">&#x1F1F8;&#x1F1F0;</span> Singapore</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <p class="about-content"><span class="emoji">&#x1F1EE;&#x1F1F3;</span> India</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <p class="about-content"><span class="emoji">&#x1F1E8;&#x1F1F3;</span> China</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <p class="about-content"><span class="emoji">&#x1F1E6;&#x1F1FA;</span> Australia</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <p class="about-content"><span class="emoji">&#x1F1F3;&#x1F1FF;</span> New Zealand</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <p class="about-content"><span class="emoji">&#x1F1E8;&#x1F1E6;</span> Canada</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <p class="about-content"><span class="emoji">🇲🇽</span> Latin America</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <p class="about-content"><span class="emoji">🇧🇾</span> Minsk</p>
+            </div>
+
         </div>
     </div>
+  </section>
+  
+  <style>
 
-    <section id="about">
-        <div class="about-container">
-            <div class="about-personal">
+    .gblexp{
+        margin-top: 15px;
+    }
+    .global-experience-section h2 {
+      color: #343a40;
+    }
+  
+    .global-experience-section .about-content {
+      color: #6c757d;
+    }
+  
+   
+    .emoji {
+      font-size: 1.2em;
+      margin-right: 5px;
+    }
+  .about-section {
+    background-color: rgb(249, 211, 255); 
+  }
 
-                <div class="about-title">
-                    <p>Personal &nbsp;&nbsp;&nbsp;<i class="fas fa-user" id="about-icons"></i></p>
-                </div>
-                <br>
-                <hr>
-                <div class="about-list">
-                        <ul>
-                            <li>Fascinated with photography</li>
-                            <li>Geography & history nerd</li>
-                            <li>Bilingual</li>
-                            <li>Interest in language & linguistics</li>
-                        </ul>
-                </div>
-            </div>
-            <div class="about-work">
+  .about-section {
+    padding: 80px 20px;
+    text-align: center;
+    margin: unset !important;
+  }
 
-                <div class="about-title">
-                    <p>Work &nbsp;&nbsp;&nbsp;<i class="fas fa-code" id="about-icons"></i></p>
-                </div>
-                <br>
-                <hr>
-                <div class="about-list">
-                        <ul>
-                            <li>MEN / MERN / JAM Stacks</li>
-                            <li>Python / Django Stacks</li>
-                            <li>Vanilla Javascipt</li>
-                            <li>UX/UI design</li>
-                            <li>HTML 5 / CSS 3</li>
-                        </ul>
-                </div>
-            </div>
-            <div class="about-fun">
-                    
-                <div class="about-title">
-                    <p>Fun &nbsp;&nbsp;&nbsp;<i class="fas fa-plane-departure" id="about-icons"></i></p>
-                </div>
-                <br>
-                <hr>
-                <div class="about-list">
-                        <ul>
-                            <li>20 countries and counting &nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/0regonnative/" target="_blank" style="color: black"><i class="fab fa-instagram"></i></a></li>
-                            <li>Automotive enthusiast</li>
-                            <li>Hiking is fun</li>
-                            <li>Exotic foods / fruits</li>
-                        </ul>
-                </div>
-            </div>
+  .about-section h2{
+    color: rgb(22, 22, 22);
+  }
+  .about-section .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .about-content {
+    text-align: justify;
+    font-size: 1.2rem; 
+    margin-bottom: 20px;
+    color: rgb(22, 22, 22);
+  }
+
+  .city-image {
+    width: 100%;
+    max-width: 400px; 
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+</style>
+
+
+
+ -->
+
+ <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center"> <!-- Added mx-auto class here -->
+          <h2>Hey 🙋🏻‍♂️</h2>
+          <p class="about-content1">
+            What's up! I'm Muhammed, a UX Engineer based in Los Angeles. I've got this knack for understanding how people and computers vibe and I use it to cook up digital experiences that not only look cool but are also super easy for anyone to use.
+          </p>
+          <p class="about-content2">
+            My career in UX development is all about turning tricky concepts into smooth, enjoyable experiences. I'm on a mission to blend design and tech seamlessly, bringing you solutions that not only work but also make your user experience rock.
+          </p>
         </div>
-    </section>
-
-    <section id="work">
-        <div class="work-container">
-                <div class="work">
-                        <div class="flip-card">
-                                <div class="flip-card-inner">
-                                  <div class="flip-card-back">
-                                    <img src="./kiwi-news-home-page.png" alt="War Game" style="    width: 450px; height: 280px;">
-                                  </div>
-                                  <div class="flip-card-front">
-                                    <div>
-                                        <p>Flip <i class="fas fa-redo-alt"></i></p>
-                                    </div>
-                                  </div>
-                                </div>
-                        </div>
-                        <div class="work-info-container">
-                            <div class="work-title">
-                                kiwi news
-                            </div>
-                            <div class="work-desc">
-                                <div class="desc">
-                                    <p>A constantly updating news delivery platform which pulls the top 20 clicked on news articles in the United States from over 50 various news publications</p>
-                                </div>
-                                <div class="tech-used">
-                                    <p class="tech-used-title">
-                                        Technologies used
-                                    </p>
-                                    <ul>
-                                        <li>React.js</li>
-                                        <li>Express</li>
-                                        <li>Vanilla Javascript</li>
-                                        <li>MongoDB</li>
-                                        <li>Node.js</li>
-                                        <li>Mongoose</li>
-                                        <li>JSON Web Token (JWT)</li>
-                                        <li>Ajax</li>
-                                        <li>News API</li>
-                                        <li>Weather API</li>
-                                        <li>CSS 3</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="launch-container">
-                                    <div class="git-launch">
-                                        <a href="https://github.com/qadanm/news" class="nav" target="_blank"><span>Github</span></a>
-                                    </div>
-                                    <div class="hosted-launch">
-                                        <a href="https://kiwi-news.herokuapp.com" class="nav" target="_blank"><span>Launch</span></a>
-                                    </div>
-                            </div>
-                        </div>
-                </div>
-            <div class="work-reverse">
-                    <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-back">
-                                <img src="./war-game-landing-page.png" alt="War Game" style="    width: 450px; height: 280px;">
-                              </div>
-                              <div class="flip-card-front">
-                                <div>
-                                    <p>Flip <i class="fas fa-redo-alt"></i></p>
-                                </div>
-                              </div>
-                            </div>
-                    </div>
-                    <div class="work-info-container">
-                        <div class="work-title">
-                            War Card Game
-                        </div>
-                        <div class="work-desc">
-                            <div class="desc">
-                                <p>This Web Application brings a childhood classic into the modern era with various interactive elements throughout the game-play experience.</p>
-                            </div>
-                            <div class="tech-used">
-                                <p class="tech-used-title">
-                                    Technologies used
-                                </p>
-                                <ul>
-                                    <li>Javascript</li>
-                                    <li>HTML 5</li>
-                                    <li>CSS 3</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="launch-container">
-                                <div class="git-launch">
-                                    <a href="https://github.com/qadanm/war-game" class="nav" target="_blank"><span>Github</span></a>
-                                </div>
-                                <div class="hosted-launch">
-                                    <a href="https://qadanm.github.io/war-game/" class="nav" target="_blank"><span>Launch</span></a>
-                                </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="work">
-                    <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-back">
-                                <img src="./farawla-home-page.png" alt="War Game" style="    width: 450px; height: 280px;">
-                              </div>
-                              <div class="flip-card-front">
-                                <div>
-                                    <p>Flip <i class="fas fa-redo-alt"></i></p>
-                                </div>
-                              </div>
-                            </div>
-                    </div>
-                    <div class="work-info-container">
-                        <div class="work-title">
-                            Farawla
-                        </div>
-                        <div class="work-desc">
-                            <div class="desc">
-                                <p>This Web Application is a simplistic approach to a recipe website. Allows users to create an account and post recipes and also see other recipes posted by all users. Straight to the point to the stuff that matters.</p>
-                            </div>
-                            <div class="tech-used">
-                                <p class="tech-used-title">
-                                    Technologies used
-                                </p>
-                                <ul>
-                                    <li>Javascript</li>
-                                    <li>MongoDB</li>
-                                    <li>Mongoose</li>
-                                    <li>Node.js</li>
-                                    <li>Express</li>
-                                    <li>HTML 5</li>
-                                    <li>CSS 3</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="launch-container">
-                                <div class="git-launch">
-                                    <a href="https://github.com/qadanm/recipes" class="nav" target="_blank"><span>Github</span></a>
-                                </div>
-                                <div class="hosted-launch">
-                                    <a href="https://farawla.herokuapp.com" class="nav" target="_blank"><span>Launch</span></a>
-                                </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="work-reverse">
-                    <div class="flip-card">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-back">
-                                <img src="./car-diary-home-page.png" alt="War Game" style="    width: 450px; height: 280px;">
-                              </div>
-                              <div class="flip-card-front">
-                                <div>
-                                    <p>Flip <i class="fas fa-redo-alt"></i></p>
-                                </div>
-                              </div>
-                            </div>
-                    </div>
-                    <div class="work-info-container">
-                        <div class="work-title">
-                            Car Diary - Team Project
-                        </div>
-                        <div class="work-desc">
-                            <div class="desc">
-                                <p>Allows users to sign up and post their vehicles and associate specs, features, and a photo</p>
-                            </div>
-                            <div class="tech-used">
-                                <p class="tech-used-title">
-                                    Technologies used
-                                </p>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Django</li>
-                                    <li>Amazon S3</li>
-                                    <li>PostgreSQL</li>
-                                    <li>HTML 5</li>
-                                    <li>CSS 3</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="launch-container">
-                                <div class="git-launch">
-                                    <a href="https://github.com/TimeForZeros/myCarDiaryApp" class="nav" target="_blank"><span>Github</span></a>
-                                </div>
-                                <div class="hosted-launch">
-                                    <a href="https://mycardiary.herokuapp.com/" class="nav" target="_blank"><span>Launch</span></a>
-                                </div>
-                        </div>
-                    </div>
-            </div>
+        <div class="col-md-6 mx-auto text-center"> <!-- Added mx-auto class here -->
+          <img src="Screenshot 2023-12-09 at 6.58.06 PM.png" class="img-fluid" alt="Your Name">
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-        <div class="contact-container">
+  
 
-            <div class="contact-me">
-                <a href="https://www.linkedin.com/in/mqadan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-
-            <div class="contact-me">
-                <a href="https://github.com/qadanm" target="_blank"><i class="fab fa-github-square"></i></a>
-            </div>
-
-            <div class="contact-me">
-                <div class="white-color">
-                    <input type="text" value="qadanmuhammed1@gmail.com" readonly id="myInputEmail" style="position: absolute; color: white; border: none;">
-                </div>
-                <button onclick="copyEmail()"><i class="fas fa-envelope-square"></i></button>
-            </div>
-
-
-        </div>
-            <div class="contact-me" id="phone-number-container">
-                <div class="white-color">
-                    <input type="text" value="5033193958" readonly id="myInputPhone" style="position: absolute; color: white; border: none;">
-                </div>
-                <button onclick="copyPhone()" id="phone-number-text">+1(503) 319-3958</button>
-            </div>
-    </section>
+<section id="la-info" class="py-5">
+    <div class="container">
+        <h1 class="all-things-la text-center">All Things LA</h1>
+        <div class="row">
+            <!-- Time -->
+            <div class="col-md-8">
+                <div class="row">
+            <div class="col-md-4">
+                <h2 class="mb-4"><i class="bi bi-clock"></i> Time</h2>
+                <hr class="my-4 thicker-line text-center">
+                <p id="time">Loading...</p>
+                <!-- Analog Clock -->
+<!-- Analog Clock -->
+<div class="analog-clock">
+    <div class="hand hour-hand"></div>
+    <div class="hand minute-hand"></div>
+    <div class="hand second-hand"></div>
     
-    <div class="back-top-container">
-        <div class="back-top">
-            <a href="#header" class="nav" id="back-to-the-top"><span>Back to the top</span></a>
-        </div>
-    </div>
-
-    <div class="copied-alert-email" id="copied-alert-email">
-        <div class="alert-text">
-            <p>Muhammed's email address has been copied to your clipboard <i class="far fa-clone"></i></p>
-        </div>
-    </div>
-
-    <div class="copied-alert-phone" id="copied-alert-phone">
-        <div class="alert-text">
-            <p>Muhammed's phone number has been copied to your clipboard <i class="far fa-clone"></i></p>
-        </div>
-    </div>
+    <!-- Numbers -->
+    <div class="number number-1">١</div>
+    <div class="number number-2">٢</div>
+    <div class="number number-3">٣</div>
+    <div class="number number-4">٤</div>
+    <div class="number number-5">٥</div>
+    <div class="number number-6">٦</div>
+    <div class="number number-7">٧</div>
+    <div class="number number-8">٨</div>
+    <div class="number number-9">٩</div>
+    <div class="number number-10">١٠</div>
+    <div class="number number-11">١١</div>
+    <div class="number number-12">١٢</div>
     
-    <script>
+</div>
 
-        var copiedEmail = document.getElementById("copied-alert-email")
+            </div>
+
+            <!-- Weather -->
+            <div class="col-md-4 mx-auto">
+                <h2 class="mb-4"><i class="bi bi-cloud"></i> Weather</h2>
+                <hr class="my-4 thicker-line">
+                <div id="weather-container">
+                    <p id="weather-description">Loading...</p>
+                    <p id="temp">Temperature: Loading...</p>
+                    <p id="humidity">Humidity: Loading...</p>
+                    <p id="city">City: Loading...</p>
+                    <p id="sunrise">Sunrise: Loading...</p>
+                    <p id="sunset">Sunset: Loading...</p>
+                </div>
+            </div>
+            <h2 class="mb-4"><i class="bi bi-music-note-beamed"></i> LAs Favorite Stations</h2>
+
+                <div class="row radio-container text-center">
+                    <div class="col-12 col-sm-8 col-md-4 radio-btn">
+                        <button class="btn btn-default" type="submit">
+                            <iframe src="https://tunein.com/embed/player/s52543/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+                        </button>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-4 radio-btn">
+                        <button class="btn btn-default" type="submit">
+                            <iframe src="https://tunein.com/embed/player/s33898/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+                        </button>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-4 radio-btn">
+                        <button class="btn btn-default" type="submit">
+                            <iframe src="https://tunein.com/embed/player/s35247/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+                        </button>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-4 radio-btn">
+                        <button class="btn btn-default" type="submit">
+                            <iframe src="https://tunein.com/embed/player/s34635/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+                        </button>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-4 radio-btn">
+                        <button class="btn btn-default" type="submit">
+                            <iframe src="https://tunein.com/embed/player/s67134/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+                        </button>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-4 radio-btn">
+                        <button class="btn btn-default" type="submit">
+                            <iframe src="https://tunein.com/embed/player/s35247/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+            <!-- Latest News -->
+<!-- Latest News -->
+<style>
+.yt {
+    margin: 15px 0px;
+}
+
+.yt:not(:first-child) {
+    margin-top: 0 !important;
+}
+
+</style>
+<div class="col-md-4 mx-auto">
+    <h2 class="mb-4"><i class="bi bi-newspaper"></i> Latest News</h2>
+    <hr class="my-4 thicker-line">
+    <div id="news-container" class="news-container">
+
+        <iframe class="yt" width="320" height="180" src="https://www.youtube.com/embed/-E0AHOOGo24?si=fo1AXCWzonDpshzZ&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="yt"  width="320" height="180" src="https://www.youtube-nocookie.com/embed/gCNeDWCI0vo?si=ZRip9drcwlpmPEjK&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="yt"  width="320" height="180" src="https://www.youtube-nocookie.com/embed/9NyxcX3rhQs?si=dqZopU0noYmwpIV_&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="yt"  width="320" height="180" src="https://www.youtube-nocookie.com/embed/OOtxXPaQvoM?si=OelDKO6t-zZkTNU-&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+</div>
+
+        </div>
 
 
-        function copyEmail() {
-            var copyTextEmail = document.getElementById("myInputEmail");
-            copyTextEmail.select();
-            copyTextEmail.setSelectionRange(0, 99999);
-            document.execCommand("copy");
-            displayCopyTextEmail();
-            removeDisplayCopyTextEmail();
+    </div>
+</section>
+
+
+<div class="container" data-aos="fade-up">
+<!-- Travel Section -->
+<section id="travel" class="py-5">
+<!-- LightWidget WIDGET --><iframe src="http://lightwidget.com/widgets/9ee10d2a26c15d1c8dc19e45e8345db8.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+</section>
+
+  </div> <!-- End Container-Fluid -->
+<!-- Add this section to your HTML file -->
+
+
+<section id="future-projects" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="fw-bold mb-4">Projects</h2>
+                <p class="lead">I'm thrilled to showcase the successful completion of the following projects:</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="lbt.png" alt="Roku Application" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">Roku Application Development</h3>
+                <p>
+                    One of my ongoing projects involves developing a Roku application. Initially, this application is being
+                    created for personal use and will be sideloaded onto my own TV. I am actively learning BrightScript,
+                    the language used for Roku development, to create a feature-rich application for personal enjoyment.
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-clock"></i> 
+                        Real-time Clock
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-cloud"></i>
+                        Real-time Weather Integration
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-newspaper"></i>
+                        News Ticker
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-instagram"></i>
+                        Instagram Slideshow
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                </ul>
+                <p>
+                    Stay tuned as I explore the world of Roku development! While the initial release is for personal use,
+                    I may consider expanding its availability in the future.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="online-shop.png" alt="Tabouleh Finder" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">TaboulehFinder Reconstruction</h3>
+                <p>
+                    Another exciting project on the horizon is the reconstruction of my beloved passion project, TaboulehFinder.
+                    Tabouleh happens to be my favorite food in the world, and I've been yearning to breathe new life into this
+                    project for a while now.
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-tools"></i> 
+                        Modernized User Interface
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-search"></i>
+                        Advanced Search Functionality
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-cloud"></i>
+                        Real-time Weather Integration
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-journal"></i>
+                        Interactive Culinary Journal
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                </ul>
+                <p>
+                    Stay tuned for the relaunch of TaboulehFinder and embark on a journey to discover the finest tabouleh spots!
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Project 3 -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="voya.png" alt="Virtual Assistant" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">Virtual Assistant Integration</h3>
+                <p>
+                    I am currently working on integrating a virtual assistant into various applications. The goal is to enhance user experience by providing voice-activated commands and intelligent responses. The virtual assistant will be capable of performing tasks such as setting reminders, answering queries, and controlling application functionalities.
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-microphone"></i> 
+                        Voice-Activated Commands
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-chat-dots"></i>
+                        Intelligent Conversational Interface
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-clock"></i>
+                        Task Automation
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-broadcast"></i>
+                        Cross-Platform Integration
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                </ul>
+                <p>
+                    Exciting times ahead as I explore the realm of virtual assistants to create seamless and interactive user experiences.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+<!-- Project 7 - React Mindfulness App for iOS -->
+<div class="row mt-4">
+    <div class="col-md-6">
+        <img src="homepage.png" alt="React Mindfulness App" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+        <h3 class="mb-3">React Mindfulness App for iOS</h3>
+        <p>
+            Immerse yourself in a serene oasis that will soon be in your pocket – an upcoming React-based iOS app dedicated to mindfulness and meditation. This app is meticulously designed to help users unwind, manage stress, and foster a sense of calm through forthcoming guided meditation sessions and relaxation exercises.
+        </p>
+        <ul class="list-unstyled">
+            <li>
+                <i class="bi bi-moon"></i> 
+                Guided Meditation Sessions
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+            <li>
+                <i class="bi bi-music-note"></i>
+                Soothing Background Music
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+            <li>
+                <i class="bi bi-heart"></i>
+                Breathing Exercises for Relaxation
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+            <li>
+                <i class="bi bi-calendar"></i>
+                Daily Mindfulness Reminders
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+        </ul>
+        <p>
+            Embrace tranquility and mindfulness with the upcoming React Mindfulness App. Whether you're new to meditation or an experienced practitioner, this app will soon provide a peaceful sanctuary for your mental well-being.
+        </p>
+
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <img src="ashrf.png" alt="React Mindfulness App" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+        <h3 class="mb-3">React Mindfulness App for iOS</h3>
+        <p>
+            Immerse yourself in a serene oasis that will soon be in your pocket – an upcoming React-based iOS app dedicated to mindfulness and meditation. This app is meticulously designed to help users unwind, manage stress, and foster a sense of calm through forthcoming guided meditation sessions and relaxation exercises.
+        </p>
+        <ul class="list-unstyled">
+            <li>
+                <i class="bi bi-moon"></i> 
+                Guided Meditation Sessions
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+            <li>
+                <i class="bi bi-music-note"></i>
+                Soothing Background Music
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+            <li>
+                <i class="bi bi-heart"></i>
+                Breathing Exercises for Relaxation
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+            <li>
+                <i class="bi bi-calendar"></i>
+                Daily Mindfulness Reminders
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+        </ul>
+        <p>
+            Embrace tranquility and mindfulness with the upcoming React Mindfulness App. Whether you're new to meditation or an experienced practitioner, this app will soon provide a peaceful sanctuary for your mental well-being.
+        </p>
+
+    </div>
+</div>
+
+
+        <!-- Project 5 -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="eastwest.png" alt="AR/VR Platform" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">Immersive AR/VR Platform</h3>
+                <p>
+                    Taking a step into the immersive realm of Augmented Reality (AR) and Virtual Reality (VR), I am working on developing a platform that provides captivating and interactive experiences. This project involves creating applications that leverage AR and VR technologies for gaming, education, and real-world simulations.
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-eye"></i> 
+                        Immersive Visual Experiences
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-gamepad"></i>
+                        Gamification Elements
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-book"></i>
+                        Educational Simulations
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-glasses"></i>
+                        Cross-Platform Compatibility
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                </ul>
+                <p>
+                    Get ready to be transported to a new dimension as I explore the limitless possibilities of AR and VR technology.
+                </p>
+            </div>
+        </div>
+                <!-- Project 5 -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <img src="westwood.png" alt="AR/VR Platform" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="mb-3">Immersive AR/VR Platform</h3>
+                        <p>
+                            Taking a step into the immersive realm of Augmented Reality (AR) and Virtual Reality (VR), I am working on developing a platform that provides captivating and interactive experiences. This project involves creating applications that leverage AR and VR technologies for gaming, education, and real-world simulations.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="bi bi-eye"></i> 
+                                Immersive Visual Experiences
+                                <i class="bi bi-check-circle text-success"></i>
+                            </li>
+                            <li>
+                                <i class="bi bi-gamepad"></i>
+                                Gamification Elements
+                                <i class="bi bi-check-circle text-success"></i>
+                            </li>
+                            <li>
+                                <i class="bi bi-book"></i>
+                                Educational Simulations
+                                <i class="bi bi-check-circle text-success"></i>
+                            </li>
+                            <li>
+                                <i class="bi bi-glasses"></i>
+                                Cross-Platform Compatibility
+                                <i class="bi bi-check-circle text-success"></i>
+                            </li>
+                        </ul>
+                        <p>
+                            Get ready to be transported to a new dimension as I explore the limitless possibilities of AR and VR technology.
+                        </p>
+                    </div>
+                </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="future-projects" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="fw-bold mb-4">Future Projects</h2>
+                <p class="lead">I'm excited to share a glimpse of my upcoming projects:</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="roku.png" alt="Roku Application" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">Roku Application Development</h3>
+                <p>
+                    One of my ongoing projects involves developing a Roku application. Initially, this application is being
+                    created for personal use and will be sideloaded onto my own TV. I am actively learning BrightScript,
+                    the language used for Roku development, to create a feature-rich application for personal enjoyment.
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-clock"></i> 
+                        Real-time Clock
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-cloud"></i>
+                        Real-time Weather Integration
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-newspaper"></i>
+                        News Ticker
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-instagram"></i>
+                        Instagram Slideshow
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                </ul>
+                <p>
+                    Stay tuned as I explore the world of Roku development! While the initial release is for personal use,
+                    I may consider expanding its availability in the future.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="taboulehfinder.png" alt="Tabouleh Finder" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">TaboulehFinder Reconstruction</h3>
+                <p>
+                    Another exciting project on the horizon is the reconstruction of my beloved passion project, TaboulehFinder.
+                    Tabouleh happens to be my favorite food in the world, and I've been yearning to breathe new life into this
+                    project for a while now.
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-tools"></i> 
+                        Modernized User Interface
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-search"></i>
+                        Advanced Search Functionality
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-cloud"></i>
+                        Real-time Weather Integration
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-journal"></i>
+                        Interactive Culinary Journal
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                </ul>
+                <p>
+                    Stay tuned for the relaunch of TaboulehFinder and embark on a journey to discover the finest tabouleh spots!
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Project 3 -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="virtual-assistants.png" alt="Virtual Assistant" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">Virtual Assistant Integration</h3>
+                <p>
+                    I am currently working on integrating a virtual assistant into various applications. The goal is to enhance user experience by providing voice-activated commands and intelligent responses. The virtual assistant will be capable of performing tasks such as setting reminders, answering queries, and controlling application functionalities.
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-microphone"></i> 
+                        Voice-Activated Commands
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-chat-dots"></i>
+                        Intelligent Conversational Interface
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-clock"></i>
+                        Task Automation
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-broadcast"></i>
+                        Cross-Platform Integration
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                </ul>
+                <p>
+                    Exciting times ahead as I explore the realm of virtual assistants to create seamless and interactive user experiences.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+<!-- Project 7 - React Mindfulness App for iOS -->
+<div class="row mt-4">
+    <div class="col-md-6">
+        <img src="pexels-nana-dua-8622843.jpg" alt="React Mindfulness App" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+        <h3 class="mb-3">React Mindfulness App for iOS</h3>
+        <p>
+            Immerse yourself in a serene oasis that will soon be in your pocket – an upcoming React-based iOS app dedicated to mindfulness and meditation. This app is meticulously designed to help users unwind, manage stress, and foster a sense of calm through forthcoming guided meditation sessions and relaxation exercises.
+        </p>
+        <ul class="list-unstyled">
+            <li>
+                <i class="bi bi-moon"></i> 
+                Guided Meditation Sessions
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+            <li>
+                <i class="bi bi-music-note"></i>
+                Soothing Background Music
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+            <li>
+                <i class="bi bi-heart"></i>
+                Breathing Exercises for Relaxation
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+            <li>
+                <i class="bi bi-calendar"></i>
+                Daily Mindfulness Reminders
+                <i class="bi bi-check-circle text-success"></i>
+            </li>
+        </ul>
+        <p>
+            Embrace tranquility and mindfulness with the upcoming React Mindfulness App. Whether you're new to meditation or an experienced practitioner, this app will soon provide a peaceful sanctuary for your mental well-being.
+        </p>
+
+    </div>
+</div>
+
+
+        <!-- Project 5 -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="vr.jpeg" alt="AR/VR Platform" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">Immersive AR/VR Platform</h3>
+                <p>
+                    Taking a step into the immersive realm of Augmented Reality (AR) and Virtual Reality (VR), I am working on developing a platform that provides captivating and interactive experiences. This project involves creating applications that leverage AR and VR technologies for gaming, education, and real-world simulations.
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="bi bi-eye"></i> 
+                        Immersive Visual Experiences
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-gamepad"></i>
+                        Gamification Elements
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-book"></i>
+                        Educational Simulations
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                    <li>
+                        <i class="bi bi-glasses"></i>
+                        Cross-Platform Compatibility
+                        <i class="bi bi-check-circle text-success"></i>
+                    </li>
+                </ul>
+                <p>
+                    Get ready to be transported to a new dimension as I explore the limitless possibilities of AR and VR technology.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Education Section -->
+<section id="education" class="py-5" style="display: none;">
+    <div class="container">
+      <h2 class="text-center mb-4">Education</h2>
+      <div class="row">
+        <!-- Add images and style as needed -->
+        <div class="col-md-6 edu-item">
+          <img src="psu.jpeg" alt="PSU Logo" class="img-fluid edu-logo">
+          <h4>Portland State University</h4>
+          <p>Computer and Information Sciences and Support Services</p>
+          <p>Aug 2015 - Jul 2018</p>
+        </div>
+        <!-- Add images and style as needed -->
+        <div class="col-md-6 edu-item">
+          <img src="RGB-Red_Small_GeneralAssembly-Cog.png" alt="GA Logo" class="img-fluid edu-logo">
+          <h4>General Assembly</h4>
+          <p>Software Engineering, Full-Stack Software Engineering</p>
+          <p>2019 - 2019</p>
+        </div>
+        <!-- Add images and style as needed -->
+        <div class="col-md-6 edu-item">
+          <img src="pcc.png" alt="PCC Logo" class="img-fluid edu-logo">
+          <h4>Portland Community College</h4>
+          <p>Associate of Arts and Sciences - AAS, Linguistics</p>
+          <p>Jan 2014 - Oct 2015</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Experience Section -->
+  <section id="experience" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Experience</h2>
+      <div class="row">
+        <!-- Add images and style as needed -->
+        <div class="col-md-6 exp-item">
+          <img src="path/to/magtek-logo.png" alt="MagTek Logo" class="img-fluid exp-logo">
+          <h4>MagTek</h4>
+          <p>UX Engineer</p>
+          <p>Nov 2022 - Present</p>
+          <p>Seal Beach, California, United States</p>
+          <ul>
+            <li>Spearheaded impactful user research initiatives.</li>
+            <li>Developed and maintained a comprehensive front-end system.</li>
+            <li>Implemented accessibility standards (WCAG).</li>
+          </ul>
+        </div>
+        <!-- Add images and style as needed -->
+        <div class="col-md-6 exp-item">
+          <img src="path/to/investcloud-logo.png" alt="InvestCloud Logo" class="img-fluid exp-logo">
+          <h4>InvestCloud, Inc.</h4>
+          <p>Front End Developer</p>
+          <p>Aug 2020 - Dec 2021</p>
+          <p>West Hollywood, California, United States</p>
+          <ul>
+            <li>Developed interactive digital interfaces using proprietary technology.</li>
+            <li>Collaborated with the design team using tools like Invision and Sketch.</li>
+            <li>Engineered web functionality aligned with business requirements.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-6 skills-item">
+
+          <h4>Technical Skills</h4>
+          <ul>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li class="list-group-item">Expertise in MEN / MERN / JAM Stacks</li>
+            <li class="list-group-item">Proficient in Python / Django Stacks</li>
+            <li class="list-group-item">Passionate about Vanilla JavaScript</li>
+            <li class="list-group-item">Specialized in UX/UI design</li>
+            <li class="list-group-item">Experienced with HTML 5 / CSS 3</li>
+            <li class="list-group-item">Skilled in responsive web design</li>
+            <li class="list-group-item">Knowledgeable in mobile app development</li>
+          </ul>
+
+    </div>
+        <div class="col-md-6 skills-item">
+
+          <h4>Other Skills</h4>
+          <ul>
+            <li>Agile Development</li>
+            <li>Prototyping</li>
+            <li>Industry Insight</li>
+            <li>Optimization Strategies</li>
+          </ul>
+
+    </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="features-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <h2 class="display-4">Got an Idea?</h2>
+                <p class="lead">Transform Your Vision into a Seamless User Experience</p>
+                <p class="lead">Embark on a journey to bring your ideas to life with our expert UX development services. Whether it's a groundbreaking app concept, a web platform, or a unique digital experience, we're here to turn your vision into reality.</p>
+                <h3 class="section-heading">Let's Start Building</h3>
+                <p class="lead">Ready to take the first step towards transforming your idea into a digital masterpiece? Explore our services, see our work, and let's discuss how we can bring your vision to life.</p>
+                <div class="btn-group">
+                    <a class="qadan-btn qadan-btn-white" href="#get-in-touch">Get in Touch</a>
+                    <a class="qadan-btn qadan-btn-white" href="#view-portfolio">View Our Portfolio</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="pexels-roberto-nickson-3082341.jpg" alt="Image Placeholder" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+.features-section {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 60px 0;
         }
 
-        function displayCopyTextEmail(){
-            copiedEmail.style =  "opacity: 1; transition: all .75s ease-in-out; z-index: 2;";
+        .display-4 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
         }
 
-        function removeDisplayCopyTextEmail(){
-            setTimeout(function(){
-            copiedEmail.style =  "opacity: 0;  transition: all .75s ease-in-out; z-index: -1;";
-        },3500)}
-
-
-
-
-        var copiedPhone = document.getElementById("copied-alert-phone")
-
-
-        function copyPhone() {
-            var copyTextPhone = document.getElementById("myInputPhone");
-            copyTextPhone.select();
-            copyTextPhone.setSelectionRange(0, 99999);
-            document.execCommand("copy");
-            displayCopyTextPhone();
-            removeDisplayCopyTextPhone();
+        .lead {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
         }
 
-        function displayCopyTextPhone(){
-            copiedPhone.style =  "opacity: 1; transition: all .75s ease-in-out; z-index: 2;";
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
         }
 
-        function removeDisplayCopyTextPhone(){
-            setTimeout(function(){
-            copiedPhone.style =  "opacity: 0;  transition: all .75s ease-in-out; z-index: -1;";
-        },3500)}
+        .section-heading {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f8f9fa; /* Lighter color for headings */
+        }
 
-    </script>
+</style>
+<!-- Pricing and Plans Section -->
+<section id="pricing" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Pricing and Plans</h2>
+        <div class="row">
+
+            <!-- Basic Plan -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Plan</h5>
+                        <p class="card-text">Ideal for small projects and individuals.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-phone"></i> Responsive Design <i class="bi bi-check-circle text-success"></i></li>
+                            <li><i class="bi bi-file-earmark"></i> Up to 5 Pages <i class="bi bi-check-circle text-success"></i></li>
+                            <li><i class="bi bi-headset"></i> Basic UX Consultation <i class="bi bi-check-circle text-success"></i></li>
+                        </ul>
+                        <p class="card-text">One-Time Fee: $499</p>
+                        <div class="text-center">
+                            <button class="qadan-btn qadan-btn-white">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard Plan</h5>
+                        <p class="card-text">Great for medium-sized projects and businesses.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-phone"></i> Responsive Design <i class="bi bi-check-circle text-success"></i></li>
+                            <li><i class="bi bi-file-earmark"></i> Up to 10 Pages <i class="bi bi-check-circle text-success"></i></li>
+                            <li><i class="bi bi-headset"></i> Detailed UX Analysis <i class="bi bi-check-circle text-success"></i></li>
+                            <li>Custom Graphics <i class="bi bi-check-circle text-success"></i></li>
+                        </ul>
+                        <p class="card-text">One-Time Fee: $999</p>
+                        <div class="text-center">
+                            <button class="qadan-btn qadan-btn-white">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Plan</h5>
+                        <p class="card-text">For complex projects and advanced features.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-phone"></i> Responsive Design <i class="bi bi-check-circle text-success"></i></li>
+                            <li><i class="bi bi-file-earmark"></i> Unlimited Pages <i class="bi bi-check-circle text-success"></i></li>
+                            <li>Comprehensive UX Strategy <i class="bi bi-check-circle text-success"></i></li>
+                            <li>Advanced Customization <i class="bi bi-check-circle text-success"></i></li>
+                            <li>Premium Support <i class="bi bi-check-circle text-success"></i></li>
+                        </ul>
+                        <p class="card-text">One-Time Fee: $1,999</p>
+                        <div class="text-center">
+                            <button class="qadan-btn qadan-btn-white">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Corporate Plan -->
+<!-- Corporate Plan -->
+<div class="col-md-3">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Corporate Plan</h5>
+            <p class="card-text">Experience the ultimate in web development with our Corporate plan.</p>
+            <ul class="list-unstyled">
+                <li>Personalized Design with Unlimited Revisions <i class="bi bi-check-circle text-success"></i></li>
+                <li>Corporate Priority Support (24/7 Availability) <i class="bi bi-check-circle text-success"></i></li>
+                <li>Advanced Security Measures <i class="bi bi-check-circle text-success"></i></li>
+                <li>SEO Optimization <i class="bi bi-check-circle text-success"></i></li>
+                <li>High-Performance Hosting <i class="bi bi-check-circle text-success"></i></li>
+                <li>Exclusive Access to New Features <i class="bi bi-check-circle text-success"></i></li>
+                <li>Monthly Analytics and Performance Reports <i class="bi bi-check-circle text-success"></i></li>
+            </ul>
+            <p class="card-text">One-Time Fee: $7,499</p>
+            <div class="text-center">
+            <button class="qadan-btn qadan-btn-white">Choose Plan</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+
+
+        <section id="maintenance" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Maintenance Plans</h2>
+                <div class="row">
+        
+                    <!-- Standard Maintenance -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Standard Maintenance</h5>
+                                <p class="card-text">Ensure the security and currency of your standard projects.</p>
+                                <ul class="list-unstyled">
+                                    <li>Regular Security Updates <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Content Updates <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Priority Support <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Performance Optimization <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Backup and Restore <i class="bi bi-check-circle text-success"></i></li>
+                                </ul>
+                                <!-- Additional Maintenance Details -->
+                                <p class="card-text">Monthly Subscription: $99</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Premium Maintenance -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Maintenance</h5>
+                                <p class="card-text">Comprehensive maintenance tailored for advanced projects.</p>
+                                <ul class="list-unstyled">
+                                    <li>Advanced Customization <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Security Audits <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Database Optimization <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>24/7 Monitoring <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Marketing Support <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Monthly Performance Reports <i class="bi bi-check-circle text-success"></i></li>
+                                </ul>
+                                <!-- Additional Maintenance Details -->
+                                <p class="card-text">Monthly Subscription: $149</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Corporate Maintenance -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Corporate Maintenance</h5>
+                                <p class="card-text">Top-tier maintenance for high-performance projects.</p>
+                                <ul class="list-unstyled">
+                                    <li>24/7 Availability <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>SEO Optimization <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Monthly Analytics and Reports <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Priority Bug Fixes <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Content Strategy Consultation <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Marketing Support <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Social Media Integration <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>Ad Campaign Management <i class="bi bi-check-circle text-success"></i></li>
+                                </ul>
+                                <!-- Additional Maintenance Details -->
+                                <p class="card-text">Monthly Subscription: $599</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <h2>Lets Talk</h2>
+
+    <form
+        action="https://formspree.io/f/xgejgayp"
+        method="POST"
+        class="needs-validation"
+    >
+        <div class="mb-3">
+            <label for="email" class="form-label">Your email:</label>
+            <input type="email" name="email" class="form-control" id="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label">Your message:</label>
+            <textarea name="message" class="form-control" id="message" required placeholder="Type your message here"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="subject" class="form-label">Subject:</label>
+            <input type="text" name="subject" class="form-control" id="subject" placeholder="Enter the subject">
+        </div>
+
+        <div class="mb-3">
+            <label for="category" class="form-label">Category:</label>
+            <select name="category" class="form-select" id="category">
+                <option value="" disabled selected>Select a category</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="sales">Sales Inquiry</option>
+                <option value="partnership">Partnership Opportunities</option>
+                <option value="billing">Billing and Invoicing</option>
+                <option value="marketing">Marketing Collaboration</option>
+                <option value="events">Event Participation</option>
+                <option value="job">Job Opportunities</option>
+                <option value="other">Other</option>
+                <!-- Add 10 more categories as needed -->
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="tel" name="phone" class="form-control" id="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="mb-3">
+            <p>Preferred Contact Method:</p>
+            <div class="form-check">
+                <input type="radio" name="contactMethod" class="form-check-input" id="emailRadio" value="email" checked>
+                <label class="form-check-label" for="emailRadio">Email</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="contactMethod" class="form-check-input" id="phoneRadio" value="phone">
+                <label class="form-check-label" for="phoneRadio">Phone</label>
+            </div>
+        </div>
+
+        <!-- Add more fields as needed -->
+
+        <button type="submit" class="qadan-btn">Send</button>
+    </form>
+</section>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p>&copy; <span id="currentYear"></span>      {  Qadan |
+        
+                    <span class="logo-ar" style="
+                    font-size: smaller;
+                ">
+               
+                     قعدان 
+            
+            
+            
+            
+            </span> }</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <div class="social-links">
+                    <a href="#" target="_blank" class="text-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                      </svg>
+                    </a>
+                    <a href="#" target="_blank" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg></a>
+                    <a href="#" target="_blank" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-snapchat" viewBox="0 0 16 16">
+                        <path d="M15.943 11.526c-.111-.303-.323-.465-.564-.599a1.416 1.416 0 0 0-.123-.064l-.219-.111c-.752-.399-1.339-.902-1.746-1.498a3.387 3.387 0 0 1-.3-.531c-.034-.1-.032-.156-.008-.207a.338.338 0 0 1 .097-.1c.129-.086.262-.173.352-.231.162-.104.289-.187.371-.245.309-.216.525-.446.66-.702a1.397 1.397 0 0 0 .069-1.16c-.205-.538-.713-.872-1.329-.872a1.829 1.829 0 0 0-.487.065c.006-.368-.002-.757-.035-1.139-.116-1.344-.587-2.048-1.077-2.61a4.294 4.294 0 0 0-1.095-.881C9.764.216 8.92 0 7.999 0c-.92 0-1.76.216-2.505.641-.412.232-.782.53-1.097.883-.49.562-.96 1.267-1.077 2.61-.033.382-.04.772-.036 1.138a1.83 1.83 0 0 0-.487-.065c-.615 0-1.124.335-1.328.873a1.398 1.398 0 0 0 .067 1.161c.136.256.352.486.66.701.082.058.21.14.371.246l.339.221a.38.38 0 0 1 .109.11c.026.053.027.11-.012.217a3.363 3.363 0 0 1-.295.52c-.398.583-.968 1.077-1.696 1.472-.385.204-.786.34-.955.8-.128.348-.044.743.28 1.075.119.125.257.23.409.31a4.43 4.43 0 0 0 1 .4.66.66 0 0 1 .202.09c.118.104.102.26.259.488.079.118.18.22.296.3.33.229.701.243 1.095.258.355.014.758.03 1.217.18.19.064.389.186.618.328.55.338 1.305.802 2.566.802 1.262 0 2.02-.466 2.576-.806.227-.14.424-.26.609-.321.46-.152.863-.168 1.218-.181.393-.015.764-.03 1.095-.258a1.14 1.14 0 0 0 .336-.368c.114-.192.11-.327.217-.42a.625.625 0 0 1 .19-.087 4.446 4.446 0 0 0 1.014-.404c.16-.087.306-.2.429-.336l.004-.005c.304-.325.38-.709.256-1.047Zm-1.121.602c-.684.378-1.139.337-1.493.565-.3.193-.122.61-.34.76-.269.186-1.061-.012-2.085.326-.845.279-1.384 1.082-2.903 1.082-1.519 0-2.045-.801-2.904-1.084-1.022-.338-1.816-.14-2.084-.325-.218-.15-.041-.568-.341-.761-.354-.228-.809-.187-1.492-.563-.436-.24-.189-.39-.044-.46 2.478-1.199 2.873-3.05 2.89-3.188.022-.166.045-.297-.138-.466-.177-.164-.962-.65-1.18-.802-.36-.252-.52-.503-.402-.812.082-.214.281-.295.49-.295a.93.93 0 0 1 .197.022c.396.086.78.285 1.002.338.027.007.054.01.082.011.118 0 .16-.06.152-.195-.026-.433-.087-1.277-.019-2.066.094-1.084.444-1.622.859-2.097.2-.229 1.137-1.22 2.93-1.22 1.792 0 2.732.987 2.931 1.215.416.475.766 1.013.859 2.098.068.788.009 1.632-.019 2.065-.01.142.034.195.152.195a.35.35 0 0 0 .082-.01c.222-.054.607-.253 1.002-.338a.912.912 0 0 1 .197-.023c.21 0 .409.082.49.295.117.309-.04.56-.401.812-.218.152-1.003.638-1.18.802-.184.169-.16.3-.139.466.018.14.413 1.991 2.89 3.189.147.073.394.222-.041.464Z"/>
+                      </svg></a>
+                    <a href="#" target="_blank" class="text-light"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                      </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div id="quote-container" class="text-center">
+                    <p id="quote"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+<!-- Custom JS -->
+<script>
+    AOS.init();
+    function updateDigitalTime() {
+
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+
+            var digitalTime = hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+
+            document.getElementById("time").innerText = digitalTime;
+        }
+
+
+        setInterval(updateDigitalTime, 1000);
+
+
+        updateDigitalTime();
+    function updateTime() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+
+
+  var hourRotation = (hours % 12 + minutes / 60) * 30;
+  var minuteRotation = (minutes + seconds / 60) * 6;
+  var secondRotation = seconds * 6;
+
+
+  document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation}deg)`;
+  document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
+  document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
+}
+
+function updateWeather() {
+
+    var apiKey = '2231455fcb8467f0d6b8b9fdd4c7dab4';
+    var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Los%20Angeles&appid=' + apiKey;
+
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+      
+            var description = data.weather[0].description;
+            var temperature = data.main.temp;
+            var humidity = data.main.humidity;
+            var city = data.name;
+            var sunriseTimestamp = data.sys.sunrise;
+            var sunsetTimestamp = data.sys.sunset;
+
+            // Convert timestamps to readable time
+            var sunrise = new Date(sunriseTimestamp * 1000).toLocaleTimeString();
+            var sunset = new Date(sunsetTimestamp * 1000).toLocaleTimeString();
+
+            // Update weather HTML
+            document.getElementById('weather-description').innerText = 'Description: ' + description;
+            document.getElementById('temp').innerText = 'Temperature: ' + temperature + ' K';
+            document.getElementById('humidity').innerText = 'Humidity: ' + humidity + '%';
+            document.getElementById('city').innerText = 'City: ' + city;
+            document.getElementById('sunrise').innerText = 'Sunrise: ' + sunrise;
+            document.getElementById('sunset').innerText = 'Sunset: ' + sunset;
+        })
+        .catch(error => console.error('Error fetching weather data:', error));
+}
+
+    // Function to map news data to HTML format
+    function mapNewsData(articles) {
+        return articles.map(article => `
+            <li>
+                <h5>${article.title}</h5>
+                <p>${article.description}</p>
+                <p><strong>Source:</strong> ${article.source.name}</p>
+                <p><strong>Author:</strong> ${article.author ? article.author : 'Not available'}</p>
+                <p><strong>Published At:</strong> ${new Date(article.publishedAt).toLocaleString()}</p>
+                <img src="${article.urlToImage}" alt="Article Image">
+                <p>${article.content}</p>
+                <a href="${article.url}" target="_blank">Read more</a>
+            </li>
+        `).join('');
+    }
+
+    // Function to get latest news
+// Function to get latest news
+// function updateNews() {
+//     var newsApiUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=5a772b016ff74d8abebed1a0ad570abb';
+
+
+//     var proxyUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent(newsApiUrl);
+
+//     fetch(proxyUrl)
+//             .then(response => response.json())
+//             .then(data => {
+//                 var articles = JSON.parse(data.contents).articles;
+
+
+//                 var newsContainer = document.getElementById('news-container');
+
+          
+//                 newsContainer.innerHTML = '';
+
+           
+//                 articles.forEach(article => {
+//                     var newsDiv = document.createElement('div');
+//                     newsDiv.className = 'news-square';
+
+//                     var imgContainer = document.createElement('div');
+//                     imgContainer.className = 'img-container';
+
+//                     var imgElement = document.createElement('img');
+//                     imgElement.src = article.urlToImage;
+//                     imgElement.alt = 'Article';
+
+//                     imgContainer.appendChild(imgElement);
+
+//                     var titleDiv = document.createElement('div');
+//                     titleDiv.className = 'title';
+
+//                     var titleParagraph = document.createElement('p');
+//                     titleParagraph.textContent = article.title;
+
+//                     titleDiv.appendChild(titleParagraph);
+
+//                     newsDiv.appendChild(imgContainer);
+//                     newsDiv.appendChild(titleDiv);
+
+               
+//                     newsContainer.appendChild(newsDiv);
+//                 });
+
+       
+//                 newsContainer.style.display = 'block';
+//             })
+//             .catch(error => console.error('Error fetching news data:', error));
+//     }
+
+
+
+
+
+// Update time, weather, and news every minute
+setInterval(function () {
+  updateTime();
+  updateWeather();
+  updateNews();
+}, 60000); // 60000 milliseconds = 1 minute
+
+// Initial update
+updateTime();
+updateWeather();
+updateNews();
+
+</script>
 </body>
 </html>
+
