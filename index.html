@@ -306,7 +306,7 @@
             </div>
 
             <!-- Weather -->
-            <div class="col-md-4 mx-auto">
+            <!-- <div class="col-md-4 mx-auto">
                 <h2 class="mb-4"><i class="bi bi-cloud"></i> Weather</h2>
                 <hr class="my-4 thicker-line">
                 <div id="weather-container">
@@ -317,6 +317,22 @@
                     <p id="sunrise">Sunrise: Loading...</p>
                     <p id="sunset">Sunset: Loading...</p>
                 </div>
+            </div> -->
+
+
+
+            <div class="col-md-4 mx-auto text-center">
+                    <h2 class="mb-4"><i class="bi bi-sun"></i>Weather</h2>
+                    <hr class="my-4 thicker-line">
+                    <div id="weather-container" class="text-left p-4 rounded shadow-sm">
+                        <p id="weather-description" class="mb-2 h4">Loading... <i class="bi bi-arrow-repeat"></i></p>
+                        <p id="temp" class="mb-2 h5">Temperature: Loading... <i class="bi bi-thermometer"></i></p>
+                        <p id="humidity" class="mb-2 h5">Humidity: Loading... <i class="bi bi-droplet"></i></p>
+                        <p id="city" class="mb-2 h5">City: Loading... <i class="bi bi-geo-alt"></i></p>
+                        <p id="sunrise" class="mb-2 h5">Sunrise: Loading... <i class="bi bi-sunrise"></i></p>
+                        <p id="sunset" class="mb-0 h5">Sunset: Loading... <i class="bi bi-sunset"></i></p>
+                    </div>
+                    
             </div>
             <h2 class="mb-4"><i class="bi bi-music-note-beamed"></i> LAs Favorite Stations</h2>
 
@@ -1373,22 +1389,32 @@
   document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
 }
 
-function updateWeather() {
+function kelvinToCelsius(kelvin) {
+    return kelvin - 273.15;
+}
 
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+function updateWeather() {
     var apiKey = '2231455fcb8467f0d6b8b9fdd4c7dab4';
     var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Los%20Angeles&appid=' + apiKey;
-
 
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-      
             var description = data.weather[0].description;
-            var temperature = data.main.temp;
+            var temperatureKelvin = data.main.temp;
             var humidity = data.main.humidity;
             var city = data.name;
             var sunriseTimestamp = data.sys.sunrise;
             var sunsetTimestamp = data.sys.sunset;
+
+            // Convert temperature to Fahrenheit and round to the nearest whole number
+            var temperatureCelsius = kelvinToCelsius(temperatureKelvin);
+            var temperatureFahrenheit = celsiusToFahrenheit(temperatureCelsius);
+            var roundedTemperature = Math.round(temperatureFahrenheit);
 
             // Convert timestamps to readable time
             var sunrise = new Date(sunriseTimestamp * 1000).toLocaleTimeString();
@@ -1396,7 +1422,7 @@ function updateWeather() {
 
             // Update weather HTML
             document.getElementById('weather-description').innerText = 'Description: ' + description;
-            document.getElementById('temp').innerText = 'Temperature: ' + temperature + ' K';
+            document.getElementById('temp').innerText = 'Temperature: ' + roundedTemperature + ' °F';
             document.getElementById('humidity').innerText = 'Humidity: ' + humidity + '%';
             document.getElementById('city').innerText = 'City: ' + city;
             document.getElementById('sunrise').innerText = 'Sunrise: ' + sunrise;
@@ -1404,6 +1430,7 @@ function updateWeather() {
         })
         .catch(error => console.error('Error fetching weather data:', error));
 }
+
 
     // Function to map news data to HTML format
     function mapNewsData(articles) {
