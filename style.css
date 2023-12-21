@@ -1,15 +1,22 @@
 
+/* pricing fw-bold
+
+
+#radio-buttons-section
 
 
 
 
-/* pricing fw-bold */
+employmentContent lead
+*/
 
 /* LA SECTION BELOW nav clamp qadanradio-btn*/
 
 
 
-
+body, html{
+  overflow-x: hidden
+}
 body{
     background-color: #f8f9fa;
 }
@@ -341,18 +348,23 @@ ul li {
     margin-bottom: 40px;
 }
 
-.experience .fw-bold {
+#employmentContent .fw-bold {
   color: rgb(84, 84, 165);
   font-size: 5rem;
 }
 .choose .fw-bold {
-  color: rgb(84, 84, 165);
+  color: rgb(255, 255, 255);
   font-size: 5rem;
+}
+#employmentContent .lead {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #666
 }
 .choose .lead {
   font-size: 22px;
   line-height: 1.6;
-  color: #666;
+  color: rgba(255, 255, 255, 0.782);
 }
 #contact .fw-bold {
   color: rgb(84, 84, 165);
@@ -360,6 +372,22 @@ ul li {
 }
 #contact .lead {
   font-size: 22px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.instagram-images-api .fw-bold {
+  color: rgb(84, 84, 165);
+  font-size: 5rem;
+  margin-top: 30px;
+}
+.instagram-images-api .lead {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #666;
+}
+.instagram-images-api h3 {
+  font-size: 25px;
   line-height: 1.6;
   color: #666;
 }
@@ -379,9 +407,9 @@ form {
     margin-bottom: 20px;
     border: 1px solid #ced4da;
 }
-.container{
+/* .container{
     overflow: hidden !important;
-}
+} */
 .form-select {
     border-radius: 5px;
     padding: 12px;
@@ -564,6 +592,9 @@ form {
     transition: color .25s,background-color .25s,border-color .25s;
     white-space: nowrap;
     margin: 10px;
+    -webkit-box-shadow: 1px 2px 14px -4px rgba(0,0,0,0.45);
+-moz-box-shadow: 1px 2px 14px -4px rgba(0,0,0,0.45);
+box-shadow: 1px 2px 14px -4px rgba(0,0,0,0.45);
 }
 .qadan-btn:hover{
     background-color: rgba(255, 255, 255, 0);
@@ -712,7 +743,7 @@ font-size: 5rem;
   }
 
   #radio-buttons-section {
-    min-height: 60vh;
+    min-height: 70vh;
     background: linear-gradient(45deg, #3494e6, #47b8e0, #8adce0, #ec6ead, #f26522);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
@@ -729,7 +760,7 @@ font-size: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+flex-direction: column;
   }
 
   .modern-special-section {
@@ -744,6 +775,12 @@ font-size: 5rem;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
   }
+
+  @media (max-width: 767px) {
+        #radio-buttons-section{
+          min-height: 80vh;
+        }
+}
 
   .modern-special-section h2 {
     color: #ffffff;
@@ -840,6 +877,45 @@ font-size: 5rem;
 .card-title{
     text-align: center;
 }
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.info-icon {
+  cursor: pointer;
+  font-size: larger;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 300px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-icon-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
   /* Animation for the linear gradient background */
   @keyframes gradientAnimation {
     0% {
@@ -852,3 +928,55 @@ font-size: 5rem;
       background-position: 0% 50%;
     }
   }
+
+@media only screen and (max-width: 900px) {
+
+  .tooltip {
+      margin-left: -572%; 
+  }
+}
+
+@media only screen and (max-width: 795px) {
+
+  .tooltip {
+      margin-left: -602%; 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .tooltip {
+      margin-left: -672%; 
+  }
+  #pricing .card{
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 700px) {
+
+  .tooltip {
+      margin-left: -972%; 
+  }
+  .form-control, .form-label{
+    margin: 10px;
+  }
+  .form-control{
+    width: 94%;
+  }
+  form .mb-3 p{
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .tooltip {
+      margin-left: -1172%; 
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for mobile */
+  .tooltip {
+      margin-left: -1372%;
+  }
+}

@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <!-- Custom CSS -->
   <script src="quotes.js" defer></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Rajdhani:wght@500&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -28,7 +29,8 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="#" data-aos="fade-down">
+      <a class="navbar-brand" href="#" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="400">
       {Qadan |
         
         <span class="logo-ar" style="
@@ -45,21 +47,25 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto" data-aos="fade-down">
+        <ul class="navbar-nav ml-auto" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="400">
           <li class="nav-item active">
-            <a class="nav-link" href="#la-info">Everything LA</a>
+            <a class="nav-link" href="#qadan-about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#qadan-we-love-la">We Love LA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#qadan-projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#qadan-fun">Fun</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#qadan-choose-your-path">Choose Your Path</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#qadan-contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -70,7 +76,8 @@
 
   <div class="container-fluid hero-container">
     <div class="hero-overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
+    <div class="hero-content" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="500">
         <h1 class="rainbow-text">UX Alchemist</h1>
         <p class="lead">Multi-Platform Experience Architect</p>
         <!-- White line here -->
@@ -101,7 +108,7 @@
         
         <!-- Clickable text to start a conversation with the specified styles -->
         <p class="mt-4">
-            <a href="#contact" class="qadan-btn qadan-btn-white">Let's start a conversation</a>
+            <a href="#qadan-contact" class="qadan-btn qadan-btn-white">Let's start a conversation</a>
         </p>
     </div>
 </div>
@@ -224,9 +231,10 @@
   }
 </style>
 
-
+<div id="qadan-about"></div>
  <section id="about" class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="500">
       <div class="row">
         <div class="col-md-6 mx-auto text-center"> <!-- Added mx-auto class here -->
           <h2>Hey 🙋🏻‍♂️</h2>
@@ -245,9 +253,10 @@
   </section>
 
   
-
+<div id="qadan-we-love-la"></div>
 <section id="la-info" class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="500">
         <h1 class="all-things-la text-center">All Things LA</h1>
         <div class="row">
             <!-- Time -->
@@ -381,26 +390,20 @@
 </section>
 
 
-<div class="container" data-aos="fade-up">
-<!-- Travel Section -->
-<section id="travel" class="py-5">
-<!-- LightWidget WIDGET --><iframe src="http://lightwidget.com/widgets/9ee10d2a26c15d1c8dc19e45e8345db8.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-</section>
 
-  </div> <!-- End Container-Fluid -->
-<!-- Add this section to your HTML file -->
-
-<div id="completed-projects"></div>
+<div id="qadan-projects"></div>
 <section id="future-projects" class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col text-center">
+            <div class="col text-center" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
                 <h2 class="fw-bold mb-4">Projects</h2>
                 <p class="lead">I'm thrilled to showcase the successful completion of the following projects:</p>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-md-12 text-center">
+        <div class="row">
+            <div class="col-md-12"  data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
                 <label for="project-search" class="form-label visually-hidden">Search Projects:</label>
                 <input type="text" id="project-search" class="form-control" placeholder="Search projects by technologies (e.g., JavaScript, Python, CSS)..." oninput="filterProjects()">
           
@@ -408,7 +411,8 @@
         </div>
         
 <!--         
-        <div class="row mt-4">
+        <div class="row mt-4" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500">
             <div class="col text-center">
                 <button class="btn btn-outline-primary btn-pill filter-btn" data-filter="all">All</button>
                 <button class="btn btn-outline-primary btn-pill filter-btn" data-filter="wordpress">WordPress</button>
@@ -430,7 +434,8 @@
             </div>
         </div> -->
 
-                <div class="row mt-4 project-cards" data-filter="wordpress php html-css mysql javascript">
+                <div class="row mt-4 project-cards" data-aos="fade-up" data-aos-easing="linear"
+                data-aos-duration="500" data-filter="wordpress php html-css mysql javascript">
             <div class="col-md-5">
                 <img src="lbt.png" alt="Roku Application" class="img-fluid rounded">
             </div>
@@ -475,7 +480,8 @@
             </div>
             
         </div>
-        <div class="row mt-4 project-cards" data-filter="html-css javascript-bootstrap asp-net">
+        <div class="row mt-4 project-cards" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500" data-filter="html-css javascript-bootstrap asp-net">
             <div class="col-md-5">
                 <img src="Screenshot 2023-12-14 at 6.37.04 PM.png" alt="Roku Application" class="img-fluid rounded">
             </div>
@@ -512,13 +518,14 @@
                     </li>
                 </ul>
                 <p>
-                    The MagTek Contact Page now stands as a testament to a successful solo endeavor, leveraging modern web technologies to provide users with an efficient and enjoyable interaction. The iOS-inspired tab system ensures information is easily digestible, fostering a better user experience.
+                    The MagTek Contact Page now stands as a testament to a successful display of a lot of information while not overwhelming the user, leveraging modern web technologies to provide users with an efficient and enjoyable interaction. The iOS-inspired tab system ensures information is easily digestible, fostering a better user experience.
                 </p>
             </div>
             
             
         </div>
-        <div class="row mt-4 project-cards" data-filter="html-css javascript-bootstrap asp-net">
+        <div class="row mt-4 project-cards" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500" data-filter="html-css javascript-bootstrap asp-net">
             <div class="col-md-5">
                 <img src="online-shop.png" alt="Tabouleh Finder" class="img-fluid rounded">
             </div>
@@ -558,7 +565,8 @@
 
 
         <!-- Project 3 -->
-        <div class="row mt-4 project-cards" data-filter="html-css javascript-bootstrap cms database">
+        <div class="row mt-4 project-cards" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500" data-filter="html-css javascript-bootstrap cms database">
             <div class="col-md-5">
                 <img src="voya.png" alt="Virtual Assistant" class="img-fluid rounded">
             </div>
@@ -603,7 +611,8 @@
 
         <!-- Project 4 -->
 <!-- Project 7 - React Mindfulness App for iOS -->
-<div class="row mt-4 project-cards" data-filter="react">
+<div class="row mt-4 project-cards" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="500" data-filter="react">
     <div class="col-md-5">
         <img src="homepage.png" alt="React Mindfulness App" class="img-fluid rounded">
     </div>
@@ -611,6 +620,8 @@
         <h3 class="mb-3">Rebuilding of MagTek Home Page from Groundup</h3>
         <p>
            
+
+            Confronted with an exceptionally tight timeframe, I embarked on the challenge of modernizing MagTek's eight-year-old homepage within a mere two-week period. The project commenced in December 2022, and my deadline was set for January 2023 to ensure that MagTek would unveil a revamped homepage in time for Retail's Biggest Tradeshow (NRF).
         </p>
         <ul class="list-unstyled">
             <li>
@@ -635,13 +646,14 @@
             </li>
         </ul>
         <p>
-            Embrace tranquility and mindfulness with the upcoming React Mindfulness App. Whether you're new to meditation or an experienced practitioner, this app will soon provide a peaceful sanctuary for your mental well-being.
+            The designs were finalized around the middle of December, signaling the transition to the development phase. This rapid timeline demanded swift and efficient execution to meet the ambitious goal of presenting MagTek with a contemporary and polished homepage for the NRF event.
         </p>
 
     </div>
 </div>
 
-<div class="row mt-4 project-cards" data-filter="jsx javascript react bootstrap">
+<div class="row mt-4 project-cards" data-aos="fade-up" data-aos-easing="linear"
+data-aos-duration="500" data-filter="jsx javascript react bootstrap">
     <div class="col-md-5">
         <img src="ashrf.png" alt="React Mindfulness App" class="img-fluid rounded">
     </div>
@@ -681,7 +693,8 @@
 
 
         <!-- Project 5 -->
-        <div class="row mt-4 project-cards" data-filter="html-css javascript-bootstrap cms database">
+        <div class="row mt-4 project-cards" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="500" data-filter="html-css javascript-bootstrap cms database">
             <div class="col-md-5">
                 <img src="eastwest.png" alt="AR/VR Platform" class="img-fluid rounded">
             </div>
@@ -714,7 +727,8 @@
             
         </div>
                 <!-- Project 5 -->
-                <div class="row mt-4 project-cards" data-filter="html-css javascript-bootstrap cms database">
+                <div class="row mt-4 project-cards" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="500" data-filter="html-css javascript-bootstrap cms database">
                     <div class="col-md-5">
                         <img src="westwood.png" alt="AR/VR Platform" class="img-fluid rounded">
                     </div>
@@ -778,10 +792,46 @@
 
 
 <style>
+    #future-projects{
+        margin: 10px;
+    }
     .filter-btn.active {
         background-color:rgb(84, 84, 165);
         color: #fff;
     }
+    /* Add your custom styles here */
+
+/* Example: Add margin to the top of the container */
+
+/* Example: Style the project cards */
+.project-cards {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Example: Style the image inside the project cards */
+.project-cards img {
+    width: 100%;
+    height: auto;
+}
+
+/* Example: Style the heading */
+.project-cards h3 {
+    color: rgb(84, 84, 165); /* Bootstrap primary color */
+}
+
+/* Example: Style the list items */
+.project-cards ul li {
+    margin-bottom: 10px;
+}
+
+/* Example: Style the success check circle icon */
+.project-cards .bi-check-circle {
+    color: #28a745; /* Bootstrap success color */
+}
+
 </style>
 
 
@@ -790,12 +840,14 @@
 <section id="future-projects" class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col text-center">
+            <div class="col text-center" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
                 <h2 class="fw-bold mb-4">Future Projects</h2>
                 <p class="lead">I'm excited to share a glimpse of my upcoming projects:</p>
             </div>
         </div>
-        <div class="row mt-4">
+        <div class="row mt-4" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500">
             <div class="col-md-6">
                 <img src="roku.png" alt="Roku Application" class="img-fluid rounded">
             </div>
@@ -834,7 +886,8 @@
                 </p>
             </div>
         </div>
-        <div class="row mt-4">
+        <div class="row mt-4" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500">
             <div class="col-md-6">
                 <img src="taboulehfinder.png" alt="Tabouleh Finder" class="img-fluid rounded">
             </div>
@@ -875,7 +928,8 @@
 
 
         <!-- Project 3 -->
-        <div class="row mt-4">
+        <div class="row mt-4" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500">
             <div class="col-md-6">
                 <img src="virtual-assistants.png" alt="Virtual Assistant" class="img-fluid rounded">
             </div>
@@ -914,7 +968,8 @@
 
         <!-- Project 4 -->
 <!-- Project 7 - React Mindfulness App for iOS -->
-<div class="row mt-4">
+<div class="row mt-4" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500">
     <div class="col-md-6">
         <img src="pexels-nana-dua-8622843.jpg" alt="React Mindfulness App" class="img-fluid rounded">
     </div>
@@ -954,7 +1009,8 @@
 
 
         <!-- Project 5 -->
-        <div class="row mt-4">
+        <div class="row mt-4" data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500">
             <div class="col-md-6">
                 <img src="vr.jpeg" alt="AR/VR Platform" class="img-fluid rounded">
             </div>
@@ -994,13 +1050,33 @@
 </section>
 
 
-<div class="choose">
-    <div class="col text-center">
-        <h2 class="fw-bold mb-4">Unlock Sections</h2>
-        <p class="lead">Tailor content for recruiters or project seekers for a personalized experience:</p>
+
+<div id="qadan-fun"></div>
+<div class="container instagram-images-api" data-aos="fade-up">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="fw-bold mb-4">Work Hard, Play Hard</h2>
+            <h3>Explore My Adventures Through Travel and Photography</h3>
+            <p class="lead">Or am I just another Digital Nomad? Regardless, my enthusiasm for travel never compromises my dedication to User Experience.</p>
+            
+        </div>
     </div>
-    <div id="radio-buttons-section">
-        
+<!-- Travel Section -->
+<section id="travel" class="py-5">
+<!-- LightWidget WIDGET --><iframe src="http://lightwidget.com/widgets/9ee10d2a26c15d1c8dc19e45e8345db8.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+</section>
+
+  </div> 
+
+<div id="qadan-choose-your-path"></div>
+<div class="choose">
+
+    <div id="radio-buttons-section"  data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="500">
+        <div class="col text-center">
+            <h2 class="fw-bold mb-4">Unlock Sections</h2>
+            <p class="lead">Tailor content for recruiters or project seekers for a personalized experience:</p>
+        </div>
 <!-- Modern Special Section: Choose Your Interaction -->
 <div class="container modern-special-section">
     <h2>Choose Whats Next: </h2>
@@ -1042,59 +1118,6 @@
 
 </div>
 </div>
-<style>
-.tooltip-container {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip-icon-container {
-    position: relative;
-    display: inline-block;
-}
-
-.info-icon {
-    cursor: pointer;
-    font-size: larger;
-}
-
-.tooltip {
-    visibility: hidden;
-    width: 300px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -20px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltip-icon-container:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-@media only screen and (max-width: 768px) {
-    /* Adjust styles for tablet */
-    .tooltip {
-        width: 80%; /* or any other suitable width */
-        margin-left: -40%; /* half of the width to center the tooltip */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    /* Adjust styles for mobile */
-    .tooltip {
-        width: 100%; /* or any other suitable width */
-        margin-left: -45%; /* half of the width to center the tooltip */
-    }
-}
-</style>
 <script>
 // Function to toggle tooltip visibility
 function toggleTooltip(iconId, tooltipId) {
@@ -1137,7 +1160,8 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
             <p class="lead">I've gained valuable experience through the following roles:</p>
         </div>
     </div>
-    <div class="card mb-4">
+    <div class="card mb-4"  data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
       <div class="card-header">
         <img src="magtek.jpeg" alt="MagTek Logo" class="img-fluid" style="max-width: 100px;">
       </div>
@@ -1188,7 +1212,8 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
     </div>
   
     <!-- InvestCloud, Inc. Experience Card -->
-    <div class="card mb-4">
+    <div class="card mb-4"  data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
       <div class="card-header">
         <img src="investcloud.jpeg" alt="InvestCloud, Inc. Logo" class="img-fluid" style="max-width: 100px;">
       </div>
@@ -1218,7 +1243,8 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
     </div>
   
     <!-- Freelance - Avant & GAARDE Mobile Accessories LLC Experience Card -->
-    <div class="card mb-4">
+    <div class="card mb-4"  data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
       <div class="card-header">
         <img src="shopify.jpeg" alt="Freelance Logo" class="img-fluid" style="max-width: 100px;">
       </div>
@@ -1258,7 +1284,8 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
     </div>
   
     <!-- Apple Experience Card -->
-    <div class="card mb-4">
+    <div class="card mb-4"  data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
       <div class="card-header">
         <img src="apple_logo.jpeg" alt="Apple Logo" class="img-fluid" style="max-width: 100px;">
       </div>
@@ -1322,43 +1349,83 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
             <p class="lead">Education has been instrumental in my personal and professional growth:</p>
         </div>
     </div>
-    
-    <div class="card mb-4">
-        <div class="card-header">
-            <img src="portland_state_university_logo.jpeg" alt="Portland State University Logo" class="img-fluid" style="max-width: 100px;">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Computer and Information Sciences</h5>
-            <p class="card-text">Portland State University</p>
-            <p class="card-text">Aug 2015 - Jul 2016</p>
-        </div>
-    </div>
 
-    <!-- Portland Community College Education Card .experience .card-header -->
-    <div class="card mb-4">
-        <div class="card-header">
-            <img src="pcc.jpeg" alt="Portland Community College Logo" class="img-fluid" style="max-width: 100px;">
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Associate of Arts and Sciences - AAS, Linguistics</h5>
-            <p class="card-text">Portland Community College</p>
-            <p class="card-text">Jan 2014 - Oct 2015</p>
-            <p class="card-text"><strong>Degree:</strong> Associate of Arts and Sciences in Linguistics</p>
-        </div>
+<div class="card mb-4"  data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
+    <div class="card-header">
+      <img src="generalassembly_logo.jpeg" alt="General Assembly Logo" class="img-fluid" style="max-width: 100px;">
     </div>
+    <div class="card-body">
+      <h5 class="card-title">Full Stack Software Engineering</h5>
+      <p class="card-text">General Assembly · Internship</p>
+      <p class="card-text">Aug 2019 - Dec 2019 · 5 mos</p>
+      <p class="card-text">Santa Monica, CA</p>
 
-    <!-- Udemy Course Card -->
-<!-- Udemy Course Card -->
-<!-- Udemy Course Card -->
-<div class="card mb-4">
+      <h6 class="mt-4">🚀 Immersive Learning Experience:</h6>
+      <ul>
+        <li>Engaged in an intensive coding bootcamp, focusing on Full Stack Software Engineering.</li>
+        <li>Acquired hands-on experience in building front-end and full-stack applications.</li>
+
+      </ul>
+
+      <h6 class="mt-4">🛠️ Technology Stacks:</h6>
+      <ul>
+        <li>Worked with diverse technology stacks, including MERN/MEN/JAM/Python/Django.</li>
+
+      </ul>
+
+      <h6 class="mt-4">💻 Key Technologies:</h6>
+      <ul>
+        <li>Javascript</li>
+        <li>Python</li>
+
+      </ul>
+
+      <h6 class="mt-4">👩‍💻 Hands-On Projects:</h6>
+      <ul>
+        <li>Successfully completed multiple projects showcasing proficiency in application development.</li>
+        <li>Collaborated with peers on team projects, fostering a collaborative and agile development environment.</li>
+        
+      </ul>
+     
+      <h6 class="mt-4">🔄 Agile Development Practices:</h6>
+      <ul>
+        <li>Gained experience in Agile methodologies, participating in sprint planning, daily stand-ups, and retrospectives.</li>
+       
+      </ul>
+      
+      <h6 class="mt-4">🔍 Database Management:</h6>
+      <ul>
+        <li>Learned effective database management using MongoDB, PostgreSQL, and Mongoose.</li>
+      
+      </ul>
+   
+      <h6 class="mt-4">📝 Version Control:</h6>
+      <ul>
+        <li>Utilized Git and GitHub for version control and collaborative coding.</li>
+     
+      </ul>
+
+      <h6 class="mt-4">🔧 Deployment and Hosting:</h6>
+      <ul>
+        <li>Deployed applications on platforms such as Heroku and Amazon S3.</li>
+
+      </ul>
+      <!-- Continuous Learning -->
+      <h6 class="mt-4">📚 Continuous Learning:</h6>
+      <ul>
+        <li>Demonstrated a commitment to continuous learning, staying updated with the latest industry trends and best practices.</li>
+
+      </ul>
+    </div>
+  </div>
+<div class="card mb-4"  data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
     <div class="card-header">
         <img src="udemy_logo.jpeg" alt="Udemy Logo" class="img-fluid" style="max-width: 100px;">
     </div>
     <div class="card-body">
         <h5 class="card-title">React - The Complete Guide 2023 (incl. React Router & Redux) 🚀</h5>
-        <p class="card-text">Instructor: [Instructor Name]</p>
-        <p class="card-text">Last updated 12/2023</p>
-        <p class="card-text">Language: English [CC], Bulgarian [Auto]</p>
         <h6 class="mt-4">What I learned:</h6>
         <ul>
             <li>Learned React from the ground up and finished the course as an advanced React developer</li>
@@ -1388,75 +1455,33 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
     </div>
 </div>
 
-    
-        <div class="card mb-4">
-            <div class="card-header">
-              <img src="generalassembly_logo.jpeg" alt="General Assembly Logo" class="img-fluid" style="max-width: 100px;">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Full Stack Software Engineering</h5>
-              <p class="card-text">General Assembly · Internship</p>
-              <p class="card-text">Aug 2019 - Dec 2019 · 5 mos</p>
-              <p class="card-text">Santa Monica, CA</p>
-              <!-- Immersive Learning Experience -->
-              <h6 class="mt-4">🚀 Immersive Learning Experience:</h6>
-              <ul>
-                <li>Engaged in an intensive coding bootcamp, focusing on Full Stack Software Engineering.</li>
-                <li>Acquired hands-on experience in building front-end and full-stack applications.</li>
-                <!-- Add other learning experience details as list items -->
-              </ul>
-              <!-- Technology Stacks -->
-              <h6 class="mt-4">🛠️ Technology Stacks:</h6>
-              <ul>
-                <li>Worked with diverse technology stacks, including MERN/MEN/JAM/Python/Django.</li>
-                <!-- Add other technology stacks as list items -->
-              </ul>
-              <!-- Key Technologies -->
-              <h6 class="mt-4">💻 Key Technologies:</h6>
-              <ul>
-                <li>Javascript</li>
-                <li>Python</li>
-                <!-- Add other key technologies as list items -->
-              </ul>
-              <!-- Hands-On Projects -->
-              <h6 class="mt-4">👩‍💻 Hands-On Projects:</h6>
-              <ul>
-                <li>Successfully completed multiple projects showcasing proficiency in application development.</li>
-                <li>Collaborated with peers on team projects, fostering a collaborative and agile development environment.</li>
-                <!-- Add other project details as list items -->
-              </ul>
-              <!-- Agile Development Practices -->
-              <h6 class="mt-4">🔄 Agile Development Practices:</h6>
-              <ul>
-                <li>Gained experience in Agile methodologies, participating in sprint planning, daily stand-ups, and retrospectives.</li>
-                <!-- Add other agile development practices as list items -->
-              </ul>
-              <!-- Database Management -->
-              <h6 class="mt-4">🔍 Database Management:</h6>
-              <ul>
-                <li>Learned effective database management using MongoDB, PostgreSQL, and Mongoose.</li>
-                <!-- Add other database management details as list items -->
-              </ul>
-              <!-- Version Control -->
-              <h6 class="mt-4">📝 Version Control:</h6>
-              <ul>
-                <li>Utilized Git and GitHub for version control and collaborative coding.</li>
-                <!-- Add other version control details as list items -->
-              </ul>
-              <!-- Deployment and Hosting -->
-              <h6 class="mt-4">🔧 Deployment and Hosting:</h6>
-              <ul>
-                <li>Deployed applications on platforms such as Heroku and Amazon S3.</li>
-                <!-- Add other deployment and hosting details as list items -->
-              </ul>
-              <!-- Continuous Learning -->
-              <h6 class="mt-4">📚 Continuous Learning:</h6>
-              <ul>
-                <li>Demonstrated a commitment to continuous learning, staying updated with the latest industry trends and best practices.</li>
-                <!-- Add other continuous learning details as list items -->
-              </ul>
-            </div>
-          </div>
+
+              
+    <div class="card mb-4"  data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
+        <div class="card-header">
+            <img src="portland_state_university_logo.jpeg" alt="Portland State University Logo" class="img-fluid" style="max-width: 100px;">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Computer and Information Sciences</h5>
+            <p class="card-text">Portland State University</p>
+            <p class="card-text">Aug 2015 - Jul 2016</p>
+        </div>
+    </div>
+
+    <!-- Portland Community College Education Card .experience .card-header -->
+    <div class="card mb-4"  data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
+        <div class="card-header">
+            <img src="pcc.jpeg" alt="Portland Community College Logo" class="img-fluid" style="max-width: 100px;">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Associate of Arts and Sciences - AAS, Linguistics</h5>
+            <p class="card-text">Portland Community College</p>
+            <p class="card-text">Jan 2014 - Oct 2015</p>
+            <p class="card-text"><strong>Degree:</strong> Associate of Arts and Sciences in Linguistics</p>
+        </div>
+    </div>
 </div>
 
 
@@ -1529,7 +1554,8 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
 
   <div id="projectContent" class="lets-work-on-a-project" style="display: none;">
   <section class="modern-features-section">
-    <div class="container">
+    <div class="container"  data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="500">
         <div class="row align-items-center">
             <div class="col-md-6 text-center">
                 <h2 class="section-title">Unleash Your Ideas</h2>
@@ -1537,8 +1563,8 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
                 <p class="section-description">Embark on a transformative journey turning visionary concepts into captivating digital experiences — be it a revolutionary app, dynamic web platform, or a unique digital adventure, we bring your vision to life. Let's build together; take the first step towards transforming your idea into a digital masterpiece. Explore our services, delve into our portfolio, and discuss how we can breathe life into your vision.</p>
                 <h3 class="modern-heading">Let's Build Together</h3>
                 <div class="btn-group">
-                    <a class="qadan-btn qadan-btn-white" href="#contact">Get in Touch</a>
-                    <a class="qadan-btn qadan-btn-white" href="#completed-projects">View Portfolio</a>
+                    <a class="qadan-btn qadan-btn-white" href="#qadan-contact">Get in Touch</a>
+                    <a class="qadan-btn qadan-btn-white" href="#qadan-projects">View Portfolio</a>
                 </div>
             </div>
             <div class="col-md-6 text-center">
@@ -1580,7 +1606,8 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
 
 <!-- Pricing and Plans Section -->
 <section id="pricing" class="py-5">
-    <div class="container">
+    <div class="container"  data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="500">
         <h2 class="text-center mb-4">Pricing and Plans</h2>
         <div class="row">
 
@@ -1763,10 +1790,12 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
     });
 </script>
 
-<!-- Contact Section -->
+<!-- #Contact Section -->
+<div id="qadan-contact"></div>
 <section id="contact" class="py-5">
     <div class="row">
-        <div class="col text-center">
+        <div class="col text-center"  data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500">
             <h2 class="fw-bold mb-4">Lets Talk</h2>
             <p class="lead">I'm here to connect. Whether you have a question, a project idea, or just want to say hello, drop me a message below!</p>
         </div>
@@ -1776,6 +1805,8 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
         action="https://formspree.io/f/xgejgayp"
         method="POST"
         class="needs-validation"
+        data-aos="fade-up" data-aos-easing="linear"
+        data-aos-duration="500"
     >
         <div class="mb-3">
             <label for="email" class="form-label">Your email:</label>
