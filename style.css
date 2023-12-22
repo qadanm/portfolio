@@ -366,6 +366,15 @@ ul li {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.782);
 }
+#pricing .lead {
+  font-size: 22px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.782);
+}
+#pricing .fw-bold {
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+}
 #contact .fw-bold {
   color: rgb(84, 84, 165);
   font-size: 5rem;
@@ -914,6 +923,45 @@ flex-direction: column;
   visibility: visible;
   opacity: 1;
 }
+#future-projects{
+  margin: 10px;
+}
+.filter-btn.active {
+  background-color:rgb(84, 84, 165);
+  color: #fff;
+}
+/* Add your custom styles here */
+
+/* Example: Add margin to the top of the container */
+
+/* Example: Style the project cards */
+.project-cards {
+background-color: #f8f9fa;
+padding: 20px;
+margin-bottom: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Example: Style the image inside the project cards */
+.project-cards img {
+width: 100%;
+height: auto;
+}
+
+/* Example: Style the heading */
+.project-cards h3, #future-projects h3 {
+color: rgb(84, 84, 165); /* Bootstrap primary color */
+}
+
+/* Example: Style the list items */
+.project-cards ul li {
+margin-bottom: 10px;
+}
+
+/* Example: Style the success check circle icon */
+.project-cards .bi-check-circle {
+color: #28a745; /* Bootstrap success color */
+}
 
 
   /* Animation for the linear gradient background */
@@ -966,6 +1014,10 @@ flex-direction: column;
   form .mb-3 p{
     margin: 10px;
   }
+  .project-cards h3, #future-projects h3 {
+    margin-top: 10px;
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -979,4 +1031,8 @@ flex-direction: column;
   .tooltip {
       margin-left: -1372%;
   }
+  #pricing .fw-bold {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+}
 }
