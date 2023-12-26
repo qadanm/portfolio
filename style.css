@@ -176,7 +176,9 @@ margin-top: 10px; /* Add some spacing between image and title */
 
 
 
-
+#weather-container .p-4{
+padding: 0px !important;
+}
 
 
 
@@ -829,6 +831,7 @@ flex-direction: column;
     border: 0.2rem solid rgb(255, 255, 255);
     transform: scale(1.2);
     cursor: pointer;
+    margin-right: 30px;
   }
   .interaction-option.qadan-btn.active:hover{
     background: rgba(0, 0, 0, 0.058)
@@ -878,7 +881,10 @@ flex-direction: column;
     box-shadow: unset;
 
   }
-
+  #future-projects .col-md-5{
+    display: flex;
+    align-items: center;
+  }
 
   .card-text{
     font-weight: 600;
@@ -1025,6 +1031,12 @@ color: #28a745; /* Bootstrap success color */
   .tooltip {
       margin-left: -1172%; 
   }
+  #radio-buttons-section {
+    min-height: 88vh;
+}
+.whthrinfo{
+  margin-bottom: 20px;
+}
 }
 @media only screen and (max-width: 480px) {
   /* Adjust styles for mobile */
