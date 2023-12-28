@@ -59,7 +59,7 @@
             <a class="nav-link" href="#qadan-projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-fun">Fun</a>
+            <a class="nav-link" href="#qadan-fun" style="display: none;">Fun</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#qadan-choose-your-path">Collaborate</a>
@@ -313,14 +313,14 @@
 
 
 
-            <div class="col-md-4 mx-auto text-center">
+            <div class="col-md-4 mx-auto whthrinfo text-center">
                     <h2 class="mb-4"><i class="bi bi-sun"></i>Weather</h2>
                     <hr class="my-4 thicker-line">
-                    <div id="weather-container" class="text-left p-4 rounded shadow-sm">
-                        <p id="weather-description" class="mb-2 h4">Loading... <i class="bi bi-arrow-repeat"></i></p>
+                    <div id="weather-container" class="text-left rounded shadow-sm">
+                        <p id="city" class="mb-2 h4">City: Loading... <i class="bi bi-geo-alt"></i></p>
+                        <p id="weather-description" class="mb-2 h5">Loading... <i class="bi bi-arrow-repeat"></i></p>
                         <p id="temp" class="mb-2 h5">Temperature: Loading... <i class="bi bi-thermometer"></i></p>
                         <p id="humidity" class="mb-2 h5">Humidity: Loading... <i class="bi bi-droplet"></i></p>
-                        <p id="city" class="mb-2 h5">City: Loading... <i class="bi bi-geo-alt"></i></p>
                         <p id="sunrise" class="mb-2 h5">Sunrise: Loading... <i class="bi bi-sunrise"></i></p>
                         <p id="sunset" class="mb-0 h5">Sunset: Loading... <i class="bi bi-sunset"></i></p>
                     </div>
@@ -341,7 +341,7 @@
                     </div>
                     <div class="col-12 col-sm-8 col-md-4 radio-btn">
                         <button class="btn btn-default" type="submit">
-                            <iframe src="https://tunein.com/embed/player/s35247/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
+                            <iframe src="https://tunein.com/embed/player/s34767/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
                         </button>
                     </div>
                     <div class="col-12 col-sm-8 col-md-4 radio-btn">
@@ -715,7 +715,9 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
         </p>
         <ul class="list-unstyled">
             <li>
-                <i class="bi bi-jsx"></i> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-jsx" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.075 14.841a1.13 1.13 0 0 0 .401.823c.13.108.288.192.478.252.19.061.411.091.665.091.338 0 .624-.053.858-.158.237-.105.416-.252.54-.44a1.17 1.17 0 0 0 .187-.656c0-.224-.045-.41-.135-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.565-.21l-.621-.144a.97.97 0 0 1-.405-.176.37.37 0 0 1-.143-.299c0-.156.061-.284.184-.384.125-.101.296-.152.513-.152.143 0 .266.023.37.068a.624.624 0 0 1 .245.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.199-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.552.05-.776.15-.225.099-.4.24-.528.421-.127.182-.19.395-.19.639 0 .201.04.376.123.524.082.149.199.27.351.367.153.095.332.167.54.213l.618.144c.207.049.36.113.462.193a.387.387 0 0 1 .153.326.512.512 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.224-.013-.32-.04a.837.837 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM0 14.791c0 .165.027.32.082.466.055.147.136.277.243.39.11.113.245.202.407.267.164.062.354.093.569.093.42 0 .748-.115.984-.346.238-.23.358-.565.358-1.004v-2.725h-.791v2.745c0 .201-.046.357-.138.466-.092.11-.233.164-.422.164a.499.499 0 0 1-.454-.246.576.576 0 0 1-.073-.27H0Zm8.907-2.859H9.8l-1.274 2.007L9.78 15.93h-.908l-.85-1.415h-.035l-.853 1.415h-.861l1.24-2.016-1.228-1.983h.931l.832 1.438h.036l.823-1.438Z"/>
+                  </svg>
                 JSX
                 <i class="bi bi-check-circle text-success"></i>
             </li>
@@ -727,7 +729,9 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
                 <i class="bi bi-check-circle text-success"></i>
             </li>
             <li>
-                <i class="bi bi-react"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                    <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                  </svg>
                 React.js
                 <i class="bi bi-check-circle text-success"></i>
             </li>
@@ -850,14 +854,30 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
                 </div>
     </div>
 </section>
-
 <script>
     function filterProjects() {
         var searchInput = document.getElementById('project-search').value.toLowerCase();
         var projects = document.querySelectorAll('.project-cards');
 
         projects.forEach(function (project) {
+            // Concatenate all text content within the project
             var projectText = project.textContent.toLowerCase();
+            
+            var title = project.querySelector('h3');
+            if (title) {
+                projectText += title.textContent.toLowerCase();
+            }
+
+            var list = project.querySelector('ul');
+            if (list) {
+                projectText += list.textContent.toLowerCase();
+            }
+
+            var description = project.querySelector('p');
+            if (description) {
+                projectText += description.textContent.toLowerCase();
+            }
+
             if (projectText.includes(searchInput)) {
                 project.style.display = 'flex';  // Show the project card
             } else {
@@ -866,6 +886,9 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
         });
     }
 </script>
+
+
+
 
 
 
@@ -1086,7 +1109,7 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
 
 
 <div id="qadan-fun"></div>
-<div class="container instagram-images-api" data-aos="fade-up">
+<div class="container instagram-images-api" data-aos="fade-up" style="display: none;">
     <div class="row">
         <div class="col text-center">
             <h2 class="fw-bold mb-4">Work Hard, Play Hard</h2>
@@ -1126,16 +1149,8 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
 
 
 </span>} journey! Select an option below:</p>  -->
-<!-- Collaborate on a Project Button -->
-<div class="tooltip-container">
-    <button class="interaction-option qadan-btn" id="projectToggle">
-        Collaborate on a Project
-    </button>
-    <div class="tooltip-icon-container">
-        <i class="bi bi-info-circle info-icon" id="projectInfoIcon" data-tooltip="Click to Collaborate on a Project"></i>
-        <span class="tooltip" id="projectTooltip">Choosing this option will reveal the pricing rates and the most common tiers available for selection.</span>
-    </div>
-</div>
+
+
 
 <!-- Employment Button -->
 <div class="tooltip-container">
@@ -1147,6 +1162,20 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
         <span class="tooltip" id="employmentTooltip">Opting for this unlocks the Education and Experience section, along with the ability to download my resume.</span>
     </div>
 </div>
+
+
+<!-- Collaborate on a Project Button -->
+<div class="tooltip-container">
+    <button class="interaction-option qadan-btn" id="projectToggle">
+        Collaborate on a Project
+    </button>
+    <div class="tooltip-icon-container">
+        <i class="bi bi-info-circle info-icon" id="projectInfoIcon" data-tooltip="Click to Collaborate on a Project"></i>
+        <span class="tooltip" id="projectTooltip">Choosing this option will reveal the pricing rates and the most common tiers available for selection.</span>
+    </div>
+</div>
+
+
 
 
 
@@ -2032,24 +2061,26 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
 <script>
     AOS.init();
     function updateDigitalTime() {
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    
+    // Determine whether it's AM or PM
+    var ampm = hours >= 12 ? 'PM' : 'AM';
+    
+    // Convert to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // 0 should be displayed as 12
 
-            var now = new Date();
-            var hours = now.getHours();
-            var minutes = now.getMinutes();
-            var seconds = now.getSeconds();
+    var digitalTime = hours + ":" + (minutes < 10 ? "0" : "") + minutes + " " + ampm;
 
+    document.getElementById("time").innerText = digitalTime;
+}
 
-            var digitalTime = hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+setInterval(updateDigitalTime, 1000);
 
+updateDigitalTime();
 
-            document.getElementById("time").innerText = digitalTime;
-        }
-
-
-        setInterval(updateDigitalTime, 1000);
-
-
-        updateDigitalTime();
     function updateTime() {
   var now = new Date();
   var hours = now.getHours();
@@ -2095,14 +2126,15 @@ function updateWeather() {
             var roundedTemperature = Math.round(temperatureFahrenheit);
 
             // Convert timestamps to readable time
-            var sunrise = new Date(sunriseTimestamp * 1000).toLocaleTimeString();
-            var sunset = new Date(sunsetTimestamp * 1000).toLocaleTimeString();
+            var sunrise = new Date(sunriseTimestamp * 1000).toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', hour12: true });
+            var sunset = new Date(sunsetTimestamp * 1000).toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', hour12: true });
+
 
             // Update weather HTML
-            document.getElementById('weather-description').innerHTML = '<i class="bi bi-cloud"></i> Description: ' + description;
-            document.getElementById('temp').innerHTML = '<i class="bi bi-thermometer"></i> Temperature: ' + roundedTemperature + ' °F';
+            document.getElementById('city').innerHTML = '<i class="bi bi-geo-alt"></i> ' + city;
+            document.getElementById('temp').innerHTML = '<i class="bi bi-thermometer"></i> ' + roundedTemperature + ' °F';
             document.getElementById('humidity').innerHTML = '<i class="bi bi-droplet"></i> Humidity: ' + humidity + '%';
-            document.getElementById('city').innerHTML = '<i class="bi bi-geo-alt"></i> City: ' + city;
+            document.getElementById('weather-description').innerHTML = '<i class="bi bi-cloud"></i> ' + description;
             document.getElementById('sunrise').innerHTML = '<i class="bi bi-sunrise"></i> Sunrise: ' + sunrise;
             document.getElementById('sunset').innerHTML = '<i class="bi bi-sunset"></i> Sunset: ' + sunset;
         })
