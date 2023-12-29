@@ -10,7 +10,12 @@
 employmentContent lead
 */
 
-/* LA SECTION BELOW nav clamp qadanradio-btn*/
+/* LA SECTION BELOW nav clamp qadanradio-btn
+
+
+instagram-images-api
+
+*/
 
 
 
@@ -388,19 +393,19 @@ ul li {
 }
 
 .instagram-images-api .fw-bold {
-  color: rgb(84, 84, 165);
+  color: rgb(255, 255, 255);
   font-size: 5rem;
   margin-top: 30px;
 }
 .instagram-images-api .lead {
   font-size: 22px;
   line-height: 1.6;
-  color: #666;
+  color: #dedede;
 }
 .instagram-images-api h3 {
   font-size: 25px;
   line-height: 1.6;
-  color: #666;
+  color: #dedede;
 }
 form {
     max-width: 600px;
