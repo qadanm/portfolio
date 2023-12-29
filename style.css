@@ -12,6 +12,7 @@ employmentContent lead
 
 /* LA SECTION BELOW nav clamp qadanradio-btn
 
+  .navbar {
 
 instagram-images-api
 
@@ -25,7 +26,13 @@ body, html{
 body{
     background-color: #f8f9fa;
 }
-
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+}
 .radio-container {
     margin-top: 20px;
 }
@@ -214,10 +221,9 @@ body {
     font-family: 'Noto Nastaliq Urdu', serif !important;
 }
     nav {
-      background-color: rgb(0, 0, 0) !important; /* Light gray background color */
+      background-color: rgb(0, 0, 0); /* Light gray background color */
       box-shadow: 0 2px 4px rgb(0, 0, 0); /* Subtle box shadow */
     }
-
     .navbar-brand {
         font-family: 'Rajdhani', sans-serif;
 
@@ -238,9 +244,6 @@ body {
     .navbar-nav .nav-link:hover{
 color: rgb(151, 151, 236) !important;
 scale: 1.1;
-    }
-    .navbar-toggler-icon {
-      background-color: #343a40; /* Dark color for the toggle icon */
     }
 
     .navbar-nav .nav-item.active .nav-link {
@@ -281,9 +284,7 @@ scale: 1.1;
 }
 
 /* Style the icon inside the toggler button */
-.navbar-toggler-icon {
-  background-color: rgb(84, 84, 165); /* Set icon color to black */
-}
+
 
 /* Styles for the active state when the button is clicked */
 .navbar-toggler:active,
