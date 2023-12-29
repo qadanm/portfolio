@@ -2340,6 +2340,29 @@ function updateWeather() {
 //     }
 
 
+
+  $(document).ready(function() {
+    var originalNavbarColor = $(".navbar").css("background-color");
+    var originalTogglerColor = $(".navbar-toggler").css("background-color");
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) {
+        $(".navbar").css("background-color", "#08070adb");
+        $(".navbar-toggler").css("background-color", "rgba(84, 84, 165, 0.662)");
+      } else {
+        $(".navbar").css("background-color", originalNavbarColor);
+        $(".navbar-toggler").css({
+          "background-color": originalTogglerColor,
+          "border": "unset !important"
+        });
+        $(".navbar-toggler-icon").css("background-color", originalIconColor);
+      }
+    });
+  });
+
+
+
+
 function downloadResume() {
         // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
         var resumePath = 'MuhammedResume.pdf';
