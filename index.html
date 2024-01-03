@@ -2199,6 +2199,10 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
     AOS.init();
     function updateDigitalTime() {
     var now = new Date();
+    
+    // Set the timezone to Los Angeles (PST)
+    now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+
     var hours = now.getHours();
     var minutes = now.getMinutes();
     
@@ -2218,21 +2222,23 @@ setInterval(updateDigitalTime, 1000);
 
 updateDigitalTime();
 
-    function updateTime() {
-  var now = new Date();
-  var hours = now.getHours();
-  var minutes = now.getMinutes();
-  var seconds = now.getSeconds();
+function updateTime() {
+    var now = new Date();
 
+    // Set the timezone to Los Angeles (PST)
+    now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
 
-  var hourRotation = (hours % 12 + minutes / 60) * 30;
-  var minuteRotation = (minutes + seconds / 60) * 6;
-  var secondRotation = seconds * 6;
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
 
+    var hourRotation = (hours % 12 + minutes / 60) * 30;
+    var minuteRotation = (minutes + seconds / 60) * 6;
+    var secondRotation = seconds * 6;
 
-  document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation}deg)`;
-  document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
-  document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
+    document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation}deg)`;
+    document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
+    document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
 }
 
 function kelvinToCelsius(kelvin) {
