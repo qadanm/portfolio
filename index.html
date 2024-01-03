@@ -43,35 +43,37 @@
 
 
 </span> }</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto" data-aos="fade-down" data-aos-easing="linear"
         data-aos-duration="400">
           <li class="nav-item active">
-            <a class="nav-link" href="#qadan-about">About</a>
+            <a class="nav-link" href="#qadan-about" onclick="closeMobileMenu()">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-we-love-la">We Love LA</a>
+            <a class="nav-link" href="#qadan-we-love-la" onclick="closeMobileMenu()">We Love LA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-projects">Projects</a>
+            <a class="nav-link" href="#qadan-projects" onclick="closeMobileMenu()">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-fun">Fun</a>
+            <a class="nav-link" href="#qadan-fun" onclick="closeMobileMenu()">Fun</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-choose-your-path">Collaborate</a>
+            <a class="nav-link" href="#qadan-choose-your-path" onclick="closeMobileMenu()">Collaborate</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-choose-your-path">For Employers</a>
+            <a class="nav-link" href="#qadan-choose-your-path" onclick="closeMobileMenu()">For Employers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="downloadResume()" style="cursor: pointer;">Download Resume</a>
+<a class="nav-link" onclick="downloadResume(); closeMobileMenu();" style="cursor: pointer;">Download Resume</a>
+
         </li>        
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-contact">Contact</a>
+            <a class="nav-link" href="#qadan-contact" onclick="closeMobileMenu()">Contact</a>
           </li>
         </ul>
       </div>
@@ -157,6 +159,14 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+    function closeMobileMenu() {
+    // Find the toggle button and trigger a click event to close the menu
+    var toggleButton = document.querySelector('.navbar-toggler');
+    if (toggleButton) {
+      toggleButton.click();
+    }
+  }
+
   </script>
 
 
