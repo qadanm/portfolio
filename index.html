@@ -43,35 +43,37 @@
 
 
 </span> }</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto" data-aos="fade-down" data-aos-easing="linear"
         data-aos-duration="400">
           <li class="nav-item active">
-            <a class="nav-link" href="#qadan-about">About</a>
+            <a class="nav-link" href="#qadan-about" onclick="closeMobileMenu()">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-we-love-la">We Love LA</a>
+            <a class="nav-link" href="#qadan-we-love-la" onclick="closeMobileMenu()">We Love LA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-projects">Projects</a>
+            <a class="nav-link" href="#qadan-projects" onclick="closeMobileMenu()">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-fun" style="display: none;">Fun</a>
+            <a class="nav-link" href="#qadan-fun" onclick="closeMobileMenu()">Fun</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-choose-your-path">Collaborate</a>
+            <a class="nav-link" href="#qadan-choose-your-path" onclick="closeMobileMenu()">Collaborate</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-choose-your-path">For Employers</a>
+            <a class="nav-link" href="#qadan-choose-your-path" onclick="closeMobileMenu()">For Employers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="downloadResume()" style="cursor: pointer;">Download Resume</a>
+<a class="nav-link" onclick="downloadResume(); closeMobileMenu();" style="cursor: pointer;">Download Resume</a>
+
         </li>        
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-contact">Contact</a>
+            <a class="nav-link" href="#qadan-contact" onclick="closeMobileMenu()">Contact</a>
           </li>
         </ul>
       </div>
@@ -120,7 +122,85 @@
 </div>
 
 
+  <button
+    type="button"
+    class="btn btn-danger btn-floating btn-lg"
+    id="btn-back-to-top"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+    </svg>
+  </button>
 
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    function closeMobileMenu() {
+    // Find the toggle button and trigger a click event to close the menu
+    var toggleButton = document.querySelector('.navbar-toggler');
+    if (toggleButton) {
+      toggleButton.click();
+    }
+  }
+
+  </script>
+
+
+
+<style>
+    #btn-back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      display: none;
+      background-color:rgba(84, 84, 165, 0.662);
+      color: #fff;
+      border: 2px solid rgba(255, 0, 0, 0);
+      border-radius: 50%;
+      /* padding: 10px; */
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    #btn-back-to-top:hover {
+        background-color:rgb(84, 84, 165);
+        border: 2px solid rgb(84, 84, 165);
+        transform: scale(1.07);
+        -webkit-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+    }
+
+    /* Smooth scrolling behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 
 <section class="parallax-section" style="display: none;">
     <div class="container">
@@ -268,10 +348,10 @@
             <!-- Time -->
             <div class="col-md-8">
                 <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 text-center">
                 <h2 class="mb-4"><i class="bi bi-clock"></i> Time</h2>
                 <hr class="my-4 thicker-line text-center">
-                <p id="time">Loading...</p>
+                <h5 id="time">Loading...</h5>
                 <!-- Analog Clock -->
 <!-- Analog Clock -->
 <div class="analog-clock">
@@ -326,10 +406,12 @@
                     </div>
                     
             </div>
-            <h2 class="mb-4"><i class="bi bi-music-note-beamed"></i> LAs Favorite Stations</h2>
+            <h2 class="mb-4 text-center"><i class="bi bi-music-note-beamed"></i> LAs Favorite Stations</h2>
 
                 <div class="row radio-container text-center">
+
                     <div class="col-12 col-sm-8 col-md-4 radio-btn">
+
                         <button class="btn btn-default" type="submit">
                             <iframe src="https://tunein.com/embed/player/s52543/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
                         </button>
@@ -376,7 +458,7 @@
 }
 
 </style>
-<div class="col-md-4 mx-auto">
+<div class="col-md-4 mx-auto text-center">
     <h2 class="mb-4"><i class="bi bi-newspaper"></i> Latest News</h2>
     <hr class="my-4 thicker-line">
     <div id="news-container" class="news-container">
@@ -384,7 +466,7 @@
         <iframe class="yt" width="320" height="180" src="https://www.youtube.com/embed/-E0AHOOGo24?si=fo1AXCWzonDpshzZ&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <iframe class="yt"  width="320" height="180" src="https://www.youtube-nocookie.com/embed/gCNeDWCI0vo?si=ZRip9drcwlpmPEjK&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <iframe class="yt"  width="320" height="180" src="https://www.youtube-nocookie.com/embed/9NyxcX3rhQs?si=dqZopU0noYmwpIV_&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <iframe class="yt"  width="320" height="180" src="https://www.youtube-nocookie.com/embed/OOtxXPaQvoM?si=OelDKO6t-zZkTNU-&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="yt"  width="320" height="180" src="https://www.youtube.com/embed/txnH_RGNuEk?si=2oqP5qCZW1GKygRC&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
 </div>
@@ -1108,7 +1190,62 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
 
 
 
-<div id="qadan-fun"></div>
+<div id="qadan-fun" style="background: linear-gradient(to bottom, rgb(48, 48, 94), rgb(18, 32, 60), rgb(10, 18, 45));padding-bottom: 20px;">
+
+<div class="container mt-5 instagram-images-api">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="fw-bold mb-4">Fun & Travel</h2>
+            <h3>Explore My Adventures Through Travel and Photography</h3>
+            
+        </div>
+    </div>
+  
+    <div class="row photo-grid">
+        <div class="col-md-4 col-sm-6">
+            <img src="Screenshot 2023-12-28 at 1.49.26 AM.png" alt="Photo 1" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <img src="Screenshot 2023-12-28 at 3.29.01 PM.png" alt="Photo 2" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <img src="Screenshot 2023-12-28 at 3.29.37 PM.png" alt="Photo 3" class="img-fluid">
+        </div>
+        <!-- Add more columns as needed -->
+
+        <!-- Example with additional rows -->
+        <div class="col-md-4 col-sm-6">
+            <img src="Screenshot 2023-12-28 at 3.31.16 PM.png" alt="Photo 4" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <img src="Screenshot 2023-12-28 at 3.32.01 PM.png" alt="Photo 5" class="img-fluid">
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <img src="Screenshot 2023-12-28 at 3.32.55 PM.png" alt="Photo 6" class="img-fluid">
+        </div>
+    </div>
+    <div class="button-container text-right"><a target="_blank" href="https://www.instagram.com/muhammedqadan/"><button class="qadan-btn qadan-btn-white align-content-center">See More &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" style="vertical-align: middle;">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+      </svg></button></a></div>
+  </div>
+</div>
+  <style>
+    /* Custom styles for the photo grid */
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .photo-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+
+
 <div class="container instagram-images-api" data-aos="fade-up" style="display: none;">
     <div class="row">
         <div class="col text-center">
@@ -1236,7 +1373,7 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
       <div class="card-body">
         <h5 class="card-title">UX Engineer</h5>
         <p class="card-text">MagTek · Full-time</p>
-        <p class="card-text">Nov 2022 - Present · 1 yr 2 mos</p>
+        <p class="card-text">Nov 2022 - Present</p>
         <p class="card-text">Seal Beach, California, United States · Hybrid</p>
         <!-- Key Contributions -->
         <h6 class="mt-4">🚀 Key Contributions:</h6>
@@ -1288,7 +1425,7 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
       <div class="card-body">
         <h5 class="card-title">Front End Developer</h5>
         <p class="card-text">InvestCloud, Inc. · Full-time</p>
-        <p class="card-text">Aug 2020 - Dec 2021 · 1 yr 5 mos</p>
+        <p class="card-text">Aug 2020 - Dec 2021</p>
         <p class="card-text">West Hollywood, California, United States · Remote</p>
         <!-- Key Achievements -->
         <h6 class="mt-4">🚀 Key Achievements:</h6>
@@ -1319,7 +1456,7 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
       <div class="card-body">
         <h5 class="card-title">UI Developer</h5>
         <p class="card-text">Freelance - Avant & GAARDE Mobile Accessories LLC · Freelance</p>
-        <p class="card-text">Jul 2016 - Jan 2018 · 1 yr 7 mos</p>
+        <p class="card-text">Jul 2016 - Jan 2018</p>
         <p class="card-text">Beaverton, Oregon · Remote</p>
         <!-- Project Overview -->
         <h6 class="mt-4">💼 Project Overview:</h6>
@@ -1360,7 +1497,7 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
       <div class="card-body">
         <h5 class="card-title">iOS/Apple CarPlay CSM</h5>
         <p class="card-text">Apple · Full-time</p>
-        <p class="card-text">Jul 2014 - Jun 2016 · 2 yrs</p>
+        <p class="card-text">Jul 2014 - Jun 2016</p>
         <p class="card-text">Tigard, Oregon</p>
         <!-- Client Support and Communication -->
         <h6 class="mt-4">🔍 Client Support and Communication:</h6>
@@ -1498,7 +1635,6 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
         <ul>
             <li>Learned React from the ground up and finished the course as an advanced React developer</li>
             <li>Built multiple high-quality demo apps, including a fullstack app built with NextJS</li>
-            <li>Joined more than 750,000 students in this course & more than 2,500,000 students I taught across all my courses</li>
             <li>Built multiple demo projects & explored realistic examples</li>
             <li>Followed along locally or in a cloud development environment</li>
             <li>Learned all about React Hooks and React Components</li>
@@ -1684,7 +1820,7 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
         <div class="row">
 
             <!-- Basic Plan -->
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Basic Plan</h5>
@@ -1700,10 +1836,10 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Standard Plan -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Standard Plan</h5>
@@ -1725,7 +1861,7 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
             </div>
 
             <!-- Premium Plan -->
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Premium Plan</h5>
@@ -1749,13 +1885,13 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
                 </div>
             </div>
 
-            <!-- Corporate Plan -->
-<!-- Corporate Plan -->
-<div class="col-md-3">
+            <!-- Complete Strategy Plan -->
+<!-- Complete Strategy Plan -->
+<div class="col-md-4">
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">Corporate Plan</h5>
-            <p class="card-text">Experience the ultimate in web development with our Corporate plan.</p>
+            <h5 class="card-title">Complete Strategy</h5>
+            <p class="card-text">Experience the ultimate in web development with our Complete Strategy.</p>
             <ul class="list-unstyled">
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-palette" viewBox="0 0 16 16">
                     <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
@@ -1767,7 +1903,7 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
                     <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
                   </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Orange" class="bi bi-fire" viewBox="0 0 16 16">
   <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
-</svg> Corporate Priority Support (24/7 Availability) 
+</svg> Complete Strategy Priority Support (24/7 Availability) 
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-infinity" viewBox="0 0 16 16">
                     <path d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916z"/>
                   </svg> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="Orange" class="bi bi-fire" viewBox="0 0 16 16">
@@ -1805,7 +1941,7 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
             </ul>
             <p class="card-text">Fee: $7,499 +</p>
             <div class="text-center">
-            <a class="qadan-btn qadan-btn-white choose-plan-btn" href="#qadan-contact">Choose Plan</a>
+            <a class="qadan-btn qadan-btn-white choose-plan-btn" href="#qadan-contact">Choose Strategy</a>
         </div>
         </div>
     </div>
@@ -1859,11 +1995,11 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
                         </div>
                     </div>
         
-                    <!-- Corporate Maintenance -->
+                    <!-- Complete Strategy Maintenance -->
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Corporate Maintenance</h5>
+                                <h5 class="card-title">Complete Strategy Maintenance</h5>
                                 <p class="card-text">Top-tier maintenance for high-performance projects.</p>
                                 <ul class="list-unstyled">
                                     <li>24/7 Availability <i class="bi bi-check-circle text-success"></i></li>
@@ -1874,9 +2010,10 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
                                     <li>Marketing Support <i class="bi bi-check-circle text-success"></i></li>
                                     <li>Social Media Integration <i class="bi bi-check-circle text-success"></i></li>
                                     <li>Ad Campaign Management <i class="bi bi-check-circle text-success"></i></li>
+                                    <li>100+ other services available <i class="bi bi-check-circle text-success"></i></li>
                                 </ul>
                                 <!-- Additional Maintenance Details -->
-                                <p class="card-text">Monthly Subscription: $599</p>
+                                <p class="card-text">Monthly Subscription: $800+</p>
                             </div>
                         </div>
                     </div>
@@ -2062,6 +2199,10 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
     AOS.init();
     function updateDigitalTime() {
     var now = new Date();
+    
+    // Set the timezone to Los Angeles (PST)
+    now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+
     var hours = now.getHours();
     var minutes = now.getMinutes();
     
@@ -2081,21 +2222,23 @@ setInterval(updateDigitalTime, 1000);
 
 updateDigitalTime();
 
-    function updateTime() {
-  var now = new Date();
-  var hours = now.getHours();
-  var minutes = now.getMinutes();
-  var seconds = now.getSeconds();
+function updateTime() {
+    var now = new Date();
 
+    // Set the timezone to Los Angeles (PST)
+    now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
 
-  var hourRotation = (hours % 12 + minutes / 60) * 30;
-  var minuteRotation = (minutes + seconds / 60) * 6;
-  var secondRotation = seconds * 6;
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
 
+    var hourRotation = (hours % 12 + minutes / 60) * 30;
+    var minuteRotation = (minutes + seconds / 60) * 6;
+    var secondRotation = seconds * 6;
 
-  document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation}deg)`;
-  document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
-  document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
+    document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation}deg)`;
+    document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
+    document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
 }
 
 function kelvinToCelsius(kelvin) {
@@ -2213,6 +2356,29 @@ function updateWeather() {
 //     }
 
 
+
+  $(document).ready(function() {
+    var originalNavbarColor = $(".navbar").css("background-color");
+    var originalTogglerColor = $(".navbar-toggler").css("background-color");
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) {
+        $(".navbar").css("background-color", "#08070adb");
+        $(".navbar-toggler").css("background-color", "rgba(84, 84, 165, 0.662)");
+      } else {
+        $(".navbar").css("background-color", originalNavbarColor);
+        $(".navbar-toggler").css({
+          "background-color": originalTogglerColor,
+          "border": "unset !important"
+        });
+        $(".navbar-toggler-icon").css("background-color", originalIconColor);
+      }
+    });
+  });
+
+
+
+
 function downloadResume() {
         // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
         var resumePath = 'MuhammedResume.pdf';
@@ -2222,7 +2388,7 @@ function downloadResume() {
         link.href = resumePath;
 
         // Set the download attribute with the desired file name
-        link.download = 'your_resume.pdf';
+        link.download = 'Muhammed_Q-Resume.pdf';
 
         // Append the link to the document body
         document.body.appendChild(link);
@@ -2245,8 +2411,8 @@ $(document).ready(function() {
         var planName = parentCard.find(".card-title").text();
 
         // Set the subject and message based on the selected plan
-        var subject = "Interested in " + planName + " Plan";
-        var message = "I am interested in the " + planName + " Plan. Please provide more information.";
+        var subject = "Interested in " + planName;
+        var message = "I am interested in the " + planName + ". Please provide more information.";
 
         // Prefill the subject and message fields in the contact form
         $("#subject").val(subject);

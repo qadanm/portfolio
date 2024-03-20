@@ -5,13 +5,26 @@
 #radio-buttons-section
 
 
-
+qadan
 
 employmentContent lead
 */
 
-/* LA SECTION BELOW nav clamp qadanradio-btn*/
+/* LA SECTION BELOW nav clamp qadanradio-btn
 
+  .navbar {
+
+instagram-images-api
+
+*/
+
+
+/* 
+--ultra-violet: #5454a5ff;
+--black-olive: #37392eff;
+--pumpkin: #fa8334ff;
+--white: #ffffffff;
+--cream: #eaefb1ff; */
 
 
 body, html{
@@ -20,7 +33,13 @@ body, html{
 body{
     background-color: #f8f9fa;
 }
-
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+}
 .radio-container {
     margin-top: 20px;
 }
@@ -148,6 +167,7 @@ margin-top: 10px; /* Add some spacing between image and title */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    background-color: rgb(249 249 255);
   }
   
   .edu-item:hover, .exp-item:hover, .skills-item:hover, .proj-item:hover {
@@ -209,10 +229,9 @@ body {
     font-family: 'Noto Nastaliq Urdu', serif !important;
 }
     nav {
-      background-color: rgb(0, 0, 0) !important; /* Light gray background color */
+      background-color: rgb(0, 0, 0); /* Light gray background color */
       box-shadow: 0 2px 4px rgb(0, 0, 0); /* Subtle box shadow */
     }
-
     .navbar-brand {
         font-family: 'Rajdhani', sans-serif;
 
@@ -233,9 +252,6 @@ body {
     .navbar-nav .nav-link:hover{
 color: rgb(151, 151, 236) !important;
 scale: 1.1;
-    }
-    .navbar-toggler-icon {
-      background-color: #343a40; /* Dark color for the toggle icon */
     }
 
     .navbar-nav .nav-item.active .nav-link {
@@ -259,6 +275,7 @@ scale: 1.1;
       height: 95vh; /* Adjust the height as needed */
       display: flex;
       flex-direction: column;
+      margin-top: 68px;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -276,9 +293,7 @@ scale: 1.1;
 }
 
 /* Style the icon inside the toggler button */
-.navbar-toggler-icon {
-  background-color: rgb(84, 84, 165); /* Set icon color to black */
-}
+
 
 /* Styles for the active state when the button is clicked */
 .navbar-toggler:active,
@@ -339,7 +354,7 @@ ul li {
   margin-bottom: 0.5rem;
 }
 #contact {
-    background-color: #f8f9fa;
+  background-color: rgb(245 245 255);
     padding: 60px 0;
 }
 
@@ -388,19 +403,19 @@ ul li {
 }
 
 .instagram-images-api .fw-bold {
-  color: rgb(84, 84, 165);
+  color: rgb(255, 255, 255);
   font-size: 5rem;
   margin-top: 30px;
 }
 .instagram-images-api .lead {
   font-size: 22px;
   line-height: 1.6;
-  color: #666;
+  color: #dedede;
 }
 .instagram-images-api h3 {
   font-size: 25px;
   line-height: 1.6;
-  color: #666;
+  color: #dedede;
 }
 form {
     max-width: 600px;
@@ -414,6 +429,7 @@ form {
 
 .form-control {
     border-radius: 5px;
+    background-color: rgb(249 249 255);
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ced4da;
@@ -714,7 +730,7 @@ font-size: 5rem;
     font-weight: 500;
 }
     #about {
-      background-color: #f4f4f4;
+      background-color: rgb(245 245 255);
       padding: 60px 0;
     }
   
@@ -929,8 +945,9 @@ flex-direction: column;
   visibility: visible;
   opacity: 1;
 }
-#future-projects{
-  margin: 10px;
+#future-projects {
+  /* margin: 10px; */
+  background-color: rgb(245 245 255);
 }
 .filter-btn.active {
   background-color:rgb(84, 84, 165);
@@ -942,7 +959,7 @@ flex-direction: column;
 
 /* Example: Style the project cards */
 .project-cards {
-background-color: #f8f9fa;
+  background-color: rgb(249 249 255);
 padding: 20px;
 margin-bottom: 20px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
@@ -1046,5 +1063,10 @@ color: #28a745; /* Bootstrap success color */
   #pricing .fw-bold {
     color: rgb(255, 255, 255);
     font-size: 4rem;
+}
+}
+@media only screen and (max-width: 400px) {
+  #radio-buttons-section {
+    min-height: 108vh;
 }
 }
