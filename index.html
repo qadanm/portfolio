@@ -60,14 +60,14 @@ aria-expanded="false" aria-label="Toggle navigation">
             <a class="nav-link" href="#qadan-projects" onclick="closeMobileMenu()">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-fun" onclick="closeMobileMenu()">Fun</a>
-          </li>
-          <li class="nav-item">
+            <a class="nav-link" href="./blog.html" onclick="closeMobileMenu()">Articles</a>
+          </li>  
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#qadan-choose-your-path" onclick="closeMobileMenu()">Collaborate</a>
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#qadan-choose-your-path" onclick="closeMobileMenu()">For Employers</a>
-          </li>
+          </li> -->
           <li class="nav-item">
 <a class="nav-link" onclick="downloadResume(); closeMobileMenu();" style="cursor: pointer;">Download Resume</a>
 
@@ -971,12 +971,57 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
 
 
 
-
-
-
-
-
 <section id="future-projects" class="py-5">
+        <div class="row">
+            <div class="col text-center" data-aos="fade-up" data-aos-easing="linear"
+            data-aos-duration="500">
+                <h2 class="fw-bold mb-4">My Latest Publications</h2>
+                <p class="lead">Your Guide to Crafting Seamless UX and Front End Experiences</p>
+            </div>
+        </div>
+
+<div class="container blog-posts">
+    <div class="row">
+      <a href="./articles/code-meets-design.html" class="col-md-4 blog-a">
+        <div class="blog-post">
+          <img src="./articles/images/pexels-magnetme-5839461.jpg" alt="Post Image">
+          <h2>The Role of Front-End Development in UX: How Code Meets Design</h2>
+          <p>Explore the crucial role that front-end development plays in shaping the user experience and how designers and developers can collaborate to create seamless products.</p>
+        </div>
+      </a>
+  
+      <a href="./articles/user-studies-step-by-step-guide.html" class="col-md-4 blog-a">
+        <div class="blog-post">
+          <img src="./articles/images/pexels-josh-sorenson-1714208.jpg" alt="Post Image">
+          <h2>A Step-by-Step Guide to Conducting User Research for Beginners</h2>
+          <p>Discover a comprehensive guide for beginners on conducting user research, essential for creating products that truly meet users' needs.</p>
+        </div>
+      </a>
+  
+      <a href="./articles/importance-of-accessibility.html" class="col-md-4 blog-a">
+        <div class="blog-post">
+          <img src="./articles/images/pexels-designecologist-1779487.jpg" alt="Post Image">
+          <h2>The Importance of Accessibility in UX Development: Best Practices and Tips</h2>
+          <p>Learn about the importance of accessibility in UX development and discover best practices and tips for making your products more accessible to all users.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  
+
+  <div class="text-center">
+    <a href="./blog.html" class="qadan-btn">See All Articles</a>
+</div>
+
+<style>
+    .blog-posts {
+    padding: 0px 0 !important;
+}
+</style>
+
+
+<section id="future-projects" class="py-5" style="display: none;">
     <div class="container">
         <div class="row">
             <div class="col text-center" data-aos="fade-up" data-aos-easing="linear"
@@ -1195,8 +1240,8 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
 <div class="container mt-5 instagram-images-api">
     <div class="row">
         <div class="col text-center">
-            <h2 class="fw-bold mb-4">Fun & Travel</h2>
-            <h3>Explore My Adventures Through Travel and Photography</h3>
+            <h2 class="fw-bold mb-4" style="color: white;">Fun & Travel</h2>
+            <h3 style="color: white;">Explore My Adventures Through Travel and Photography</h3>
             
         </div>
     </div>
@@ -1262,7 +1307,7 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
 
   </div> 
 
-<div id="qadan-choose-your-path"></div>
+<!-- <div id="qadan-choose-your-path"></div>
 <div class="choose">
 
     <div id="radio-buttons-section"  data-aos="fade-up" data-aos-easing="linear"
@@ -1270,10 +1315,10 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
         <div class="col text-center">
             <h2 class="fw-bold mb-4">Unlock Sections</h2>
             <p class="lead">Tailor content for recruiters or project seekers for a personalized experience:</p>
-        </div>
+        </div> -->
 <!-- Modern Special Section: Choose Your Interaction -->
-<div class="container modern-special-section">
-    <h2>Choose Whats Next: </h2>
+<!-- <div class="container modern-special-section">
+    <h2>Choose Whats Next: </h2> -->
     <!-- <p class="lead">Curate your {Qadan |
         
         <span class="logo-ar" style="
@@ -1289,8 +1334,8 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
 
 
 
-<!-- Employment Button -->
-<div class="tooltip-container">
+
+<!-- <div class="tooltip-container">
     <button class="interaction-option qadan-btn mt-3" id="employmentToggle">
        See My Experience
     </button>
@@ -1300,8 +1345,6 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
     </div>
 </div>
 
-
-<!-- Collaborate on a Project Button -->
 <div class="tooltip-container">
     <button class="interaction-option qadan-btn" id="projectToggle">
         Collaborate on a Project
@@ -1312,7 +1355,7 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
     </div>
 </div>
 
-
+ -->
 
 
 
@@ -1320,40 +1363,40 @@ data-aos-duration="500" data-filter="jsx javascript react bootstrap">
 </div>
 <script>
 // Function to toggle tooltip visibility
-function toggleTooltip(iconId, tooltipId) {
-    const tooltip = document.getElementById(tooltipId);
-    tooltip.classList.toggle("active");
-}
-
-// Add hover event listeners to the info icons
-document.getElementById("projectInfoIcon").addEventListener("mouseover", function() {
-    toggleTooltip("projectInfoIcon", "projectTooltip");
-});
-
-document.getElementById("employmentInfoIcon").addEventListener("mouseover", function() {
-    toggleTooltip("employmentInfoIcon", "employmentTooltip");
-});
+// function toggleTooltip(iconId, tooltipId) {
+//     const tooltip = document.getElementById(tooltipId);
+//     tooltip.classList.toggle("active");
+// }
 
 
-    // Toggle content based on the state of the buttons
-    var projectToggle = document.getElementById('projectToggle');
-    var employmentToggle = document.getElementById('employmentToggle');
+// document.getElementById("projectInfoIcon").addEventListener("mouseover", function() {
+//     toggleTooltip("projectInfoIcon", "projectTooltip");
+// });
 
-    var projectContent = document.getElementById('projectContent');
-    var employmentContent = document.getElementById('employmentContent');
+// document.getElementById("employmentInfoIcon").addEventListener("mouseover", function() {
+//     toggleTooltip("employmentInfoIcon", "employmentTooltip");
+// });
 
-    projectToggle.addEventListener('click', function () {
-        projectContent.style.display = projectToggle.classList.contains('active') ? 'none' : 'block';
-        projectToggle.classList.toggle('active');
-    });
 
-    employmentToggle.addEventListener('click', function () {
-        employmentContent.style.display = employmentToggle.classList.contains('active') ? 'none' : 'block';
-        employmentToggle.classList.toggle('active');
-    });
+
+//     var projectToggle = document.getElementById('projectToggle');
+//     var employmentToggle = document.getElementById('employmentToggle');
+
+//     var projectContent = document.getElementById('projectContent');
+//     var employmentContent = document.getElementById('employmentContent');
+
+//     projectToggle.addEventListener('click', function () {
+//         projectContent.style.display = projectToggle.classList.contains('active') ? 'none' : 'block';
+//         projectToggle.classList.toggle('active');
+//     });
+
+//     employmentToggle.addEventListener('click', function () {
+//         employmentContent.style.display = employmentToggle.classList.contains('active') ? 'none' : 'block';
+//         employmentToggle.classList.toggle('active');
+//     });
 </script>
 <div id="employmentContent" class="want-to-hire-you" style="display: none;">
-<div class="container experience mt-5">
+<div class="container experience mt-5" style="display: none;">
     <div class="row">
         <div class="col text-center">
             <h2 class="fw-bold mb-4">Experience</h2>
@@ -1757,7 +1800,7 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
   
 
   <div id="projectContent" class="lets-work-on-a-project" style="display: none;">
-  <section class="modern-features-section">
+  <section class="modern-features-section" style="display: none;">
     <div class="container"  data-aos="fade-up" data-aos-easing="linear"
     data-aos-duration="500">
         <div class="row align-items-center">
@@ -1806,6 +1849,110 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
     margin-bottom: 20px;
     color: #f8f9fa;
 }
+.blog-post.blog-a {
+text-decoration: none !important;
+text-decoration: unset !important;
+  color: inherit; /* Inherit text color */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.blog-post.blog-a:hover h2,
+.blog-post.blog-a:hover p {
+text-decoration: none !important;
+text-decoration: unset !important;
+}
+.blog-post.blog-a:hover + h2,
+.blog-post.blog-a:hover + p {
+text-decoration: none;
+}
+.blog-post.blog-a:hover {
+text-decoration: none !important;
+color: inherit !important; /* Inherit text color */
+}
+.blog-post.blog-a{
+transition: all 0.3s;
+border-radius: 15px;
+}
+.blog-post.blog-a:hover {
+background-color: white;
+text-decoration: underline; /*.blog-add underline to text on hover */
+transform: translateY(-2px); /* Move the link 2 pixels up on hover */
+transition: all 0.3s; /* Smooth transition for color, transform,.blog-and text-decoration */
+}
+.blog-post.blog-a:hover {
+transform: translateY(-3px); /* Move the link 3 pixels up on hover */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*.blog-add.blog-a subtle shadow effect */
+}
+
+.blog-post.blog-a {
+    text-decoration: none !important;
+    text-decoration: unset !important;
+      color: inherit; /* Inherit text color */
+      transition: color 0.3s; /* Smooth transition for color change */
+    }
+    
+    .blog-post.blog-a:hover h2,
+  .blog-post.blog-a:hover p {
+    text-decoration: none !important;
+    text-decoration: unset !important;
+  }
+  .blog-post.blog-a:hover + h2,
+  .blog-post.blog-a:hover + p {
+    text-decoration: none;
+  }
+  .blog-post.blog-a:hover {
+  text-decoration: none !important;
+  color: inherit !important; /* Inherit text color */
+}
+.blog-post.blog-a{
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+.blog-post.blog-a:hover {
+    background-color: white;
+  text-decoration: underline; /*.blog-add underline to text on hover */
+  transform: translateY(-2px); /* Move the link 2 pixels up on hover */
+  transition: all 0.3s; /* Smooth transition for color, transform,.blog-and text-decoration */
+}
+.blog-post.blog-a:hover {
+  transform: translateY(-3px); /* Move the link 3 pixels up on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*.blog-add.blog-a subtle shadow effect */
+}
+
+.blog-post.blog-a {
+    text-decoration: none !important;
+    text-decoration: unset !important;
+      color: inherit; /* Inherit text color */
+      transition: color 0.3s; /* Smooth transition for color change */
+    }
+    
+    .blog-post.blog-a:hover h2,
+  .blog-post.blog-a:hover p {
+    text-decoration: none !important;
+    text-decoration: unset !important;
+  }
+  .blog-post.blog-a:hover + h2,
+  .blog-post.blog-a:hover + p {
+    text-decoration: none;
+  }
+ .blog-a:hover {
+  text-decoration: none !important;
+  color: inherit !important; /* Inherit text color */
+}
+.blog-a{
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+.blog-a:hover {
+    background-color: white;
+  text-decoration: underline; /* Add underline to text on hover */
+  transform: translateY(-2px); /* Move the link 2 pixels up on hover */
+  transition: all 0.3s; /* Smooth transition for color, transform, and text-decoration */
+}
+.blog-a:hover {
+  transform: translateY(-3px); /* Move the link 3 pixels up on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
 </style>
 
 <!-- Pricing and Plans Section jquery -->
@@ -1813,8 +1960,8 @@ document.getElementById("employmentInfoIcon").addEventListener("mouseover", func
     <div class="container"  data-aos="fade-up" data-aos-easing="linear"
     data-aos-duration="500">
     <div class="col text-center">
-        <h2 class="fw-bold mb-4">Let's Collaborate</h2>
-        <p class="lead">Whether you're in need of a straightforward website or a comprehensive strategy, there's a plan for you.</p>
+        <h2 class="fw-bold mb-4" style="color: white;">Let's Collaborate</h2>
+        <p class="lead"style="color: white;">Whether you're in need of a straightforward website or a comprehensive strategy, there's a plan for you.</p>
     </div>
         <h2 class="text-center mb-4">Pricing and Plans</h2>
         <div class="row">
