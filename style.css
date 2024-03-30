@@ -986,6 +986,243 @@ margin-bottom: 10px;
 color: #28a745; /* Bootstrap success color */
 }
 
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff; /* White background */
+}
+.article h1, .article h2 {
+  color: rgb(84, 84, 165); /* Primary color */
+}
+.article a {
+  color: rgb(84, 84, 165); /* Primary color for links */
+}
+.article p {
+  line-height: 1.6;
+}
+.article ul {
+  padding-left: 20px;
+}
+.article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.author-info img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.jumbotron {
+  background-color: rgb(84, 84, 165);
+  color: #fff;
+  padding: 100px 0;
+}
+.jumbotron h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.jumbotron p {
+  font-size: 1.2rem;
+}
+.blog-posts {
+  padding: 50px 0;
+}
+.blog-post {
+  margin-bottom: 30px;
+}
+.blog-post img {
+  max-width: 100%;
+}
+.blog-post h2 {
+  color: rgb(84, 84, 165);
+}
+.blog-post p {
+  color: #666;
+}
+
+.content {
+max-width: 600px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.hero {
+position: relative;
+background: #333333;
+color: white;
+height: 63vh;
+padding-top: 50px;
+display: flex;
+align-items: center;
+overflow: hidden;
+}
+
+.hero h2 {
+position: relative;
+z-index: 1;
+font-size: 4rem;
+margin: 0 0 10px;
+line-height: 1;
+color: rgba(255, 255, 255, 0.9);
+}
+
+.hero p {
+position: relative;
+z-index: 1;
+font-size: 1.8rem;
+color: rgba(255, 255, 255, 0.5);
+line-height: 1.4;
+}
+
+/* ========================= */
+
+.waves {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height: 360px;
+background-color: var(--color);
+box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+transition: 500ms;
+}
+
+.waves::before,
+.waves::after {
+content: '';
+position: absolute;
+width: 300vw;
+height: 300vw;
+top: -65vw;
+left: 50%;
+transform: translate(-50%, -75%);
+}
+
+.waves::before {
+border-radius: 44%;
+background: rgba(51, 51, 51, 1);
+animation: waves 15s linear infinite;
+}
+
+.waves::after {
+border-radius: 44%;
+background: rgba(51, 51, 51, 0.5);
+animation: waves 25s linear infinite;
+}
+
+:root {
+--color: rgb(84, 84, 165)
+}
+.blog-post {
+display: flex;
+flex-direction: column;
+height: 100%; /* Ensure all blog posts have the same height */
+}
+
+.blog-post .post-content {
+flex: 1; /* Take remaining space */
+display: flex;
+flex-direction: column;
+}
+
+.blog-post img {
+max-height: 200px; /* Set the max height for the images */
+width: 100%;
+margin-top: 10px;
+object-fit: cover; /* Maintain aspect ratio */
+border-radius: 15px 15px 0 0; /* Top two corners with 15px border radius */
+}
+
+.blog-post h2, .blog-post p, .blog-post a {
+margin-bottom: 15px;
+}
+.blog-post h2{
+margin-top: 10px;
+}
+.blog-post a {
+text-decoration: none !important;
+text-decoration: unset !important;
+  color: inherit; /* Inherit text color */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.blog-post a:hover h2,
+.blog-post a:hover p {
+text-decoration: none !important;
+text-decoration: unset !important;
+}
+.blog-post a:hover + h2,
+.blog-post a:hover + p {
+text-decoration: none;
+}
+.blog-post a:hover {
+text-decoration: none !important;
+color: inherit !important; /* Inherit text color */
+}
+.blog-post a{
+transition: all 0.3s;
+border-radius: 15px;
+}
+.blog-post a:hover {
+background-color: white;
+text-decoration: underline; /* Add underline to text on hover */
+transform: translateY(-2px); /* Move the link 2 pixels up on hover */
+transition: all 0.3s; /* Smooth transition for color, transform, and text-decoration */
+}
+.blog-post a:hover {
+transform: translateY(-3px); /* Move the link 3 pixels up on hover */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+/* Custom styles */
+.author-info {
+  display: flex;
+  align-items: center;
+}
+.share-icons {
+  display: flex;
+  align-items: center;
+}
+.share-icons a {
+  margin-right: 10px;
+  color: #555; /* Default color for icons */
+  font-size: x-large;
+}
+.share-icons .share-icon.twitter i {
+color: #1da1f2; /* Twitter blue */
+}
+
+.share-icons .share-icon.facebook i {
+color: #3b5998; /* Facebook blue */
+}
+
+.share-icons .share-icon.linkedin i {
+color: #0077b5; /* LinkedIn blue */
+}
+
+.share-icons .share-icon.reddit i {
+color: #ff4500; /* Reddit orange */
+}
+
+.share-icons .share-icon.email i {
+color: #ff0000; /* Email red */
+}
+.share-title-container p {
+margin-bottom: inherit;
+}
 
   /* Animation for the linear gradient background */
   @keyframes gradientAnimation {
@@ -1044,7 +1281,9 @@ color: #28a745; /* Bootstrap success color */
 }
 
 @media only screen and (max-width: 600px) {
-
+.blog-post{
+  margin: 20px;
+}
   .tooltip {
       margin-left: -1172%; 
   }
@@ -1070,3 +1309,28 @@ color: #28a745; /* Bootstrap success color */
     min-height: 108vh;
 }
 }
+
+    /* Existing CSS styles */
+
+
+
+    /* Additional CSS for responsiveness */
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 4rem !important;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero h2 {
+        font-size: 3.5rem !important;
+      }
+      .hero{
+        height: 72vh !important;
+      }
+    }
+
