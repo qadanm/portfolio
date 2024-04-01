@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../style.css">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -30,7 +30,7 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="../index.html" data-aos="fade-down" data-aos-easing="linear"
+      <a class="navbar-brand" href="../index" data-aos="fade-down" data-aos-easing="linear"
       data-aos-duration="400">
       {Qadan |
         
@@ -53,13 +53,13 @@ aria-expanded="false" aria-label="Toggle navigation">
         data-aos-duration="400">
 
         <li class="nav-item">
-            <a class="nav-link" href="../index.html" onclick="closeMobileMenu()">Home</a>
+            <a class="nav-link" href="../index" onclick="closeMobileMenu()">Home</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="../index.html#qadan-about" onclick="closeMobileMenu()">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../blog.html" onclick="closeMobileMenu()">All Articles</a>
+            <a class="nav-link" href="../blog" onclick="closeMobileMenu()">All Articles</a>
           </li>    
           <li class="nav-item">
             <a class="nav-link" href="#qadan-contact" onclick="closeMobileMenu()">Contact</a>
@@ -212,6 +212,137 @@ body {
 </head>
 <body>
 
+
+
+
+
+
+
+
+
+
+
+
+  <button
+  type="button"
+  class="btn btn-danger btn-floating btn-lg"
+  id="btn-back-to-top"
+  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+  </svg>
+  </button>
+  
+  <script>
+  // Get the button
+  let mybutton = document.getElementById("btn-back-to-top");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+  
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  function closeMobileMenu() {
+  // Find the toggle button and trigger a click event to close the menu
+  var toggleButton = document.querySelector('.navbar-toggler');
+  if (toggleButton) {
+    toggleButton.click();
+  }
+  }
+  
+  </script>
+  
+  
+  
+  <style>
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    background-color:rgba(84, 84, 165, 0.662);
+    color: #fff;
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 50%;
+    /* padding: 10px; */
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  #btn-back-to-top:hover {
+      background-color:rgb(84, 84, 165);
+      border: 2px solid rgb(84, 84, 165);
+      transform: scale(1.07);
+      -webkit-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+  }
+  
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  </style>
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <div class="article" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
           
@@ -306,7 +437,7 @@ body {
               <img src="./images/tf.jpg" class="img-fluid rounded" alt="Design Process">
               <li><a target="_blank" href="https://brain.js.org/#/" style="font-weight: bold;">Brain.js</a>: Brain.js is a lightweight ML library that simplifies the implementation of neural networks in JavaScript. With its intuitive API and flexibility, it's suitable for a wide range of applications, from predictive analytics to sentiment analysis.</li>
               <img src="./images/brain.jpg" class="img-fluid rounded" alt="Design Process">
-              <li><a target="_blank" href="https://cs.stanford.edu/people/karpathy/convnetjs/index.html" style="font-weight: bold;">ConvNetJS</a>: ConvNetJS specializes in convolutional neural networks (CNNs), making it a go-to choice for tasks like image recognition and computer vision. Its ease of use and browser compatibility make it suitable for both educational purposes and production-grade applications.</li>
+              <li><a target="_blank" href="https://cs.stanford.edu/people/karpathy/convnetjs/index" style="font-weight: bold;">ConvNetJS</a>: ConvNetJS specializes in convolutional neural networks (CNNs), making it a go-to choice for tasks like image recognition and computer vision. Its ease of use and browser compatibility make it suitable for both educational purposes and production-grade applications.</li>
               <img src="./images/convnet.jpg" class="img-fluid rounded" alt="Design Process">
               <li><a target="_blank" href="https://caza.la/synaptic/#/" style="font-weight: bold;">Synaptic</a>: Synaptic is a powerful neural network library designed for Node.js. It offers a modular architecture and extensive documentation, making it suitable for building complex ML models and integrating them seamlessly into server-side applications.</li>
               <img src="./images/synaptic.jpg" class="img-fluid rounded" alt="Design Process">
@@ -335,17 +466,17 @@ body {
             <p>JavaScript's integration with artificial intelligence and machine learning heralds a new era of innovation in web development. By harnessing the power of ML libraries and frameworks, developers can create intelligent, data-driven web applications that deliver personalized experiences and drive user engagement. As we continue to explore the possibilities of JavaScript in AI, let's embrace this transformative technology and unlock new opportunities in the ever-evolving landscape of web development.</p>
         
             <h2>Additional Resources</h2>
-            <div class="alert alert-info" role="alert">
+            <div class="alert alert-dark" role="alert">
               <i class="fa-solid fa-circle-info"></i>
               <a target="_blank" href="https://www.tensorflow.org/resources/learn-ml/basics-of-tensorflow-for-js-development" class="alert-link">Learn Machine Learning with JavaScript</a>: Learn, and Dive deeper into the integration of ML with JavaScript and explore advanced techniques and applications.
             </div>
             
-            <div class="alert alert-info" role="alert">
+            <div class="alert alert-dark" role="alert">
               <i class="fa-solid fa-circle-info"></i>
               <a target="_blank" href="https://www.w3schools.com/ai/ai_javascript.asp" class="alert-link">JavaScript Machine Learning</a>: Stay updated with the latest advancements and best practices in JavaScript-based machine learning.
             </div>
             
-            <div class="alert alert-info" role="alert">
+            <div class="alert alert-dark" role="alert">
               <i class="fa-solid fa-circle-info"></i>
               <a target="_blank" href="https://www.tensorflow.org/certificate" class="alert-link">AI and Machine Learning with JavaScript</a>: Join the community of AI enthusiasts and JavaScript developers and get certified 
             </div>
@@ -413,7 +544,7 @@ body {
     
       </div>
       <div class="text-center">
-        <a href="../blog.html" class="qadan-btn">See All Articles</a>
+        <a href="../blog" class="qadan-btn">See All Articles</a>
     </div>
       <script>
         function shareToTwitter() {

@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="../style.css">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 <body>
@@ -30,7 +31,7 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="../index.html" data-aos="fade-down" data-aos-easing="linear"
+      <a class="navbar-brand" href="../index" data-aos="fade-down" data-aos-easing="linear"
       data-aos-duration="400">
       {Qadan |
         
@@ -53,13 +54,13 @@ aria-expanded="false" aria-label="Toggle navigation">
         data-aos-duration="400">
 
         <li class="nav-item">
-            <a class="nav-link" href="../index.html" onclick="closeMobileMenu()">Home</a>
+            <a class="nav-link" href="../index" onclick="closeMobileMenu()">Home</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="../index.html#qadan-about" onclick="closeMobileMenu()">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../blog.html" onclick="closeMobileMenu()">All Articles</a>
+            <a class="nav-link" href="../blog" onclick="closeMobileMenu()">All Articles</a>
           </li>    
           <li class="nav-item">
             <a class="nav-link" href="#qadan-contact" onclick="closeMobileMenu()">Contact</a>
@@ -287,6 +288,160 @@ body {
 </head>
 <body>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <button
+  type="button"
+  class="btn btn-danger btn-floating btn-lg"
+  id="btn-back-to-top"
+  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+  </svg>
+  </button>
+  
+  <script>
+  // Get the button
+  let mybutton = document.getElementById("btn-back-to-top");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+  
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  function closeMobileMenu() {
+  // Find the toggle button and trigger a click event to close the menu
+  var toggleButton = document.querySelector('.navbar-toggler');
+  if (toggleButton) {
+    toggleButton.click();
+  }
+  }
+  
+  </script>
+  
+  
+  
+  <style>
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    background-color:rgba(84, 84, 165, 0.662);
+    color: #fff;
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 50%;
+    /* padding: 10px; */
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  #btn-back-to-top:hover {
+      background-color:rgb(84, 84, 165);
+      border: 2px solid rgb(84, 84, 165);
+      transform: scale(1.07);
+      -webkit-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+  }
+  
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  </style>
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <div class="article" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
           
@@ -313,7 +468,7 @@ body {
             </div>
             <div class="col-md-3" style="padding-left: 0px;">
                 <div class="publish-date">
-                    <p><strong>Publish Date</strong><br>March 29, 2024</p>
+                    <p><strong>Publish Date</strong><br>April 1, 2024</p>
                 </div>
             </div>
           
@@ -393,13 +548,13 @@ body {
             
               <h2>Best Practices for Accessible UX</h2>
               <img src="./images/pexels-lisa-fotios-811587.jpg" class="img-fluid rounded" alt="Design Process">
-              <ol>
+              <ul>
                 <li><strong>Use Clear and Simple Language:</strong> Avoid jargon and complex sentences that may confuse users with cognitive or learning disabilities. 📝</li>
                 <li><strong>Provide Alternative Text for Images:</strong> Ensure that all images have descriptive alt text for users with visual impairments. 🖼️</li>
                 <li><strong>Make Interactive Elements Accessible:</strong> Use ARIA attributes to make dynamic content and interactive elements accessible to screen readers and other assistive technologies. 🛠️</li>
                 <li><strong>Use High Contrast Colors:</strong> Ensure that text and background colors have sufficient contrast for users with visual impairments. 🎨</li>
                 <li><strong>Provide Closed Captions and Audio Descriptions:</strong> Include closed captions and audio descriptions for multimedia content to make it accessible to users with hearing or visual impairments. 🔊</li>
-              </ol>
+              </ul>
               
             
               <h2>How Accessibility Helps SEO</h2>
@@ -414,12 +569,12 @@ body {
             
               <h2>Tips for Implementing Accessibility</h2>
               <img src="./images/pexels-format-1029757.jpg" class="img-fluid rounded" alt="Design Process">
-              <ol>
+              <ul>
                 <li><strong>Conduct Accessibility Audits:</strong> Regularly review your product for accessibility issues using tools like WAVE or Lighthouse. 🔍</li>
                 <li><strong>Involve Users with Disabilities in Testing:</strong> Include users with disabilities in your testing process to ensure that your product meets their needs. 👩‍🦯</li>
                 <li><strong>Use Accessible Design Patterns:</strong> Leverage established design patterns and guidelines, such as the WCAG 2.1, to ensure accessibility. 🎨</li>
                 <li><strong>Make Accessibility a Team Effort:</strong> Involve the entire development team in accessibility efforts to ensure that accessibility is integrated into every stage of the development process. 👥</li>
-              </ol>
+              </ul>
               
             
               <h2>Conclusion</h2>
@@ -429,8 +584,27 @@ body {
         
         
         
-        
-        
+              <h2>Additional Resources</h2>
+              <div class="alert alert-dark" role="alert">
+                <i class="fa-solid fa-circle-info"></i>
+                <a target="_blank" href="https://www.w3.org/WAI/WCAG21/quickref/" class="alert-link">Web Content Accessibility Guidelines (WCAG) Quick Reference</a>: A comprehensive guide to understanding and implementing web accessibility standards.
+              </div>
+              
+              <div class="alert alert-dark" role="alert">
+                <i class="fa-solid fa-circle-info"></i>
+                <a target="_blank" href="https://www.a11yproject.com/" class="alert-link">The A11Y Project</a>: An open-source resource for developers to learn about web accessibility and best practices.
+              </div>
+              
+              <div class="alert alert-dark" role="alert">
+                <i class="fa-solid fa-circle-info"></i>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" class="alert-link">Mozilla Developer Network (MDN) Accessibility Guide</a>: A collection of resources and articles on web accessibility for developers.
+              </div>
+              
+              <div class="alert alert-dark" role="alert">
+                <i class="fa-solid fa-circle-info"></i>
+                <a target="_blank" href="https://www.audioeye.com/post/accessible-website-design-examples/" class="alert-link">10 real world examples of best practice accessibility practices</a>: An article to visualize how accessible design improvements can enhance user experience.
+              </div>
+              
         
         
         
@@ -484,7 +658,7 @@ body {
     
       </div>
       <div class="text-center">
-        <a href="../blog.html" class="qadan-btn">See All Articles</a>
+        <a href="../blog" class="qadan-btn">See All Articles</a>
     </div>
       <script>
         function shareToTwitter() {
