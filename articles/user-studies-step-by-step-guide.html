@@ -30,7 +30,7 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="../index.html" data-aos="fade-down" data-aos-easing="linear"
+      <a class="navbar-brand" href="../index" data-aos="fade-down" data-aos-easing="linear"
       data-aos-duration="400">
       {Qadan |
         
@@ -53,13 +53,13 @@ aria-expanded="false" aria-label="Toggle navigation">
         data-aos-duration="400">
 
         <li class="nav-item">
-            <a class="nav-link" href="../index.html" onclick="closeMobileMenu()">Home</a>
+            <a class="nav-link" href="../index" onclick="closeMobileMenu()">Home</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="../index.html#qadan-about" onclick="closeMobileMenu()">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../blog.html" onclick="closeMobileMenu()">All Articles</a>
+            <a class="nav-link" href="../blog" onclick="closeMobileMenu()">All Articles</a>
           </li>    
           <li class="nav-item">
             <a class="nav-link" href="#qadan-contact" onclick="closeMobileMenu()">Contact</a>
@@ -211,6 +211,143 @@ body {
   </style>
 </head>
 <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <button
+  type="button"
+  class="btn btn-danger btn-floating btn-lg"
+  id="btn-back-to-top"
+  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+  </svg>
+  </button>
+  
+  <script>
+  // Get the button
+  let mybutton = document.getElementById("btn-back-to-top");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+  
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  function closeMobileMenu() {
+  // Find the toggle button and trigger a click event to close the menu
+  var toggleButton = document.querySelector('.navbar-toggler');
+  if (toggleButton) {
+    toggleButton.click();
+  }
+  }
+  
+  </script>
+  
+  
+  
+  <style>
+  #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    background-color:rgba(84, 84, 165, 0.662);
+    color: #fff;
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 50%;
+    /* padding: 10px; */
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  #btn-back-to-top:hover {
+      background-color:rgb(84, 84, 165);
+      border: 2px solid rgb(84, 84, 165);
+      transform: scale(1.07);
+      -webkit-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
+  }
+  
+  /* Smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  </style>
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="container">
         <div class="article" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
@@ -414,7 +551,7 @@ body {
     
       </div>
       <div class="text-center">
-        <a href="../blog.html" class="qadan-btn">See All Articles</a>
+        <a href="../blog" class="qadan-btn">See All Articles</a>
     </div>
       <script>
         function shareToTwitter() {
