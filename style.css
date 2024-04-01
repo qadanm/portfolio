@@ -418,7 +418,7 @@ ul li {
   color: #dedede;
 }
 form {
-    max-width: 600px;
+    max-width: 630px;
     margin: 0 auto;
 }
 
@@ -1054,7 +1054,7 @@ color: #28a745; /* Bootstrap success color */
 }
 
 .content {
-max-width: 600px;
+max-width: 630px;
 margin: 0 auto;
 padding: 0 20px;
 }
