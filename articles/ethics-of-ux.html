@@ -620,38 +620,39 @@ body {
       <div class="text-center">
         <a href="../blog" class="qadan-btn">See All Articles</a>
     </div>
-      <script>
-        function shareToTwitter() {
-          const articleUrl = encodeURIComponent(window.location.href);
-          const twitterShareUrl = `https://twitter.com/intent/tweet?url=${articleUrl}`;
-          window.open(twitterShareUrl, '_blank', 'width=550,height=420');
-        }
-      
-        function shareToFacebook() {
-          const articleUrl = encodeURIComponent(window.location.href);
-          const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${articleUrl}`;
-          window.open(facebookShareUrl, '_blank', 'width=550,height=420');
-        }
-      
-        function shareToLinkedIn() {
-          const articleUrl = encodeURIComponent(window.location.href);
-          const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${articleUrl}`;
-          window.open(linkedInShareUrl, '_blank', 'width=550,height=420');
-        }
-      
-        function shareToReddit() {
-          const articleUrl = encodeURIComponent(window.location.href);
-          const redditShareUrl = `https://www.reddit.com/submit?url=${articleUrl}`;
-          window.open(redditShareUrl, '_blank', 'width=550,height=420');
-        }
-      
-        function shareViaEmail() {
-          const subject = encodeURIComponent('Check out this article!');
-          const body = encodeURIComponent(`I thought you might find this article interesting:\n\n${window.location.href}`);
-          const emailShareUrl = `mailto:?subject=${subject}&body=${body}`;
-          window.location.href = emailShareUrl;
-        }
-      </script>
+    <script>
+      function shareToTwitter() {
+        const articleUrl = encodeURIComponent(window.location.href.replace(/\.html$/, ''));
+        const twitterShareUrl = `https://twitter.com/intent/tweet?url=${articleUrl}`;
+        window.open(twitterShareUrl, '_blank', 'width=550,height=420');
+      }
+    
+      function shareToFacebook() {
+        const articleUrl = encodeURIComponent(window.location.href.replace(/\.html$/, ''));
+        const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${articleUrl}`;
+        window.open(facebookShareUrl, '_blank', 'width=550,height=420');
+      }
+    
+      function shareToLinkedIn() {
+        const articleUrl = encodeURIComponent(window.location.href.replace(/\.html$/, ''));
+        const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${articleUrl}`;
+        window.open(linkedInShareUrl, '_blank', 'width=550,height=420');
+      }
+    
+      function shareToReddit() {
+        const articleUrl = encodeURIComponent(window.location.href.replace(/\.html$/, ''));
+        const redditShareUrl = `https://www.reddit.com/submit?url=${articleUrl}`;
+        window.open(redditShareUrl, '_blank', 'width=550,height=420');
+      }
+    
+      function shareViaEmail() {
+        const subject = encodeURIComponent('Check out this article!');
+        const body = encodeURIComponent(`I thought you might find this article interesting:\n\n${window.location.href.replace(/\.html$/, '')}`);
+        const emailShareUrl = `mailto:?subject=${subject}&body=${body}`;
+        window.location.href = emailShareUrl;
+      }
+    </script>
+  
       <div id="qadan-contact"></div>
       <section id="contact" class="py-5">
         <div class="row">
