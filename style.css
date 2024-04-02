@@ -993,6 +993,7 @@ color: #28a745; /* Bootstrap success color */
   margin-bottom: 30px;
   padding: 20px;
   background-color: #fff; /* White background */
+  border-radius: 23px;
 }
 .article h1, .article h2 {
   color: rgb(84, 84, 165); /* Primary color */
