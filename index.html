@@ -395,18 +395,33 @@ box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
 
 
             <div class="col-md-4 mx-auto whthrinfo text-center">
-                    <h2 class="mb-4"><i class="bi bi-sun"></i>Weather</h2>
-                    <hr class="my-4 thicker-line">
-                    <div id="weather-container" class="text-left rounded shadow-sm">
-                        <p id="city" class="mb-2 h4">City: Loading... <i class="bi bi-geo-alt"></i></p>
-                        <p id="weather-description" class="mb-2 h5">Loading... <i class="bi bi-arrow-repeat"></i></p>
-                        <p id="temp" class="mb-2 h5">Temperature: Loading... <i class="bi bi-thermometer"></i></p>
-                        <p id="humidity" class="mb-2 h5">Humidity: Loading... <i class="bi bi-droplet"></i></p>
-                        <p id="sunrise" class="mb-2 h5">Sunrise: Loading... <i class="bi bi-sunrise"></i></p>
-                        <p id="sunset" class="mb-0 h5">Sunset: Loading... <i class="bi bi-sunset"></i></p>
-                    </div>
-                    
-            </div>
+              <h2 class="mb-4"><i class="bi bi-sun"></i> Weather</h2>
+              <hr class="my-4 thicker-line">
+              <div id="weather-container" class="text-left rounded shadow-sm weather-container">
+                  <p id="city" class="mb-2 h4">City: Loading... <i class="bi bi-geo-alt"></i></p>
+                  <p id="weather-description" class="mb-2 h5">Loading... <i class="bi bi-arrow-repeat"></i></p>
+                  <p id="temp" class="mb-2 h5">Temperature: Loading... <i class="bi bi-thermometer"></i></p>
+                  <p id="humidity" class="mb-2 h5">Humidity: Loading... <i class="bi bi-droplet"></i></p>
+                  <p id="sunrise" class="mb-2 h5">Sunrise: Loading... <i class="bi bi-sunrise"></i></p>
+                  <p id="sunset" class="mb-0 h5">Sunset: Loading... <i class="bi bi-sunset"></i></p>
+              </div>
+          </div>
+<style>.weather-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+}
+
+.weather-container p {
+  color: #495057;
+}
+
+.thicker-line {
+  border-top: 3px solid #343a40;
+}
+</style>          
+          
             <h2 class="mb-4 text-center"><i class="bi bi-music-note-beamed"></i> LAs Favorite Stations</h2>
 
                 <div class="row radio-container text-center">
@@ -2369,49 +2384,37 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*.blog-add.blog-a subtle shadow effec
 <script>
     AOS.init();
     function updateDigitalTime() {
-    var now = new Date();
-    
-    // Set the timezone to Los Angeles (PST)
-    now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+        var now = new Date();
+        
+        // Set the timezone to Los Angeles (PST)
+        var options = { timeZone: 'America/Los_Angeles' };
+        var digitalTime = now.toLocaleTimeString('en-US', options);
 
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    
-    // Determine whether it's AM or PM
-    var ampm = hours >= 12 ? 'PM' : 'AM';
-    
-    // Convert to 12-hour format
-    hours = hours % 12;
-    hours = hours ? hours : 12; // 0 should be displayed as 12
+        document.getElementById("time").innerText = digitalTime;
+    }
 
-    var digitalTime = hours + ":" + (minutes < 10 ? "0" : "") + minutes + " " + ampm;
+    setInterval(updateDigitalTime, 1000);
 
-    document.getElementById("time").innerText = digitalTime;
-}
+    updateDigitalTime();
 
-setInterval(updateDigitalTime, 1000);
+    function updateTime() {
+        var now = new Date();
 
-updateDigitalTime();
+        // Set the timezone to Los Angeles (PST)
+        now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
 
-function updateTime() {
-    var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
 
-    // Set the timezone to Los Angeles (PST)
-    now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+        var hourRotation = (hours % 12 + minutes / 60) * 30;
+        var minuteRotation = (minutes + seconds / 60) * 6;
+        var secondRotation = seconds * 6;
 
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
-
-    var hourRotation = (hours % 12 + minutes / 60) * 30;
-    var minuteRotation = (minutes + seconds / 60) * 6;
-    var secondRotation = seconds * 6;
-
-    document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation}deg)`;
-    document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
-    document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
-}
-
+        document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation}deg)`;
+        document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
+        document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
+    }
 function kelvinToCelsius(kelvin) {
     return kelvin - 273.15;
 }
@@ -2439,10 +2442,9 @@ function updateWeather() {
             var temperatureFahrenheit = celsiusToFahrenheit(temperatureCelsius);
             var roundedTemperature = Math.round(temperatureFahrenheit);
 
-            // Convert timestamps to readable time
-            var sunrise = new Date(sunriseTimestamp * 1000).toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', hour12: true });
-            var sunset = new Date(sunsetTimestamp * 1000).toLocaleTimeString([], { hour: 'numeric', minute: 'numeric', hour12: true });
-
+            // Convert timestamps to Los Angeles time
+            var sunrise = new Date(sunriseTimestamp * 1000).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: 'numeric', minute: 'numeric', hour12: true });
+            var sunset = new Date(sunsetTimestamp * 1000).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: 'numeric', minute: 'numeric', hour12: true });
 
             // Update weather HTML
             document.getElementById('city').innerHTML = '<i class="bi bi-geo-alt"></i> ' + city;
@@ -2454,6 +2456,7 @@ function updateWeather() {
         })
         .catch(error => console.error('Error fetching weather data:', error));
 }
+
 
 
     // Function to map news data to HTML format
