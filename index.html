@@ -2398,23 +2398,24 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*.blog-add.blog-a subtle shadow effec
     updateDigitalTime();
 
     function updateTime() {
-        var now = new Date();
+    var now = new Date();
+    
+    // Set the timezone to Los Angeles (PST)
+    now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+    
+    var hours = now.getUTCHours() - 8; // Los Angeles is UTC-8
+    var minutes = now.getUTCMinutes();
+    var seconds = now.getUTCSeconds();
 
-        // Set the timezone to Los Angeles (PST)
-        now.toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+    var hourRotation = ((hours % 12) * 30) + (minutes / 60 * 30); // Adjusted for minutes
+    var minuteRotation = (minutes + seconds / 60) * 6;
+    var secondRotation = seconds * 6;
 
-        var hours = now.getHours();
-        var minutes = now.getMinutes();
-        var seconds = now.getSeconds();
+    document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation + (minutes * 0.5)}deg)`; // Adjusted for minutes
+    document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
+    document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
+}
 
-        var hourRotation = (hours % 12 + minutes / 60) * 30;
-        var minuteRotation = (minutes + seconds / 60) * 6;
-        var secondRotation = seconds * 6;
-
-        document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation}deg)`;
-        document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
-        document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
-    }
 function kelvinToCelsius(kelvin) {
     return kelvin - 273.15;
 }
