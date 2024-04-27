@@ -16,7 +16,10 @@ employmentContent lead
 instagram-images-api72vh !important
 
 */
+/* Additional styles for scrollable div */
 .table-of-contents {
+  max-height: 300px; /* Set maximum height */
+  overflow-y: scroll; /* Always show scrollbar */
   background-color: #f4f4f4;
   border-radius: 8px;
   padding: 20px;
@@ -38,6 +41,8 @@ instagram-images-api72vh !important
 
 .table-of-contents li {
   margin-bottom: 10px;
+  border-bottom: 1px solid #ccc; /* Add border between items */
+  padding-bottom: 10px; /* Add padding between border and text */
 }
 
 .table-of-contents a {
