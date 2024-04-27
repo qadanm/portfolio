@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var tocHTML = "<h2>Table of Contents</h2><ul>";
 
     // Select all headings within the article content
-    var headings = document.querySelectorAll("h2, h3, h4, h5, h6");
+    var headings = document.querySelectorAll("h2, h3, h4");
 
     // Check if headings exist
     if (!headings || headings.length === 0) {
