@@ -273,7 +273,7 @@
 
 
 
-</span> }</a>
+</span> } <span style="font-size: small; color: black; background-color: white; border-radius:6px; padding: 8px; margin-bottom: 5px;">_ux</span> </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
 aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
@@ -281,25 +281,21 @@ aria-expanded="false" aria-label="Toggle navigation">
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto"   >
           <li class="nav-item active">
-            <a class="nav-link" href="#qadan-about">UX Interviews</a>
+            <a class="nav-link" href="#key-personas">Personas</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#qadan-we-love-la">Personas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#qadan-projects">User Journey</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./blog">Comparative Analasys</a>
-          </li>  
-          <li class="nav-item" style="
-    display: none;
-">
-<a class="nav-link" onclick="downloadResume(); closeMobileMenu();" style="cursor: pointer;">Download Resume</a>
 
-        </li>        
           <li class="nav-item">
-            <a class="nav-link" href="#qadan-contact">Contact</a>
+            <a class="nav-link" href="#user-journey">User Journey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#analytics-overview">Analytics Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#competition">Comparative Analasys</a>
+          </li>  
+ 
+          <li class="nav-item">
+            <a class="nav-link" href="#project-plan">Rebuild Plan</a>
           </li>
         </ul>
       </div>
@@ -493,16 +489,20 @@ aria-expanded="false" aria-label="Toggle navigation">
     </defs>
   </svg>
 
-  <div class="container">
-    <h1>MagTek UX Inernal Interviews:</h1>
-
+  <div class="container"id="key-personas">
+    <div class="ux-case-study-header">
+    <h1>MagTek UX Interviews:
+      <br>
+      Key Personas
+    </h1>
+</div>
     <section id="personas">
-      <h2>Key Personas</h2>
+
       <div class="card">
         <div class="persona">
           <div class="persona-icon">SV</div>
           <div class="persona-details">
-            <h3>Software Vendors</h3>
+            <h3 style="font-weight: 900;">Software Vendors</h3>
             <p>Focus on integrating software solutions with our hardware, requiring robust technical support and
               up-to-date resources.</p>
           </div>
@@ -510,7 +510,7 @@ aria-expanded="false" aria-label="Toggle navigation">
         <div class="persona">
           <div class="persona-icon">SV</div>
           <div class="persona-details">
-            <h3>Smaller Vendors</h3>
+            <h3 style="font-weight: 900;">Smaller Vendors</h3>
             <p>Limited technical resources and expertise, needing straightforward and user-friendly solutions and
               accessible support.</p>
           </div>
@@ -518,7 +518,7 @@ aria-expanded="false" aria-label="Toggle navigation">
         <div class="persona">
           <div class="persona-icon">SC</div>
           <div class="persona-details">
-            <h3>Software Companies</h3>
+            <h3 style="font-weight: 900;">Software Companies</h3>
             <ul>
               <li>Require integrated payment solutions</li>
               <li>Focus on technological compatibility and innovation</li>
@@ -528,7 +528,7 @@ aria-expanded="false" aria-label="Toggle navigation">
         <div class="persona">
           <div class="persona-icon">HC</div>
           <div class="persona-details">
-            <h3>Healthcare</h3>
+            <h3 style="font-weight: 900;">Healthcare</h3>
             <ul>
               <li>Need secure, compliant payment systems</li>
               <li>Emphasis on reliability and data security</li>
@@ -538,7 +538,7 @@ aria-expanded="false" aria-label="Toggle navigation">
         <div class="persona">
           <div class="persona-icon">RT</div>
           <div class="persona-details">
-            <h3>Restaurants</h3>
+            <h3 style="font-weight: 900;">Restaurants</h3>
             <ul>
               <li>Look for easy-to-use POS systems</li>
               <li>Prioritize quick transactions and customer experience</li>
@@ -548,7 +548,7 @@ aria-expanded="false" aria-label="Toggle navigation">
         <div class="persona">
           <div class="persona-icon">R</div>
           <div class="persona-details">
-            <h3>Resellers</h3>
+            <h3 style="font-weight: 900;">Resellers</h3>
             <ul>
               <li>Looking for hardware and services to resell.</li>
               <li>They want information and specs on the hardware and servives</li>
@@ -557,66 +557,311 @@ aria-expanded="false" aria-label="Toggle navigation">
         </div>
       </div>
     </section>
+
+
+<style>
+  .ux-case-study-header{
+    background-color: #343a4000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    border-top: 5px solid #230017;
+    border-bottom: 5px solid #230017;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+</style>
+
+
+    <div class="container">
+
+      <section id="detailed-personas personas">
+        
+        <div class="ux-case-study-header">
+        
+        <h1>MagTek UX Interviews:
+          <br>
+          Detailed Personas
+        </h1>
+
+      </div>
+
+
+        <div class="card">
+          <div class="persona">
+            <img
+              src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="John, Small Business Owner" class="persona-image" />
+            <div class="persona-details">
+              <h3 style="font-weight: 900;">John, Small Business Owner</h3>
+              <p><strong>Age:</strong> 45</p>
+              <p><strong>Location:</strong> New York</p>
+              <p><strong>Occupation:</strong> Owns a Gluten Free Bakery</p>
+              <p><strong>Tech Savviness:</strong> Moderate</p>
+              <p>
+                <strong>Goals:</strong> Looking for reliable payment solutions
+                to integrate into his store's POS system
+              </p>
+              <p>
+                <strong>Pain Points:</strong> Limited knowledge about the latest
+                payment technologies, needs quick and easy-to-understand
+                information
+              </p>
+            </div>
+          </div>
+          <div class="persona">
+            <img
+              src="https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Sarah, IT Manager" class="persona-image" />
+            <div class="persona-details">
+              <h3 style="font-weight: 900;">Sarah, IT Manager</h3>
+              <p><strong>Age:</strong> 35</p>
+              <p><strong>Location:</strong> Toronto</p>
+              <p>
+                <strong>Occupation:</strong> IT Manager at a mid-sized company
+              </p>
+              <p><strong>Tech Savviness:</strong> High</p>
+              <p>
+                <strong>Goals:</strong> Needs secure and efficient payment
+                systems for the company
+              </p>
+              <p>
+                <strong>Pain Points:</strong> Requires detailed technical
+                specifications, support for integration, and strong data
+                security
+              </p>
+            </div>
+          </div>
+          <div class="persona">
+            <img
+              src="https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Ahmed, Start-Up Entrepreneur" class="persona-image" />
+            <div class="persona-details">
+              <h3 style="font-weight: 900;">Ahmed, Start-Up Entrepreneur</h3>
+              <p><strong>Age:</strong> 28</p>
+              <p><strong>Location:</strong> San Jose</p>
+              <p><strong>Occupation:</strong> Founder of a tech start-up</p>
+              <p><strong>Tech Savviness:</strong> High</p>
+              <p>
+                <strong>Goals:</strong> Seeks scalable payment solutions to
+                support his growing business
+              </p>
+              <p>
+                <strong>Pain Points:</strong> Limited budget, needs
+                cost-effective solutions with robust support and scalability
+              </p>
+            </div>
+          </div>
+          <div class="persona">
+            <img
+              src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Elena, Systems Engineer" class="persona-image" />
+            <div class="persona-details">
+              <h3 style="font-weight: 900;">Elena, Systems Engineer</h3>
+              <p><strong>Age:</strong> 32</p>
+              <p><strong>Location:</strong> Los Angeles</p>
+              <p>
+                <strong>Occupation:</strong> Systems Engineer at a large
+                manufacturing company
+              </p>
+              <p><strong>Tech Savviness:</strong> Very high</p>
+              <p>
+                <strong>Goals:</strong> To integrate advanced payment
+                technologies into the company's existing systems to streamline
+                operations and enhance security.
+              </p>
+              <p>
+                <strong>Pain Points:</strong> Struggles with finding payment
+                solutions that can seamlessly integrate with a wide array of
+                existing hardware and software. Requires detailed documentation
+                and active technical support for complex integrations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </div>
 <!-- contact -->
 
     <section id="journey">
-      <h2>Customer Journey</h2>
+      <div class="ux-case-study-header">
+      <h1>MagTek UX Interviews:
+        <br>
+        Customer Journey
+      </h1>
+      </div>
       <div class="card">
         <div class="journey-map">
           <div class="journey-step">
             <div class="journey-icon">🔍</div>
-            <h3>Discover</h3>
+            <h3 style="font-weight: 900;">Discover</h3>
             <p><strong>Positives:</strong> Recognized as a leader in secure payment solutions.</p>
             <p><strong>Negatives:</strong> Legacy perception of MagTek as old-fashioned.</p>
           </div>
           <div class="journey-step">
             <div class="journey-icon">💡</div>
-            <h3>Consider</h3>
+            <h3 style="font-weight: 900;">Consider</h3>
             <p><strong>Positives:</strong> Wide range of innovative products.</p>
             <p><strong>Negatives:</strong> Brand misconceptions about lack of innovation.</p>
           </div>
           <div class="journey-step">
             <div class="journey-icon">🤝</div>
-            <h3>Purchase</h3>
+            <h3 style="font-weight: 900;">Purchase</h3>
             <p><strong>Positives:</strong> Comprehensive reseller network providing valuable assistance.</p>
             <p><strong>Negatives:</strong> Interaction with resellers sometimes required for assistance.</p>
           </div>
           <div class="journey-step">
             <div class="journey-icon">🔧</div>
-            <h3>Implement</h3>
+            <h3 style="font-weight: 900;">Implement</h3>
             <p><strong>Positives:</strong> Detailed documentation available for integration.</p>
             <p><strong>Negatives:</strong> Challenges with outdated integration methods.</p>
           </div>
           <div class="journey-step">
             <div class="journey-icon">🔁</div>
-            <h3>Support</h3>
+            <h3 style="font-weight: 900;">Support</h3>
             <p><strong>Positives:</strong> Dedicated support team available.</p>
             <p><strong>Negatives:</strong> Need for more direct and efficient support.</p>
           </div>
         </div>
       </div>
     </section>
-
+    <div class="container" id="user-journey">
+      <section id="journey-timelines">
+        <h2>User Journey Timelines</h2>
+        <div class="card">
+          <div class="journey-timeline" id="john-journey">
+            <h3 style="font-weight: 900;">John's Journey</h3>
+            <div class="journey-step" data-step="1">
+              <h4>Discovery</h4>
+              <p>John searches online for "easy POS systems for small bakeries"</p>
+            </div>
+            <div class="journey-step" data-step="2">
+              <h4>Research</h4>
+              <p>Finds MagTek through a business forum recommendation</p>
+            </div>
+            <div class="journey-step" data-step="3">
+              <h4>Consideration</h4>
+              <p>Browses MagTek website, focuses on small business solutions</p>
+            </div>
+            <div class="journey-step" data-step="4">
+              <h4>Decision</h4>
+              <p>Contacts sales for a demo of the bakery-friendly POS system</p>
+            </div>
+            <div class="journey-step" data-step="5">
+              <h4>Implementation</h4>
+              <p>Works with support team to set up the new system in his bakery</p>
+            </div>
+          </div>
+  
+          <div class="journey-timeline" id="sarah-journey">
+            <h3 style="font-weight: 900;">Sarah's Journey</h3>
+            <div class="journey-step" data-step="1">
+              <h4>Discovery</h4>
+              <p>Sarah searches for "secure payment systems for mid-sized companies"</p>
+            </div>
+            <div class="journey-step" data-step="2">
+              <h4>Research</h4>
+              <p>Visits MagTek's website and downloads whitepapers and technical documents</p>
+            </div>
+            <div class="journey-step" data-step="3">
+              <h4>Consideration</h4>
+              <p>Reviews detailed product specifications and integration guides</p>
+            </div>
+            <div class="journey-step" data-step="4">
+              <h4>Decision</h4>
+              <p>Contacts technical support for a detailed consultation</p>
+            </div>
+            <div class="journey-step" data-step="5">
+              <h4>Implementation</h4>
+              <p>Oversees the integration of the new system with existing infrastructure</p>
+            </div>
+          </div>
+  
+          <div class="journey-timeline" id="ahmed-journey">
+            <h3 style="font-weight: 900;">Ahmed's Journey</h3>
+            <div class="journey-step" data-step="1">
+              <h4>Discovery</h4>
+              <p>Ahmed searches for "scalable payment solutions for start-ups"</p>
+            </div>
+            <div class="journey-step" data-step="2">
+              <h4>Research</h4>
+              <p>Finds MagTek via a reseller</p>
+            </div>
+            <div class="journey-step" data-step="3">
+              <h4>Consideration</h4>
+              <p>Compares pricing and scalability options with competitors</p>
+            </div>
+            <div class="journey-step" data-step="4">
+              <h4>Decision</h4>
+              <p>Requests a trial and consults with the sales team for customization</p>
+            </div>
+            <div class="journey-step" data-step="5">
+              <h4>Implementation</h4>
+              <p>Integrates the solution with his start-up's platform with minimal support</p>
+            </div>
+          </div>
+  
+          <div class="journey-timeline" id="elena-journey">
+            <h3 style="font-weight: 900;">Elena's Journey</h3>
+            <div class="journey-step" data-step="1">
+              <h4>Discovery</h4>
+              <p>Elena searches for "advanced payment technologies for manufacturing"</p>
+            </div>
+            <div class="journey-step" data-step="2">
+              <h4>Research</h4>
+              <p>Reads technical blogs and case studies about MagTek's solutions</p>
+            </div>
+            <div class="journey-step" data-step="3">
+              <h4>Consideration</h4>
+              <p>Evaluates MagTek's integration capabilities with existing systems</p>
+            </div>
+            <div class="journey-step" data-step="4">
+              <h4>Decision</h4>
+              <p>Schedules a meeting with a technical consultant for a deep dive</p>
+            </div>
+            <div class="journey-step" data-step="5">
+              <h4>Implementation</h4>
+              <p>Leads the team to implement the system with comprehensive support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    </div>
 
     <section id="pain-points">
-      <h2>Pain Points</h2>
+      <div class="ux-case-study-header">
+      <h1>MagTek UX Interviews:
+        <br>
+        Pain Points
+      </h1>
+      </div>
+
       <div class="card">
-        <div class="pain-point">
-          <h3>Outdated Integration Methods</h3>
+        <div class="pain-point section-heading">
+          <h3 style="font-weight: 900;">Outdated Integration Methods</h3>
           <p>
             Current integration requires outdated coding languages like XML,
             which modern developers find cumbersome.
           </p>
         </div>
-        <div class="pain-point">
-          <h3>Need for Reseller Interaction</h3>
+        <div class="pain-point section-heading">
+          <h3 style="font-weight: 900;">Need for Reseller Interaction</h3>
           <p>
             MagTek Support finds that they have to redirect customers to their reseller as they are asking for support
             specific to resellers.
           </p>
         </div>
-        <div class="pain-point">
-          <h3>Legacy Perception</h3>
+        <div class="pain-point section-heading">
+          <h3 style="font-weight: 900;">Legacy Perception</h3>
           <p>
             Users view MagTek as old-fashioned, associated with outdated
             technologies rather than current innovations.
@@ -626,32 +871,39 @@ aria-expanded="false" aria-label="Toggle navigation">
     </section>
     <!-- pain -->
     <section id="insights">
-      <h2>Key Insights</h2>
-      <div class="insights">
-        <div class="insight-card">
-          <h3>Desire for Modernization</h3>
+
+      <section id="pain-points">
+        <div class="ux-case-study-header">
+        <h1>MagTek UX Interviews:
+          <br>
+         Key Insights
+        </h1>
+        </div>
+      <div class="insights card">
+        <div class="insight-card section-heading">
+          <h3 style="font-weight: 900;">Desire for Modernization</h3>
           <p>
             Strong desire for a fresh and modern digital presence to enhance
             user satisfaction and engagement.
           </p>
         </div>
-        <div class="insight-card">
-          <h3>Role-Based Communication</h3>
+        <div class="insight-card section-heading">
+          <h3 style="font-weight: 900;">Role-Based Communication</h3>
           <p>
             Need for tailoring communication to different user roles,
             suggesting more personalized and role-specific content and
             support.
           </p>
         </div>
-        <div class="insight-card">
-          <h3>Brand Legacy</h3>
+        <div class="insight-card section-heading">
+          <h3 style="font-weight: 900;">Brand Legacy</h3>
           <p>
             MagTek is a recognized name linked with past technologies rather
             than current innovations.
           </p>
         </div>
-        <div class="insight-card">
-          <h3>Support Modernization</h3>
+        <div class="insight-card section-heading">
+          <h3 style="font-weight: 900;">Support Modernization</h3>
           <p>
             Recommendations for modernizing the support page and ensuring
             users know thay they'll interact with human representatives.
@@ -661,32 +913,37 @@ aria-expanded="false" aria-label="Toggle navigation">
     </section>
 
     <section id="recommendations">
-      <h2>Actionable Recommendations</h2>
+      <div class="ux-case-study-header">
+      <h1>MagTek UX Interviews:
+        <br>
+        Actionable Recommendations
+      </h1>
+    </div>
       <div class="card">
-        <div class="recommendation">
-          <h3>1. Update Integration Methods</h3>
+        <div class="recommendation section-heading">
+          <h3 style="font-weight: 900;">1. Update Integration Methods</h3>
           <p>
             Transition from XML to modern coding languages to improve
             accessibility for developers.
           </p>
         </div>
-        <div class="recommendation">
-          <h3>2. Modernize Digital Presence</h3>
+        <div class="recommendation section-heading">
+          <h3 style="font-weight: 900;">2. Modernize Digital Presence</h3>
           <p>
             Overhaul website design and navigation to create a contemporary
             aesthetic.
           </p>
         </div>
-        <div class="recommendation">
-          <h3>3. Streamline Reseller Interaction</h3>
+        <div class="recommendation section-heading">
+          <h3 style="font-weight: 900;">3. Streamline Reseller Interaction</h3>
           <p>Introduce direct support mechanisms within the website.</p>
         </div>
-        <div class="recommendation">
-          <h3>4. Modernize Branding</h3>
+        <div class="recommendation section-heading">
+          <h3 style="font-weight: 900;">4. Modernize Branding</h3>
           <p>Refresh branding elements to convey a forward-thinking image.</p>
         </div>
-        <div class="recommendation">
-          <h3>5. Showcase Innovation</h3>
+        <div class="recommendation section-heading">
+          <h3 style="font-weight: 900;">5. Showcase Innovation</h3>
           <p>
             Regularly feature new products and technologies in marketing
             materials.
@@ -696,9 +953,15 @@ aria-expanded="false" aria-label="Toggle navigation">
     </section>
 
     <section id="action-plan">
-      <h2>Detailed Action Plan</h2>
-      <div class="action-plan">
-        <h3>1. Enhance Online Presence</h3>
+      <div class="ux-case-study-header">
+      <h1>MagTek UX Interviews:
+        <br>
+        Detailed Action Plan
+      </h1>
+      </div>
+      <div class="action-plan card">
+        <div class="action-plan-item section-heading">
+        <h3 style="font-weight: 900;">1. Enhance Online Presence</h3>
         <ul>
           <li>
             Update the website with new products, case studies, and success
@@ -709,18 +972,24 @@ aria-expanded="false" aria-label="Toggle navigation">
             webinars
           </li>
         </ul>
-        <h3>2. Customer Engagement</h3>
+        </div>       
+         <div class="action-plan-item section-heading">
+        <h3 style="font-weight: 900;">2. Customer Engagement</h3>
         <ul>
           <li>Implement a feedback loop for continuous improvement</li>
           <li>Provide interactive product demos and virtual tours</li>
         </ul>
-        <h3>1. Keep updating MagTek.com Often</h3>
+      </div>
+
+        <div class="action-plan-item section-heading">
+        <h3 style="font-weight: 900;">3. Keep updating MagTek.com Often</h3>
         <ul>
           <li>
             Update with guideds, infographics, and other engaging things
           </li>
 
         </ul>
+      </div>
       </div>
     </section>
   </div>
@@ -752,246 +1021,231 @@ aria-expanded="false" aria-label="Toggle navigation">
       });
     });
   </script>
+    <div class="container">
+
+
+
+
   <div class="container">
+    <h1>Key Takeaways From UX Interviews <br> MagTek Rebuild Notes</h1>
 
-    <section id="detailed-personas">
-      <h2>Detailed Personas</h2>
+    </section>
+
+    <section id="homepage">
+      <h2>Homepage</h2>
       <div class="card">
-        <div class="persona">
-          <img
-            src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="John, Small Business Owner" class="persona-image" />
-          <div class="persona-details">
-            <h3>John, Small Business Owner</h3>
-            <p><strong>Age:</strong> 45</p>
-            <p><strong>Location:</strong> New York</p>
-            <p><strong>Occupation:</strong> Owns a Gluten Free Bakery</p>
-            <p><strong>Tech Savviness:</strong> Moderate</p>
-            <p>
-              <strong>Goals:</strong> Looking for reliable payment solutions
-              to integrate into his store's POS system
-            </p>
-            <p>
-              <strong>Pain Points:</strong> Limited knowledge about the latest
-              payment technologies, needs quick and easy-to-understand
-              information
-            </p>
-          </div>
-        </div>
-        <div class="persona">
-          <img
-            src="https://images.pexels.com/photos/785667/pexels-photo-785667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Sarah, IT Manager" class="persona-image" />
-          <div class="persona-details">
-            <h3>Sarah, IT Manager</h3>
-            <p><strong>Age:</strong> 35</p>
-            <p><strong>Location:</strong> Toronto</p>
-            <p>
-              <strong>Occupation:</strong> IT Manager at a mid-sized company
-            </p>
-            <p><strong>Tech Savviness:</strong> High</p>
-            <p>
-              <strong>Goals:</strong> Needs secure and efficient payment
-              systems for the company
-            </p>
-            <p>
-              <strong>Pain Points:</strong> Requires detailed technical
-              specifications, support for integration, and strong data
-              security
-            </p>
-          </div>
-        </div>
-        <div class="persona">
-          <img
-            src="https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Ahmed, Start-Up Entrepreneur" class="persona-image" />
-          <div class="persona-details">
-            <h3>Ahmed, Start-Up Entrepreneur</h3>
-            <p><strong>Age:</strong> 28</p>
-            <p><strong>Location:</strong> San Jose</p>
-            <p><strong>Occupation:</strong> Founder of a tech start-up</p>
-            <p><strong>Tech Savviness:</strong> High</p>
-            <p>
-              <strong>Goals:</strong> Seeks scalable payment solutions to
-              support his growing business
-            </p>
-            <p>
-              <strong>Pain Points:</strong> Limited budget, needs
-              cost-effective solutions with robust support and scalability
-            </p>
-          </div>
-        </div>
-        <div class="persona">
-          <img
-            src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Elena, Systems Engineer" class="persona-image" />
-          <div class="persona-details">
-            <h3>Elena, Systems Engineer</h3>
-            <p><strong>Age:</strong> 32</p>
-            <p><strong>Location:</strong> Los Angeles</p>
-            <p>
-              <strong>Occupation:</strong> Systems Engineer at a large
-              manufacturing company
-            </p>
-            <p><strong>Tech Savviness:</strong> Very high</p>
-            <p>
-              <strong>Goals:</strong> To integrate advanced payment
-              technologies into the company's existing systems to streamline
-              operations and enhance security.
-            </p>
-            <p>
-              <strong>Pain Points:</strong> Struggles with finding payment
-              solutions that can seamlessly integrate with a wide array of
-              existing hardware and software. Requires detailed documentation
-              and active technical support for complex integrations.
-            </p>
-          </div>
-        </div>
+        <h3 style="font-weight: 900;">Objectives:</h3>
+        <ul>
+          <li>Create a modern, engaging first impression.</li>
+          <li>Highlight key products and solutions.</li>
+          <li>Provide clear navigation to other parts of the site.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions:</h3>
+        <ul>
+          <li>Hero section with a dynamic and almost overwhelmingly captivating hero background with <strong style="font-size: 1.5rem; color: red; text-decoration: underline;">very short</strong> language innovation.</li>
+          <li>Highlight recent news, products, and customer testimonials.</li>
+          <li>Interactive elements to engage users (e.g., hover effects, animations).</li>
+        </ul>
       </div>
     </section>
 
-    <section id="journey-timelines">
-      <h2>User Journey Timelines</h2>
+
+    <section id="countertop">
+      <h2>Countertop (Hardware Landing)</h2>
       <div class="card">
-        <div class="journey-timeline" id="john-journey">
-          <h3>John's Journey</h3>
-          <div class="journey-step" data-step="1">
-            <h4>Discovery</h4>
-            <p>John searches online for "easy POS systems for small bakeries"</p>
-          </div>
-          <div class="journey-step" data-step="2">
-            <h4>Research</h4>
-            <p>Finds MagTek through a business forum recommendation</p>
-          </div>
-          <div class="journey-step" data-step="3">
-            <h4>Consideration</h4>
-            <p>Browses MagTek website, focuses on small business solutions</p>
-          </div>
-          <div class="journey-step" data-step="4">
-            <h4>Decision</h4>
-            <p>Contacts sales for a demo of the bakery-friendly POS system</p>
-          </div>
-          <div class="journey-step" data-step="5">
-            <h4>Implementation</h4>
-            <p>Works with support team to set up the new system in his bakery</p>
-          </div>
-        </div>
-
-        <div class="journey-timeline" id="sarah-journey">
-          <h3>Sarah's Journey</h3>
-          <div class="journey-step" data-step="1">
-            <h4>Discovery</h4>
-            <p>Sarah searches for "secure payment systems for mid-sized companies"</p>
-          </div>
-          <div class="journey-step" data-step="2">
-            <h4>Research</h4>
-            <p>Visits MagTek's website and downloads whitepapers and technical documents</p>
-          </div>
-          <div class="journey-step" data-step="3">
-            <h4>Consideration</h4>
-            <p>Reviews detailed product specifications and integration guides</p>
-          </div>
-          <div class="journey-step" data-step="4">
-            <h4>Decision</h4>
-            <p>Contacts technical support for a detailed consultation</p>
-          </div>
-          <div class="journey-step" data-step="5">
-            <h4>Implementation</h4>
-            <p>Oversees the integration of the new system with existing infrastructure</p>
-          </div>
-        </div>
-
-        <div class="journey-timeline" id="ahmed-journey">
-          <h3>Ahmed's Journey</h3>
-          <div class="journey-step" data-step="1">
-            <h4>Discovery</h4>
-            <p>Ahmed searches for "scalable payment solutions for start-ups"</p>
-          </div>
-          <div class="journey-step" data-step="2">
-            <h4>Research</h4>
-            <p>Finds MagTek via a reseller</p>
-          </div>
-          <div class="journey-step" data-step="3">
-            <h4>Consideration</h4>
-            <p>Compares pricing and scalability options with competitors</p>
-          </div>
-          <div class="journey-step" data-step="4">
-            <h4>Decision</h4>
-            <p>Requests a trial and consults with the sales team for customization</p>
-          </div>
-          <div class="journey-step" data-step="5">
-            <h4>Implementation</h4>
-            <p>Integrates the solution with his start-up’s platform with minimal support</p>
-          </div>
-        </div>
-
-        <div class="journey-timeline" id="elena-journey">
-          <h3>Elena's Journey</h3>
-          <div class="journey-step" data-step="1">
-            <h4>Discovery</h4>
-            <p>Elena searches for "advanced payment technologies for manufacturing"</p>
-          </div>
-          <div class="journey-step" data-step="2">
-            <h4>Research</h4>
-            <p>Reads technical blogs and case studies about MagTek's solutions</p>
-          </div>
-          <div class="journey-step" data-step="3">
-            <h4>Consideration</h4>
-            <p>Evaluates MagTek's integration capabilities with existing systems</p>
-          </div>
-          <div class="journey-step" data-step="4">
-            <h4>Decision</h4>
-            <p>Schedules a meeting with a technical consultant for a deep dive</p>
-          </div>
-          <div class="journey-step" data-step="5">
-            <h4>Implementation</h4>
-            <p>Leads the team to implement the system with comprehensive support</p>
-          </div>
-        </div>
+        <h3 style="font-weight: 900;">Objectives:</h3>
+        <ul>
+          <li>Showcase countertop hardware solutions effectively.</li>
+          <li>Provide detailed specifications and use cases.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions:</h3>
+        <ul>
+          <li>High-quality images and 360-degree views of products.</li>
+          <li>Technical specifications with download links for datasheets.</li>
+          <li>Customer testimonials and case studies for real-world applications.</li>
+        </ul>
       </div>
     </section>
 
+    <section id="support-landing">
+      <h2>Support Landing</h2>
+      <div class="card">
+        <h3 style="font-weight: 900;">Objectives:</h3>
+        <ul>
+          <li>Centralize access to support resources.</li>
+          <li>Make it easy to find and use support materials.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions:</h3>
+        <ul>
+          <li>Searchable knowledge base and FAQs.</li>
+          <li>Access to live chat and support ticket submission.</li>
+          <li>Links to product-specific support pages.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="support-product">
+      <h2>Support Product</h2>
+      <div class="card">
+        <h3 style="font-weight: 900;">Objectives:</h3>
+        <ul>
+          <li>Provide detailed support for specific products.</li>
+          <li>Ensure easy access to product manuals and troubleshooting guides.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions:</h3>
+        <ul>
+          <li>Product-specific FAQs and troubleshooting guides.</li>
+          <li>Downloadable manuals and software updates.</li>
+          <li>Contact options for product-specific support.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="magensa-landing">
+      <h2>Magensa Landing</h2>
+      <div class="card">
+        <h3 style="font-weight: 900;">Objectives:</h3>
+        <ul>
+          <li>Highlight Magensa's unique value propositions.</li>
+          <li>Provide detailed information on services offered.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions:</h3>
+        <ul>
+          <li>Feature case studies and client testimonials.</li>
+          <li>Detailed descriptions of services with benefits and features.</li>
+          <li>Clear calls to action for service inquiries and demos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="careers">
+      <h2>Careers Page Landing (First Impression)</h2>
+      <div class="card">
+        <h3 style="font-weight: 900;">Objectives:</h3>
+        <ul>
+          <li>Attract top talent by showcasing company culture and benefits.</li>
+          <li>Provide a clear path for job applications.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions:</h3>
+        <ul>
+          <li>Engaging hero section with employee testimonials and videos.</li>
+          <li>List of current job openings with detailed descriptions.</li>
+          <li>Information on company culture, values, and benefits.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="industries">
+      <h2>Industries Pages</h2>
+      <div class="card">
+        <h3 style="font-weight: 900;">Objectives:</h3>
+        <ul>
+          <li>Highlight MagTek's solutions for various industries.</li>
+          <li>Provide detailed information tailored to each industry.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions for Payments:</h3>
+        <ul>
+          <li>Case studies on payment solutions.</li>
+          <li>Detailed product offerings for the payments industry.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions for Banking:</h3>
+        <ul>
+          <li>Information on secure banking solutions.</li>
+          <li>Success stories from banking clients.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions for OEM:</h3>
+        <ul>
+          <li>Technical specifications for OEM products.</li>
+          <li>Partnership opportunities and integration guides.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="online-shop">
+      <h2>Online Shop Hero Style</h2>
+      <div class="card">
+        <h3 style="font-weight: 900;">Objectives:</h3>
+        <ul>
+          <li>Create an engaging and visually appealing entry point to the online shop.</li>
+          <li>Highlight promotions and new products.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions:</h3>
+        <ul>
+          <li>Hero section with high-quality images and promotional banners.</li>
+          <li>Clear calls to action for featured products.</li>
+          <li>Interactive elements like sliders and product carousels.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="forms">
+      <h2>Forms</h2>
+      <div class="card">
+        <h3 style="font-weight: 900;">Objectives:</h3>
+        <ul>
+          <li>Ensure forms are user-friendly and accessible.</li>
+          <li>Improve form submission rates.</li>
+        </ul>
+        <h3 style="font-weight: 900;">Suggestions:</h3>
+        <ul>
+          <li>Simple and clean design with clear labels and placeholders.</li>
+          <li>Responsive design for mobile and desktop users.</li>
+          <li>Inline validation and helpful error messages.</li>
+        </ul>
+
+      </div>
+    </section>
+
+  </div>
+
+
+
+  <div class="container">
 
     <section id="analytics-overview">
       <h2>Analytics Overview</h2>
       <div class="analytics-grid">
         <div class="analytics-card">
-          <h3>Total Users (Last Month)</h3>
+          <h3 style="font-weight: 900;">Total Users (Last Month)</h3>
           <p>12K</p>
         </div>
         <div class="analytics-card">
-          <h3>New Users (Last Month)</h3>
+          <h3 style="font-weight: 900;">New Users (Last Month)</h3>
           <p>11K</p>
         </div>
         <div class="analytics-card">
-          <h3>Average Engagement Time</h3>
+          <h3 style="font-weight: 900;">Average Engagement Time</h3>
           <p>56s</p>
         </div>
       </div>
       <div class="card">
-        <h3>Traffic Sources</h3>
+        <h3 style="font-weight: 900;">Traffic Sources</h3>
         <div class="chart-container">
           <canvas id="trafficSourcesChart"></canvas>
         </div>
       </div>
       <div class="card">
-        <h3>Geographic Distribution</h3>
+        <h3 style="font-weight: 900;">Geographic Distribution</h3>
         <div class="chart-container">
           <canvas id="geoDistributionChart"></canvas>
         </div>
       </div>
       <div class="card">
-        <h3>User Retention</h3>
+        <h3 style="font-weight: 900;">User Retention</h3>
         <div class="chart-container">
           <canvas id="userRetentionChart"></canvas>
         </div>
       </div>
     </section>
 
+  </div>
+
+
+  <div class="container">
     <section id="analysis">
       <h2>Analysis</h2>
       <div class="card">
-        <h3>Strengths</h3>
+        <h3 style="font-weight: 900;">Strengths</h3>
         <ul>
           <li>
             High New User Acquisition: The site attracts a significant number
@@ -1007,7 +1261,7 @@ aria-expanded="false" aria-label="Toggle navigation">
             and engaging with support content.
           </li>
         </ul>
-        <h3>Weaknesses</h3>
+        <h3 style="font-weight: 900;">Weaknesses</h3>
         <ul>
           <li>
             Low User Retention: Drastic drop in user retention after the first
@@ -1020,184 +1274,14 @@ aria-expanded="false" aria-label="Toggle navigation">
         </ul>
       </div>
     </section>
-
+  </div>
 
 </div>
 
 
 
     
-    <div class="container">
-      <h1>Key Takeaways From UX Interviews <br> MagTek Rebuild Notes</h1>
 
-      </section>
-
-      <section id="homepage">
-        <h2>Homepage</h2>
-        <div class="card">
-          <h3>Objectives:</h3>
-          <ul>
-            <li>Create a modern, engaging first impression.</li>
-            <li>Highlight key products and solutions.</li>
-            <li>Provide clear navigation to other parts of the site.</li>
-          </ul>
-          <h3>Suggestions:</h3>
-          <ul>
-            <li>Hero section with a dynamic and almost overwhelmingly captivating hero background with <strong style="font-size: 1.5rem; color: red; text-decoration: underline;">very short</strong> language innovation.</li>
-            <li>Highlight recent news, products, and customer testimonials.</li>
-            <li>Interactive elements to engage users (e.g., hover effects, animations).</li>
-          </ul>
-        </div>
-      </section>
-
-
-      <section id="countertop">
-        <h2>Countertop (Hardware Landing)</h2>
-        <div class="card">
-          <h3>Objectives:</h3>
-          <ul>
-            <li>Showcase countertop hardware solutions effectively.</li>
-            <li>Provide detailed specifications and use cases.</li>
-          </ul>
-          <h3>Suggestions:</h3>
-          <ul>
-            <li>High-quality images and 360-degree views of products.</li>
-            <li>Technical specifications with download links for datasheets.</li>
-            <li>Customer testimonials and case studies for real-world applications.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="support-landing">
-        <h2>Support Landing</h2>
-        <div class="card">
-          <h3>Objectives:</h3>
-          <ul>
-            <li>Centralize access to support resources.</li>
-            <li>Make it easy to find and use support materials.</li>
-          </ul>
-          <h3>Suggestions:</h3>
-          <ul>
-            <li>Searchable knowledge base and FAQs.</li>
-            <li>Access to live chat and support ticket submission.</li>
-            <li>Links to product-specific support pages.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="support-product">
-        <h2>Support Product</h2>
-        <div class="card">
-          <h3>Objectives:</h3>
-          <ul>
-            <li>Provide detailed support for specific products.</li>
-            <li>Ensure easy access to product manuals and troubleshooting guides.</li>
-          </ul>
-          <h3>Suggestions:</h3>
-          <ul>
-            <li>Product-specific FAQs and troubleshooting guides.</li>
-            <li>Downloadable manuals and software updates.</li>
-            <li>Contact options for product-specific support.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="magensa-landing">
-        <h2>Magensa Landing</h2>
-        <div class="card">
-          <h3>Objectives:</h3>
-          <ul>
-            <li>Highlight Magensa’s unique value propositions.</li>
-            <li>Provide detailed information on services offered.</li>
-          </ul>
-          <h3>Suggestions:</h3>
-          <ul>
-            <li>Feature case studies and client testimonials.</li>
-            <li>Detailed descriptions of services with benefits and features.</li>
-            <li>Clear calls to action for service inquiries and demos.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="careers">
-        <h2>Careers Page Landing (First Impression)</h2>
-        <div class="card">
-          <h3>Objectives:</h3>
-          <ul>
-            <li>Attract top talent by showcasing company culture and benefits.</li>
-            <li>Provide a clear path for job applications.</li>
-          </ul>
-          <h3>Suggestions:</h3>
-          <ul>
-            <li>Engaging hero section with employee testimonials and videos.</li>
-            <li>List of current job openings with detailed descriptions.</li>
-            <li>Information on company culture, values, and benefits.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="industries">
-        <h2>Industries Pages</h2>
-        <div class="card">
-          <h3>Objectives:</h3>
-          <ul>
-            <li>Highlight MagTek’s solutions for various industries.</li>
-            <li>Provide detailed information tailored to each industry.</li>
-          </ul>
-          <h3>Suggestions for Payments:</h3>
-          <ul>
-            <li>Case studies on payment solutions.</li>
-            <li>Detailed product offerings for the payments industry.</li>
-          </ul>
-          <h3>Suggestions for Banking:</h3>
-          <ul>
-            <li>Information on secure banking solutions.</li>
-            <li>Success stories from banking clients.</li>
-          </ul>
-          <h3>Suggestions for OEM:</h3>
-          <ul>
-            <li>Technical specifications for OEM products.</li>
-            <li>Partnership opportunities and integration guides.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="online-shop">
-        <h2>Online Shop Hero Style</h2>
-        <div class="card">
-          <h3>Objectives:</h3>
-          <ul>
-            <li>Create an engaging and visually appealing entry point to the online shop.</li>
-            <li>Highlight promotions and new products.</li>
-          </ul>
-          <h3>Suggestions:</h3>
-          <ul>
-            <li>Hero section with high-quality images and promotional banners.</li>
-            <li>Clear calls to action for featured products.</li>
-            <li>Interactive elements like sliders and product carousels.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="forms">
-        <h2>Forms</h2>
-        <div class="card">
-          <h3>Objectives:</h3>
-          <ul>
-            <li>Ensure forms are user-friendly and accessible.</li>
-            <li>Improve form submission rates.</li>
-          </ul>
-          <h3>Suggestions:</h3>
-          <ul>
-            <li>Simple and clean design with clear labels and placeholders.</li>
-            <li>Responsive design for mobile and desktop users.</li>
-            <li>Inline validation and helpful error messages.</li>
-          </ul>
-
-        </div>
-      </section>
-
-    </div>
 
 
 
@@ -1259,7 +1343,7 @@ aria-expanded="false" aria-label="Toggle navigation">
 </style>
 
 
-      <div class="container">
+      <div class="container" id="competition">
         <h1 class="text-center my-5">Comparative Analysis</h1>
 
         <br>
@@ -1276,7 +1360,7 @@ aria-expanded="false" aria-label="Toggle navigation">
                 <p>
                   Stripe's homepage offers a more modern and dynamic experience compared to our professional and straightforward approach at MagTek. With vibrant gradient colors, high-quality imagery, and modern typography, Stripe provides a tech-focused design and extensive, segmented content covering a wide range of financial services. Its navigation includes detailed dropdown menus, making the site more comprehensive but potentially overwhelming. In contrast, we use a simpler red and white color scheme, clear and consistent typography, and straightforward navigation with a focus on product information and digital security. Stripe's CTAs are prominently placed and well-distributed, while our CTAs are strategically placed for guiding users. Overall, Stripe emphasizes innovation and integrated solutions, whereas we focus on reliability and customization.</p>
                 <div class="features">
-                    <h3>Features :</h3>
+                    <h3 style="font-weight: 900;">Features :</h3>
                     <ul>
                       <li><strong>Colors</strong>: Captivating gradient transitioning to white and blue sections.</li>
                       <li><strong>Imagery</strong>: High-quality images of financial tools and technology and highly customized photoshoots.</li>
@@ -1402,9 +1486,9 @@ aria-expanded="false" aria-label="Toggle navigation">
             <div class="competitor-details">
                 <h2>Stripe's Support Page:</h2>
                 <p>
-                  Stripe's support page is sleek and modern, using a white and blue color scheme with minimalistic design elements, emphasizing text and icons. In contrast, our MagTek support page uses red, white, and grey, with images of customer support representatives to add a human touch. Stripe’s page features modern typography, a clear search bar, categorized topics, and extensive content on common issues. Our page focuses on professional readability, simple navigation with dropdowns, and clear guidance through support options. While Stripe offers quick access to information with a search function and 24/7 support, we provide detailed service status, phone and email support, and resources for app downloads and developer tools. Both pages load efficiently and are easy to read, but our approach is more straightforward and supportive.</p>
+                  Stripe's support page is sleek and modern, using a white and blue color scheme with minimalistic design elements, emphasizing text and icons. In contrast, our MagTek support page uses red, white, and grey, with images of customer support representatives to add a human touch. Stripe's page features modern typography, a clear search bar, categorized topics, and extensive content on common issues. Our page focuses on professional readability, simple navigation with dropdowns, and clear guidance through support options. While Stripe offers quick access to information with a search function and 24/7 support, we provide detailed service status, phone and email support, and resources for app downloads and developer tools. Both pages load efficiently and are easy to read, but our approach is more straightforward and supportive.</p>
                 <div class="features">
-                    <h3>Features :</h3>
+                    <h3 style="font-weight: 900;">Features :</h3>
                     <ul>
                       <li><strong>Colors and Design:</strong> Stripe uses a modern, clean aesthetic with white and blue colors and a minimalistic design, while we maintain consistency with red, white, and grey, enhancing the human touch with images of customer support representatives.</li>
                       <li><strong>Typography:</strong> Stripe features modern and clean typography with good hierarchy, while we focus on clear and professional readability.</li>
@@ -1526,9 +1610,9 @@ aria-expanded="false" aria-label="Toggle navigation">
                 <h2>Stripe's Careers Page:</h2>
                 <p>
 
-                  Stripe's careers page is vibrant and engaging, with colorful gradients and high-quality workplace images. Our MagTek page uses a red, white, and black color scheme, focusing on text and job listings. Stripe’s modern typography and comprehensive navigation cover company culture, benefits, and job openings, while ours is straightforward and job-focused. Stripe provides detailed content on company values and employee testimonials, offering a holistic view, whereas our page is professional, value-focused, and linear. Stripe’s tone is inclusive and innovative, highlighting a supportive work environment, compared to our more straightforward, professional tone.</p>
+                  Stripe's careers page is vibrant and engaging, with colorful gradients and high-quality workplace images. Our MagTek page uses a red, white, and black color scheme, focusing on text and job listings. Stripe's modern typography and comprehensive navigation cover company culture, benefits, and job openings, while ours is straightforward and job-focused. Stripe provides detailed content on company values and employee testimonials, offering a holistic view, whereas our page is professional, value-focused, and linear. Stripe's tone is inclusive and innovative, highlighting a supportive work environment, compared to our more straightforward, professional tone.</p>
                 <div class="features">
-                    <h3>Features :</h3>
+                    <h3 style="font-weight: 900;">Features :</h3>
                     <ul>
                       <li><strong>Colors and Design:</strong> Stripe uses a modern, vibrant palette with gradients and blue as a dominant color, while we utilize a consistent red, white, and black scheme, focusing more on text and job listings.</li>
                       <li><strong>Imagery:</strong> Stripe features extensive high-quality images and visuals of the workplace and team, whereas we have limited use of images, focusing on text and job listings.</li>
@@ -1572,7 +1656,7 @@ aria-expanded="false" aria-label="Toggle navigation">
               <tr>
                 <td>Branding</td>
                 <td>Strong and consistent branding with the logo and color scheme.</td>
-                <td>Strong, tech-forward branding that aligns with Stripe’s identity.</td>
+                <td>Strong, tech-forward branding that aligns with Stripe's identity.</td>
               </tr>
               <tr>
                 <td>Navigation</td>
@@ -1672,7 +1756,7 @@ aria-expanded="false" aria-label="Toggle navigation">
                 <p>
                   Datacap Systems' services page is professional and clean, using white, grey, and red with diagrams, product images, and video thumbnails. Our MagTek page uses red, white, and black with high-quality images of people using payment services. Datacap features modern typography and comprehensive navigation, while ours is straightforward and readable. Their content is segmented and detailed, focusing on integration and secure payment solutions. Our content is linear and emphasizes payment service details. Both pages offer extensive information; Datacap highlights integration and compatibility, while we emphasize security and flexibility. Additionally, Datacap includes partner information and clear contact options, while we provide multiple contact methods and product support links.</p>
                 <div class="features">
-                    <h3>Features :</h3>
+                    <h3 style="font-weight: 900;">Features :</h3>
                     <ul>
                       <li><strong>Colors and Design:</strong> Datacap Systems uses a combination of white, grey, and red for a professional look, while we use a consistent red, white, and black scheme.</li>
                       <li><strong>Imagery:</strong> Datacap utilizes diagrams, product images, and video thumbnails to illustrate services, whereas we use high-quality images depicting people using payment services and product images.</li>
@@ -1819,7 +1903,7 @@ aria-expanded="false" aria-label="Toggle navigation">
                   <p>
                     Verifone's card readers page features a vibrant palette with blue and white, modern typography, and high-quality images for an engaging look, compared to our MagTek page's consistent red, white, and black scheme with clear product images and descriptions. Verifone offers comprehensive navigation with detailed sections and segmented content, focusing on product versatility and user scenarios, while we maintain a straightforward navigation and linear content structure. Both pages ensure good accessibility and efficient load times, but Verifone provides more extensive content covering various product categories, features, and use cases, emphasizing advanced technology and comprehensive support.</p>
                   <div class="features">
-                      <h3>Features :</h3>
+                      <h3 style="font-weight: 900;">Features :</h3>
                       <ul>
                         <li><strong>Colors and Design:</strong> Verifone uses a vibrant palette with blue and white, while we use red, white, and black for consistency.</li>
                         <li><strong>Imagery:</strong> Verifone features high-quality images of card readers in use, compared to our clear product images with descriptions.</li>
@@ -1955,7 +2039,7 @@ aria-expanded="false" aria-label="Toggle navigation">
                 <p>
                   Our contact page is straightforward and professional, using a red, white, and black color scheme with a background image of the company building. It features clear typography, strong branding, and a simple navigation bar. The content structure is linear, focusing on a basic contact form, subscription options, and links to international distributors. In contrast, Ingenico's contact page uses a modern blue and white palette, high-quality images, and modern typography for a clean and engaging look. Ingenico provides comprehensive navigation with clear sections for different contact needs, extensive content, and a segmented structure. Their tone is engaging and supportive, offering detailed contact options and a global presence. Both pages ensure usability with good accessibility and efficient load times, but Ingenico includes more interactive elements like segmented contact sections and high-quality visuals.</p>
                 <div class="features">
-                    <h3>Features :</h3>
+                    <h3 style="font-weight: 900;">Features :</h3>
                     <ul>
                       <li><strong>Visual Design:</strong> MagTek uses red, white, and black colors with a background image of the company building, while Ingenico uses a modern blue and white palette with high-quality images for a personalized touch.</li>
                       <li><strong>Typography:</strong> MagTek features clear and professional typography, whereas Ingenico uses modern and clean typography for an engaging experience.</li>
@@ -2119,7 +2203,7 @@ aria-expanded="false" aria-label="Toggle navigation">
                 <p>
                   Square's online shop page presents a modern and clean look with a black, white, and blue color scheme, using high-quality images of products in use and detailed product images. In contrast, our MagTek page maintains a consistent red, white, and black color scheme with product images and a background image. Square uses modern typography, creating an engaging and readable experience, while we maintain clear and professional readability. Their navigation is comprehensive with clear product categories, whereas ours is straightforward with a top navigation bar. Square's content structure is detailed and segmented by product categories and support options, compared to our linear focus on the ordering process and product options. Square's tone is informative and engaging, highlighting product versatility and user scenarios, while ours is professional and focused on providing product information and support. Both pages ensure usability with good accessibility and efficient load times, but Square includes more extensive content covering various product categories, features, and use cases, while we emphasize secure transactions and a streamlined ordering experience.</p>
                 <div class="features">
-                    <h3>Features :</h3>
+                    <h3 style="font-weight: 900;">Features :</h3>
                     <ul>
                       <li><strong>Colors and Design:</strong> Square uses a black, white, and blue color scheme for a modern look, while we use red, white, and black for consistency with our brand identity.</li>
                       <li><strong>Imagery:</strong> Square features high-quality images of products in use and detailed product images, whereas we use product images and a background image.</li>
@@ -2236,10 +2320,12 @@ aria-expanded="false" aria-label="Toggle navigation">
 
     <style>
       .section-heading {
-        background-color: #f8f9fa;
+        background-color: #edf6ff8e;
+        border: solid 1px #ff00aa2d;
         padding: 20px;
         margin-bottom: 20px;
         border-radius: 5px;
+        border-radius: 15px;
       }
       .step {
         margin-bottom: 20px;
@@ -2267,144 +2353,145 @@ aria-expanded="false" aria-label="Toggle navigation">
     </style>
 
   
-  <div class="container mt-5">
-    <div class="section-heading text-center">
+  <div class="container mt-5" id="project-plan">
+    <div class="text-center">
       <h2>MagTek Website Revamp Plan</h2>
       <p class="lead">A comprehensive plan to update and enhance the MagTek website, ensuring a modern, user-friendly experience across key web pages.</p>
     </div>
   
  <!-- Homepage Section -->
- <div class="section">
+ <div class="section card">
   <div class="section-heading">
-    <h3>Homepage</h3>
+    <h3 style="font-weight: 900;">Homepage</h3>
     <p>Create a modern, engaging first impression. Highlight key products and solutions, and provide clear navigation to other parts of the site.</p>
   </div>
   <div class="timeline">
     <div class="timeline-item">
-      <h5>Week 1: Planning & Design</h5>
+      <h5><span style="font-weight: 900;">Week 1 - 2:</span> Figma -> Planning & Design</h5>
       <p>Create wireframes and mockups based on completed user research. Review and finalize the design.</p>
     </div>
     <div class="timeline-item">
-      <h5>Week 2-3: Content & Layout Update & Hero Section Development</h5>
+      <h5><span style="font-weight: 900;">Week 3 - 4:</span> Content & Layout Update & Hero Section Development</h5>
       <p>Develop dynamic hero backgrounds, integrate recent news, products, and customer testimonials, add interactive elements.</p>
       <p>Create sections for featured products, customer stories, and company news. Incorperate many clear CTAs and test new layout internally.</p>
     </div>
 
     <div class="timeline-item">
-      <h5>Week 3-4: Final Adjustments & Launch</h5>
+      <h5><span style="font-weight: 900;">Week 4 - 5:</span> Final Adjustments & Launch</h5>
       <p>Refine based on feedback, conduct final testing, launch updated homepage.</p>
     </div>
   </div>
 </div>
   
     <!-- Contact Page Section -->
-    <div class="section">
+    <div class="section card">
       <div class="section-heading">
-        <h3>Contact Page</h3>
+        <h3 style="font-weight: 900;">Contact Page</h3>
         <p>Ensure easy access to contact information and provide a streamlined method for inquiries.</p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <h5>Week 1: Redesign Contact Form</h5>
+          <h5><span style="font-weight: 900;">Week 1 - 2:</span> Figma -> Redesign Contact Form</h5>
           <p>Simplify the contact form with clear labels and placeholders, add inline validation for user-friendly error messages.</p>
         </div>
         <div class="timeline-item">
-          <h5>Week 2: Content & Layout Update</h5>
+          <h5><span style="font-weight: 900;">Week 3: Con</span>tent & Layout Update</h5>
           <p>Provide detailed contact options, add a section for global office locations, include links to support resources and FAQs, test and launch.</p>
         </div>
       </div>
     </div>
   
     <!-- Countertop (Hardware Landing) Section -->
-    <div class="section">
+    <div class="section card">
       <div class="section-heading">
-        <h3>Countertop (Hardware Landing)</h3>
+        <h3 style="font-weight: 900;">Countertop (Hardware Landing)</h3>
         <p>Showcase countertop hardware solutions effectively and provide detailed specifications and perhaps include use cases.</p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <h5>Week 1: Wireframe</h5>
+          <h5><span style="font-weight: 900;">Week 1 - 2:</span> Figma -> Content Update Wireframe</h5>
           <p>Create,low-mid fidelity figma mockup</p>
         </div>
         <div class="timeline-item">
-          <h5>Week 2: Content Update, Visual & Interactive Update</h5>
+          <h5><span style="font-weight: 900;">Week 3: Vis</span>ual & Interactive Update</h5>
           <p>Use existing qwantum hero. Existing Qwantum hero will receive it's own update. We are to explore various animation / liquid libraries</p>
           <p>Completely strip out old grid to make room for a more modern and clean grid (bootstrap), increasing the size of each product</p>
         </div>
         <div class="timeline-item">
-          <h5>Week 3: Final Adjustments & Launch</h5>
+          <h5><span style="font-weight: 900;">Week 4: Fin</span>al Adjustments & Launch</h5>
           <p>Test the updated page internally, gather feedback, make final adjustments, launch updated hardware page.</p>
         </div>
       </div>
     </div>
   
     <!-- Support Landing Section -->
-    <div class="section">
+    <div class="section card">
       <div class="section-heading">
-        <h3>Support Landing</h3>
+        <h3 style="font-weight: 900;">Support Landing</h3>
         <p>Centralize access to support resources and make it easy to find and use support materials.</p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <h5>Week 1: Figma -> Navigation & Search Enhancement</h5>
+          <h5><span style="font-weight: 900;">Week 1 - 2:</span> Figma -> Navigation & Search Enhancement</h5>
           <p>Redesign support page, light, modern and lean- Implement a searchable knowledge base and FAQs, add links to product-specific support pages.</p>
         </div>
         <div class="timeline-item">
-          <h5>Week 2: Content Update</h5>
+          <h5><span style="font-weight: 900;">Week 3: Con</span>tent Update</h5>
           <p>Provide access to quick links, test and launch.</p>
         </div>
       </div>
     </div>
   
     <!-- Magensa Landing Section -->
-    <div class="section">
+    <div class="section card">
       <div class="section-heading">
-        <h3>Magensa Landing</h3>
+        <h3 style="font-weight: 900;">Magensa Landing</h3>
         <p>Highlight Magensa's unique value propositions and provide detailed information on services offered.</p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <h5>Week 1: Redesign Magenssa Landing, Figma -> Visual & Content Update</h5>
+          <h5><span style="font-weight: 900;">Week 1 - 2:</span> Figma -> Redesign Magenssa Landing, Visual & Content Update</h5>
           <p>Maybe Feature case studies and client testimonials, provide detailed descriptions of services with benefits and features.</p>
         </div>
         <div class="timeline-item">
-          <h5>Week 2: Final Adjustments & Launch</h5>
+          <h5><span style="font-weight: 900;">Week 3:</span> Final Adjustments & Launch</h5>
           <p>Add clear CTAs for service inquiries and demos, test and launch.</p>
         </div>
       </div>
     </div>
-  
+
+
     <!-- Careers Page Landing Section -->
-    <div class="section">
+    <div class="section card">
       <div class="section-heading">
-        <h3>Careers Page Landing (First Impression)</h3>
+        <h3 style="font-weight: 900;">Careers Page Landing (First Impression)</h3>
         <p>Attract top talent by showcasing company culture and benefits, provide a clear path for job applications.</p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <h5>Week 1: Redesign Careers, Figma -> Visual & Interactive Update</h5>
+          <h5><span style="font-weight: 900;">Week 1 - 2:</span> Figma -> Redesign Careers, Visual & Interactive Update</h5>
           <p>Create an engaging hero section with employee testimonials and videos.</p>
         </div>
         <div class="timeline-item">
-          <h5>Week 2: Content Update & Launch</h5>
+          <h5><span style="font-weight: 900;">Week 3:</span> Content Update & Launch</h5>
           <p>Highlight current job openings with detailed descriptions, provide information on company culture, values, and benefits, test and launch.</p>
         </div>
       </div>
     </div>
   
     <!-- Industries Pages Section -->
-    <div class="section">
+    <div class="section card">
       <div class="section-heading">
-        <h3>Industries Pages</h3>
-        <p>Highlight MagTek’s solutions for various industries and provide detailed information tailored to each industry.</p>
+        <h3 style="font-weight: 900;">Industries Pages</h3>
+        <p>Highlight MagTek's solutions for various industries and provide detailed information tailored to each industry.</p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <h5>Week 1 and 2: Redesign all Industries, Figma</h5>
+          <h5><span style="font-weight: 900;">Week 1 - 2:</span> Figma -> Redesign all Industries, Figma</h5>
           <p>Include case studies on payment solutions, provide detailed product offerings for the payments industry.</p>
         </div>
         <div class="timeline-item">
-          <h5>Week 3-5: Banking Page + OEM Page + Payments Page</h5>
+          <h5><span style="font-weight: 900;">Week 3-5:</span> Banking Page + OEM Page + Payments Page</h5>
           <p>Highlight secure banking solutions, include success stories from banking clients.</p>
           <p>Provide technical specifications for OEM products, highlight partnership opportunities and request to use high quality image assets of oem hardware integrated within solutions, test and launch all three pages.</p>
         </div>
@@ -2413,39 +2500,39 @@ aria-expanded="false" aria-label="Toggle navigation">
     </div>
   
     <!-- Online Shop Hero Style Section -->
-    <div class="section">
+    <div class="section card">
       <div class="section-heading">
-        <h3>Online Shop Hero Style</h3>
+        <h3 style="font-weight: 900;">Online Shop Hero Style</h3>
         <p>We will spend time giving the online shop a fresh coat of paint, bringing in some of the newer design language of the recent magtek updates</p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <h5>Week 1: Redesign Online Shop, Figma -> Visual & Interactive Update</h5>
+          <h5><span style="font-weight: 900;">Week 1 - 2:</span> Figma -> Redesign Online Shop, Visual & Interactive Update</h5>
           <p>Update the hero section with high-quality images and promotional banners, ensure clear CTAs for featured products.</p>
         </div>
         <div class="timeline-item">
-          <h5>Week 2: Interactive Elements & Launch + add an additional field for promo codes.</h5>
+          <h5><span style="font-weight: 900;">Week 3:</span> Interactive Elements & Launch + add an additional field for promo codes.</h5>
           <p>Add interactive elements like sliders and product carousels, test and launch.</p>
         </div>
         <div class="timeline-item">
-          <h5>*Week 3: May or May not need to allocate time to working with Backend Dev on integration.*</h5>
+          <h5><span style="font-weight: 900;">*Week 4</span>: May or May not need to allocate time to working with Backend Dev on integration.*</h5>
         </div>
       </div>
     </div>
   
     <!-- Forms Section -->
-    <div class="section">
+    <div class="section card">
       <div class="section-heading">
-        <h3>Forms</h3>
+        <h3 style="font-weight: 900;">Forms</h3>
         <p>Make sure forms are user-friendly and accessible, improve form submission rates, </p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <h5>Week 1: Redesign Forms, Figma -> Form Design Enhancement</h5>
+          <h5><span style="font-weight: 900;">Week 1:</span> Figma -> Redesign Forms, Form Design Enhancement</h5>
           <p>Simplify design with clear labels and placeholders, Keep it lean, minimal text, and not overwhelming, ensure responsive design for mobile and desktop users.</p>
         </div>
         <div class="timeline-item">
-          <h5>Week 2: Add Promo Code Field & Launch</h5>
+          <h5><span style="font-weight: 900;">Week 2:</span> Add Promo Code Field & Launch</h5>
           <p>make sure the fields are clearly labeled and easy to use, test functionality and user experience before launch.</p>
         </div>
       </div>
@@ -2534,7 +2621,7 @@ aria-expanded="false" aria-label="Toggle navigation">
               
               
               
-              </span> }</p>
+              </span> } <span style="font-size: small; color: black; background-color: white; border-radius:6px; padding: 6px; margin-bottom: 5px;">_ux</span> </p>
               </div>
               <div class="col-md-6 text-center text-md-end">
                   <div class="social-links">
