@@ -728,14 +728,21 @@ aria-expanded="false" aria-label="Toggle navigation">
             <div class="journey-icon">🔁</div>
             <h3 style="font-weight: 900;">Support</h3>
             <p><strong>Positives:</strong> Dedicated support team available.</p>
-            <p><strong>Negatives:</strong> Need for more direct and efficient support.</p>
+            <p><strong>Negatives:</strong> Sometimes, who the user needs to reach out to is unclear.</p>
           </div>
         </div>
       </div>
     </section>
+
+
+
     <div class="container" id="user-journey">
+      <div class="ux-case-study-header">
+        <h1>MagTek UX Interviews:
+          <br>User Journey Timelines</h1>
+      </div>
       <section id="journey-timelines">
-        <h2>User Journey Timelines</h2>
+      
         <div class="card">
           <div class="journey-timeline" id="john-journey">
             <h3 style="font-weight: 900;">John's Journey</h3>
@@ -945,8 +952,7 @@ aria-expanded="false" aria-label="Toggle navigation">
         <div class="recommendation section-heading">
           <h3 style="font-weight: 900;">5. Showcase Innovation</h3>
           <p>
-            Regularly feature new products and technologies in marketing
-            materials.
+            Regularly feature new products and technologies on the homepage with a bi-monthly rotation.
           </p>
         </div>
       </div>
@@ -994,7 +1000,7 @@ aria-expanded="false" aria-label="Toggle navigation">
     </section>
   </div>
 
-  <script>
+  <!-- <script>
     document.addEventListener("DOMContentLoaded", (event) => {
       const sections = document.querySelectorAll("section");
       const options = {
@@ -1020,16 +1026,20 @@ aria-expanded="false" aria-label="Toggle navigation">
         observer.observe(section);
       });
     });
-  </script>
+  </script> -->
     <div class="container">
 
 
 
 
   <div class="container">
-    <h1>Key Takeaways From UX Interviews <br> MagTek Rebuild Notes</h1>
 
-    </section>
+    <div class="ux-case-study-header">
+      <h1>Key Takeaways From UX Interviews
+        <br>MagTek Rebuild Notes</h1>
+    </div>
+
+
 
     <section id="homepage">
       <h2>Homepage</h2>
@@ -1203,7 +1213,11 @@ aria-expanded="false" aria-label="Toggle navigation">
   <div class="container">
 
     <section id="analytics-overview">
-      <h2>Analytics Overview</h2>
+
+      <div class="ux-case-study-header">
+        <h1>Analytics Overview</h1>
+      </div>
+      <h2>Analytics</h2>
       <div class="analytics-grid">
         <div class="analytics-card">
           <h3 style="font-weight: 900;">Total Users (Last Month)</h3>
@@ -1344,7 +1358,11 @@ aria-expanded="false" aria-label="Toggle navigation">
 
 
       <div class="container" id="competition">
-        <h1 class="text-center my-5">Comparative Analysis</h1>
+
+        <div class="ux-case-study-header">
+          <h1>Comparative Analysis
+          </h1>
+      </div>
 
         <br>
         <h1 class="text-left my-5">Stripe</h1>
@@ -2355,10 +2373,92 @@ aria-expanded="false" aria-label="Toggle navigation">
   
   <div class="container mt-5" id="project-plan">
     <div class="text-center">
-      <h2>MagTek Website Revamp Plan</h2>
+
+      <div class="ux-case-study-header">
+        <h1>MagTek Website Revamp Plan
+        </h1>
+    </div>
+      <h2>Revamp Plan</h2>
       <p class="lead">A comprehensive plan to update and enhance the MagTek website, ensuring a modern, user-friendly experience across key web pages.</p>
     </div>
+
+ <!-- Considerations -->
+ <div class="section card">
+  <div class="section-heading">
+    <h3 style="font-weight: 900;">Consideration & Web Strategy Evaluation</h3>
+    <p>
+      Currently, MagTek uses a custom-built CMS that generally performs well in meeting the necessary requirements. However, in some rare and difficult-to-replicate scenarios, the CMS falls short. Additionally, certain processes for adding content are outdated and cumbersome.
+    </p>
+    <p>Another important consideration is the website's overall functionality, particularly its reliance on manual processes where automation should be in place. This inefficiency adds unnecessary workload to an already lean organization, especially in areas like form submissions and subscription management.</p>
+
+  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h5><span style="font-weight: 900;">Week 1:</span> Planning, Research & Strategy</h5>
+      <p>Prepare and present a comprehensive report to stakeholders, detailing potential CMS tools for adoption, along with a comparative analysis of full implementation versus partial integration strategies.</p>
+
+    </div>
+  </div>
+</div>
+
   
+ <!-- Architecture -->
+
+
+
+    <div class="section card">
+      <div class="section-heading">
+        <div class="alert alert-secondary small" role="alert">
+          *This step may be skipped if we proceed with a complete CMS integration as previously discussed.
+      </div>
+        <h3 style="font-weight: 900;">Web Application Achitecture Cleanup</h3>
+
+      
+
+        <p>Currenly, MagTek has Several CSS files that repeat the same styles or repeat styles that at times, conflict with other styles that share the same ID or Class. <br> <strong>The Solution:</strong> We must allocate time to wipe out 90% of the css from our website and start fresh with the new upcoming styles and design system
+        
+        
+        
+        
+        </p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h5><span style="font-weight: 900;">Week 1:</span> Planning & Strategy</h5>
+          <p>Determin the conflicting and dead CSS. Take liberties by deleting all styles which are assocated with the revamp.</p>
+        </div>
+        <div class="timeline-item">
+          <h5><span style="font-weight: 900;">Week 2:</span> Delete CSS & Strip away conflicting styles</h5>
+          <p>Investigate which styles are not needed anymore.</p>
+          <p>Delete most CSS styles which were implemented by previous develors</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="section card">
+      <div class="section-heading">
+        <h3 style="font-weight: 900;">Web Application Achitecture</h3>
+        <p>MagTek uses the Bootstrap library which is extremely powerful. Keeping our styles extremely lean will keep our website easy to maintain. <br> <strong>The Solution:</strong> We must allocate time to wipe out 90% of the css from our website and start fresh with the new upcoming styles and design system
+        
+        
+        
+        
+        </p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h5><span style="font-weight: 900;">Week 1:</span> Planning & Strategy</h5>
+          <p>Determin the conflicting and dead CSS. Take liberties by deleting all styles which are assocated with the revamp.</p>
+        </div>
+        <div class="timeline-item">
+          <h5><span style="font-weight: 900;">Week 2:</span> Delete CSS & Strip away conflicting styles</h5>
+          <p>Investigate which styles are not needed anymore.</p>
+          <p>Delete most CSS styles which were implemented by previous develors</p>
+        </div>
+      </div>
+    </div>
  <!-- Homepage Section -->
  <div class="section card">
   <div class="section-heading">
