@@ -277,6 +277,42 @@
         color: var(--text-medium);
         margin: 5px 0 0 0;
       }
+      @media only screen and (max-width: 480px) {
+        .app-container {
+          width: 100%;
+          height: 100vh;
+          max-height: 100vh;
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .app-content {
+          height: calc(100vh - 44px);
+          overflow: hidden;
+        }
+
+        body {
+          padding: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .restaurant-card {
+          top: 10px;
+          bottom: 80px;
+          height: calc(100vh - 134px);
+        }
+
+        .matches-drawer {
+          height: 60px;
+        }
+
+        .matches-drawer.expanded {
+          height: 40%;
+        }
+      }
 
       /* Animations */
       @keyframes slideUp {
