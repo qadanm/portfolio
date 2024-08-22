@@ -277,6 +277,115 @@
         color: var(--text-medium);
         margin: 5px 0 0 0;
       }
+
+      .status-bar-card {
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 8px 12px;
+        box-shadow: var(--shadow-soft);
+        z-index: 10;
+      }
+
+      .active-indicator {
+        font-size: 10px;
+        color: var(--text-light);
+        margin-bottom: 3px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .active-users {
+        display: flex;
+        align-items: center;
+      }
+
+      .active-users img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-right: 3px;
+        object-fit: cover;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border: 2px solid #fff;
+      }
+
+      .active-users img:not(:first-child) {
+        margin-left: -12px;
+      }
+
+      .more-users {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--accent-color);
+        color: var(--text-dark);
+        font-size: 10px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -12px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border: 2px solid #fff;
+      }
+
+      .add-user-btn {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+
+      .add-user-btn:hover {
+        transform: scale(1.1);
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .active-users img:last-child {
+        animation: pulse 2s infinite;
+      }
+      .active-users {
+        display: flex;
+      }
+
+      .active-users img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-right: 3px;
+        object-fit: cover;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        border: 2px solid #fff;
+      }
+
       @media only screen and (max-width: 480px) {
         body,
         html {
@@ -358,6 +467,25 @@
         <span> 100% </span>
       </div>
       <div class="app-content">
+        <div class="status-bar-card">
+          <span class="active-indicator">Active Now</span>
+          <div class="active-users">
+            <img
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="User 1"
+            />
+            <img
+              src="https://randomuser.me/api/portraits/women/65.jpg"
+              alt="User 2"
+            />
+            <img
+              src="https://randomuser.me/api/portraits/men/85.jpg"
+              alt="User 3"
+            />
+            <div class="more-users">+2</div>
+            <button class="add-user-btn">+</button>
+          </div>
+        </div>
         <div class="restaurant-card">
           <div class="restaurant-image">
             <img
