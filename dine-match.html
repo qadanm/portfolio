@@ -484,6 +484,30 @@
       .fab svg {
         color: var(--background-white);
       }
+      .add-friend-btn {
+        position: absolute;
+        top: 0px;
+        right: -15px;
+        width: 19px;
+        height: 19px;
+        transform: translateX(-50%);
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .add-friend-btn:hover {
+        background-color: #3db4a8;
+        transform: translateX(-50%) scale(1.1);
+      }
     </style>
   </head>
   <body>
@@ -514,6 +538,9 @@
                 />
                 <span class="active-user-name">Saleh</span>
                 <div class="active-badge"></div>
+                <button class="add-friend-btn" title="Add Sarah as a friend">
+                  +
+                </button>
               </div>
               <div class="active-user">
                 <img
@@ -532,6 +559,9 @@
                 />
                 <span class="active-user-name">Jihad</span>
                 <div class="active-badge"></div>
+                <button class="add-friend-btn" title="Add Sarah as a friend">
+                  +
+                </button>
               </div>
               <div class="active-user">
                 <img
@@ -559,6 +589,9 @@
                 />
                 <span class="active-user-name">Hani</span>
                 <div class="active-badge"></div>
+                <button class="add-friend-btn" title="Add Sarah as a friend">
+                  +
+                </button>
               </div>
               <div class="active-user">
                 <img
