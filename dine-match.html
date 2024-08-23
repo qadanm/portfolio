@@ -67,7 +67,7 @@
 
       .restaurant-card {
         position: absolute;
-        top: 20px;
+        top: 95px;
         left: 20px;
         right: 20px;
         bottom: 180px;
@@ -81,7 +81,7 @@
 
       .restaurant-image {
         width: 100%;
-        height: 70%;
+        height: 65%;
         position: relative;
         overflow: hidden;
       }
@@ -284,106 +284,93 @@
         left: 10px;
         display: flex;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
+
         border-radius: 15px;
         padding: 8px 12px;
-        box-shadow: var(--shadow-soft);
+
         z-index: 10;
       }
 
-      .active-indicator {
-        font-size: 10px;
-        color: var(--text-light);
-        margin-bottom: 3px;
+      .active-users-section {
+        position: absolute;
+        top: -5px;
+        left: 20px;
+        right: 20px;
+        height: 100px;
+        background-color: var(--background-white);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .active-users-title {
+        font-size: 16px;
         font-weight: 600;
-        text-transform: uppercase;
+        color: var(--text-dark);
+        margin-bottom: 10px;
+      }
+
+      .active-users-scroll {
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .active-users-scroll::-webkit-scrollbar {
+        display: none;
       }
 
       .active-users {
-        display: flex;
-        align-items: center;
+        display: inline-flex;
+        padding-bottom: 5px;
       }
 
-      .active-users img {
-        width: 24px;
-        height: 24px;
+      .active-user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        position: relative;
+      }
+
+      .active-user:last-child {
+        margin-right: 0;
+      }
+
+      .active-user-avatar {
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
-        margin-right: 3px;
         object-fit: cover;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        border: 2px solid #fff;
+        border: 2px solid var(--primary-color);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
       }
 
-      .active-users img:not(:first-child) {
-        margin-left: -12px;
-      }
-
-      .more-users {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background-color: var(--accent-color);
-        color: var(--text-dark);
-        font-size: 10px;
-        font-weight: 600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -12px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        border: 2px solid #fff;
-      }
-
-      .add-user-btn {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background-color: var(--secondary-color);
-        color: white;
-        font-size: 18px;
-        font-weight: 600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 8px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        border: none;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-      }
-
-      .add-user-btn:hover {
+      .active-user:hover .active-user-avatar {
         transform: scale(1.1);
       }
 
-      @keyframes pulse {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-        100% {
-          transform: scale(1);
-        }
+      .active-user-name {
+        font-size: 12px;
+        margin-top: 5px;
+        color: var(--text-medium);
+        max-width: 60px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
-      .active-users img:last-child {
-        animation: pulse 2s infinite;
-      }
-      .active-users {
-        display: flex;
-      }
-
-      .active-users img {
-        width: 24px;
-        height: 24px;
+      .active-badge {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 12px;
+        height: 12px;
+        background-color: #2ecc71;
         border-radius: 50%;
-        margin-right: 3px;
-        object-fit: cover;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        border: 2px solid #fff;
+        border: 2px solid white;
       }
 
       @media only screen and (max-width: 480px) {
@@ -507,23 +494,82 @@
         <span> 100% </span>
       </div>
       <div class="app-content">
-        <div class="status-bar-card">
-          <span class="active-indicator">Active Now</span>
-          <div class="active-users">
-            <img
-              src="https://randomuser.me/api/portraits/men/75.jpg"
-              alt="User 1"
-            />
-            <img
-              src="https://randomuser.me/api/portraits/women/65.jpg"
-              alt="User 2"
-            />
-            <img
-              src="https://randomuser.me/api/portraits/men/85.jpg"
-              alt="User 3"
-            />
-            <div class="more-users">+2</div>
-            <button class="add-user-btn">+</button>
+        <div class="active-users-section">
+          <div class="active-users-scroll">
+            <div class="active-users">
+              <div class="active-user">
+                <img
+                  src="https://radaris.com/i/c0d7eddc84c580cac762ec7a6802e5aa.jpg"
+                  alt="Issam"
+                  class="active-user-avatar"
+                />
+                <span class="active-user-name">Issam</span>
+                <div class="active-badge"></div>
+              </div>
+              <div class="active-user">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxol8HQywEGZW6gnRAUffeyQlwkP11l3XPWg&sg"
+                  alt="Sarah"
+                  class="active-user-avatar"
+                />
+                <span class="active-user-name">Saleh</span>
+                <div class="active-badge"></div>
+              </div>
+              <div class="active-user">
+                <img
+                  src="https://media.licdn.com/dms/image/D4E03AQEXMqGqoTpmqA/profile-displayphoto-shrink_200_200/0/1710901540914?e=2147483647&v=beta&t=Pzbi_2Iv7qvIqadV_JNk9vNQhuFRuPTzWkRO32yNZWA"
+                  alt="Mike"
+                  class="active-user-avatar"
+                />
+                <span class="active-user-name">Muhammed</span>
+                <div class="active-badge"></div>
+              </div>
+              <div class="active-user">
+                <img
+                  src="https://media.licdn.com/dms/image/C5103AQE62cK4J3bYIA/profile-displayphoto-shrink_400_400/0/1575162648445?e=2147483647&v=beta&t=LIwdgAH4tjJD5N8bc57mmmClTJ3SOuJz6XqIkDWdQU8"
+                  alt="Emma"
+                  class="active-user-avatar"
+                />
+                <span class="active-user-name">Jihad</span>
+                <div class="active-badge"></div>
+              </div>
+              <div class="active-user">
+                <img
+                  src="https://www.recordonline.com/gcdn/authoring/2016/10/15/NTHR/ghows-TH-3eda9577-954b-2700-e053-0100007f6655-ef0d3bc0.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp"
+                  alt="Alex"
+                  class="active-user-avatar"
+                />
+                <span class="active-user-name">Abed</span>
+                <div class="active-badge"></div>
+              </div>
+              <div class="active-user">
+                <img
+                  src="https://pbs.twimg.com/profile_images/807737431327797248/UOYWy2j6_400x400.jpg"
+                  alt="Lisa"
+                  class="active-user-avatar"
+                />
+                <span class="active-user-name">Mo</span>
+                <div class="active-badge"></div>
+              </div>
+              <div class="active-user">
+                <img
+                  src="https://i1.rgstatic.net/ii/profile.image/771443403010051-1560937848679_Q512/Hani-Qadan.jpg"
+                  alt="Tom"
+                  class="active-user-avatar"
+                />
+                <span class="active-user-name">Hani</span>
+                <div class="active-badge"></div>
+              </div>
+              <div class="active-user">
+                <img
+                  src="https://canarymission.cdnazur.com/profile_picture/Maia_Qadan_1_203x172_dA5ezb_2.jpg"
+                  alt="Anna"
+                  class="active-user-avatar"
+                />
+                <span class="active-user-name">Maia</span>
+                <div class="active-badge"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="restaurant-card">
