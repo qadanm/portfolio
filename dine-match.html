@@ -1,14 +1,35 @@
 <html>
   <head>
-    <base href="https://www.dine-match.app/" />
+    <base href="https://www.restaurant-swipe.app/" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DineMatch - Discover Your Next Culinary Adventure</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>DineMatch - Discover Your Next Meal</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
       :root {
         --primary-color: #ff6b6b;
+        --background-color: #f7f9fc;
+        --background-light: #f7f7f7;
+        --background-white: #ffffff;
+        --text-color: #2c3e50;
+        --light-gray: #e5e9f0;
+        --dark-gray: #34495e;
+        --text-dark: #2c3e50;
+        --text-medium: #34495e;
+        --text-light: #7f8c8d;
+        --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.1);
+        --shadow-strong: 0 15px 40px rgba(0, 0, 0, 0.2);
+        --transition-quick: 0.3s ease;
+        --success-color: #2ecc71;
+        --gradient-start: #ff6b6b;
+        --gradient-end: #ffa07a;
+      }
+
+      :root {
         --secondary-color: #2ecc71;
         --accent-color: #ffd93d;
         --background-light: #f7f7f7;
@@ -25,20 +46,1461 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Roboto", "Helvetica", "Arial", sans-serif;
       }
-
+      /* back-button */
       body {
-        font-family: "Poppins", sans-serif;
-        background-color: var(--background-light);
-        color: var(--text-dark);
+        background-color: var(--background-color);
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         padding: 20px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
 
-      .app-container {
+      .flow .app-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        max-width: 1400px;
+      }
+
+      .flow .iphone-frame {
+        width: 375px;
+        height: 812px;
+        background-color: #ffffff;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease;
+      }
+
+      .flow .iphone-frame:hover {
+        box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.3);
+      }
+
+      .flow .status-bar {
+        height: 44px;
+        background: linear-gradient(
+          135deg,
+          var(--gradient-start),
+          var(--gradient-end)
+        );
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .flow .content {
+        padding: 30px 15px;
+        height: calc(100% - 44px - 70px);
+        overflow-y: auto;
+      }
+
+      .flow h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+        color: var(--text-color);
+        text-align: left;
+        font-weight: 700;
+        background: linear-gradient(
+          135deg,
+          var(--gradient-start),
+          var(--gradient-end)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .flow h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: var(--text-color);
+        font-weight: 600;
+      }
+
+      .flow .subtitle {
+        font-size: 18px;
+        color: var(--dark-gray);
+        text-align: left;
+        margin-bottom: 30px;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+
+      .flow .button {
+        background: linear-gradient(
+          135deg,
+          var(--gradient-start),
+          var(--gradient-end)
+        );
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        margin: 15px 0;
+        box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+      }
+
+      .flow .button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(255, 107, 107, 0.4);
+      }
+
+      .flow .button.secondary {
+        background: linear-gradient(135deg, var(--secondary-color), #45b7aa);
+        box-shadow: 0 10px 20px rgba(78, 205, 196, 0.3);
+      }
+
+      .flow .button.secondary:hover {
+        box-shadow: 0 15px 30px rgba(78, 205, 196, 0.4);
+      }
+
+      .flow .nav-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid var(--light-gray);
+      }
+
+      .flow .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--dark-gray);
+        font-size: 12px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .flow .nav-item.active {
+        color: var(--primary-color);
+        transform: translateY(-5px);
+      }
+
+      .flow .nav-icon {
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+
+      .flow .cuisine-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 25px;
+      }
+
+      .flow .cuisine-pill {
+        background-color: var(--light-gray);
+        border-radius: 25px;
+        padding: 12px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .flow .cuisine-pill.selected {
+        background: linear-gradient(
+          135deg,
+          var(--gradient-start),
+          var(--gradient-end)
+        );
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(255, 107, 107, 0.3);
+      }
+
+      .flow .cuisine-pill:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .flow .selection-controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+      }
+
+      .flow .selection-button {
+        background-color: var(--light-gray);
+        border: none;
+        padding: 12px 20px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .flow .selection-button:hover {
+        background-color: var(--dark-gray);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .flow .skip-button {
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        padding: 12px 25px;
+        border-radius: 25px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 25px;
+      }
+
+      .flow .skip-button:hover {
+        background-color: var(--primary-color);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(255, 107, 107, 0.2);
+      }
+
+      .flow .match-card,
+      .flow .friend-card,
+      .flow .restaurant-card {
+        background-color: white;
+        border-radius: 25px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .flow .match-card:hover,
+      .flow .friend-card:hover,
+      .flow .restaurant-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .flow .match-card h3,
+      .flow .friend-card h3,
+      .flow .restaurant-card h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: var(--text-color);
+      }
+
+      .flow .match-card p,
+      .flow .friend-card p,
+      .flow .restaurant-card p {
+        font-size: 16px;
+        color: var(--dark-gray);
+        margin-bottom: 10px;
+      }
+      .input-field {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 2px solid var(--light-gray);
+        border-radius: 15px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+      }
+
+      .input-field:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2);
+      }
+
+      .social-login {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .social-button {
+        flex: 1;
+        margin: 0 5px;
+        padding: 12px;
+        border-radius: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-button svg {
+        margin-right: 8px;
+        width: 18px;
+        height: 18px;
+      }
+
+      .google-button {
+        background-color: #db4437;
+        color: white;
+      }
+
+      .facebook-button {
+        background-color: #4267b2;
+        color: white;
+      }
+
+      .apple-button {
+        background-color: #000000;
+        color: white;
+      }
+
+      .or-divider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .or-divider::before,
+      .or-divider::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid var(--light-gray);
+      }
+
+      .or-divider span {
+        padding: 0 10px;
+        color: var(--dark-gray);
+        font-size: 14px;
+      }
+
+      .toggle-form {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: var(--dark-gray);
+      }
+
+      .toggle-form a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .logo {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto 20px;
+        display: block;
+      }
+
+      .back-button {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: var(--primary-color);
+        cursor: pointer;
+      }
+
+      .success-icon {
+        font-size: 64px;
+        color: var(--success-color);
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .flow .friend-avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          var(--gradient-start),
+          var(--gradient-end)
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 24px;
+        color: white;
+        margin-right: 20px;
+      }
+
+      .flow .restaurant-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 15px;
+      }
+
+      .flow .rating {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .flow .star {
+        color: #ffd700;
+        margin-right: 5px;
+        font-size: 18px;
+      }
+      /* start your feast */
+      .flow .back-button {
+        position: absolute;
+        top: 44px;
+        left: 20px;
+        font-size: 28px;
+        color: var(--primary-color);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .flow .back-button:hover {
+        transform: translateX(-3px);
+      }
+
+      .flow .progress-bar {
+        width: 100%;
+        height: 6px;
+        background-color: var(--light-gray);
+        margin-bottom: 30px;
+        border-radius: 3px;
+        overflow: hidden;
+      }
+
+      .flow .progress {
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          var(--gradient-start),
+          var(--gradient-end)
+        );
+        transition: width 0.5s ease;
+      }
+
+      .flow .input-field {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 2px solid var(--light-gray);
+        border-radius: 15px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+      }
+
+      .flow .input-field:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.2);
+      }
+    </style>
+  </head>
+  <body class="flow">
+    <div class="app-container">
+      <!-- Welcome Screen .fab -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content">
+          <img
+            src="https://png.pngtree.com/png-clipart/20200721/original/pngtree-fire-media-logo-design-vector-illustration-png-image_4896332.jpg"
+            alt="DineMatch Logo"
+            class="logo"
+          />
+          <h1>Welcome to DineMatch</h1>
+          <p class="subtitle">
+            Discover your next favorite restaurant with friends!
+          </p>
+          <button class="button">Sign Up</button>
+          <button class="button secondary">Log In</button>
+          <div class="social-login">
+            <div class="social-button google-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path
+                  d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"
+                />
+              </svg>
+              Google
+            </div>
+            <div class="social-button facebook-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+              Facebook
+            </div>
+            <div class="social-button apple-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path
+                  d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                />
+              </svg>
+              Apple
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sign Up Screen -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content">
+          <button class="back-button">←</button>
+          <h1>Create Account</h1>
+          <p class="subtitle">Join DineMatch and start discovering!</p>
+          <input type="text" class="input-field" placeholder="Full Name" />
+          <input type="email" class="input-field" placeholder="Email" />
+          <input type="password" class="input-field" placeholder="Password" />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Confirm Password"
+          />
+          <button class="button">Sign Up</button>
+          <div class="or-divider">
+            <span>OR</span>
+          </div>
+          <div class="social-login">
+            <div class="social-button google-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path
+                  d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"
+                />
+              </svg>
+              Google
+            </div>
+            <div class="social-button facebook-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+              Facebook
+            </div>
+            <div class="social-button apple-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path
+                  d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                />
+              </svg>
+              Apple
+            </div>
+          </div>
+          <div class="toggle-form">
+            Already have an account? <a href="#">Log In</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Log In Screen -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content">
+          <button class="back-button">←</button>
+          <h1>Welcome Back</h1>
+          <p class="subtitle">Log in to continue your culinary journey!</p>
+          <input type="email" class="input-field" placeholder="Email" />
+          <input type="password" class="input-field" placeholder="Password" />
+          <button class="button">Log In</button>
+          <div class="or-divider">
+            <span>OR</span>
+          </div>
+          <div class="social-login">
+            <div class="social-button google-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path
+                  d="M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"
+                />
+              </svg>
+              Google
+            </div>
+            <div class="social-button facebook-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                />
+              </svg>
+              Facebook
+            </div>
+            <div class="social-button apple-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+              >
+                <path
+                  d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"
+                />
+              </svg>
+              Apple
+            </div>
+          </div>
+          <div class="toggle-form">
+            Don't have an account? <a href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forgot Password Screen -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content">
+          <button class="back-button">←</button>
+          <h1>Reset Password</h1>
+          <p class="subtitle">
+            Enter your email to receive a password reset link.
+          </p>
+          <input type="email" class="input-field" placeholder="Email" />
+          <button class="button">Send Reset Link</button>
+          <div class="toggle-form">
+            Remember your password? <a href="#">Log In</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Signup Success Screen -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content fade-in">
+          <div class="success-icon">
+            <img
+              src="https://static-00.iconduck.com/assets.00/success-icon-512x512-qdg1isa0.png"
+              class="img-fluid"
+              style="max-width: 70%"
+              alt=""
+            />
+          </div>
+          <h1>Welcome Aboard!</h1>
+          <p class="subtitle">
+            Your account has been created successfully. Let's start discovering
+            amazing restaurants!
+          </p>
+          <button class="button">Get Started</button>
+        </div>
+        <div class="nav-bar">
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-home"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="fab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-plus"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-bar-chart"
+            >
+              <line x1="12" y1="20" x2="12" y2="10"></line>
+              <line x1="18" y1="20" x2="18" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- Match Session List Screen -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content">
+          <h1>Dining Adventures</h1>
+          <p class="subtitle">Your gastronomic journeys await!</p>
+          <button class="button pulse">Create New Session</button>
+          <div class="match-card">
+            <h3>🍝 Pasta Paradise</h3>
+            <p>Date: May 15, 2023</p>
+            <p>Status: Active (2/4 Found a Match)</p>
+            <button class="button secondary">Continue Matching</button>
+          </div>
+          <div class="match-card">
+            <h3>🍣 Sushi Soirée</h3>
+            <p>Date: May 10, 2023</p>
+            <p>Status: Completed</p>
+            <button class="button secondary">Open</button>
+          </div>
+        </div>
+        <div class="nav-bar">
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-home"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="fab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-plus"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-bar-chart"
+            >
+              <line x1="12" y1="20" x2="12" y2="10"></line>
+              <line x1="18" y1="20" x2="18" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Create Match Session Screen -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content">
+          <div class="back-button">←</div>
+          <h1>Craft Your Session</h1>
+          <p class="subtitle">
+            Set the stage for your next group dining adventure
+          </p>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Name your Session"
+          />
+          <input type="date" class="input-field" placeholder="Pick a date" />
+          <h2>Invite Fellow Foodies</h2>
+          <div class="friend-card">
+            <div style="display: flex; align-items: center">
+              <div class="friend-avatar">JD</div>
+              <div>
+                <h3>John Doe</h3>
+                <p>@foodie_john</p>
+              </div>
+            </div>
+            <button
+              class="button secondary"
+              style="padding: 10px 15px; font-size: 16px"
+            >
+              Add to Session
+            </button>
+          </div>
+          <div class="friend-card">
+            <div style="display: flex; align-items: center">
+              <div class="friend-avatar">AS</div>
+              <div>
+                <h3>Alice Smith</h3>
+                <p>@gourmet_alice</p>
+              </div>
+            </div>
+            <button
+              class="button secondary"
+              style="padding: 10px 15px; font-size: 16px"
+            >
+              Add to Session
+            </button>
+          </div>
+          <button class="button pulse">Launch Your Session</button>
+        </div>
+        <div class="nav-bar">
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-home"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="fab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-plus"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-bar-chart"
+            >
+              <line x1="12" y1="20" x2="12" y2="10"></line>
+              <line x1="18" y1="20" x2="18" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- Cuisine Selection Screen -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content">
+          <div class="progress-bar">
+            <div class="progress" style="width: 33%"></div>
+          </div>
+          <h1>Culinary Adventures</h1>
+          <p class="subtitle">Which flavors are calling your name today?</p>
+          <div class="cuisine-grid">
+            <div class="cuisine-pill">🍝 <br />Italian</div>
+            <div class="cuisine-pill">🍣 <br />Japanese</div>
+            <div class="cuisine-pill">🌮 <br />Mexican</div>
+            <div class="cuisine-pill">🍛 <br />Indian</div>
+            <div class="cuisine-pill">🍜 <br />Thai</div>
+            <div class="cuisine-pill">🍔 <br />American</div>
+            <div class="cuisine-pill">🥡 <br />Chinese</div>
+            <div class="cuisine-pill">🥙 <br />Greek</div>
+            <div class="cuisine-pill">🥐 <br />French</div>
+            <div class="cuisine-pill">🍜 <br />Vietnamese</div>
+            <div class="cuisine-pill">🍱 <br />Korean</div>
+            <div class="cuisine-pill">🥘 <br />Spanish</div>
+          </div>
+          <div class="selection-controls">
+            <button class="selection-button">Select All</button>
+            <button class="selection-button">Deselect All</button>
+          </div>
+          <button class="skip-button">Skip for now</button>
+          <button class="button pulse">Discover Tastes</button>
+        </div>
+        <div class="nav-bar">
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-home"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="fab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-plus"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-bar-chart"
+            >
+              <line x1="12" y1="20" x2="12" y2="10"></line>
+              <line x1="18" y1="20" x2="18" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Price Range Selection Screen -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content">
+          <div class="progress-bar">
+            <div class="progress" style="width: 66%"></div>
+          </div>
+          <h1>Budget Bites</h1>
+          <p class="subtitle">
+            How much are you willing to spend on this culinary journey?
+          </p>
+          <div class="cuisine-grid">
+            <div class="cuisine-pill">$ <br />Thrifty</div>
+            <div class="cuisine-pill">$$ <br />Moderate</div>
+            <div class="cuisine-pill">$$$ <br />Fine Dining</div>
+            <div class="cuisine-pill">$$$$ <br />Luxurious</div>
+          </div>
+          <button class="skip-button">Skip for now</button>
+          <button class="button pulse">Set the Table</button>
+        </div>
+        <div class="nav-bar">
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-home"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="fab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-plus"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-bar-chart"
+            >
+              <line x1="12" y1="20" x2="12" y2="10"></line>
+              <line x1="18" y1="20" x2="18" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Preferences Screen -->
+      <div class="iphone-frame">
+        <div class="status-bar">
+          <span>9:41</span>
+          <span>DineMatch</span>
+          <span>🔋 100%</span>
+        </div>
+        <div class="content">
+          <div class="progress-bar">
+            <div class="progress" style="width: 100%"></div>
+          </div>
+          <h1>Perfect Your Plate</h1>
+          <p class="subtitle">Let's fine-tune your dining experience</p>
+          <div class="cuisine-grid">
+            <div class="cuisine-pill">🥗 <br />Vegetarian</div>
+            <div class="cuisine-pill">🌱 <br />Vegan</div>
+            <div class="cuisine-pill">🌾 <br />Gluten-Free</div>
+            <div class="cuisine-pill">🕌 <br />Halal</div>
+            <div class="cuisine-pill">✡️ <br />Kosher</div>
+            <div class="cuisine-pill">🍃 <br />Organic</div>
+            <div class="cuisine-pill">🚜 <br />Farm-to-Table</div>
+            <div class="cuisine-pill">🌳 <br />Outdoor Seating</div>
+            <div class="cuisine-pill">🎵 <br />Live Music</div>
+          </div>
+          <button class="skip-button">Skip for now</button>
+          <button class="button pulse">Stat Matching!</button>
+        </div>
+        <div class="nav-bar">
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-home"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <div class="fab">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-plus"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+          <div class="nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-bar-chart"
+            >
+              <line x1="12" y1="20" x2="12" y2="10"></line>
+              <line x1="18" y1="20" x2="18" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- DineMatch Screen voted -->
+      <div class="iphone-frame">
+        <div class="app-container-swipe-swipe">
+          <div class="status-bar">
+            <span>9:41</span>
+            <span>DineMatch</span>
+            <span>🔋 100% </span>
+          </div>
+          <div class="app-content">
+            <div class="active-users-section">
+              <div class="active-users-scroll">
+                <div class="active-users">
+                  <div class="active-user">
+                    <img
+                      src="https://radaris.com/i/c0d7eddc84c580cac762ec7a6802e5aa.jpg"
+                      alt="Issam"
+                      class="active-user-avatar"
+                    />
+                    <span class="active-user-name">Issam</span>
+                    <div class="active-badge"></div>
+                  </div>
+                  <div class="active-user">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxol8HQywEGZW6gnRAUffeyQlwkP11l3XPWg&sg"
+                      alt="Sarah"
+                      class="active-user-avatar"
+                    />
+                    <span class="active-user-name">Saleh</span>
+                    <div class="active-badge"></div>
+                    <button
+                      class="add-friend-btn"
+                      title="Add Sarah as a friend"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <div class="active-user">
+                    <img
+                      src="https://media.licdn.com/dms/image/D4E03AQEXMqGqoTpmqA/profile-displayphoto-shrink_200_200/0/1710901540914?e=2147483647&v=beta&t=Pzbi_2Iv7qvIqadV_JNk9vNQhuFRuPTzWkRO32yNZWA"
+                      alt="Mike"
+                      class="active-user-avatar"
+                    />
+                    <span class="active-user-name">Mugs</span>
+                    <div class="active-badge"></div>
+                  </div>
+                  <div class="active-user">
+                    <img
+                      src="https://media.licdn.com/dms/image/C5103AQE62cK4J3bYIA/profile-displayphoto-shrink_400_400/0/1575162648445?e=2147483647&v=beta&t=LIwdgAH4tjJD5N8bc57mmmClTJ3SOuJz6XqIkDWdQU8"
+                      alt="Emma"
+                      class="active-user-avatar"
+                    />
+                    <span class="active-user-name">Jihad</span>
+                    <div class="active-badge"></div>
+                    <button
+                      class="add-friend-btn"
+                      title="Add Sarah as a friend"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <div class="active-user">
+                    <img
+                      src="https://www.recordonline.com/gcdn/authoring/2016/10/15/NTHR/ghows-TH-3eda9577-954b-2700-e053-0100007f6655-ef0d3bc0.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp"
+                      alt="Alex"
+                      class="active-user-avatar"
+                    />
+                    <span class="active-user-name">Abed</span>
+                    <div class="active-badge"></div>
+                  </div>
+                  <div class="active-user">
+                    <img
+                      src="https://pbs.twimg.com/profile_images/807737431327797248/UOYWy2j6_400x400.jpg"
+                      alt="Lisa"
+                      class="active-user-avatar"
+                    />
+                    <span class="active-user-name">Mo</span>
+                    <div class="active-badge"></div>
+                  </div>
+                  <div class="active-user">
+                    <img
+                      src="https://i1.rgstatic.net/ii/profile.image/771443403010051-1560937848679_Q512/Hani-Qadan.jpg"
+                      alt="Tom"
+                      class="active-user-avatar"
+                    />
+                    <span class="active-user-name">Hani</span>
+                    <div class="active-badge"></div>
+                    <button
+                      class="add-friend-btn"
+                      title="Add Sarah as a friend"
+                    >
+                      +
+                    </button>
+                  </div>
+                  <div class="active-user">
+                    <img
+                      src="https://canarymission.cdnazur.com/profile_picture/Maia_Qadan_1_203x172_dA5ezb_2.jpg"
+                      alt="Anna"
+                      class="active-user-avatar"
+                    />
+                    <span class="active-user-name">Maia</span>
+                    <div class="active-badge"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="restaurant-card">
+              <div class="restaurant-image">
+                <img
+                  src="https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/798104191/uno-pizzeria-whole-hog-burger.jpg?quality=82&strip=1"
+                  alt="Delicious dish from Gourmet Haven"
+                />
+                <div class="swipe-overlay">
+                  <div class="swipe-icon">✕</div>
+                  <div class="swipe-icon">♥</div>
+                </div>
+              </div>
+              <div class="restaurant-info">
+                <h2 class="restaurant-name">Gourmet Haven</h2>
+                <p class="restaurant-details">
+                  Modern American • $$$ • 0.5 miles away
+                </p>
+                <div class="restaurant-rating">
+                  <span class="rating-stars">★★★★☆</span>
+                  <span>4.5 (200+ reviews)</span>
+                </div>
+              </div>
+            </div>
+            <div class="swipe-actions">
+              <button class="swipe-button swipe-left" style="display: none">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 6L6 18"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 6L18 18"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button class="swipe-button swipe-right" style="display: none">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.84 4.60999C20.3292 4.09888 19.7228 3.69352 19.0554 3.41696C18.3879 3.14039 17.6725 2.99805 16.95 2.99805C16.2275 2.99805 15.5121 3.14039 14.8446 3.41696C14.1772 3.69352 13.5708 4.09888 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7564 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7564 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="matches-drawer">
+              <div class="matches-handle"></div>
+              <h3 class="matches-title">Your Matches</h3>
+              <div class="matches-list">
+                <div class="match-item">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/73/1e/25/sushi-crush-restaurant.jpg?w=1200&h=-1&s=1"
+                    alt="Sushi Paradise"
+                    class="match-image"
+                  />
+                  <div class="match-info">
+                    <h4 class="match-name">Sushi Paradise</h4>
+                    <p class="match-cuisine">Japanese • $$</p>
+                  </div>
+                </div>
+                <div class="match-item">
+                  <img
+                    src="https://www.eatthis.com/wp-content/uploads/sites/4/2023/03/create-your-own-pasta.jpg?quality=82&strip=1"
+                    alt="Pasta Palace"
+                    class="match-image"
+                  />
+                  <div class="match-info">
+                    <h4 class="match-name">Pasta Palace</h4>
+                    <p class="match-cuisine">Italian • $$$</p>
+                  </div>
+                </div>
+                <div class="match-item">
+                  <img
+                    src="https://familiakitchen.com/wp-content/uploads/2021/01/iStock-960337396-3beef-barbacoa-tacos-e1695391119564.jpg"
+                    alt="Taco Town"
+                    class="match-image"
+                  />
+                  <div class="match-info">
+                    <h4 class="match-name">Taco Town</h4>
+                    <p class="match-cuisine">Mexican • $</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nav-bar">
+              <div class="nav-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-home"
+                >
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"
+                  ></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div class="fab">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-plus"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </div>
+              <div class="nav-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-bar-chart"
+                >
+                  <line x1="12" y1="20" x2="12" y2="10"></line>
+                  <line x1="18" y1="20" x2="18" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="16"></line>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      .app-container-swipe {
         width: 375px;
         height: 812px;
         background-color: var(--background-white);
@@ -473,7 +1935,7 @@
         top: -25px;
         width: 56px;
         height: 56px;
-        background-color: var(--secondary-color);
+        background: linear-gradient(135deg, var(--secondary-color), #45b7aa);
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -509,260 +1971,76 @@
         transform: translateX(-50%) scale(1.1);
       }
     </style>
-  </head>
-  <body>
-    <div class="app-container">
-      <div class="status-bar">
-        <span>9:41</span>
-        <span>DineMatch</span>
-        <span> 100% </span>
-      </div>
-      <div class="app-content">
-        <div class="active-users-section">
-          <div class="active-users-scroll">
-            <div class="active-users">
-              <div class="active-user">
-                <img
-                  src="https://radaris.com/i/c0d7eddc84c580cac762ec7a6802e5aa.jpg"
-                  alt="Issam"
-                  class="active-user-avatar"
-                />
-                <span class="active-user-name">Issam</span>
-                <div class="active-badge"></div>
-              </div>
-              <div class="active-user">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxol8HQywEGZW6gnRAUffeyQlwkP11l3XPWg&sg"
-                  alt="Sarah"
-                  class="active-user-avatar"
-                />
-                <span class="active-user-name">Saleh</span>
-                <div class="active-badge"></div>
-                <button class="add-friend-btn" title="Add Sarah as a friend">
-                  +
-                </button>
-              </div>
-              <div class="active-user">
-                <img
-                  src="https://media.licdn.com/dms/image/D4E03AQEXMqGqoTpmqA/profile-displayphoto-shrink_200_200/0/1710901540914?e=2147483647&v=beta&t=Pzbi_2Iv7qvIqadV_JNk9vNQhuFRuPTzWkRO32yNZWA"
-                  alt="Mike"
-                  class="active-user-avatar"
-                />
-                <span class="active-user-name">Mugs</span>
-                <div class="active-badge"></div>
-              </div>
-              <div class="active-user">
-                <img
-                  src="https://media.licdn.com/dms/image/C5103AQE62cK4J3bYIA/profile-displayphoto-shrink_400_400/0/1575162648445?e=2147483647&v=beta&t=LIwdgAH4tjJD5N8bc57mmmClTJ3SOuJz6XqIkDWdQU8"
-                  alt="Emma"
-                  class="active-user-avatar"
-                />
-                <span class="active-user-name">Jihad</span>
-                <div class="active-badge"></div>
-                <button class="add-friend-btn" title="Add Sarah as a friend">
-                  +
-                </button>
-              </div>
-              <div class="active-user">
-                <img
-                  src="https://www.recordonline.com/gcdn/authoring/2016/10/15/NTHR/ghows-TH-3eda9577-954b-2700-e053-0100007f6655-ef0d3bc0.jpeg?width=1200&disable=upscale&format=pjpg&auto=webp"
-                  alt="Alex"
-                  class="active-user-avatar"
-                />
-                <span class="active-user-name">Abed</span>
-                <div class="active-badge"></div>
-              </div>
-              <div class="active-user">
-                <img
-                  src="https://pbs.twimg.com/profile_images/807737431327797248/UOYWy2j6_400x400.jpg"
-                  alt="Lisa"
-                  class="active-user-avatar"
-                />
-                <span class="active-user-name">Mo</span>
-                <div class="active-badge"></div>
-              </div>
-              <div class="active-user">
-                <img
-                  src="https://i1.rgstatic.net/ii/profile.image/771443403010051-1560937848679_Q512/Hani-Qadan.jpg"
-                  alt="Tom"
-                  class="active-user-avatar"
-                />
-                <span class="active-user-name">Hani</span>
-                <div class="active-badge"></div>
-                <button class="add-friend-btn" title="Add Sarah as a friend">
-                  +
-                </button>
-              </div>
-              <div class="active-user">
-                <img
-                  src="https://canarymission.cdnazur.com/profile_picture/Maia_Qadan_1_203x172_dA5ezb_2.jpg"
-                  alt="Anna"
-                  class="active-user-avatar"
-                />
-                <span class="active-user-name">Maia</span>
-                <div class="active-badge"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="restaurant-card">
-          <div class="restaurant-image">
-            <img
-              src="https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/798104191/uno-pizzeria-whole-hog-burger.jpg?quality=82&strip=1"
-              alt="Delicious dish from Gourmet Haven"
-            />
-            <div class="swipe-overlay">
-              <div class="swipe-icon">✕</div>
-              <div class="swipe-icon">♥</div>
-            </div>
-          </div>
-          <div class="restaurant-info">
-            <h2 class="restaurant-name">Gourmet Haven</h2>
-            <p class="restaurant-details">
-              Modern American • $$$ • 0.5 miles away
-            </p>
-            <div class="restaurant-rating">
-              <span class="rating-stars">★★★★☆</span>
-              <span>4.5 (200+ reviews)</span>
-            </div>
-          </div>
-        </div>
-        <div class="swipe-actions">
-          <button class="swipe-button swipe-left" style="display: none">
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M18 6L6 18"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M6 6L18 18"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-          <button class="swipe-button swipe-right" style="display: none">
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20.84 4.60999C20.3292 4.09888 19.7228 3.69352 19.0554 3.41696C18.3879 3.14039 17.6725 2.99805 16.95 2.99805C16.2275 2.99805 15.5121 3.14039 14.8446 3.41696C14.1772 3.69352 13.5708 4.09888 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7564 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7564 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="matches-drawer">
-          <div class="matches-handle"></div>
-          <h3 class="matches-title">Your Matches</h3>
-          <div class="matches-list">
-            <div class="match-item">
-              <img
-                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/73/1e/25/sushi-crush-restaurant.jpg?w=1200&h=-1&s=1"
-                alt="Sushi Paradise"
-                class="match-image"
-              />
-              <div class="match-info">
-                <h4 class="match-name">Sushi Paradise</h4>
-                <p class="match-cuisine">Japanese • $$</p>
-              </div>
-            </div>
-            <div class="match-item">
-              <img
-                src="https://www.eatthis.com/wp-content/uploads/sites/4/2023/03/create-your-own-pasta.jpg?quality=82&strip=1"
-                alt="Pasta Palace"
-                class="match-image"
-              />
-              <div class="match-info">
-                <h4 class="match-name">Pasta Palace</h4>
-                <p class="match-cuisine">Italian • $$$</p>
-              </div>
-            </div>
-            <div class="match-item">
-              <img
-                src="https://familiakitchen.com/wp-content/uploads/2021/01/iStock-960337396-3beef-barbacoa-tacos-e1695391119564.jpg"
-                alt="Taco Town"
-                class="match-image"
-              />
-              <div class="match-info">
-                <h4 class="match-name">Taco Town</h4>
-                <p class="match-cuisine">Mexican • $</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="nav-bar">
-          <div class="nav-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-home"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"></path>
-              <polyline points="9 22 9 12 15 12 15 22"></polyline>
-            </svg>
-          </div>
-          <div class="fab">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-plus"
-            >
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-            </svg>
-          </div>
-          <div class="nav-item">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-bar-chart"
-            >
-              <line x1="12" y1="20" x2="12" y2="10"></line>
-              <line x1="18" y1="20" x2="18" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="16"></line>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cuisinePills = document.querySelectorAll(".cuisine-pill");
+        const selectAllBtn = document.querySelector(
+          ".selection-button:nth-child(1)"
+        );
+        const deselectAllBtn = document.querySelector(
+          ".selection-button:nth-child(2)"
+        );
 
+        cuisinePills.forEach((pill) => {
+          pill.addEventListener("click", () => {
+            pill.classList.toggle("selected");
+          });
+        });
+
+        selectAllBtn.addEventListener("click", () => {
+          cuisinePills.forEach((pill) => pill.classList.add("selected"));
+        });
+
+        deselectAllBtn.addEventListener("click", () => {
+          cuisinePills.forEach((pill) => pill.classList.remove("selected"));
+        });
+
+        // Add smooth scrolling
+        const contents = document.querySelectorAll(".content");
+        contents.forEach((content) => {
+          content.style.scrollBehavior = "smooth";
+        });
+
+        // Add haptic feedback simulation
+        const buttons = document.querySelectorAll(
+          ".button, .cuisine-pill, .selection-button, .skip-button"
+        );
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            if ("vibrate" in navigator) {
+              navigator.vibrate(10);
+            }
+          });
+        });
+
+        // Add hover effects
+        const hoverElements = document.querySelectorAll(
+          ".button, .cuisine-pill, .selection-button, .skip-button, .match-card, .friend-card, .restaurant-card"
+        );
+        hoverElements.forEach((element) => {
+          element.addEventListener("mouseenter", () => {
+            element.style.transform = "scale(1.05)";
+            element.style.transition = "all 0.3s ease";
+          });
+          element.addEventListener("mouseleave", () => {
+            element.style.transform = "scale(1)";
+          });
+        });
+
+        // Simulate loading states
+        const nextButtons = document.querySelectorAll(".button.pulse");
+        nextButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            button.textContent = "Loading...";
+            button.disabled = true;
+            setTimeout(() => {
+              button.textContent = button.dataset.originalText || "Next";
+              button.disabled = false;
+            }, 1500);
+          });
+        });
+      });
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const card = document.querySelector(".restaurant-card");
