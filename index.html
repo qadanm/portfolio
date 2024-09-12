@@ -634,16 +634,6 @@ box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
   }
 }
 
-@keyframes blink {
-  0%,
-  100% {
-    transform: scaleY(1);
-  }
-  50% {
-    transform: scaleY(0.1);
-  }
-}
-
 @media (max-width: 600px) {
   .avatar-container .container {
     gap: 1.5rem;
@@ -684,21 +674,6 @@ box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
     <g id="eyes">
       <circle cx="40" cy="45" r="5" fill="var(--text-color)" />
       <circle cx="60" cy="45" r="5" fill="var(--text-color)" />
-      <!-- Eyelids -->
-      <!-- <path
-        id="left-eyelid"
-        d="M35 45 Q40 40 45 45"
-        stroke="var(--primary-color)"
-        stroke-width="3"
-        fill="none"
-      />
-      <path
-        id="right-eyelid"
-        d="M55 45 Q60 40 65 45"
-        stroke="var(--primary-color)"
-        stroke-width="3"
-        fill="none"
-      /> -->
     </g>
 
     <!-- Smile -->
@@ -756,7 +731,7 @@ const observer = new IntersectionObserver(
   { threshold: 0.1 }
 );
 
-observer.observe(document.querySelector(".content"));
+observer.observe(document.querySelector(".avatar-container .content"));
 </script>
 
 
