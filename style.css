@@ -1,22 +1,13 @@
-/* pricing fw-bold
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #ff6b6b;
+  --accent-color: #54a4a6;
+  --text-color: #ffffff;
+  --background-color: #121212;
+  --background-color-lighter: #191919;
+  --card-background: #282828;
+}
 
-
-#radio-buttons-section
-
-
-qadan hero 85vh
-
-employmentContent lead
-*/
-
-/* LA SECTION BELOW nav clamp qadanradio-btn
-
-  .navbar {
-
-instagram-images-api72vh !important
-
-*/
-/* Additional styles for scrollable div */
 .table-of-contents {
   max-height: 300px; /* Set maximum height */
   overflow-y: scroll; /* Always show scrollbar */
@@ -296,11 +287,11 @@ body {
   font-family: "Noto Nastaliq Urdu", serif !important;
 }
 nav {
-  background-color: rgb(0, 0, 0); /* Light gray background color */
+  background-color: #0f0f0f;
   box-shadow: 0 2px 4px rgb(0, 0, 0); /* Subtle box shadow */
 }
 .navbar-brand {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Comfortaa", sans-serif;
 
   font-size: 1.8rem; /* Larger font size for the brand */
   color: #ffffff !important; /* Dark text color */
@@ -325,98 +316,6 @@ nav {
   color: #ffffff; /* Active link color */
 }
 
-.hero-container .lead {
-  font-size: clamp(0.8rem, 4vw, 2rem);
-  color: #f8f9fa;
-}
-.hero-container .qadan-btn {
-  font-size: clamp(1rem, 5vw, 1.5rem);
-}
-@media screen and (max-width: 600px) {
-  .hero-container .lead {
-    font-size: 1.5rem; /* Adjust the font size for mobile screens */
-  }
-}
-.container-fluid.hero-container {
-  position: relative;
-  height: 95vh; /* Adjust the height as needed */
-  display: flex;
-  flex-direction: column;
-  margin-top: 68px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  background: url("pexels-negative-space-97077.jpg") center/cover no-repeat;
-}
-.navbar-nav {
-  overflow: hidden !important;
-}
-/* Custom styles for the Navbar Toggler button */
-/* Custom styles for the navbar toggler button */
-.navbar-toggler {
-  background-color: rgb(84, 84, 165); /* Set background color to white */
-  border: unset !important;
-}
-
-/* Style the icon inside the toggler button */
-
-/* Styles for the active state when the button is clicked */
-.navbar-toggler:active,
-.navbar-toggler:focus {
-  background-color: rgb(
-    84,
-    84,
-    165
-  ); /* Change background color on click or focus */
-  border: unset !important;
-}
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    -45deg,
-    #00061dde,
-    #000f18d5,
-    #00161ed4,
-    #001812d4
-  );
-  background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.hero-content {
-  z-index: 2;
-}
-.thicker-line {
-  border-top: 2px solid #fff; /* Adjust the thickness and color as needed */
-}
-
-.container-fluid {
-  padding: 3rem 0;
-}
-
-.bg-dark {
-  color: #ffffff;
-}
-
-.bg-light {
-  padding: 3rem 0;
-}
-
 /* section {
   margin: 2rem 0;
 } */
@@ -435,14 +334,11 @@ ul li {
 }
 
 #contact h2 {
-  text-align: center;
-  color: rgb(84, 84, 165);
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  text-align: left;
 }
 
 #employmentContent .fw-bold {
-  color: rgb(84, 84, 165);
+  color: var(--text-color);
   font-size: 5rem;
 }
 .choose .fw-bold {
@@ -470,8 +366,16 @@ ul li {
 }
 #contact .fw-bold {
   color: rgb(84, 84, 165);
+  text-align: center;
   font-size: 5rem;
 }
+
+#contact form {
+  background-color: var(--card-background);
+  padding: 30px;
+  border-radius: 15px;
+}
+
 #contact .lead {
   font-size: 22px;
   line-height: 1.6;
@@ -499,13 +403,13 @@ form {
 }
 
 .form-label {
-  color: rgb(84, 84, 165);
+  color: var(--text-color);
   font-weight: bold;
 }
 
 .form-control {
   border-radius: 5px;
-  background-color: rgb(249 249 255);
+  background-color: transparent;
   padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ced4da;
@@ -515,6 +419,8 @@ form {
 } */
 .form-select {
   border-radius: 5px;
+  background-color: transparent;
+  color: #495057;
   padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ced4da;
@@ -546,7 +452,9 @@ form {
   color: rgb(84, 84, 165);
   font-weight: bold;
 }
-
+#contact .cta-button {
+  color: var(--text-color) !important;
+}
 .form-check {
   display: flex;
   align-items: center;
@@ -559,7 +467,7 @@ form {
 
 .form-check-label {
   font-size: 1rem;
-  color: #495057;
+  color: var(--text-color);
   cursor: pointer;
   position: relative;
   padding-left: 40px;
@@ -574,9 +482,8 @@ form {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  border: 2px solid rgb(84, 84, 165);
+  border: 2px solid var(--text-color);
   border-radius: 50%;
-  background-color: #fff;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -707,70 +614,6 @@ footer {
   text-decoration: none;
   color: rgb(84, 84, 165);
 }
-.hero-content {
-  overflow: hidden !important;
-}
-@keyframes rainbow {
-  0% {
-    color: rgb(255, 130, 255);
-  }
-  5% {
-    color: rgb(244, 130, 255);
-  }
-  10% {
-    color: rgb(232, 130, 255);
-  }
-  15% {
-    color: rgb(218, 128, 255);
-  }
-  20% {
-    color: rgb(202, 127, 255);
-  }
-  30% {
-    color: rgb(161, 120, 255);
-  }
-  40% {
-    color: rgb(120, 120, 255);
-  }
-  50% {
-    color: rgb(122, 187, 122);
-  }
-  60% {
-    color: rgb(124, 255, 124);
-  }
-  70% {
-    color: rgb(189, 255, 121);
-  }
-  80% {
-    color: rgb(255, 255, 121);
-  }
-  85% {
-    color: rgb(255, 244, 121);
-  }
-  90% {
-    color: rgb(255, 232, 121);
-  }
-  95% {
-    color: rgb(255, 221, 121);
-  }
-  98% {
-    color: rgb(255, 175, 138);
-  }
-  100% {
-    color: rgb(255, 130, 255);
-  }
-}
-
-.rainbow-text {
-  font-size: 3.5em;
-  font-weight: bold;
-  margin: 0;
-  line-height: 1.2;
-  display: inline-block;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow 10s linear infinite;
-}
 
 @media (max-width: 767px) {
   .container-fluid.hero-container {
@@ -779,7 +622,7 @@ footer {
 }
 
 #future-projects .fw-bold {
-  color: rgb(84, 84, 165);
+  color: var(--text-color);
   font-size: 5rem;
 }
 
@@ -796,7 +639,7 @@ footer {
 
 @media (max-width: 767px) {
   #future-projects .fw-bold {
-    color: rgb(84, 84, 165);
+    color: var(--text-color);
     font-size: 4rem;
   }
 
@@ -805,7 +648,7 @@ footer {
     margin-bottom: 10px;
   }
   #about h2 {
-    color: rgb(84, 84, 165);
+    color: var(--text-color);
     font-size: 4rem;
   }
 }
@@ -822,7 +665,7 @@ footer {
 }
 
 #about h2 {
-  color: rgb(84, 84, 165);
+  color: var(--text-color);
   font-size: 5rem;
 }
 #about .row {
@@ -1066,7 +909,7 @@ footer {
 /* Example: Style the heading */
 .project-cards h3,
 #future-projects h3 {
-  color: rgb(84, 84, 165); /* Bootstrap primary color */
+  color: var(--text-color); /* Bootstrap primary color */
 }
 
 /* Example: Style the list items */
@@ -1090,10 +933,10 @@ footer {
 }
 .article h1,
 .article h2 {
-  color: rgb(84, 84, 165); /* Primary color */
+  color: rgb(84, 84, 165);
 }
 .article a {
-  color: rgb(84, 84, 165); /* Primary color for links */
+  color: rgb(84, 84, 165);
 }
 .article p {
   line-height: 1.6;
@@ -1142,7 +985,7 @@ footer {
   max-width: 100%;
 }
 .blog-post h2 {
-  color: rgb(84, 84, 165);
+  color: var(--text-color);
 }
 .blog-post p {
   color: #666;
@@ -1190,7 +1033,7 @@ footer {
   left: 0;
   right: 0;
   height: 360px;
-  background-color: var(--color);
+  background-color: var(--text-color);
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
   transition: 500ms;
 }
@@ -1461,5 +1304,8 @@ footer {
   }
   .hero {
     height: 78vh !important;
+  }
+  #contact form {
+    margin: 0 19px;
   }
 }
