@@ -301,6 +301,7 @@ nav {
   font-weight: 500;
   color: #ffffff !important; /* Darker text color */
   transition: 0.3s;
+  font-family: "Comfortaa", sans-serif;
 }
 
 .navbar-toggler {
