@@ -1312,6 +1312,6 @@ footer {
     margin-bottom: 30px;
   }
   #contact .cta-button {
-    margin-top: 12px;
+    margin-top: 15px !important;
   }
 }
