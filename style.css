@@ -1308,4 +1308,10 @@ footer {
   #contact form {
     margin: 0 19px;
   }
+  .instagram-images-api .button-container {
+    margin-bottom: 30px;
+  }
+  #contact .cta-button {
+    margin-top: 12px;
+  }
 }
