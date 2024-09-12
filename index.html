@@ -94,18 +94,24 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
   position: relative;
   overflow: hidden;
   background-color: #0f0f0f;
-  background-image: url('path/to/your/background.jpg'); /* Replace with your image */
+  background-image: url('path/to/your/background.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
+  will-change: background-position; /* Hint for GPU acceleration */
 }
 
 .hero-content {
   z-index: 2;
   position: relative;
+  will-change: transform; /* Hint for GPU acceleration */
 }
+
+.particle {
+  will-change: transform; /* Hint for GPU acceleration */
+}
+
 
     .new-home-header {
       font-size: 3.5rem;
@@ -363,31 +369,53 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
     });
 
     function createParticle(container) {
-      const particle = document.createElement("div");
-      particle.style.position = "absolute";
-      particle.style.width = "5px";
-      particle.style.height = "5px";
-      particle.style.background = "rgba(84, 84, 165, 0.5)";
-      particle.style.borderRadius = "50%";
-      particle.style.pointerEvents = "none";
+  const particle = document.createElement("div");
+  particle.style.position = "absolute";
+  particle.style.width = "5px";
+  particle.style.height = "5px";
+  particle.style.background = "rgba(84, 84, 165, 0.5)";
+  particle.style.borderRadius = "50%";
+  particle.style.pointerEvents = "none";
 
-      const startX = Math.random() * container.offsetWidth;
-      const startY = Math.random() * container.offsetHeight;
-      particle.style.left = `${startX}px`;
-      particle.style.top = `${startY}px`;
+  const startX = Math.random() * container.offsetWidth;
+  const startY = Math.random() * container.offsetHeight;
+  particle.style.left = `${startX}px`;
+  particle.style.top = `${startY}px`;
 
-      particle.style.animation = `floatParticle ${
-        5 + Math.random() * 10
-      }s infinite`;
+  container.appendChild(particle);
 
-      container.appendChild(particle);
-    }
-    window.addEventListener('scroll', function() {
-  const scrollPosition = window.pageYOffset;
-  const heroContent = document.querySelector('.hero-content');
-  
-  heroContent.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.pageYOffset;
+    particle.style.transform = `translateY(${scrollPosition * 0.2}px)`;
+  });
+}
+
+    let scrollPosition = 0;
+let ticking = false;
+
+window.addEventListener('scroll', function() {
+  scrollPosition = window.pageYOffset;
+
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      applyParallaxEffect(scrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
 });
+
+function applyParallaxEffect(scrollPos) {
+  const heroContent = document.querySelector('.hero-content');
+  heroContent.style.transform = `translateY(${scrollPos * 0.3}px)`;  // Adjust the multiplier to control speed
+
+  const particles = document.querySelectorAll('.particle');
+  particles.forEach(particle => {
+    particle.style.transform = `translateY(${scrollPos * 0.1}px)`; // Apply slower scroll effect for particles
+  });
+}
+
 
   </script>
 
