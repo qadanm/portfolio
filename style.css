@@ -1315,3 +1315,7 @@ footer {
     margin-top: 15px !important;
   }
 }
+/* Apply the background color to the .navbar-toggler-icon on all pages except the index page */
+body:not(.index-page) .navbar-toggler-icon {
+  background-color: #80808085;
+}
