@@ -1319,3 +1319,6 @@ footer {
 body:not(.index-page) .navbar-toggler-icon {
   background-color: #80808085;
 }
+form .mb-3 p {
+  color: var(--text-color);
+}
