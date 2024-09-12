@@ -84,21 +84,28 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
 .navbar-brand, .new-home-header, .new-home-header-section-title{
   font-family: "Comfortaa", sans-serif;
 }
-    .home-hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      background-color: #0f0f0f;
-    }
+.home-hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #0f0f0f;
+  background-image: url('path/to/your/background.jpg'); /* Replace with your image */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
 
-   .hero-content {
-      z-index: 2;
-    }
+.hero-content {
+  z-index: 2;
+  position: relative;
+}
 
     .new-home-header {
       font-size: 3.5rem;
@@ -375,6 +382,13 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
 
       container.appendChild(particle);
     }
+    window.addEventListener('scroll', function() {
+  const scrollPosition = window.pageYOffset;
+  const heroContent = document.querySelector('.hero-content');
+  
+  heroContent.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+});
+
   </script>
 
 
