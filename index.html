@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>{ Qadan }</title>
+  <meta name="description" content="Explore the world of Muhammed Qadan, a Los Angeles-based UX Designer who masterfully shapes transformative digital experiences. Leveraging innovative design principles, Muhammed consistently delivers intuitive and impactful solutions that seamlessly connect users with technology.">
+
+  <title>Muhammed Qadan - UX Alchemist & Digital Experience Creator</title>
   
   <!-- Bootstrap CSS -->
   <link href="data:image/x-icon;base64, 
@@ -532,7 +534,236 @@ box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
 }
 
 
-  </style>
+
+.avatar-parent-container{
+  background-color: var(--background-color-lighter);
+}
+
+
+
+
+.avatar-container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.avatar-container .avatar-section {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.avatar-container .avatar {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 10px 20px rgba(108, 99, 255, 0.2));
+}
+
+.avatar-container .speech-bubble {
+  position: absolute;
+  top: -135px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--card-background);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out 1s forwards;
+  max-width: 250px;
+}
+
+.avatar-container .speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: var(--card-background) transparent transparent transparent;
+}
+
+.avatar-container .content {
+  text-align: center;
+}
+
+.avatar-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.avatar-container p {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.1);
+  }
+}
+
+@media (max-width: 600px) {
+  .avatar-container .container {
+    gap: 1.5rem;
+  }
+
+  .avatar-container .avatar-section {
+    width: 150px;
+    height: 150px;
+  }
+
+  .avatar-container .speech-bubble {
+    font-size: 0.8rem;
+    top: -50px;
+    max-width: 180px;
+  }
+
+  .avatar-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .avatar-container p {
+    font-size: 0.9rem;
+  }
+}
+</style>
+<div class="avatar-parent-container">
+<div class="container avatar-container">
+<div class="avatar-section">
+  <svg
+    class="avatar"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <!-- Body -->
+    <circle cx="50" cy="50" r="40" fill="var(--primary-color)" />
+
+    <!-- Eyes -->
+    <g id="eyes">
+      <circle cx="40" cy="45" r="5" fill="var(--text-color)" />
+      <circle cx="60" cy="45" r="5" fill="var(--text-color)" />
+      <!-- Eyelids -->
+      <!-- <path
+        id="left-eyelid"
+        d="M35 45 Q40 40 45 45"
+        stroke="var(--primary-color)"
+        stroke-width="3"
+        fill="none"
+      />
+      <path
+        id="right-eyelid"
+        d="M55 45 Q60 40 65 45"
+        stroke="var(--primary-color)"
+        stroke-width="3"
+        fill="none"
+      /> -->
+    </g>
+
+    <!-- Smile -->
+    <path
+      d="M 35 60 Q 50 70 65 60"
+      stroke="var(--text-color)"
+      stroke-width="3"
+      fill="none"
+    />
+
+    <!-- Waving arm -->
+    <g id="arm">
+      <path
+        d="M 70 50 Q 85 50 90 35"
+        stroke="var(--primary-color)"
+        stroke-width="8"
+        fill="none"
+        stroke-linecap="round"
+      />
+      <circle cx="90" cy="30" r="6" fill="var(--primary-color)" />
+    </g>
+  </svg>
+
+  <div class="speech-bubble">
+    Hi there! I'm here to make your digital experience simple and
+    enjoyable.
+  </div>
+</div>
+
+<div class="content">
+  <h2 class="new-home-header-section-title">I'm Muhammed Qadan,</h2>
+  <p>
+    and I'm passionate about creating intuitive, delightful digital experiences. Through empathy, research, and innovative design, I craft seamless connections between users and technology.
+  </p>
+</div>
+</div>
+</div>
+
+<script>
+const arm = document.getElementById("arm");
+arm.style.transformOrigin = "70px 50px";
+arm.style.animation = "wave 0.7s ease-in-out infinite";
+
+
+
+// Intersection Observer for fade-in effect
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.animation = "fadeIn 0.5s ease-out forwards";
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+observer.observe(document.querySelector(".content"));
+</script>
+
+
+
+
+
+
 
 <section id="services" class="services" style="text-align: unset;">
   <div class="container">
