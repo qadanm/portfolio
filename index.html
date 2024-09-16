@@ -241,7 +241,143 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
         flex-wrap: wrap;
       }
     }
+
+    #loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color); /* Adjust as needed */
+  z-index: 9999; /* Ensure it's higher than other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.loader-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+}
+
+.loader-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    mix-blend-mode: screen;
+}
+
+.loader-circle-1 {
+    width: 100%;
+    height: 100%;
+    border-top-color: var(--primary-color);
+    animation: spin 2s linear infinite;
+}
+
+.loader-circle-2 {
+    width: 80%;
+    height: 80%;
+    border-right-color: var(--secondary-color);
+    animation: spin 1.5s linear infinite reverse;
+}
+
+.loader-circle-3 {
+    width: 60%;
+    height: 60%;
+    border-bottom-color: var(--accent-color);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s ease infinite;
+    background-size: 200% auto;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.progress-bar {
+    width: 250px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease-out;
+    animation: gradientMove 2s linear infinite;
+    background-size: 200% auto;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
   </style>
+<body class="index-page">
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+        <div class="loader">
+            <div class="loader-circle loader-circle-1"></div>
+            <div class="loader-circle loader-circle-2"></div>
+            <div class="loader-circle loader-circle-3"></div>
+        </div>
+    </div>
+    <div class="loading-text">Initializing</div>
+    <div class="progress-bar">
+        <div class="progress"></div>
+    </div>
+</div>
+
+  <!-- Your existing content goes here -->
 
   <section class="home-hero">
     <div class="hero-content">
@@ -1814,6 +1950,70 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*.blog-add.blog-a subtle shadow effec
       }
     });
   });
+
+
+  window.addEventListener("load", function () {
+    // Hide the loading screen
+    const loadingScreen = document.getElementById("loading-screen");
+    loadingScreen.style.display = "none";
+  });
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const progress = document.querySelector('.progress');
+        const loadingScreen = document.getElementById('loading-screen');
+        const loadingText = document.querySelector('.loading-text');
+        let width = 0;
+
+        function simulateLoading() {
+            const interval = setInterval(() => {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        loadingScreen.style.opacity = '0';
+                        loadingScreen.style.transition = 'opacity 0.5s ease-out';
+                        setTimeout(() => {
+                            loadingScreen.style.display = 'none';
+                        }, 500);
+                    }, 500);
+                } else {
+                    width += Math.random() * 5;
+                    width = Math.min(width, 100);
+                    progress.style.width = width + '%';
+                    updateLoadingText(width);
+                }
+            }, 100);
+        }
+
+        function updateLoadingText(progress) {
+            const texts = ['Initializing', 'Configuring', 'Optimizing', 'Finalizing'];
+            const index = Math.floor(progress / 25);
+            loadingText.textContent = texts[index];
+        }
+
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = Math.random() * window.innerWidth + 'px';
+            particle.style.top = Math.random() * window.innerHeight + 'px';
+            loadingScreen.appendChild(particle);
+
+            const size = Math.random() * 3 + 2;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+
+            const duration = Math.random() * 2 + 1;
+            particle.style.animation = `float ${duration}s linear infinite`;
+
+            setTimeout(() => {
+                particle.remove();
+            }, duration * 1000);
+        }
+
+        setInterval(createParticle, 200);
+
+        simulateLoading();
+    });
+
 
 
 </script>
