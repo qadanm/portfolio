@@ -1,0 +1,894 @@
+<html>
+  <head>
+    <base href="https://qadan.co/" />
+    <meta charset="UTF-8" />
+    <title>Support Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --primary: #1d1d1f;
+        --secondary: #06c;
+        --accent: #2997ff;
+        --light: #f5f5f7;
+        --success: #29c75f;
+        --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      * {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "Helvetica Neue", sans-serif;
+      }
+
+      body {
+        background: var(--light);
+        color: var(--primary);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .support-header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .support-header h1 {
+        background: none;
+        -webkit-text-fill-color: initial;
+        color: var(--primary);
+        font-size: 48px;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        line-height: 1.1;
+      }
+
+      .support-header p {
+        font-size: 21px;
+        font-weight: 400;
+        letter-spacing: 0.009em;
+        color: #6e6e73;
+      }
+
+      .support-tiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+      }
+
+      .support-tiles::before {
+        content: "Choose one:";
+        position: absolute;
+        top: -2rem;
+        left: 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--primary);
+      }
+
+      .support-tile {
+        background: #fff;
+        border-radius: 18px;
+        padding: 2.5rem 2rem;
+        border: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        transition: var(--transition);
+      }
+
+      .support-tile:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        border-color: transparent;
+      }
+
+      .support-tile h2 {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.009em;
+      }
+
+      .support-tile p {
+        color: #6e6e73;
+        font-size: 17px;
+        line-height: 1.47059;
+      }
+
+      .support-tile svg {
+        stroke: var(--secondary);
+        stroke-width: 1.5;
+      }
+
+      .support-content {
+        display: none;
+        padding: 2rem;
+        background: white;
+        border-radius: 15px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .support-content.active {
+        display: block;
+        animation: fadeIn 0.3s ease;
+      }
+
+      .select-wrapper {
+        position: relative;
+        margin-bottom: 1rem;
+      }
+
+      select {
+        font-size: 17px;
+        padding: 12px 16px;
+        border-radius: 12px;
+        border: 1px solid #d2d2d7;
+        background: #fff;
+        color: var(--primary);
+        appearance: none;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      select:focus {
+        outline: none;
+        border-color: var(--secondary);
+      }
+
+      .select-wrapper::after {
+        content: "↓";
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+
+      .cloud-workspaces {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .workspace-section {
+        background: #fff;
+        border-radius: 18px;
+        padding: 2rem;
+      }
+
+      .workspace-section h3 {
+        color: var(--primary);
+        margin-bottom: 1rem;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.009em;
+      }
+
+      .cloud-services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .cloud-service-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid #d2d2d7;
+      }
+
+      .cloud-service-card h3 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.009em;
+      }
+
+      .cloud-service-card p {
+        color: #666;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .doc-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: var(--secondary);
+        font-size: 17px;
+        padding: 0.5rem 0;
+      }
+
+      .doc-link:hover {
+        background: rgba(52, 152, 219, 0.1);
+      }
+
+      .doc-icon {
+        fill: currentColor;
+      }
+
+      .cloud-service-card.private {
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+      }
+
+      .cloud-service-card.private .doc-link {
+        color: #6c757d;
+      }
+
+      .quick-support {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .quick-support-section {
+        background: #fff;
+        border-radius: 18px;
+        padding: 2rem;
+        border: none;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      }
+
+      .quick-support-section h2 {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.009em;
+        margin-bottom: 1.5rem;
+      }
+
+      .top-hardware-list {
+        list-style: none;
+      }
+
+      .top-hardware-list li {
+        border-bottom: 1px solid #d2d2d7;
+        padding: 1rem 0;
+      }
+
+      .top-hardware-list li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .top-hardware-list a {
+        color: var(--primary);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        transition: var(--transition);
+      }
+
+      .top-hardware-list a:hover {
+        color: var(--secondary);
+      }
+
+      .hardware-detail {
+        font-size: 14px;
+        color: #6e6e73;
+        margin-top: 4px;
+      }
+
+      .faq-list,
+      .quick-links {
+        list-style: none;
+      }
+
+      .faq-list li,
+      .quick-links li {
+        border-bottom: 1px solid #d2d2d7;
+        padding: 1rem 0;
+        font-size: 17px;
+        color: var(--primary);
+      }
+
+      .faq-list li:last-child,
+      .quick-links li:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .quick-links a {
+        color: var(--secondary);
+        font-size: 17px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: var(--transition);
+        padding: 0.5rem 0;
+      }
+
+      .quick-links a:hover {
+        color: var(--accent);
+        background: transparent;
+        transform: none;
+      }
+
+      @media (max-width: 768px) {
+        .support-tiles {
+          grid-template-columns: 1fr;
+        }
+
+        .container {
+          padding: 1rem;
+        }
+
+        .cloud-services {
+          grid-template-columns: 1fr;
+        }
+
+        .workspace-section {
+          padding: 1rem;
+        }
+
+        .quick-support {
+          grid-template-columns: 1fr;
+        }
+
+        .support-header h1 {
+          font-size: 2rem;
+        }
+
+        .support-tile {
+          padding: 1.5rem;
+        }
+
+        .quick-support-section {
+          padding: 1.2rem;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+
+      .go-button {
+        background: var(--secondary);
+        color: white;
+        border: none;
+        border-radius: 980px;
+        padding: 12px 24px;
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: -0.022em;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      .go-button:hover {
+        background: var(--accent);
+        transform: none;
+      }
+
+      /* Loading state */
+      .support-content.loading {
+        position: relative;
+        min-height: 200px;
+      }
+
+      .support-content.loading::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        border: 3px solid var(--light);
+        border-top-color: var(--secondary);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Accessibility Improvements */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+
+      :focus {
+        outline: 3px solid var(--secondary);
+        outline-offset: 2px;
+      }
+
+      [role="button"] {
+        cursor: pointer;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="support-header">
+        <h1>How can we help you today?</h1>
+        <p>Click on one of the options below to access support resources</p>
+      </header>
+
+      <div class="support-tiles">
+        <div
+          class="support-tile"
+          role="button"
+          tabindex="0"
+          data-support-type="hardware"
+        >
+          <h2>Hardware Support</h2>
+          <p>Get help with your devices and equipment</p>
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="3" y="6" width="18" height="12" rx="2" />
+            <path d="M3 10h18" />
+            <path d="M7 14h2" />
+            <path d="M12 14h2" />
+          </svg>
+        </div>
+
+        <div
+          class="support-tile"
+          role="button"
+          tabindex="0"
+          data-support-type="cloud"
+        >
+          <h2>Cloud Services</h2>
+          <p>Support for software and cloud solutions</p>
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+          </svg>
+        </div>
+      </div>
+
+      <div id="hardwareSupport" class="support-content">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <span>Support</span> &gt; <span>Hardware</span>
+        </nav>
+
+        <p class="support-description">
+          View manuals, download software, watch videos, & find answers for any
+          product.
+        </p>
+
+        <div class="select-wrapper">
+          <label for="category" class="sr-only">Select a Category</label>
+          <select id="category" name="category">
+            <option value="">------Select a Category------</option>
+            <option value="laptops">Laptops</option>
+            <option value="desktops">Desktops</option>
+            <option value="printers">Printers</option>
+            <option value="monitors">Monitors</option>
+            <option value="accessories">Accessories</option>
+          </select>
+        </div>
+
+        <div class="select-wrapper">
+          <label for="product" class="sr-only">Select a Product</label>
+          <select id="product" name="product">
+            <option value="">------Select a Product------</option>
+            <!-- Dynamic options will be populated via JavaScript -->
+          </select>
+        </div>
+
+        <button class="go-button" type="button">Go</button>
+      </div>
+
+      <div id="cloudSupport" class="support-content">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <span>Support</span> &gt; <span>Cloud Services</span>
+        </nav>
+
+        <div class="cloud-workspaces">
+          <div class="workspace-section">
+            <h3>MagTek Workspace</h3>
+            <div class="cloud-services">
+              <div class="cloud-service-card" role="button" tabindex="0">
+                <h3>QMFA</h3>
+                <p>Multi-factor authentication service</p>
+                <a
+                  href="https://documenter.getpostman.com/magtek/qmfa"
+                  class="doc-link"
+                  target="_blank"
+                >
+                  <svg
+                    class="doc-icon"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-4H7V9h10v2z"
+                    />
+                  </svg>
+                  View Documentation
+                </a>
+              </div>
+              <div class="cloud-service-card" role="button" tabindex="0">
+                <h3>RMS</h3>
+                <p>Remote Management System</p>
+                <a
+                  href="https://documenter.getpostman.com/magtek/rms"
+                  class="doc-link"
+                  target="_blank"
+                >
+                  <svg
+                    class="doc-icon"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-4H7V9h10v2z"
+                    />
+                  </svg>
+                  View Documentation
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="workspace-section">
+            <h3>Magensa Workspace</h3>
+            <div class="cloud-services">
+              <div class="cloud-service-card" role="button" tabindex="0">
+                <h3>Unigate</h3>
+                <p>Magensa payment services API</p>
+                <a
+                  href="https://documenter.getpostman.com/magensa/unigate"
+                  class="doc-link"
+                  target="_blank"
+                >
+                  <svg
+                    class="doc-icon"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-4H7V9h10v2z"
+                    />
+                  </svg>
+                  View Documentation
+                </a>
+              </div>
+              <div class="cloud-service-card" role="button" tabindex="0">
+                <h3>Slingshot</h3>
+                <p>High-performance data transfer service</p>
+                <a
+                  href="https://documenter.getpostman.com/magensa/slingshot"
+                  class="doc-link"
+                  target="_blank"
+                >
+                  <svg
+                    class="doc-icon"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-4H7V9h10v2z"
+                    />
+                  </svg>
+                  View Documentation
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="workspace-section">
+            <h3>Magensa Private</h3>
+            <div class="cloud-services">
+              <div
+                class="cloud-service-card private"
+                role="button"
+                tabindex="0"
+              >
+                <h3>Secret API</h3>
+                <p>Access-controlled API collection</p>
+                <a
+                  href="https://private.magensa.com/api-docs"
+                  class="doc-link"
+                  target="_blank"
+                >
+                  <svg
+                    class="doc-icon"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+                    />
+                  </svg>
+                  Restricted Access
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-support">
+        <div class="quick-support-section">
+          <h2>Top Visited Hardware</h2>
+          <ul class="top-hardware-list">
+            <li>
+              <a href="/support/hardware/dynapro-go">
+                DynaPro Go
+                <span class="hardware-detail">Mobile Card Reader</span>
+              </a>
+            </li>
+            <li>
+              <a href="/support/hardware/dynamag">
+                Dynamag
+                <span class="hardware-detail">Swipe Card Reader</span>
+              </a>
+            </li>
+            <li>
+              <a href="/support/hardware/dynapro-mini">
+                DynaPro Mini
+                <span class="hardware-detail">PIN Entry Device</span>
+              </a>
+            </li>
+            <li>
+              <a href="/support/hardware/redireader">
+                tDynamo Gen II
+                <span class="hardware-detail">Mobile Card Reader</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="quick-support-section">
+          <h2>Quick Links</h2>
+          <ul class="quick-links">
+            <li>
+              <a href="/downloads/drivers">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                </svg>
+                Download Latest Drivers
+              </a>
+            </li>
+            <li>
+              <a href="/support/manuals">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 12H7v-2h10v2zm0-4H7V9h10v2z"
+                  />
+                </svg>
+                Product Manuals
+              </a>
+            </li>
+            <li>
+              <a href="/support/warranty">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"
+                  />
+                </svg>
+                Warranty Information
+              </a>
+            </li>
+            <li>
+              <a href="/support/videos">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                Tutorial Videos
+              </a>
+            </li>
+            <li>
+              <a href="/support/contact">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+                Contact Support
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hardwareSupport = document.getElementById("hardwareSupport");
+        const cloudSupport = document.getElementById("cloudSupport");
+        const categorySelect = document.getElementById("category");
+        const productSelect = document.getElementById("product");
+        const goButton = document.querySelector(".go-button");
+
+        // Product database
+        const productDatabase = {
+          laptops: ["ThinkPad X1", "MacBook Pro", "Dell XPS", "HP Spectre"],
+          desktops: ["iMac", "ThinkCentre", "HP Pavilion", "Dell Optiplex"],
+          printers: [
+            "HP LaserJet",
+            "Epson EcoTank",
+            "Brother MFC",
+            "Canon PIXMA",
+          ],
+          monitors: [
+            "Dell UltraSharp",
+            "LG UltraFine",
+            "Samsung Odyssey",
+            "ASUS ProArt",
+          ],
+          accessories: [
+            "Keyboards",
+            "Mice",
+            "Docking Stations",
+            "Power Adapters",
+          ],
+        };
+
+        // Support tile click handlers
+        document.querySelectorAll(".support-tile").forEach((tile) => {
+          tile.addEventListener("click", () => {
+            const supportType = tile.dataset.supportType;
+
+            // Hide all support content
+            document.querySelectorAll(".support-content").forEach((content) => {
+              content.classList.remove("active");
+            });
+
+            // Show selected support content
+            if (supportType === "hardware") {
+              hardwareSupport.classList.add("active");
+            } else if (supportType === "cloud") {
+              cloudSupport.classList.add("active");
+            }
+          });
+
+          // Keyboard accessibility
+          tile.addEventListener("keypress", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              tile.click();
+            }
+          });
+        });
+
+        // Category select change handler
+        categorySelect.addEventListener("change", () => {
+          const selectedCategory = categorySelect.value;
+
+          // Clear existing options
+          productSelect.innerHTML =
+            '<option value="">------Select a Product------</option>';
+
+          // Populate products for selected category
+          if (selectedCategory && productDatabase[selectedCategory]) {
+            productDatabase[selectedCategory].forEach((product) => {
+              const option = document.createElement("option");
+              option.value = product.toLowerCase().replace(" ", "-");
+              option.textContent = product;
+              productSelect.appendChild(option);
+            });
+          }
+        });
+
+        // Go button click handler
+        goButton.addEventListener("click", () => {
+          if (categorySelect.value && productSelect.value) {
+            // Handle support navigation
+            window.location.href = `/support/${categorySelect.value}/${productSelect.value}`;
+          } else {
+            alert("Please select both a category and product");
+          }
+        });
+
+        // Breadcrumb navigation
+        document.querySelectorAll(".breadcrumb span").forEach((span) => {
+          span.addEventListener("click", () => {
+            if (span.textContent === "Support") {
+              document
+                .querySelectorAll(".support-content")
+                .forEach((content) => {
+                  content.classList.remove("active");
+                });
+            }
+          });
+        });
+
+        // Enhanced keyboard navigation for cloud service cards
+        document.querySelectorAll(".cloud-service-card").forEach((card) => {
+          card.addEventListener("keypress", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              card.classList.add("selected");
+            }
+          });
+        });
+
+        // Implement smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", (e) => {
+            e.preventDefault();
+            const target = document.querySelector(anchor.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
