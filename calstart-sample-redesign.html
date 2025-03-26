@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CALSTART - Accelerating Clean Transportation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script type="importmap">
+  {
+    "imports": {
+      "gsap": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js",
+      "ScrollTrigger": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    }
+  }
+  </script>
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; overflow-x: hidden; animation: fadeIn 1s ease-out forwards; }
+    a { text-decoration: none; color: var(--primary-color); }
+    ul { list-style: none; }
+    img { max-width: 100%; height: auto; }
+
+
+    :root {
+      --primary-color: #00aaff;
+      --secondary-color: #6c757d;
+      --accent-color: #28a745;
+      --light-color: #f8f9fa;
+      --dark-color: #343a40;
+      --text-color: #495057;
+      --font-family: 'Roboto', sans-serif;
+      --border-radius: 8px;
+      --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
+
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    .button {
+      display: inline-block; padding: 12px 24px; border-radius: var(--border-radius);
+      font-weight: 500; transition: var(--transition); border: none; cursor: pointer;
+      text-decoration: none; text-align: center;
+    }
+    .button.primary { background-color: var(--primary-color); color: white; }
+    .button.primary:hover { background-color: #0088cc; box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+    .button.secondary { background: white; color: var(--primary-color); border: 2px solid var(--primary-color); }
+    .button.secondary:hover { background: var(--primary-color); color: white; }
+
+
+    .site-header { background: white; padding: 15px 0; box-shadow: var(--box-shadow); position: sticky; top: 0; z-index: 100; }
+    .site-header .container { display: flex; justify-content: space-between; align-items: center; }
+    .logo img { height: 40px; transition: transform var(--transition); }
+    .logo img:hover { transform: scale(1.1); }
+    .main-nav ul { display: flex; gap: 20px; }
+    .main-nav ul li a { font-weight: 500; transition: color var(--transition); }
+    .main-nav ul li a:hover { color: var(--primary-color); }
+    .header-right { display: flex; align-items: center; }
+
+    /* Contact Bar */
+    .contact-bar { background: #f0f0f0; padding: 8px 0; text-align: center; font-size: 0.85rem; }
+    .contact-bar a { margin: 0 8px; color: #555; transition: color var(--transition); }
+    .contact-bar a:hover { color: var(--primary-color); }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, var(--light-color), #e0f7fa);
+      padding: 100px 0;
+    }
+    .hero .container { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+    .hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; color: var(--dark-color); }
+    .hero-content p { font-size: 1.2rem; margin-bottom: 20px; color: var(--text-color); }
+    .hero-image img { border-radius: var(--border-radius); box-shadow: var(--box-shadow); transition: transform var(--transition); }
+    .hero-image img:hover { transform: scale(1.05); }
+
+    /* Summit Section*/
+    .summit-section {
+      background: #e0f7fa;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .summit-section h2 {
+      font-size: 2.5rem;
+      color: var(--dark-color);
+      margin-bottom: 10px;
+    }
+    .summit-section p {
+      font-size: 1.1rem;
+      color: var(--text-color);
+      margin-bottom: 20px;
+    }
+    .summit-section .button { margin-top: 10px; }
+
+    /* About Section */
+    .about-section { background: white; padding: 60px 0; margin-bottom: 30px; border-radius: var(--border-radius); box-shadow: var(--box-shadow); }
+    .about-section .container { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+    .about-content h2 { font-size: 2.5rem; margin-bottom: 15px; color: var(--dark-color); }
+    .about-content p { font-size: 1rem; margin-bottom: 20px; color: var(--text-color); }
+    
+    /* Testimonials Section (Quotes) */
+    .testimonials-section { background: var(--light-color); padding: 60px 0; }
+    .testimonials-section h2 { text-align: center; font-size: 2.4rem; color: var(--dark-color); margin-bottom: 40px; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .testimonial-card {
+      background: white; padding: 20px 25px; border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow); position: relative; transition: transform var(--transition);
+    }
+    .testimonial-card:hover { transform: translateY(-5px); }
+    .testimonial-card blockquote {
+      font-style: italic; color: var(--text-color); margin-bottom: 15px;
+      border-left: 4px solid var(--primary-color); padding-left: 15px;
+    }
+    .testimonial-card cite { font-size: 0.9rem; color: var(--secondary-color); display: block; text-align: right; }
+    
+    /* Initiatives Section */
+    .initiatives-section { background: var(--light-color); padding: 60px 0; }
+    .initiatives-section h2 { text-align: center; font-size: 2.4rem; color: var(--dark-color); margin-bottom: 30px; }
+    .initiatives-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .initiative-item {
+      background: white; padding: 25px; border-radius: var(--border-radius); text-align: center;
+      box-shadow: var(--box-shadow); transition: transform var(--transition);
+    }
+    .initiative-item:hover { transform: translateY(-5px); }
+    .initiative-item i { font-size: 2rem; margin-bottom: 15px; color: var(--primary-color); }
+    .initiative-item h3 { font-size: 1.4rem; margin-bottom: 12px; color: var(--dark-color); }
+    .initiative-item p { font-size: 0.9rem; margin-bottom: 20px; color: var(--text-color); }
+    
+    /* Membership Section */
+    .membership-section { background: white; padding: 60px 0; margin-bottom: 30px; border-radius: var(--border-radius); box-shadow: var(--box-shadow); }
+    .membership-section .container { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+    .membership-content h2 { font-size: 2.2rem; margin-bottom: 15px; color: var(--dark-color); }
+    .membership-content p { font-size: 1rem; margin-bottom: 20px; color: var(--text-color); }
+    .membership-benefits { background: var(--light-color); padding: 30px; border-radius: var(--border-radius); }
+    .membership-benefits h3 { font-size: 1.4rem; margin-bottom: 20px; color: var(--dark-color); }
+    .membership-benefits li { display: flex; align-items: center; margin-bottom: 15px; font-size: 0.95rem; color: var(--text-color); }
+    .membership-benefits li i { margin-right: 10px; font-size: 1.1rem; color: var(--primary-color); }
+
+    /* Our Impact Section */
+    .impact-section {
+      background: white;
+      padding: 60px 0;
+      margin-bottom: 30px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+    }
+    .impact-section h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 30px;
+      color: var(--dark-color);
+    }
+    .impact-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .impact-details {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    .impact-item {
+      flex: 1 1 300px;
+      margin: 10px;
+    }
+    .impact-item h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+    .impact-item p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+    .impact-item a {
+      color: var(--primary-color);
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    /* News & Events Section */
+    .news-events-section { background: var(--light-color); padding: 60px 0; }
+    .news-events-section h2 { text-align: center; font-size: 2.4rem; color: var(--dark-color); margin-bottom: 30px; }
+    .news-events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; }
+    .news-item {
+      background: white; border-radius: var(--border-radius); box-shadow: var(--box-shadow); overflow: hidden;
+      transition: transform var(--transition);
+    }
+    .news-item:hover { transform: translateY(-5px); }
+    .news-item img { width: 100%; height: 200px; object-fit: cover; }
+    .news-item h3 { font-size: 1.2rem; margin: 12px; color: var(--dark-color); }
+    .news-date { font-size: 0.85rem; color: var(--secondary-color); margin: 0 12px 12px; }
+    .news-item a {
+      display: inline-block; margin: 0 12px 12px; padding: 10px 16px;
+      background: var(--primary-color); color: white; border-radius: 0 0 var(--border-radius) var(--border-radius);
+      font-weight: 500; transition: background var(--transition);
+    }
+    .news-item a:hover { background: #0088cc; }
+    .view-all-news { text-align: center; margin-top: 20px; }
+
+    /* Network Section */
+    .network-section {
+      background: var(--light-color);
+      padding: 60px 0;
+      text-align: center;
+    }
+    .network-section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+      color: var(--dark-color);
+    }
+    .network-section p {
+      font-size: 1rem;
+      margin-bottom: 25px;
+      color: var(--text-color);
+    }
+    .network-buttons a { margin: 0 10px; }
+
+    /* Footer */
+    .site-footer { background: var(--dark-color); color: white; padding: 40px 0; }
+    .site-footer .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .footer-logo img { height: 35px; margin-bottom: 15px; }
+    .footer-contact p, .footer-bottom p { font-size: 0.9rem; }
+    .footer-links { display: flex; gap: 15px; justify-content: center; margin-top: 10px; }
+    .footer-links a { color: white; transition: color var(--transition); }
+    .footer-links a:hover { color: var(--primary-color); }
+    .footer-social {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin: 15px 0;
+    }
+    .footer-social a { color: white; font-size: 1.2rem; transition: color var(--transition); }
+    .footer-social a:hover { color: var(--primary-color); }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .site-header .container { flex-direction: column; align-items: flex-start; }
+      .main-nav ul { flex-direction: column; gap: 10px; }
+      .hero .container, .about-section .container, .membership-section .container { grid-template-columns: 1fr; text-align: center; }
+      .header-right { margin-top: 10px; }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <!-- Contact Bar -->
+  <div class="contact-bar">
+    <span>(626) 744-5600</span>
+    <a href="mailto:info@calstart.org">info@calstart.org</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-left">
+        <a href="/" class="logo">
+          <img src="https://calstart.org/wp-content/uploads/2018/06/CalstartLogoNEW.gif" alt="CALSTART Logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Initiatives</a></li>
+          <li><a href="#">Membership</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="#" class="button primary">Join Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Changing Transportation for Good</h1>
+        <p>We unite industry leaders to accelerate clean transportation innovation and job growth.</p>
+        <a href="#" class="button secondary">Learn More</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.pexels.com/photos/9800029/pexels-photo-9800029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Clean Transportation" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Summit Section -->
+  <section class="summit-section">
+    <div class="container">
+      <h2>CALSTART's California Summit in Sacramento</h2>
+      <p>Date: March 24, 2025</p>
+      <p>Join us as we assemble influential industry leaders to accelerate clean transportation innovation, create jobs, and reduce pollution.</p>
+      <a href="#" class="button primary">Join Us</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<!-- About Section -->
+<section class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <h2>About CALSTART</h2>
+        <p>We’re a national nonprofit that accelerates the clean transportation technology industry through collaboration and innovation.</p>
+        <a href="#" class="button primary">Our Mission</a>
+      </div>
+      <div class="about-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 40px;">
+        <div class="stat-item" style="text-align: center;">
+          <h3 style="font-size: 2rem; color: var(--primary-color);">210+</h3>
+          <p style="font-size: 1rem; color: var(--text-color);">Members</p>
+        </div>
+        <div class="stat-item" style="text-align: center;">
+          <h3 style="font-size: 2rem; color: var(--primary-color);">50+</h3>
+          <p style="font-size: 1rem; color: var(--text-color);">Partners</p>
+        </div>
+        <div class="stat-item" style="text-align: center;">
+          <h3 style="font-size: 2rem; color: var(--primary-color);">100+</h3>
+          <p style="font-size: 1rem; color: var(--text-color);">Projects</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2>What Industry Leaders Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <blockquote>
+            “No organization is working to accelerate transportation change across the full range of clean fuels and technologies as effectively as CALSTART.”
+          </blockquote>
+          <cite>Karen Hamberg, Former Board Chair</cite>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            “CALSTART has been and continues to be a great resource for learning about and connecting with the clean transportation sector. Their market knowledge is second to none.”
+          </blockquote>
+          <cite>Adam Ruder, Former Program Manager</cite>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            “CALSTART has grown from an early catalyst for innovation to its current status as a trusted partner for CARB, driving smarter investments.”
+          </blockquote>
+          <cite>Mary Nichols, Former CARB Chair</cite>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            “CALSTART has a remarkable team of experts in technology, policy, and markets. Their detailed analysis helps us make smarter investment decisions.”
+          </blockquote>
+          <cite>Mike Britt, Former Board Chair &amp; Former Director of Maintenance, UPS</cite>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            “I have been privileged to have helped CALSTART support a healthy environment through cutting-edge clean air technology and planning for future capabilities.”
+          </blockquote>
+          <cite>Thomas Dollmeyer, Former Director, Electrification Technology, Cummins, Inc.</cite>
+        </div>
+        <div class="testimonial-card">
+            <blockquote>
+              “CALSTART has been and continues to be a great resource for learning about and connecting with the clean transportation sector. Their market knowledge is second to none.”
+            </blockquote>
+            <cite>Adam Ruder, Former Program Manager</cite>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Initiatives Section -->
+  <section class="initiatives-section">
+    <div class="container">
+      <h2>Key Initiatives</h2>
+      <div class="initiatives-grid">
+        <div class="initiative-item">
+          <i class="fas fa-charging-station"></i>
+          <h3>Zero-Emission Vehicles</h3>
+          <p>Advancing electric, hydrogen, and other clean vehicle technologies.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="initiative-item">
+          <i class="fas fa-truck"></i>
+          <h3>Advanced Truck Tech</h3>
+          <p>Innovating for medium- and heavy-duty truck solutions.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="initiative-item">
+          <i class="fas fa-bus"></i>
+          <h3>Clean School Buses</h3>
+          <p>Transitioning fleets to zero-emission school buses.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Section -->
+  <section class="membership-section">
+    <div class="container">
+      <div class="membership-content">
+        <h2>Become a Member</h2>
+        <p>Join our network of industry leaders and access exclusive resources and policy updates.</p>
+        <a href="#" class="button primary">Explore Membership</a>
+      </div>
+      <div class="membership-benefits">
+        <h3>Benefits</h3>
+        <ul>
+          <li><i class="fas fa-newspaper"></i> News &amp; Insights</li>
+          <li><i class="fas fa-handshake"></i> Networking Events</li>
+          <li><i class="fas fa-bullhorn"></i> Policy Advocacy</li>
+          <li><i class="fas fa-lightbulb"></i> Funding Opportunities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Impact Section -->
+  <section class="impact-section">
+    <div class="container">
+      <h2>Our Impact</h2>
+      <div class="impact-content">
+        <p>CALSTART advances the clean transportation market in key industry sectors by developing breakthrough technologies, validating innovative solutions, and accelerating market adoption—all while driving policy reforms that support industry growth.</p>
+        <div class="impact-details">
+          <div class="impact-item">
+            <h3>National Presence</h3>
+            <p>With offices in four states, we break down barriers to clean transportation and create jobs across the nation.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="impact-item">
+            <h3>Global Influence</h3>
+            <p>Our Global Commercial Vehicle Drive to Zero program accelerates the growth of zero- and near-zero-emission commercial vehicles worldwide.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Events Section -->
+  <section class="news-events-section">
+    <div class="container">
+      <h2>News &amp; Events</h2>
+      <div class="news-events-grid">
+        <div class="news-item">
+          <img src="https://images.pexels.com/photos/110844/pexels-photo-110844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="News Article" />
+          <h3>Amid Shift in Federal Direction, Summit Gathers Industry Leaders and Policymakers in Sacramento to Fortify State’s Clean Transportation Leadership</h3>
+          <p class="news-date">March 13, 2025</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="news-item">
+          <img src="https://images.pexels.com/photos/63294/autos-technology-vw-multi-storey-car-park-63294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="News Article" />
+          <h3>EPA’s Transportation Regulation Rollbacks Would Cause Lasting Economic Harm</h3>
+          <p class="news-date">March 13, 2025</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="news-item">
+          <img src="https://images.pexels.com/photos/7252109/pexels-photo-7252109.jpeg" alt="News Article" />
+          <h3>U.S. Zero-Emission Bus Adoption Sees Continued Growth Despite Industry Headwinds</h3>
+          <p class="news-date">March 11, 2025</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="view-all-news">
+        <a href="#" class="button secondary">View All News</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Network Section -->
+  <section class="network-section">
+    <div class="container">
+      <h2>Join Our Influential Industry Network</h2>
+      <p>Access news, industry connections, timely policy updates, funding opportunities, and exclusive member-only collaborations.</p>
+      <div class="network-buttons">
+        <a href="#" class="button primary">Join</a>
+        <a href="#" class="button secondary">Login</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="https://calstart.org/wp-content/uploads/2023/02/calstart-logo.svg" alt="CALSTART Logo" />
+      </div>
+      <div class="footer-contact">
+        <p>123 Main Street, Suite 456</p>
+        <p>Anytown, CA 91234</p>
+        <p>Phone: (626) 744-5600</p>
+        <p>Email: <a href="mailto:info@calstart.org">info@calstart.org</a></p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CALSTART. All Rights Reserved</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+        <p>Strategic Broker for the Clean Transportation Technology Industry</p>
+      </div>
+    </div>
+  </footer>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>
