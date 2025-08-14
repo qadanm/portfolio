@@ -177,6 +177,9 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
       <div class="gradient-orb orb-2"></div>
       <div class="gradient-orb orb-3"></div>
       <div class="mesh-gradient"></div>
+      
+      <!-- Shooting Star Container -->
+      <div class="shooting-star-container"></div>
     </div>
 
     <!-- Main Hero Content -->
@@ -219,19 +222,7 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
         </a>
       </div>
 
-      <div class="tech-stack">
-        <span class="tech-label">Powered by:</span>
-        <div class="tech-icons">
-          <div class="tech-icon" title="ChatGPT-5">🤖</div>
-          <div class="tech-icon" title="Claude 3.5">🧠</div>
-          <div class="tech-icon" title="Gemini 2.0">🔮</div>
-          <div class="tech-icon" title="React 19">⚛️</div>
-          <div class="tech-icon" title="ASP.NET Core">🟦</div>
-          <div class="tech-icon" title="WordPress">📝</div>
-          <div class="tech-icon" title="Figma">🎨</div>
-          <div class="tech-icon" title="Tailwind CSS">🔧</div>
-        </div>
-      </div>
+
     </div>
 
     <!-- Floating Elements -->
@@ -262,6 +253,9 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
       for (let i = 0; i < 20; i++) {
         createParticle(hero);
       }
+
+      // Initialize shooting star effect
+      initShootingStars();
     });
 
     function createParticle(container) {
@@ -285,6 +279,85 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
     particle.style.transform = `translateY(${scrollPosition * 0.2}px)`;
   });
 }
+
+    // Shooting Star Effect
+    function initShootingStars() {
+      const container = document.querySelector('.shooting-star-container');
+      
+      function createShootingStar() {
+        const shootingStar = document.createElement('div');
+        shootingStar.className = 'shooting-star';
+        
+        // Random starting position (top-right area)
+        const startX = Math.random() * window.innerWidth * 0.3 + window.innerWidth * 0.7;
+        const startY = Math.random() * window.innerHeight * 0.3;
+        
+        // Random ending position (bottom-left area)
+        const endX = Math.random() * window.innerWidth * 0.3;
+        const endY = Math.random() * window.innerHeight * 0.7 + window.innerHeight * 0.3;
+        
+        // Calculate angle and distance
+        const deltaX = endX - startX;
+        const deltaY = endY - startY;
+        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+        const angle = Math.atan2(deltaY, deltaX);
+        
+        // Set initial position
+        shootingStar.style.left = startX + 'px';
+        shootingStar.style.top = startY + 'px';
+        
+        // Create the star body
+        const starBody = document.createElement('div');
+        starBody.className = 'star-body';
+        shootingStar.appendChild(starBody);
+        
+        // Create the star tail
+        const starTail = document.createElement('div');
+        starTail.className = 'star-tail';
+        shootingStar.appendChild(starTail);
+        
+        container.appendChild(shootingStar);
+        
+        // Animate the shooting star
+        const duration = 2000 + Math.random() * 1000; // 2-3 seconds
+        
+        shootingStar.animate([
+          {
+            transform: `translate(0, 0) rotate(${angle}rad)`,
+            opacity: 0
+          },
+          {
+            transform: `translate(0, 0) rotate(${angle}rad)`,
+            opacity: 1,
+            offset: 0.1
+          },
+          {
+            transform: `translate(${deltaX}px, ${deltaY}px) rotate(${angle}rad)`,
+            opacity: 0
+          }
+        ], {
+          duration: duration,
+          easing: 'ease-out'
+        }).onfinish = () => {
+          container.removeChild(shootingStar);
+        };
+      }
+      
+      // Create shooting stars periodically
+      function scheduleShootingStar() {
+        const delay = 3000 + Math.random() * 7000; // 3-10 seconds
+        setTimeout(() => {
+          createShootingStar();
+          scheduleShootingStar();
+        }, delay);
+      }
+      
+      // Start the shooting star cycle
+      scheduleShootingStar();
+      
+      // Create initial shooting star after a short delay
+      setTimeout(createShootingStar, 2000);
+    }
 
     let scrollPosition = 0;
 let ticking = false;
@@ -427,18 +500,13 @@ function applyParallaxEffect(scrollPos) {
         <div class="about-stats">
           <div class="stat-item">
             <div class="stat-icon">📈</div>
-            <span class="stat-number">5+</span>
+            <span class="stat-number">6+</span>
             <span class="stat-label">Years UX Experience</span>
           </div>
           <div class="stat-item">
             <div class="stat-icon">🎯</div>
-            <span class="stat-number">50+</span>
+            <span class="stat-number">340+</span>
             <span class="stat-label">Projects Delivered</span>
-          </div>
-          <div class="stat-item">
-            <div class="stat-icon">⭐</div>
-            <span class="stat-number">98%</span>
-            <span class="stat-label">User Satisfaction</span>
           </div>
           <div class="stat-item">
             <div class="stat-icon">⚡</div>
@@ -2169,7 +2237,134 @@ function applyParallaxEffect(scrollPos) {
     }, 3500);
   });
 
+  // Navbar scroll effect for futuristic styling
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+    
+    // Update active navigation based on current section
+    updateActiveNavigation();
+  });
 
+  // Function to update active navigation based on scroll position
+  function updateActiveNavigation() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    let currentSection = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.clientHeight;
+      
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+    
+    navLinks.forEach(link => {
+      link.parentElement.classList.remove('active');
+      
+      const href = link.getAttribute('href');
+      
+      // Handle special case for articles link
+      if (href === './blog' && currentSection === 'blog') {
+        link.parentElement.classList.add('active');
+      }
+      // Handle regular section links
+      else if (href === `#${currentSection}`) {
+        link.parentElement.classList.add('active');
+      }
+    });
+  }
+
+  // Initialize active navigation on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    updateActiveNavigation();
+    
+    // Create floating particles effect for navbar
+    createNavbarParticles();
+  });
+
+              // Function to create floating particles for navbar
+            function createNavbarParticles() {
+              const navbar = document.querySelector('.navbar');
+              if (!navbar) return;
+              
+              function createParticle() {
+                const particle = document.createElement('div');
+                const size = Math.random() * 3 + 2; // Random size between 2-5px
+                const opacity = Math.random() * 0.4 + 0.6; // Random opacity between 0.6-1.0
+                
+                particle.style.cssText = `
+                  position: absolute;
+                  width: ${size}px;
+                  height: ${size}px;
+                  background: rgba(64, 224, 255, ${opacity});
+                  border-radius: 50%;
+                  pointer-events: none;
+                  animation: float-up 4s linear forwards;
+                  z-index: 1;
+                  box-shadow: 0 0 ${size * 2}px rgba(64, 224, 255, ${opacity * 0.8});
+                `;
+                
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = '100%';
+                
+                navbar.appendChild(particle);
+                
+                setTimeout(() => {
+                  if (particle.parentNode) {
+                    particle.parentNode.removeChild(particle);
+                  }
+                }, 4000);
+              }
+              
+              // Create particles more frequently
+              setInterval(createParticle, 1500);
+              
+              // Create additional colored particles
+              function createColoredParticle() {
+                const particle = document.createElement('div');
+                const size = Math.random() * 2 + 1.5; // Random size between 1.5-3.5px
+                const colors = [
+                  'rgba(138, 43, 226, 0.8)', // Purple
+                  'rgba(64, 224, 255, 0.8)', // Cyan
+                  'rgba(255, 255, 255, 0.6)' // White
+                ];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                particle.style.cssText = `
+                  position: absolute;
+                  width: ${size}px;
+                  height: ${size}px;
+                  background: ${randomColor};
+                  border-radius: 50%;
+                  pointer-events: none;
+                  animation: float-up 5s linear forwards;
+                  z-index: 1;
+                  box-shadow: 0 0 ${size * 3}px ${randomColor};
+                `;
+                
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = '100%';
+                
+                navbar.appendChild(particle);
+                
+                setTimeout(() => {
+                  if (particle.parentNode) {
+                    particle.parentNode.removeChild(particle);
+                  }
+                }, 5000);
+              }
+              
+              // Create colored particles less frequently
+              setInterval(createColoredParticle, 3000);
+            }
 
 </script>
 </body>
