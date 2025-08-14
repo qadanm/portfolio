@@ -46,7 +46,7 @@
   color: #0056b3;
 }
 /* 
---ultra-violet: #5454a5ff;
+--ultra-violet about: #5454a5ff;
 --black-olive: #37392eff;
 --pumpkin: #fa8334ff;
 --white: #ffffffff;
@@ -59,13 +59,48 @@ html {
 body {
   background-color: #f8f9fa;
 }
+
+/* Essential navigation styles */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.navbar-brand {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #ffffff !important;
+  transition: 0.3s;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(151, 151, 236) !important;
+  scale: 1.1;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #ffffff;
+}
+
+nav {
+  background-color: #0f0f0f;
+  box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
 .radio-container {
   margin-top: 20px;
 }
@@ -285,36 +320,6 @@ body {
 
 .logo-ar {
   font-family: "Noto Nastaliq Urdu", serif !important;
-}
-nav {
-  background-color: #0f0f0f;
-  box-shadow: 0 2px 4px rgb(0, 0, 0); /* Subtle box shadow */
-}
-.navbar-brand {
-  font-family: "Comfortaa", sans-serif;
-
-  font-size: 1.8rem; /* Larger font size for the brand */
-  color: #ffffff !important; /* Dark text color */
-}
-
-.navbar-nav .nav-link {
-  font-weight: 500;
-  color: #ffffff !important; /* Darker text color */
-  transition: 0.3s;
-  font-family: "Comfortaa", sans-serif;
-}
-
-.navbar-toggler {
-  border: none;
-  outline: none;
-}
-.navbar-nav .nav-link:hover {
-  color: rgb(151, 151, 236) !important;
-  scale: 1.1;
-}
-
-.navbar-nav .nav-item.active .nav-link {
-  color: #ffffff; /* Active link color */
 }
 
 /* section {
@@ -648,47 +653,6 @@ footer {
     font-size: 4rem;
     margin-bottom: 10px;
   }
-  #about h2 {
-    color: var(--text-color);
-    font-size: 4rem;
-  }
-}
-
-.about-content1 {
-  font-size: 22px;
-  line-height: 1.6;
-  color: #666;
-  font-weight: 500;
-}
-#about {
-  background-color: rgb(245 245 255);
-  padding: 60px 0;
-}
-
-#about h2 {
-  color: var(--text-color);
-  font-size: 5rem;
-}
-#about .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-#about p {
-  font-size: 22px;
-  text-align: left;
-  line-height: 1.6;
-  color: #666;
-}
-
-#about img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 30px auto;
-  border: 8px solid #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 #pricing {
@@ -998,34 +962,6 @@ footer {
   padding: 0 20px;
 }
 
-.hero {
-  position: relative;
-  background: #333333;
-  color: white;
-  height: 85vh;
-  padding-top: 50px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.hero h2 {
-  position: relative;
-  z-index: 1;
-  font-size: 4rem;
-  margin: 0 0 10px;
-  line-height: 1;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.hero p {
-  position: relative;
-  z-index: 1;
-  font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.4;
-}
-
 /* ========================= */
 
 .waves {
@@ -1288,24 +1224,7 @@ footer {
 
 /* Existing CSS styles */
 
-/* Additional CSS for responsiveness */
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 4rem !important;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 576px) {
-  .hero h2 {
-    font-size: 3.5rem !important;
-  }
-  .hero {
-    height: 78vh !important;
-  }
   #contact form {
     margin: 0 19px;
   }
@@ -1316,10 +1235,12 @@ footer {
     margin-top: 15px !important;
   }
 }
+
+form .mb-3 p {
+  color: var(--text-color);
+}
+
 /* Apply the background color to the .navbar-toggler-icon on all pages except the index page */
 body:not(.index-page) .navbar-toggler-icon {
   background-color: #80808085;
-}
-form .mb-3 p {
-  color: var(--text-color);
 }
