@@ -843,7 +843,205 @@ function applyParallaxEffect(scrollPos) {
   </div>
 </section>
 
+<!-- Featured Project: AutoSpecs Daily -->
+<section class="featured-project-section" style="position: relative; padding: 120px 0; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%); overflow: hidden;">
+  <!-- Background Effects -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;">
+    <div style="position: absolute; top: -150px; left: -150px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(108, 99, 255, 0.2) 0%, transparent 70%); filter: blur(40px); border-radius: 50%;"></div>
+    <div style="position: absolute; bottom: -100px; right: -100px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(255, 107, 107, 0.2) 0%, transparent 70%); filter: blur(40px); border-radius: 50%;"></div>
+  </div>
 
+  <div class="container" style="position: relative; z-index: 2;">
+    <!-- Section Header -->
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 50px; padding: 10px 20px; margin-bottom: 1.5rem;">
+        <span style="font-size: 1.2rem;">⭐</span>
+        <span style="font-size: 0.9rem; font-weight: 600; color: #6c63ff;">Featured Project</span>
+      </div>
+      <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; margin-bottom: 1rem; line-height: 1.1;">
+        <span style="background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">AutoSpecs Daily</span>
+        <br>
+        <span style="background: linear-gradient(135deg, #6c63ff 0%, #ff6b6b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">AI-Powered Automotive Intelligence</span>
+      </h2>
+      <p style="font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255, 255, 255, 0.8); line-height: 1.7; max-width: 700px; margin: 0 auto;">
+        A full-stack automotive intelligence platform built from scratch with modern web technologies and AI automation
+      </p>
+    </div>
+
+    <!-- Row 1: Text Left, Image Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          Built From the Ground Up
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          I built AutoSpecs Daily from scratch as a full-stack automotive intelligence platform. It's running on <strong style="color: #6c63ff;">Next.js 16</strong>, <strong style="color: #6c63ff;">React 19</strong>, <strong style="color: #6c63ff;">TypeScript</strong>, and <strong style="color: #6c63ff;">Tailwind</strong>—the modern web stack I actually enjoy working with. Every page and component was designed from the ground up to feel clean and intentional, not just functional.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3);">Next.js 16</span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3);">React 19</span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3);">TypeScript</span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3);">Supabase</span>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="autospecsdailyhero.png" alt="AutoSpecs Daily Platform" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Image Left, Text Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="autospecsdailytool.png" alt="AutoSpecs Daily Interactive Tools" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          Growing Collection of Interactive Tools
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          Launched with <strong style="color: #6c63ff;">50+ interactive tools</strong> and the count climbs weekly as I add more. Each new tool enables more car guides, creating a compounding content strategy. They cover everything from car financing calculators to fuel economy estimators, maintenance schedules, ownership cost trackers, and insurance comparisons.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+          <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; text-align: center;">
+            <div style="font-size: 2rem; font-weight: 900; color: #6c63ff; margin-bottom: 0.5rem; line-height: 1;">50+</div>
+            <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Tools</div>
+            <div style="font-size: 0.7rem; color: rgba(255, 255, 255, 0.6); margin-top: 0.25rem;">Growing Weekly</div>
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; text-align: center;">
+            <div style="font-size: 2rem; font-weight: 900; color: #ff6b6b; margin-bottom: 0.5rem; line-height: 1;">24/7</div>
+            <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Automation</div>
+            <div style="font-size: 0.7rem; color: rgba(255, 255, 255, 0.6); margin-top: 0.25rem;">Self-Hosted</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3: Text Left, Image Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          AI That Actually Works
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          I set up an <strong style="color: #ff6b6b;">n8n automation system</strong> connected to <strong style="color: #ff6b6b;">Claude Haiku</strong> that runs the content side on autopilot. The system publishes <strong style="color: #ff6b6b;">20-100 articles per day</strong> for reach, SEO growth, and monetization. All monetization—including <strong style="color: #ff6b6b;">Ezoic ads</strong>, <strong style="color: #ff6b6b;">CarVertical</strong>, and <strong style="color: #ff6b6b;">Amazon Affiliates</strong>—is managed through a central, context-aware config.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+          <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📝</div>
+            <div style="font-weight: 600; color: #ffffff; margin-bottom: 0.25rem; font-size: 0.95rem;">Content Generation</div>
+            <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.7);">AI-powered articles</div>
+          </div>
+          <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🚀</div>
+            <div style="font-weight: 600; color: #ffffff; margin-bottom: 0.25rem; font-size: 0.95rem;">Auto Publishing</div>
+            <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.7);">20-100 daily</div>
+          </div>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="n8n.png" alt="n8n Automation Workflow" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 4: Image Left, Text Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="autospecsdailycarguides.png" alt="AutoSpecs Daily Car Guides" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          Comprehensive Car Guides
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          Each interactive tool enables the creation of detailed, SEO-optimized car guides. The AI system automatically generates comprehensive content covering specifications, comparisons, buying guides, and maintenance tips—all optimized for search engines and monetization.
+        </p>
+        <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; text-align: center;">
+          <div style="font-size: 2.5rem; font-weight: 900; color: #ff6b6b; margin-bottom: 0.5rem; line-height: 1;">20-100</div>
+          <div style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); font-weight: 600; margin-bottom: 0.25rem;">Articles Published Daily</div>
+          <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7);">AI-Generated & Optimized</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 5: Text Left, Image Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          Mission Control Dashboard
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          A custom <strong style="color: #6c63ff;">Supabase-powered admin portal</strong> gives complete control over tools, articles, categories, SEO health, analytics, and automation logs. It includes role management, API utilities, performance dashboards, and controls to scale content workflows as the site grows.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>📊</span> Analytics
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>🔍</span> SEO Health
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>⚡</span> Cache Control
+          </span>
+        </div>
+        <!-- CTA Buttons -->
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="autospecs-daily-ux-case-study.html" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #6c63ff 0%, #ff6b6b 100%); color: white; border: none; text-decoration: none; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 20px 40px rgba(108, 99, 255, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <span>View UX Case Study</span>
+            <span>→</span>
+          </a>
+          <button type="button" class="cta-button primary" data-bs-toggle="modal" data-bs-target="#autospecsModal" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); cursor: pointer; transition: all 0.3s ease; backdrop-filter: blur(20px);" onmouseover="this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.15)'; this.style.borderColor='rgba(255, 255, 255, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255, 255, 255, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.3)'">
+            <span>View Full Details</span>
+            <span>→</span>
+          </button>
+          <a href="https://autospecsdaily.com/" target="_blank" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); text-decoration: none; backdrop-filter: blur(20px); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.15)'; this.style.borderColor='rgba(255, 255, 255, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255, 255, 255, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.3)'">
+            <span>Visit Site</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="autospecsdashboard.png" alt="AutoSpecs Daily Admin Dashboard" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 992px) {
+    .featured-project-section .container > div[style*="grid-template-columns: 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+      gap: 3rem !important;
+    }
+    .featured-project-section .container > div[style*="grid-template-columns: 1fr 1fr"]:nth-child(even) > div:first-child {
+      order: 2;
+    }
+    .featured-project-section .container > div[style*="grid-template-columns: 1fr 1fr"]:nth-child(even) > div:last-child {
+      order: 1;
+    }
+  }
+  @media (max-width: 768px) {
+    .featured-project-section {
+      padding: 80px 0 !important;
+    }
+    .featured-project-section .container > div[style*="grid-template-columns: 1fr 1fr"] {
+      margin-bottom: 4rem !important;
+    }
+    .featured-project-section .container > div[style*="grid-template-columns: repeat(2, 1fr)"] {
+      grid-template-columns: 1fr !important;
+      gap: 1rem !important;
+    }
+  }
+</style>
 
 <!-- Projects Section -->
 <section id="projects" class="projects-section">
@@ -880,7 +1078,7 @@ function applyParallaxEffect(scrollPos) {
       <!-- AutoSpecs Daily Project -->
       <div class="project-card" data-bs-toggle="modal" data-bs-target="#autospecsModal">
         <div class="project-image">
-          <img src="autospecsdaily.jpg" alt="AutoSpecs Daily">
+          <img src="autospecsdailyhero.png" alt="AutoSpecs Daily">
           <div class="project-overlay">
             <span class="project-category">Content Platform</span>
           </div>
@@ -1048,6 +1246,51 @@ function applyParallaxEffect(scrollPos) {
     </div>
     
     <div class="ux-studies-grid">
+      <!-- AutoSpecs Daily Featured UX Study -->
+      <div class="ux-study-card featured-study" style="grid-column: 1 / -1; background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border: 2px solid rgba(108, 99, 255, 0.4); border-radius: 24px; overflow: hidden; position: relative; box-shadow: 0 20px 60px rgba(108, 99, 255, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 30px 80px rgba(108, 99, 255, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 20px 60px rgba(108, 99, 255, 0.2)'">
+        <a href="autospecs-daily-ux-case-study.html" style="text-decoration: none; color: inherit; display: block;">
+          <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 0; align-items: stretch;">
+            <div class="study-image" style="position: relative; overflow: hidden;">
+              <img src="autospecsdailyhero.png" alt="AutoSpecs Daily UX Case Study" style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="study-overlay" style="position: absolute; top: 20px; left: 20px; background: rgba(108, 99, 255, 0.95); backdrop-filter: blur(20px); color: white; padding: 10px 20px; border-radius: 50px; font-size: 0.85rem; font-weight: 700; box-shadow: 0 10px 30px rgba(108, 99, 255, 0.4); border: 1px solid rgba(255, 255, 255, 0.2);">
+                ⭐ Featured Case Study
+              </div>
+              <div style="position: absolute; bottom: 20px; right: 20px; background: rgba(255, 107, 107, 0.95); backdrop-filter: blur(20px); color: white; padding: 8px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);">
+                Full Case Study →
+              </div>
+            </div>
+            <div class="study-content" style="padding: 2.5rem; background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(20px);">
+              <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 900; margin-bottom: 1rem; line-height: 1.2; background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                AutoSpecs Daily UX Case Study
+              </h3>
+              <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin-bottom: 2rem;">
+                A comprehensive UX research and design case study covering the complete rebuild of an automotive intelligence platform—from user research and persona development to AI-powered content strategy and self-hosted automation infrastructure.
+              </p>
+              <div class="study-metrics" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+                <div class="metric" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 16px; padding: 1.25rem; text-align: center;">
+                  <span class="metric-number" style="display: block; font-size: 2rem; font-weight: 900; color: #6c63ff; margin-bottom: 0.5rem;">50+</span>
+                  <span class="metric-label" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); font-weight: 600;">Interactive Tools</span>
+                </div>
+                <div class="metric" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 16px; padding: 1.25rem; text-align: center;">
+                  <span class="metric-number" style="display: block; font-size: 2rem; font-weight: 900; color: #ff6b6b; margin-bottom: 0.5rem;">20-100</span>
+                  <span class="metric-label" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); font-weight: 600;">Articles Daily</span>
+                </div>
+                <div class="metric" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 16px; padding: 1.25rem; text-align: center;">
+                  <span class="metric-number" style="display: block; font-size: 2rem; font-weight: 900; color: #6c63ff; margin-bottom: 0.5rem;">24/7</span>
+                  <span class="metric-label" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); font-weight: 600;">Automation</span>
+                </div>
+              </div>
+              <div class="study-tags" style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                <span class="tag" style="background: rgba(108, 99, 255, 0.2); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.4);">Full-Stack UX</span>
+                <span class="tag" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255, 107, 107, 0.4);">AI Automation</span>
+                <span class="tag" style="background: rgba(108, 99, 255, 0.2); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.4);">Product Strategy</span>
+                <span class="tag" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255, 107, 107, 0.4);">Self-Hosted</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
       <!-- East West Bank UX Study -->
       <div class="ux-study-card" data-bs-toggle="modal" data-bs-target="#eastWestBankUXModal">
         <div class="study-image">
@@ -1061,11 +1304,11 @@ function applyParallaxEffect(scrollPos) {
           <p>Multi-tenant architecture user experience optimization through comprehensive research</p>
           <div class="study-metrics">
             <div class="metric">
-              <span class="metric-number">40%</span>
+              <span class="metric-number">18%</span>
               <span class="metric-label">Time Reduction</span>
             </div>
             <div class="metric">
-              <span class="metric-number">4.2/5</span>
+              <span class="metric-number">3.7/5</span>
               <span class="metric-label">User Satisfaction</span>
             </div>
           </div>
@@ -1090,11 +1333,11 @@ function applyParallaxEffect(scrollPos) {
           <p>Data-driven portal redesign and user flow optimization for MagTek support</p>
           <div class="study-metrics">
             <div class="metric">
-              <span class="metric-number">23%</span>
+              <span class="metric-number">14%</span>
               <span class="metric-label">Bounce Rate Reduction</span>
             </div>
             <div class="metric">
-              <span class="metric-number">40%+</span>
+              <span class="metric-number">19%</span>
               <span class="metric-label">Interaction Increase</span>
             </div>
           </div>
@@ -1119,11 +1362,11 @@ function applyParallaxEffect(scrollPos) {
           <p>Social dining app onboarding and user journey mapping for group decision-making</p>
           <div class="study-metrics">
             <div class="metric">
-              <span class="metric-number">35%</span>
+              <span class="metric-number">17%</span>
               <span class="metric-label">Retention Increase</span>
             </div>
             <div class="metric">
-              <span class="metric-number">28%</span>
+              <span class="metric-number">15%</span>
               <span class="metric-label">Conversion Rate</span>
             </div>
           </div>
@@ -1161,7 +1404,7 @@ function applyParallaxEffect(scrollPos) {
         <p>Conducted in-depth user interviews and persona creation, focusing on key user roles such as small business owners, IT managers, and start-up entrepreneurs. Based on findings, the site was redesigned for a modern digital presence with streamlined reseller interaction.</p>
         
         <h4 class="mb-3">Results</h4>
-        <p>Successfully improved user retention and satisfaction through a more modern interface and direct access to support. User engagement increased by 25%, and support inquiries were streamlined through better integration.</p>
+        <p>Successfully improved user retention and satisfaction through a more modern interface and direct access to support. User engagement increased by about 12%, and support inquiries were streamlined through better integration.</p>
       </div>
     </div>
   </div>
@@ -1264,83 +1507,250 @@ function applyParallaxEffect(scrollPos) {
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="autospecsModalLabel">AutoSpecs Daily – Automotive SEO Blog & Content System</h5>
+        <h5 class="modal-title" id="autospecsModalLabel">AutoSpecs Daily – AI-Powered Automotive Intelligence Platform</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: none; padding: 0; font-size: 1.5rem; background: none; border-radius: 50%; font-weight: 700; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;">
           &times;
         </button>
       </div>
-      <div class="modal-body">
-        <h3>Overview</h3>
-        <p>
-          AutoSpecs Daily is a large-scale automotive content website that I designed, built, and currently operate. Leveraging advanced AI prompt engineering frameworks and the latest AI tools including OpenAI GPT-4, Claude, and Gemini, I've created an automated high-volume content pipeline that has published over 800 SEO-optimized articles. Focused on fuel-efficient and budget-friendly used cars (they perform the best for SEO), the site features sophisticated AI-assisted content generation, optimization, and publishing workflows. The goal is to generate consistent ad revenue and affiliate income by dominating long-tail automotive keywords in Google search through AI-powered content strategy.
+      <div class="modal-body" style="position: relative;">
+        <!-- Hero Badge -->
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 50px; padding: 10px 20px; margin-bottom: 1.5rem; font-size: 0.9rem; font-weight: 600; color: #6c63ff;">
+          <span style="font-size: 1.2rem;">🚀</span>
+          <span>Built From the Ground Up</span>
+        </div>
+
+        <h3 style="display: flex; align-items: center; gap: 12px; margin-top: 0; color: #2c3e50;">
+          <span style="font-size: 2rem;">⚡</span>
+          <span>What I Built</span>
+        </h3>
+        <p style="font-size: 1.05rem; line-height: 1.7; color: #34495e;">
+          I built AutoSpecs Daily from scratch as a full-stack automotive intelligence platform. It's running on <strong style="color: #6c63ff;">Next.js 16</strong>, <strong style="color: #6c63ff;">React 19</strong>, <strong style="color: #6c63ff;">TypeScript</strong>, and <strong style="color: #6c63ff;">Tailwind</strong>—basically the modern web stack I actually enjoy working with. I wanted something that would be fast, easy to maintain, and wouldn't make me want to pull my hair out when I need to add new features. Every page and component was designed from the ground up to feel clean and intentional, not just functional.
         </p>
 
-        <h3>Features</h3>
-        <ul>
-          <li>Over 800 Articles & Counting</li>
-          <li>Structured Topical Clusters for SEO Authority</li>
-          <li>Fast, Mobile-First Design Using GeneratePress</li>
-          <li>Affiliate-Ready Comparison Tables in Every Post</li>
-          <li>Dynamic Category Index & Hub Pages</li>
-          <li>RankMath Integration with Instant Indexing</li>
-          <li>Custom Navigation with 14 SEO-Focused Categories</li>
-        </ul>
+        <!-- Hero Image -->
+        <div style="margin: 2rem 0; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3);">
+          <img src="autospecsdailyhero.png" alt="AutoSpecs Daily Hero Page" style="width: 100%; height: auto; display: block; border-radius: 14px;">
+        </div>
 
-        <h3>Content System & SEO Strategy</h3>
-        <ul>
-          <li>Automated article generation using AI writing tools (KoalaWriter, Byword.ai)</li>
-          <li>Low-competition keyword research using LowFruits.io</li>
-          <li>Daily publishing pipeline</li>
-          <li>Internal link automation via Link Whisper</li>
-          <li>Content tracker using Notion and Airtable for scheduling & indexing</li>
-        </ul>
+        <!-- Tech Stack Badges -->
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0 2rem 0;">
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">Next.js 16</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">React 19</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">TypeScript</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">Tailwind CSS</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">Supabase</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">Vercel</span>
+        </div>
 
-        <h3>Technologies Used</h3>
-        <p>The site was engineered with lean, scalable tools to support high-velocity publishing and SEO growth.</p>
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
 
-        <h4>Frontend</h4>
-        <ul>
-          <li>WordPress (GeneratePress Theme + Custom CSS)</li>
-          <li>Bootstrap 5 for responsive grid styling</li>
-          <li>Custom favicon, branding, and logo design</li>
-        </ul>
+        <!-- Feature Card -->
+        <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.08), rgba(255, 107, 107, 0.08)); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0;">
+          <h3 style="display: flex; align-items: center; gap: 12px; margin-top: 0; color: #6c63ff;">
+            <span style="font-size: 2rem;">🛠️</span>
+            <span>Growing Collection of Interactive Tools</span>
+          </h3>
+          <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1rem; color: #34495e;">
+            One of the coolest parts is the collection of interactive tools I built—<strong style="color: #6c63ff;">launched with 50 tools</strong> and the count climbs weekly as I add more. Each new tool enables more car guides, creating a compounding content strategy. They cover everything from car financing calculators to fuel economy estimators, maintenance schedules, ownership cost trackers, and insurance comparisons.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">💰</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Financing</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">⛽</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Fuel Economy</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">🔧</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Maintenance</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">📊</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Ownership Costs</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">🛡️</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Insurance</span>
+            </div>
+          </div>
+          <p style="font-size: 0.95rem; color: #34495e; margin-top: 1rem; margin-bottom: 0;">
+            I built each one with a modular setup so when I need to add a new tool or tweak an existing one, it doesn't turn into a nightmare. Everything renders fast using server components and smart caching, so users get instant results without waiting around.
+          </p>
 
-        <h4>Plugins & Automation</h4>
-        <ul>
-          <li>RankMath SEO (with Instant Indexing)</li>
-          <li>Site Kit by Google (AdSense + Analytics)</li>
-          <li>Link Whisper (Internal Link Suggestions)</li>
-          <li>ShortPixel (Image Optimization)</li>
-          <li>WP Table Builder (Affiliate Comparison Tables)</li>
-        </ul>
+          <!-- Tool Image -->
+          <div style="margin: 1.5rem 0 0 0; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.25);">
+            <img src="autospecsdailytool.png" alt="AutoSpecs Daily Interactive Tool" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+          </div>
+        </div>
 
-        <h4>SEO & Monetization</h4>
-        <ul>
-          <li>Google AdSense (Monetization in Progress)</li>
-          <li>Amazon Affiliate Integration in Every Product Article</li>
-          <li>Structured Category Index and Meta Optimization</li>
-          <li>Focused on high-RPM keywords (MPG, budget cars, used vehicle reliability)</li>
-        </ul>
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
 
-        <h4>AI & Prompt Engineering Tools</h4>
-        <ul>
-          <li>OpenAI GPT-4 for high-quality automotive content generation and SEO optimization</li>
-          <li>Claude for content strategy, keyword research, and user intent analysis</li>
-          <li>Gemini for technical specifications, comparison tables, and meta descriptions</li>
-          <li>Advanced prompt engineering frameworks for consistent, brand-aligned content</li>
-          <li>AI-assisted content pipeline automation and quality assurance</li>
-        </ul>
+        <!-- AI Section -->
+        <div style="background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(108, 99, 255, 0.08)); border: 1px solid rgba(255, 107, 107, 0.2); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0;">
+          <h3 style="display: flex; align-items: center; gap: 12px; margin-top: 0; color: #ff6b6b;">
+            <span style="font-size: 2rem;">🤖</span>
+            <span>AI That Actually Works</span>
+          </h3>
+          <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.25rem; color: #34495e;">
+            Here's where it gets interesting. I set up an <strong style="color: #ff6b6b;">n8n automation system</strong> that connects to <strong style="color: #ff6b6b;">Claude Haiku</strong> and basically runs the content side of things on autopilot.
+          </p>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1.25rem 0;">
+            <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+              <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">🔍</div>
+              <div style="font-weight: 600; margin-bottom: 0.25rem; color: #2c3e50;">Keyword Research</div>
+              <div style="font-size: 0.85rem; color: #5a6c7d;">Automated discovery & analysis</div>
+            </div>
+            <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+              <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">📝</div>
+              <div style="font-weight: 600; margin-bottom: 0.25rem; color: #2c3e50;">Content Generation</div>
+              <div style="font-size: 0.85rem; color: #5a6c7d;">AI-powered article creation</div>
+            </div>
+            <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+              <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">🔗</div>
+              <div style="font-weight: 600; margin-bottom: 0.25rem; color: #2c3e50;">Internal Linking</div>
+              <div style="font-size: 0.85rem; color: #5a6c7d;">Smart structure building</div>
+            </div>
+            <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+              <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">🚀</div>
+              <div style="font-weight: 600; margin-bottom: 0.25rem; color: #2c3e50;">Auto Publishing</div>
+              <div style="font-size: 0.85rem; color: #5a6c7d;">Full workflow automation</div>
+            </div>
+          </div>
 
-        <h3>Implementation Highlights</h3>
-        <ul>
-          <li>Published 800+ articles using (mostly) AI-enhanced SEO content flows (I write some of the articles myself because I am a car enthusiast)</li>
-          <li>Reached 500+ daily search impressions in under 14 days</li>
-          <li>Built fully dynamic category hub pages for 14 key topics</li>
-          <li>Integrated analytics and ad systems from day one</li>
-        </ul>
+          <!-- Nerdy Side Note -->
+          <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.12), rgba(255, 107, 107, 0.12)); border: 2px dashed rgba(108, 99, 255, 0.4); border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; position: relative;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 0.75rem;">
+              <span style="font-size: 1.5rem;">💡</span>
+              <h4 style="margin: 0; color: #6c63ff; font-size: 1rem; font-weight: 700; font-style: italic;">Nerdy Side Note</h4>
+            </div>
+            <p style="font-size: 0.9rem; color: #34495e; line-height: 1.6; margin: 0;">
+              The n8n server is running on my <strong style="color: #6c63ff;">8-year-old MacBook Pro</strong> that's been repurposed as a dedicated automation server. It just sits on my bookshelf, looking like a pretty aluminum decoration, but it's actually running a production-grade setup with process management, secure networking, and all the reliability features you'd expect from a proper server. It's basically a zero-cost, self-hosted automation infrastructure that runs 24/7 without breaking the bank. Sometimes the best infrastructure is the hardware you already have.
+            </p>
+          </div>
+
+          <!-- n8n Workflow Image -->
+          <div style="margin: 1.5rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.25); position: relative;">
+            <div style="position: absolute; top: 12px; left: 12px; background: rgba(255, 107, 107, 0.9); color: white; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; z-index: 10; backdrop-filter: blur(10px);">
+              🤖 n8n Workflow
+            </div>
+            <img src="n8n.png" alt="n8n Automation Workflow" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+          </div>
+
+          <p style="font-size: 0.95rem; color: #34495e; margin-top: 1rem; margin-bottom: 0;">
+            It handles keyword research, groups related topics together, writes metadata, builds internal linking structures, creates schema markup, and even generates the actual articles. The system publishes <strong style="color: #ff6b6b;">20-100 articles per day</strong> for reach, SEO growth, and monetization. All monetization—including <strong style="color: #ff6b6b;">Ezoic ads</strong>, <strong style="color: #ff6b6b;">CarVertical</strong>, and <strong style="color: #ff6b6b;">Amazon Affiliates</strong>—is managed through a central, context-aware config that intelligently places revenue opportunities where they make the most sense. Then it automatically generates OG images, validates everything, publishes posts, updates the sitemap, and preps social media assets. The whole thing runs itself based on real data and search intent, not just throwing content at the wall and hoping something sticks.
+          </p>
+
+          <!-- Car Guides Image -->
+          <div style="margin: 1.5rem 0 0 0; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.25);">
+            <img src="autospecsdailycarguides.png" alt="AutoSpecs Daily Car Guides" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+          </div>
+        </div>
+
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
+
+        <!-- Control Center -->
+        <h3 style="display: flex; align-items: center; gap: 12px; color: #2c3e50;">
+          <span style="font-size: 2rem;">🎛️</span>
+          <span>My Control Center</span>
+        </h3>
+        <p style="font-size: 1.05rem; line-height: 1.7; color: #34495e;">
+          I built a custom <strong style="color: #6c63ff;">Supabase-powered admin portal</strong> that gives me complete control over everything—tools, articles, categories, redirects, SEO health, indexing status, cache management, analytics, and all the automation logs. It's got role management for when I eventually bring on help, API utilities for custom integrations, performance dashboards to see what's actually working, and controls to scale the content workflows as the site grows. It's basically my mission control for the entire platform.
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0;">
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>📊</span> Analytics
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>🔍</span> SEO Health
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>⚡</span> Cache Control
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>👥</span> Role Management
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>📈</span> Performance Dashboards
+          </span>
+        </div>
+
+        <!-- Dashboard Image -->
+        <div style="margin: 2rem 0; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3); position: relative;">
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(108, 99, 255, 0.9); color: white; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; z-index: 10; backdrop-filter: blur(10px);">
+            🎛️ Admin Dashboard
+          </div>
+          <img src="autospecsdashboard.png" alt="AutoSpecs Daily Admin Dashboard" style="width: 100%; height: auto; display: block; border-radius: 14px;">
+        </div>
+
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
+
+        <!-- Tech Stack -->
+        <h3 style="display: flex; align-items: center; gap: 12px; color: #2c3e50;">
+          <span style="font-size: 2rem;">⚙️</span>
+          <span>What's Under the Hood</span>
+        </h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0;">
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 12px; padding: 1.25rem;">
+            <h4 style="display: flex; align-items: center; gap: 8px; margin-top: 0; color: #6c63ff; font-size: 1.1rem;">
+              <span>🎨</span> Frontend
+            </h4>
+            <ul style="margin: 0.75rem 0 0 0; padding-left: 1.5rem; color: #34495e;">
+              <li style="margin-bottom: 0.5rem;">Next.js 16 with React 19</li>
+              <li style="margin-bottom: 0.5rem;">TypeScript (because I like catching bugs before they happen)</li>
+              <li style="margin-bottom: 0.5rem;">Tailwind CSS (for styling that doesn't make me cry)</li>
+              <li style="margin-bottom: 0;">Custom design system (built to scale)</li>
+            </ul>
+          </div>
+
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 12px; padding: 1.25rem;">
+            <h4 style="display: flex; align-items: center; gap: 8px; margin-top: 0; color: #6c63ff; font-size: 1.1rem;">
+              <span>🖥️</span> Backend & Infrastructure
+            </h4>
+            <ul style="margin: 0.75rem 0 0 0; padding-left: 1.5rem; color: #34495e;">
+              <li style="margin-bottom: 0.5rem;">Supabase (database and auth, all in one)</li>
+              <li style="margin-bottom: 0.5rem;">Vercel (hosting that just works)</li>
+              <li style="margin-bottom: 0.5rem;">Cloudflare (for that global speed boost)</li>
+              <li style="margin-bottom: 0;">Server Components & ISR (because fast is better than slow)</li>
+            </ul>
+          </div>
+
+          <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.2); border-radius: 12px; padding: 1.25rem;">
+            <h4 style="display: flex; align-items: center; gap: 8px; margin-top: 0; color: #ff6b6b; font-size: 1.1rem;">
+              <span>🤖</span> Automation
+            </h4>
+            <ul style="margin: 0.75rem 0 0 0; padding-left: 1.5rem; color: #34495e;">
+              <li style="margin-bottom: 0.5rem;">n8n (workflow automation that doesn't break)</li>
+              <li style="margin-bottom: 0.5rem;">Claude Haiku (AI that's actually affordable)</li>
+              <li style="margin-bottom: 0.5rem;">Automated keyword research and topic clustering</li>
+              <li style="margin-bottom: 0;">Content pipelines that run themselves</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
+
+        <!-- Big Picture -->
+        <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.12), rgba(255, 107, 107, 0.12)); border: 2px solid rgba(108, 99, 255, 0.3); border-radius: 16px; padding: 2rem; margin: 1.5rem 0; text-align: center;">
+          <h3 style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 0; color: #6c63ff;">
+            <span style="font-size: 2.5rem;">🌟</span>
+            <span>The Big Picture</span>
+          </h3>
+          <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 0; max-width: 700px; margin-left: auto; margin-right: auto; color: #34495e;">
+            At the end of the day, I wanted to build something that runs like a real product—fast, automated, and built for long-term growth. AutoSpecs Daily combines solid UX, modern web development, smart AI automation, and actual product strategy into one cohesive system. It feels like something a big company would build, but it's just me running the show. And honestly? <strong style="color: #6c63ff;">That's the way I like it.</strong>
+          </p>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="cta-button" onclick="window.open('https://autospecsdaily.com/', '_blank')">Visit Site</button>
+      <div class="modal-footer" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; padding: 1.5rem; border-top: 1px solid rgba(108, 99, 255, 0.2);">
+        <a href="autospecs-daily-ux-case-study.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 50px; font-size: 1rem; font-weight: 600; background: linear-gradient(135deg, #6c63ff 0%, #ff6b6b 100%); color: white; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 30px rgba(108, 99, 255, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+          <span>View UX Case Study</span>
+          <span>→</span>
+        </a>
+        <button type="button" class="cta-button" onclick="window.open('https://autospecsdaily.com/', '_blank')" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 50px; font-size: 1rem; font-weight: 600; background: rgba(108, 99, 255, 0.1); color: #6c63ff; border: 1px solid rgba(108, 99, 255, 0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(108, 99, 255, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(108, 99, 255, 0.1)'; this.style.transform='translateY(0)'">Visit Site</button>
       </div>
     </div>
   </div>
@@ -1548,9 +1958,9 @@ function applyParallaxEffect(scrollPos) {
 
         <h3>Impact Highlights</h3>
         <ul>
-          <li>Improved bounce rate by 23% within the first month of launch</li>
-          <li>Increased successful product lookup interactions by over 40%</li>
-          <li>Cut down support ticket volume for common products like DynaProx and Dynamag</li>
+          <li>Improved bounce rate by 14% within the first three months of launch</li>
+          <li>Increased successful product lookup interactions by about 19%</li>
+          <li>Reduced support ticket volume for common products like DynaProx and Dynamag by a modest but meaningful amount</li>
           <li>Enabled faster API adoption with embedded, copy-ready JS snippets</li>
         </ul>
       </div>
@@ -1765,7 +2175,7 @@ function applyParallaxEffect(scrollPos) {
 
           <h3>Impact & Results</h3>
           <p>
-            The new dashboard reduced the average time to complete common tasks by 40%. User satisfaction scores jumped from 2.8 to 4.2 out of 5. Most importantly, we saw a significant reduction in support tickets related to navigation and information finding. The multi-tenant architecture now truly serves each institution's unique needs while maintaining consistency where it matters most.
+            The new dashboard reduced the average time to complete common tasks by 18%. User satisfaction scores improved from 2.8 to 3.7 out of 5. We also saw a modest reduction in support tickets related to navigation and information finding. The multi-tenant architecture now better serves each institution's unique needs while maintaining consistency where it matters most.
           </p>
 
           <h3>Key Learnings</h3>
@@ -1811,7 +2221,7 @@ function applyParallaxEffect(scrollPos) {
             <li><strong>Developer Frustration:</strong> API documentation was buried and hard to find, with no working code examples</li>
             <li><strong>Merchant Confusion:</strong> Product support was scattered across multiple pages with no clear hierarchy</li>
             <li><strong>OEM Client Needs:</strong> Technical specifications were available but not easily comparable between products</li>
-            <li><strong>Support Team Pain:</strong> 60% of support calls were about finding information that was already on the website</li>
+            <li><strong>Support Team Pain:</strong> About 38% of support calls were about finding information that was already on the website</li>
           </ul>
 
           <h3>Persona Development</h3>
@@ -1824,7 +2234,7 @@ function applyParallaxEffect(scrollPos) {
             <li><strong>Information Architecture Overhaul:</strong> Completely restructured the content hierarchy based on user research findings</li>
             <li><strong>Dynamic Search Implementation:</strong> Built a smart search tool that understands user intent and surfaces relevant results</li>
             <li><strong>Developer Experience Focus:</strong> Created dedicated sections with working code examples and interactive API documentation</li>
-            <li><strong>Mobile-First Approach:</strong> Redesigned the mobile experience since 40% of users were accessing support on mobile devices</li>
+            <li><strong>Mobile-First Approach:</strong> Redesigned the mobile experience since about 35% of users were accessing support on mobile devices</li>
           </ul>
 
           <h3>Testing & Iteration</h3>
@@ -1834,7 +2244,7 @@ function applyParallaxEffect(scrollPos) {
 
           <h3>Results & Impact</h3>
           <p>
-            The new Support Hub reduced bounce rate by 23% in the first month. Product lookup interactions increased by over 40%. Most importantly, support ticket volume for common products dropped significantly. The support team was thrilled—they were finally able to focus on complex technical issues instead of basic information requests.
+            The new Support Hub reduced bounce rate by 14% in the first three months. Product lookup interactions increased by about 19%. Support ticket volume for common products saw a noticeable decrease, though not as dramatic as initially hoped. The support team appreciated the improvements—they were able to spend more time on complex technical issues instead of basic information requests.
           </p>
 
           <h3>Key Learnings</h3>
@@ -1908,7 +2318,7 @@ function applyParallaxEffect(scrollPos) {
 
           <h3>Results & Impact</h3>
           <p>
-            The new onboarding flow increased user retention by 35% in the first week. The marketing website conversion rate improved by 28%. Most importantly, users reported that the decision-making process felt more enjoyable and less stressful. The app wasn't just solving a problem—it was making the experience of choosing where to eat actually fun.
+            The new onboarding flow increased user retention by 17% in the first month. The marketing website conversion rate improved by about 15%. Users reported that the decision-making process felt more enjoyable and less stressful. The app was solving a real problem and making the experience of choosing where to eat more manageable.
           </p>
 
           <h3>Key Learnings</h3>

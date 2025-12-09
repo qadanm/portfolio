@@ -1,0 +1,1297 @@
+here is the view source code
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<!-- Google Analytics opt-out snippet added by Site Kit -->
+<script>
+window["ga-disable-G-KP22Y7N7HN"] = true;
+</script>
+<!-- End Google Analytics opt-out snippet added by Site Kit -->
+<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>Home - AutoSpecs</title>
+<meta name="description" content="The latest car reviews, buying guides, and maintenance tips, all in one place"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://autospecsdaily.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Home - AutoSpecs" />
+<meta property="og:description" content="The latest car reviews, buying guides, and maintenance tips, all in one place" />
+<meta property="og:url" content="https://autospecsdaily.com/" />
+<meta property="og:site_name" content="AutoSpecs Daily" />
+<meta property="og:updated_time" content="2025-07-02T12:27:10+00:00" />
+<meta property="article:published_time" content="2025-06-16T13:21:14+00:00" />
+<meta property="article:modified_time" content="2025-07-02T12:27:10+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Home - AutoSpecs" />
+<meta name="twitter:description" content="The latest car reviews, buying guides, and maintenance tips, all in one place" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="mqadan" />
+<meta name="twitter:label2" content="Time to read" />
+<meta name="twitter:data2" content="Less than a minute" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://autospecsdaily.com/#person","name":"AutoSpecs Daily","logo":{"@type":"ImageObject","@id":"https://autospecsdaily.com/#logo","url":"https://autospecsdaily.com/wp-content/uploads/2025/06/cropped-cropped-cropped-ChatGPT-Image-Jun-16-2025-06_51_54-AM-150x150.png","contentUrl":"https://autospecsdaily.com/wp-content/uploads/2025/06/cropped-cropped-cropped-ChatGPT-Image-Jun-16-2025-06_51_54-AM-150x150.png","caption":"AutoSpecs Daily","inLanguage":"en-US"},"image":{"@type":"ImageObject","@id":"https://autospecsdaily.com/#logo","url":"https://autospecsdaily.com/wp-content/uploads/2025/06/cropped-cropped-cropped-ChatGPT-Image-Jun-16-2025-06_51_54-AM-150x150.png","contentUrl":"https://autospecsdaily.com/wp-content/uploads/2025/06/cropped-cropped-cropped-ChatGPT-Image-Jun-16-2025-06_51_54-AM-150x150.png","caption":"AutoSpecs Daily","inLanguage":"en-US"}},{"@type":"WebSite","@id":"https://autospecsdaily.com/#website","url":"https://autospecsdaily.com","name":"AutoSpecs Daily","alternateName":"ASD","publisher":{"@id":"https://autospecsdaily.com/#person"},"inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":"https://autospecsdaily.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://autospecsdaily.com/wp-content/uploads/2025/06/mjtpgz6fgnvdomg5lx.gif","url":"https://autospecsdaily.com/wp-content/uploads/2025/06/mjtpgz6fgnvdomg5lx.gif","width":"200","height":"200","inLanguage":"en-US"},{"@type":"WebPage","@id":"https://autospecsdaily.com/#webpage","url":"https://autospecsdaily.com/","name":"Home - AutoSpecs","datePublished":"2025-06-16T13:21:14+00:00","dateModified":"2025-07-02T12:27:10+00:00","about":{"@id":"https://autospecsdaily.com/#person"},"isPartOf":{"@id":"https://autospecsdaily.com/#website"},"primaryImageOfPage":{"@id":"https://autospecsdaily.com/wp-content/uploads/2025/06/mjtpgz6fgnvdomg5lx.gif"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://autospecsdaily.com/author/mqadan/","name":"mqadan","url":"https://autospecsdaily.com/author/mqadan/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/beb318598ad7072c7471e5ebb44fecd0ab5274d1090caa32064de61226dd07d1?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/beb318598ad7072c7471e5ebb44fecd0ab5274d1090caa32064de61226dd07d1?s=96&amp;d=mm&amp;r=g","caption":"mqadan","inLanguage":"en-US"},"sameAs":["https://autospecsdaily.com"]},{"@type":"Article","headline":"Home - AutoSpecs","datePublished":"2025-06-16T13:21:14+00:00","dateModified":"2025-07-02T12:27:10+00:00","author":{"@id":"https://autospecsdaily.com/author/mqadan/","name":"mqadan"},"publisher":{"@id":"https://autospecsdaily.com/#person"},"description":"The latest car reviews, buying guides, and maintenance tips, all in one place","name":"Home - AutoSpecs","@id":"https://autospecsdaily.com/#richSnippet","isPartOf":{"@id":"https://autospecsdaily.com/#webpage"},"image":{"@id":"https://autospecsdaily.com/wp-content/uploads/2025/06/mjtpgz6fgnvdomg5lx.gif"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://autospecsdaily.com/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="AutoSpecs &raquo; Feed" href="https://autospecsdaily.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="AutoSpecs &raquo; Comments Feed" href="https://autospecsdaily.com/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/autospecsdaily.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css" media="all">
+.wpautoterms-footer{background-color:#ffffff;text-align:center;}
+.wpautoterms-footer a{color:#000000;font-family:Arial, sans-serif;font-size:14px;}
+.wpautoterms-footer .separator{color:#cccccc;font-family:Arial, sans-serif;font-size:14px;}</style>
+<link rel='stylesheet' id='dashicons-css' href='https://autospecsdaily.com/wp-includes/css/dashicons.min.css?ver=6.8.3' media='all' />
+<link rel='stylesheet' id='admin-bar-css' href='https://autospecsdaily.com/wp-includes/css/admin-bar.min.css?ver=6.8.3' media='all' />
+<style id='admin-bar-inline-css'>
+
+@media screen { html { margin-top: 32px !important; } }
+@media screen and ( max-width: 782px ) { html { margin-top: 46px !important; } }
+
+@media print { #wpadminbar { display:none; } }
+</style>
+<style id='wp-emoji-styles-inline-css'>
+
+img.wp-smiley, img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 0.07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://autospecsdaily.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpautoterms_css-css' href='https://autospecsdaily.com/wp-content/plugins/auto-terms-of-service-and-privacy-policy/css/wpautoterms.css?ver=6.8.3' media='all' />
+<link rel='stylesheet' id='rank-math-css' href='https://autospecsdaily.com/wp-content/plugins/seo-by-rank-math/assets/front/css/rank-math.css?ver=1.0.254' media='all' />
+<link rel='stylesheet' id='generate-style-css' href='https://autospecsdaily.com/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.6.0' media='all' />
+<style id='generate-style-inline-css'>
+body{background-color:var(--base-2);color:var(--contrast);}a{color:var(--accent);}a{text-decoration:underline;}.entry-title a, .site-branding a, a.button, .wp-block-button__link, .main-navigation a{text-decoration:none;}a:hover, a:focus, a:active{color:var(--contrast);}.wp-block-group__inner-container{max-width:1200px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:60px;}:root{--contrast:#222222;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#1e73be;}:root .has-contrast-color{color:var(--contrast);}:root .has-contrast-background-color{background-color:var(--contrast);}:root .has-contrast-2-color{color:var(--contrast-2);}:root .has-contrast-2-background-color{background-color:var(--contrast-2);}:root .has-contrast-3-color{color:var(--contrast-3);}:root .has-contrast-3-background-color{background-color:var(--contrast-3);}:root .has-base-color{color:var(--base);}:root .has-base-background-color{background-color:var(--base);}:root .has-base-2-color{color:var(--base-2);}:root .has-base-2-background-color{background-color:var(--base-2);}:root .has-base-3-color{color:var(--base-3);}:root .has-base-3-background-color{background-color:var(--base-3);}:root .has-accent-color{color:var(--accent);}:root .has-accent-background-color{background-color:var(--accent);}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:var(--base-3);}.main-title a,.main-title a:hover{color:var(--contrast);}.site-description{color:#555555;}.mobile-menu-control-wrapper .menu-toggle,.mobile-menu-control-wrapper .menu-toggle:hover,.mobile-menu-control-wrapper .menu-toggle:focus,.has-inline-mobile-toggle #site-navigation.toggled{background-color:rgba(0, 0, 0, 0.02);}.main-navigation,.main-navigation ul ul{background-color:var(--base-3);}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:var(--contrast);}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:var(--accent);}button.menu-toggle:hover,button.menu-toggle:focus{color:var(--contrast);}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:var(--accent);}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:var(--accent);}.main-navigation ul ul{background-color:var(--base);}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:var(--base-3);}.entry-title a{color:var(--contrast);}.entry-title a:hover{color:var(--contrast-2);}.entry-meta{color:var(--contrast-2);}.sidebar .widget{background-color:var(--base-3);}.footer-widgets{background-color:var(--base-3);}.site-info{background-color:var(--base-3);}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:var(--contrast);background-color:var(--base-2);border-color:var(--base);}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:var(--contrast);background-color:var(--base-2);border-color:var(--contrast-3);}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#55555e;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f4047;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}:root{--gp-search-modal-bg-color:var(--base-3);--gp-search-modal-text-color:var(--contrast);--gp-search-modal-overlay-bg-color:rgba(0,0,0,0.2);}@media (max-width:768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:var(--contrast);}}.nav-below-header .main-navigation .inside-navigation.grid-container, .nav-above-header .main-navigation .inside-navigation.grid-container{padding:0px 20px 0px 20px;}.site-main .wp-block-group__inner-container{padding:40px;}.separate-containers .paging-navigation{padding-top:20px;padding-bottom:20px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px;}.site-main .wp-block-group__inner-container{padding:30px;}.inside-top-bar{padding-right:30px;padding-left:30px;}.inside-header{padding-right:30px;padding-left:30px;}.widget-area .widget{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.footer-widgets-container{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.inside-site-info{padding-right:30px;padding-left:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}.one-container .site-main .paging-navigation{margin-bottom:20px;}}/* End cached CSS */.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:100%;}@media (max-width:768px){.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right .inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}.has-inline-mobile-toggle .mobile-menu-control-wrapper{display:flex;flex-wrap:wrap;}.has-inline-mobile-toggle .inside-header{flex-direction:row;text-align:left;flex-wrap:wrap;}.has-inline-mobile-toggle .header-widget,.has-inline-mobile-toggle #site-navigation{flex-basis:100%;}.nav-float-left .has-inline-mobile-toggle #site-navigation{order:10;}}
+</style>
+<link rel='stylesheet' id='easywp-admin-css' href='https://autospecsdaily.com/wp-content/mu-plugins/wp-nc-easywp/public/css/easywp-admin.css?ver=2.1.1' media='all' />
+<link rel='stylesheet' id='wpforms-admin-bar-css' href='https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/css/admin-bar.min.css?ver=1.9.8.1' media='all' />
+<style id='wpforms-admin-bar-inline-css'>
+#wpadminbar .wpforms-menu-notification-counter, #wpadminbar .wpforms-menu-notification-indicator {
+background-color: #d63638 !important;
+color: #ffffff !important;
+}
+</style>
+<link rel='stylesheet' id='googlesitekit-fonts-css' href='https://fonts.googleapis.com/css?family=Google+Sans+Text:400,500|Google+Sans+Display:400,500,700&#038;subset=latin-ext&#038;display=fallback' media='all' />
+<link rel='stylesheet' id='googlesitekit-adminbar-css-css' href='https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/css/googlesitekit-adminbar-css-0292a189b277b20f5178.min.css' media='all' />
+<script src="https://autospecsdaily.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://autospecsdaily.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://autospecsdaily.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/auto-terms-of-service-and-privacy-policy/js/base.js?ver=3.0.4" id="wpautoterms_base-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script src="https://www.googletagmanager.com/gtag/js?id=GT-M3K79L7J" id="google_gtagjs-js" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["autospecsdaily.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-M3K79L7J");
+window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); };
+</script>
+<link rel="https://api.w.org/" href="https://autospecsdaily.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://autospecsdaily.com/wp-json/wp/v2/pages/18" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://autospecsdaily.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.3" />
+<link rel='shortlink' href='https://autospecsdaily.com/' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://autospecsdaily.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fautospecsdaily.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://autospecsdaily.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fautospecsdaily.com%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.162.1" /><link rel="icon" href="https://autospecsdaily.com/wp-content/uploads/2025/06/cropped-cropped-ChatGPT-Image-Jun-16-2025-06_51_54-AM-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://autospecsdaily.com/wp-content/uploads/2025/06/cropped-cropped-ChatGPT-Image-Jun-16-2025-06_51_54-AM-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://autospecsdaily.com/wp-content/uploads/2025/06/cropped-cropped-ChatGPT-Image-Jun-16-2025-06_51_54-AM-180x180.png" />
+<meta name="msapplication-TileImage" content="https://autospecsdaily.com/wp-content/uploads/2025/06/cropped-cropped-ChatGPT-Image-Jun-16-2025-06_51_54-AM-270x270.png" />
+<style id="wp-custom-css">
+.entry-meta {
+display: none;
+}
+
+.site-info .copyright-bar {
+display: none;
+}
+
+
+/* Glassmorphic search bar container */
+.wp-block-search__inside-wrapper {
+backdrop-filter: blur(4px);
+background: rgba(255, 255, 255, 0.07);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 12px;
+display: flex;
+margin: 20px auto;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+input[type="search"], select {
+/* color: var(--contrast); */
+background-color: unset !important;
+border: unset !important;
+}
+
+/* Input field styling */
+.wp-block-search__input {
+flex: 1;
+padding: 14px 20px;
+border: none;
+background: transparent;
+color: white;
+font-size: 18px;
+outline: none;
+}
+
+/* Placeholder color */
+.wp-block-search__input::placeholder {
+color: rgba(255, 255, 255, 0.8);
+}
+
+.wp-block-search__input {
+color: white !important;
+}
+
+
+/* Button styling */
+.wp-block-search__button {
+background: rgba(255, 255, 255, 0.0);
+border-left: 1px solid rgba(255, 255, 255, 0.2);
+color: white;
+padding: 14px 24px;
+font-size: 16px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.wp-block-search__button:hover {
+background: rgba(255, 255, 255, 0.4);
+}
+/*
+@media (max-width: 768px) {
+.wp-block-search__inside-wrapper {
+flex-direction: column;
+width: 90%;
+margin: 20px auto;
+}
+
+.wp-block-search__input {
+width: 100%;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+text-align: center;
+}
+
+.wp-block-search__button {
+width: 100%;
+border-left: none;
+border-top: 1px solid rgba(255, 255, 255, 0.2);
+padding: 14px;
+}
+}
+*/
+
+
+/* Grid layout for article cards */
+
+
+/* Individual card styling */
+.wp-block-latest-posts__list.is-grid li {
+background: #fff;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+display: flex;
+flex-direction: column;
+}
+
+/* Hover effect */
+.wp-block-latest-posts__list.is-grid li:hover {
+transform: translateY(-6px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Image styling */
+.wp-block-latest-posts__featured-image img {
+width: 100%;
+height: auto;
+display: block;
+object-fit: cover;
+aspect-ratio: 16 / 9;
+}
+
+.wp-block-latest-posts__featured-image.aligncenter {
+margin-bottom: unset;
+}
+/* Title styling */
+.wp-block-latest-posts__post-title {
+padding: 16px;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.3;
+color: #222;
+flex-grow: 1;
+transition: color 0.3s ease;
+text-decoration: none;
+}
+
+.wp-block-latest-posts__post-title:hover {
+color: #1e73be; /* accent color */
+}
+
+/* Optional: limit title to 2 lines */
+.wp-block-latest-posts__post-title {
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+
+.topic-page-first-image img{
+border-bottom-right-radius: 100px;
+}
+
+.topic-page-second-image img{
+border-bottom-left-radius: 100px;
+}
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+.wp-block-latest-posts__list.is-grid {
+gap: 20px;
+}
+}
+
+
+
+
+
+.contact-section {
+max-width: 800px;
+margin: 0 auto;
+padding: 2.5rem 2rem;
+background-color: #f8f9fa;
+border-radius: 12px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+font-family: 'Helvetica Neue', sans-serif;
+color: #222;
+line-height: 1.7;
+}
+
+/* Headings */
+.contact-section .wp-block-heading {
+font-size: 2rem;
+font-weight: 700;
+margin-bottom: 1rem;
+color: #111;
+}
+
+/* Paragraphs */
+.contact-section p {
+margin-bottom: 1.2rem;
+font-size: 1.1rem;
+color: #333;
+}
+
+/* Lists */
+.contact-section ul {
+list-style: disc;
+margin: 0 0 1.8rem 1.5rem;
+padding-left: 0;
+}
+
+.contact-section ul li {
+margin-bottom: 0.6rem;
+font-size: 1.05rem;
+}
+
+/* WPForms Integration */
+.contact-section .wpforms-form {
+background-color: #fff;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+margin-top: 2rem;
+}
+
+/* Field Labels */
+.contact-section .wpforms-field-label {
+display: block;
+font-weight: 600;
+margin-bottom: 0.5rem;
+font-size: 1rem;
+color: #222;
+}
+
+/* Inputs & Textareas */
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+width: 100%;
+padding: 0.75rem 1rem;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 1rem;
+background-color: #fff;
+margin-bottom: 1.5rem;
+box-sizing: border-box;
+transition: border 0.2s ease;
+}
+
+.contact-section input[type="text"]:focus,
+.contact-section input[type="email"]:focus,
+.contact-section textarea:focus {
+border-color: #007cba;
+outline: none;
+}
+
+/* Submit Button */
+.contact-section .wpforms-submit {
+background-color: #007cba;
+color: #fff;
+border: none;
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+
+.contact-section .wpforms-submit:hover {
+background-color: #005fa3;
+}
+
+/* Spinner */
+.contact-section .wpforms-submit-spinner {
+margin-left: 1rem;
+vertical-align: middle;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+.contact-section {
+padding: 2rem 1.2rem;
+}
+
+.contact-section .wp-block-heading {
+font-size: 1.6rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+font-size: 1rem;
+}
+
+.contact-section .wpforms-submit {
+width: 100%;
+}
+}
+
+
+
+
+</style>
+</head>
+
+<body class="home wp-singular page-template-default page page-id-18 logged-in admin-bar no-customize-support wp-custom-logo wp-embed-responsive wp-theme-generatepress no-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover full-width-content" itemtype="https://schema.org/WebPage" itemscope>
+<script>
+(function() {
+var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+request = true;
+
+b[c] = b[c].replace( rcs, ' ' );
+// The customizer requires postMessage and CORS (if the site is cross domain).
+b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+}());
+
+</script>
+<div id="wpadminbar" class="nojq nojs">
+<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+<ul role='menu' id='wp-admin-bar-root-default' class="ab-top-menu"><li role='group' id='wp-admin-bar-wp-logo' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/about.php'><span class="ab-icon" aria-hidden="true"></span><span class="screen-reader-text">About WordPress</span></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='About WordPress' id='wp-admin-bar-wp-logo-default' class="ab-submenu"><li role='group' id='wp-admin-bar-about'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/about.php'>About WordPress</a></li><li role='group' id='wp-admin-bar-contribute'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/contribute.php'>Get Involved</a></li></ul><ul role='menu' aria-label='About WordPress' id='wp-admin-bar-wp-logo-external' class="ab-sub-secondary ab-submenu"><li role='group' id='wp-admin-bar-wporg'><a class='ab-item' role="menuitem" href='https://wordpress.org/'>WordPress.org</a></li><li role='group' id='wp-admin-bar-documentation'><a class='ab-item' role="menuitem" href='https://wordpress.org/documentation/'>Documentation</a></li><li role='group' id='wp-admin-bar-learn'><a class='ab-item' role="menuitem" href='https://learn.wordpress.org/'>Learn WordPress</a></li><li role='group' id='wp-admin-bar-support-forums'><a class='ab-item' role="menuitem" href='https://wordpress.org/support/forums/'>Support</a></li><li role='group' id='wp-admin-bar-feedback'><a class='ab-item' role="menuitem" href='https://wordpress.org/support/forum/requests-and-feedback'>Feedback</a></li></ul></div></li><li role='group' id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/'>AutoSpecs</a><div class="ab-sub-wrapper"><ul role='menu' aria-label='AutoSpecs' id='wp-admin-bar-site-name-default' class="ab-submenu"><li role='group' id='wp-admin-bar-dashboard'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/'>Dashboard</a></li><li role='group' id='wp-admin-bar-plugins'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/plugins.php'>Plugins</a></li></ul><ul role='menu' aria-label='AutoSpecs' id='wp-admin-bar-appearance' class="ab-submenu"><li role='group' id='wp-admin-bar-themes'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/themes.php'>Themes</a></li><li role='group' id='wp-admin-bar-widgets'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/widgets.php'>Widgets</a></li><li role='group' id='wp-admin-bar-menus'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/nav-menus.php'>Menus</a></li></ul></div></li><li role='group' id='wp-admin-bar-customize' class="hide-if-no-customize"><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/customize.php?url=https%3A%2F%2Fautospecsdaily.com%2F'>Customize</a></li><li role='group' id='wp-admin-bar-updates'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/update-core.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label" aria-hidden="true">2</span><span class="screen-reader-text updates-available-text">2 updates available</span></a></li><li role='group' id='wp-admin-bar-comments'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/edit-comments.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label awaiting-mod pending-count count-390" aria-hidden="true">390</span><span class="screen-reader-text comments-in-moderation-text">390 Comments in moderation</span></a></li><li role='group' id='wp-admin-bar-new-content' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/post-new.php'><span class="ab-icon" aria-hidden="true"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='New' id='wp-admin-bar-new-content-default' class="ab-submenu"><li role='group' id='wp-admin-bar-new-post'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/post-new.php'>Post</a></li><li role='group' id='wp-admin-bar-new-media'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/media-new.php'>Media</a></li><li role='group' id='wp-admin-bar-new-page'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/post-new.php?post_type=page'>Page</a></li><li role='group' id='wp-admin-bar-new-wpautoterms_page'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/post-new.php?post_type=wpautoterms_page'>Legal Page</a></li><li role='group' id='wp-admin-bar-new-user'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/user-new.php'>User</a></li><li role='group' id='wp-admin-bar-wpforms'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-builder'>WPForms</a></li></ul></div></li><li role='group' id='wp-admin-bar-edit'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/post.php?post=18&#038;action=edit'>Edit Page</a></li><li role='group' id='wp-admin-bar-google-site-kit' class="menupop googlesitekit-wp-adminbar"><a class='ab-item' role="menuitem" href='#'><span class="googlesitekit-wp-adminbar__icon"></span> <span class="googlesitekit-wp-adminbar__label">Site Kit</span></a> <div class="googlesitekit-plugin ab-sub-wrapper">
+<noscript>
+<div class="googlesitekit-noscript notice notice-warning">
+<div class="mdc-layout-grid">
+<div class="mdc-layout-grid__inner">
+<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+<p class="googlesitekit-noscript__text">
+The Site Kit by Google plugin requires JavaScript to be enabled in your browser. </p>
+</div>
+</div>
+</div>
+</div>
+</noscript>
+
+<div id="js-googlesitekit-adminbar" data-view-only="" class="googlesitekit-adminbar">
+
+
+<section id="js-googlesitekit-adminbar-modules" class="googlesitekit-adminbar-modules"></section>
+
+</div>
+</div>
+</li><li role='group' id='wp-admin-bar-rank-math' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/admin.php?page=rank-math' title='Rank Math Dashboard'><span class="rank-math-icon"><svg viewBox="0 0 462.03 462.03" xmlns="http://www.w3.org/2000/svg" width="20"><g><path d="m462 234.84-76.17 3.43 13.43 21-127 81.18-126-52.93-146.26 60.97 10.14 24.34 136.1-56.71 128.57 54 138.69-88.61 13.43 21z"/><path d="m54.1 312.78 92.18-38.41 4.49 1.89v-54.58h-96.67zm210.9-223.57v235.05l7.26 3 89.43-57.05v-181zm-105.44 190.79 96.67 40.62v-165.19h-96.67z"/></g></svg></span><span class="rank-math-text">Rank Math SEO</span></a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-rank-math-default' class="ab-submenu"><li role='group' id='wp-admin-bar-rank-math-dashboard'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=rank-math' title='Dashboard'>Dashboard</a></li><li role='group' id='wp-admin-bar-rank-math-analytics'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=rank-math-analytics' title='Review analytics and sitemaps'>Analytics<span class="rm-menu-new update-plugins" style="background: #ed5e5e;margin-left: 5px;min-width: 10px;height: 10px;margin-bottom: -1px;display: inline-block;border-radius: 5px;"><span class="plugin-count"></span></span></a></li><li role='group' id='wp-admin-bar-rank-math-home'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=rank-math-options-titles&#038;view=homepage' title='Edit Homepage SEO Settings'>Homepage SEO</a></li><li role='group' id='wp-admin-bar-rank-math-content-ai-page' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/admin.php?page=rank-math-content-ai-page'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Content AI</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-rank-math-content-ai-page-default' class="ab-submenu"><li role='group' id='wp-admin-bar-rank-math-content-ai-tools'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=rank-math-content-ai-page#ai-tools' title='Content AI Tools'>AI Tools</a></li><li role='group' id='wp-admin-bar-rank-math-content-ai-editor'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=rank-math-content-ai-page#content-editor' title='Content AI Editor'>Content Editor</a></li><li role='group' id='wp-admin-bar-rank-math-content-ai-chat'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=rank-math-content-ai-page#chat' title='Content AI Chat'>Chat</a></li><li role='group' id='wp-admin-bar-rank-math-content-ai-history'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=rank-math-content-ai-page#history' title='Content AI History'>History</a></li></ul></div></li><li role='group' id='wp-admin-bar-rank-math-mark-me' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='#'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Mark this page</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-rank-math-mark-me-default' class="ab-submenu"><li role='group' id='wp-admin-bar-rank-math-pillar-content' class="mark-page-as"><a class='ab-item' role="menuitem" href='#pillar_content'>As Pillar Content</a></li><li role='group' id='wp-admin-bar-rank-math-no-index' class="mark-page-as"><a class='ab-item' role="menuitem" href='#noindex'>As NoIndex</a></li><li role='group' id='wp-admin-bar-rank-math-no-follow' class="mark-page-as"><a class='ab-item' role="menuitem" href='#nofollow'>As NoFollow</a></li></ul></div></li><li role='group' id='wp-admin-bar-rank-math-third-party' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='#'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>External Tools</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-rank-math-third-party-default' class="ab-submenu"><li role='group' id='wp-admin-bar-rank-math-google-pagespeed'><a class='ab-item' role="menuitem" href='https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fautospecsdaily.com%3A81%2F' target='_blank' title='Google PageSpeed Insights'>Google PageSpeed</a></li><li role='group' id='wp-admin-bar-rank-math-google-richresults-mobile'><a class='ab-item' role="menuitem" href='https://search.google.com/test/rich-results?url=https%3A%2F%2Fautospecsdaily.com%3A81%2F&#038;user_agent=1' target='_blank' title='Google Rich Results Test - Googlebot Smartphone'>Google Rich Results (Mobile)</a></li><li role='group' id='wp-admin-bar-rank-math-google-richresults-desktop'><a class='ab-item' role="menuitem" href='https://search.google.com/test/rich-results?url=https%3A%2F%2Fautospecsdaily.com%3A81%2F&#038;user_agent=2' target='_blank' title='Google Rich Results Test - Googlebot Desktop'>Google Rich Results (Desktop)</a></li><li role='group' id='wp-admin-bar-rank-math-fb-debugger'><a class='ab-item' role="menuitem" href='https://developers.facebook.com/tools/debug/sharing/?q=https%3A%2F%2Fautospecsdaily.com%3A81%2F' target='_blank' title='Facebook Sharing Debugger'>Facebook Debugger</a></li></ul></div></li></ul></div></li><li role='group' id='wp-admin-bar-hack-guardian'><a class='ab-item' role="menuitem" href='#' title='HackGuardian'><span class="hackguardian-title">HackGuardian</span> <span class="ab-icon hackguardian-tooltip-trigger"></span>
+<input class="easywp" type="checkbox" id="hack-guardian-checkbox" name="hack-guardian-checkbox" value="1" />
+<label for="hack-guardian-checkbox"/>
+</a></li><li role='group' id='wp-admin-bar-wpnceasywp-admin-menu'><a class='ab-item' role="menuitem" href='/?wpnceasywp_action=clear_all&#038;_wpnonce=0a58b89b43' title='Clear Cache'><span class="desktop-clearcache">Clear Cache</span> <span class="mobile-clearcache">🧽</span></a></li><li role='group' id='wp-admin-bar-wpforms-menu' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-overview'>WPForms</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-wpforms-menu-default' class="ab-submenu"><li role='group' id='wp-admin-bar-wpforms-forms'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-overview'>All Forms</a></li><li role='group' id='wp-admin-bar-wpforms-add-new'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-builder'>Add New Form</a></li><li role='group' id='wp-admin-bar-wpforms-payments'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-payments'>Payments</a></li><li role='group' id='wp-admin-bar-wpforms-settings' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Settings</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-wpforms-settings-default' class="ab-submenu"><li role='group' id='wp-admin-bar-wpforms-general-settings'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings&#038;view=general'>General</a></li><li role='group' id='wp-admin-bar-wpforms-email-settings'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings&#038;view=email'>Email</a></li><li role='group' id='wp-admin-bar-wpforms-captcha-settings'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings&#038;view=captcha'>CAPTCHA</a></li><li role='group' id='wp-admin-bar-wpforms-validation-settings'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings&#038;view=validation'>Validation</a></li><li role='group' id='wp-admin-bar-wpforms-payments-settings'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings&#038;view=payments'>Payments</a></li><li role='group' id='wp-admin-bar-wpforms-integrations-settings'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings&#038;view=integrations'>Integrations</a></li><li role='group' id='wp-admin-bar-wpforms-geolocation-settings'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings&#038;view=geolocation'>Geolocation</a></li><li role='group' id='wp-admin-bar-wpforms-access-settings'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings&#038;view=access'>Access Control</a></li><li role='group' id='wp-admin-bar-wpforms-misc-settings'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-settings&#038;view=misc'>Misc</a></li></ul></div></li><li role='group' id='wp-admin-bar-wpforms-tools' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Tools</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-wpforms-tools-default' class="ab-submenu"><li role='group' id='wp-admin-bar-wpforms-tools-import'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=import'>Import</a></li><li role='group' id='wp-admin-bar-wpforms-tools-export'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=export'>Export</a></li><li role='group' id='wp-admin-bar-wpforms-tools-entry-automation'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=entry-automation'>Entry Automation</a></li><li role='group' id='wp-admin-bar-wpforms-tools-system'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=system'>System Info</a></li><li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler' class="menupop"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms'><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Scheduled Actions</a><div class="ab-sub-wrapper"><ul role='menu' id='wp-admin-bar-wpforms-tools-action-scheduler-default' class="ab-submenu"><li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-all'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;orderby=hook&#038;order=desc'>View All</a></li><li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-complete'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;status=complete&#038;orderby=hook&#038;order=desc'>Completed Actions</a></li><li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-failed'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;status=failed&#038;orderby=hook&#038;order=desc'>Failed Actions</a></li><li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-pending'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;status=pending&#038;orderby=hook&#038;order=desc'>Pending Actions</a></li><li role='group' id='wp-admin-bar-wpforms-tools-action-scheduler-past-due'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=action-scheduler&#038;s=wpforms&#038;status=past-due&#038;orderby=hook&#038;order=desc'>Past Due Actions</a></li></ul></div></li><li role='group' id='wp-admin-bar-wpforms-tools-logs'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=logs'>Logs</a></li><li role='group' id='wp-admin-bar-wpforms-tools-wpcode'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-tools&#038;view=wpcode'>Code Snippets</a></li></ul></div></li><li role='group' id='wp-admin-bar-wpforms-community'><a class='ab-item' role="menuitem" href='https://www.facebook.com/groups/wpformsvip/' target='_blank' rel='noopener noreferrer'>Community</a></li><li role='group' id='wp-admin-bar-wpforms-help-docs'><a class='ab-item' role="menuitem" href='https://wpforms.com/docs/?utm_campaign=liteplugin&#038;utm_medium=admin-bar&#038;utm_source=WordPress&#038;utm_content=Documentation' target='_blank' rel='noopener noreferrer'>Help Docs</a></li><li role='group' id='wp-admin-bar-wpforms-upgrade'><a class='ab-item' role="menuitem" href='http://www.shareasale.com/r.cfm?B=837827&#038;U=2303424&#038;M=64312&#038;urllink=https%3A%2F%2Fwpforms.com%2Flite-upgrade%2F%3Futm_campaign%3Dliteplugin%26utm_source%3DWordPress%26utm_medium%3Dadmin-bar%26utm_content%3DUpgrade%2520to%2520Pro%26utm_locale%3Den_US' target='_blank' rel='noopener noreferrer'>Upgrade to Pro</a></li></ul></div></li></ul><ul role='menu' id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li role='group' id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' role="menuitem" aria-expanded="false" href='https://autospecsdaily.com/wp-admin/profile.php'>Howdy, <span class="display-name">mqadan</span><img alt='' src='https://secure.gravatar.com/avatar/beb318598ad7072c7471e5ebb44fecd0ab5274d1090caa32064de61226dd07d1?s=26&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/beb318598ad7072c7471e5ebb44fecd0ab5274d1090caa32064de61226dd07d1?s=52&#038;d=mm&#038;r=g 2x' class='avatar avatar-26 photo' height='26' width='26' decoding='async'/></a><div class="ab-sub-wrapper"><ul role='menu' aria-label='Howdy, mqadan' id='wp-admin-bar-user-actions' class="ab-submenu"><li role='group' id='wp-admin-bar-user-info'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-admin/profile.php'><img alt='' src='https://secure.gravatar.com/avatar/beb318598ad7072c7471e5ebb44fecd0ab5274d1090caa32064de61226dd07d1?s=64&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/beb318598ad7072c7471e5ebb44fecd0ab5274d1090caa32064de61226dd07d1?s=128&#038;d=mm&#038;r=g 2x' class='avatar avatar-64 photo' height='64' width='64' decoding='async'/><span class='display-name'>mqadan</span><span class='display-name edit-profile'>Edit Profile</span></a></li><li role='group' id='wp-admin-bar-logout'><a class='ab-item' role="menuitem" href='https://autospecsdaily.com/wp-login.php?action=logout&#038;_wpnonce=99f75f697a'>Log Out</a></li></ul></div></li><li role='group' id='wp-admin-bar-search' class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1" role="menuitem"><form action="https://autospecsdaily.com/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search" /></form></div></li></ul> </div>
+</div>
+
+<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a> <header class="site-header has-inline-mobile-toggle" id="masthead" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope>
+<div class="inside-header grid-container">
+<div class="site-branding-container"><div class="site-logo">
+<a href="https://autospecsdaily.com/" rel="home">
+<img class="header-image is-logo-image" alt="AutoSpecs" src="https://autospecsdaily.com/wp-content/uploads/2025/06/cropped-cropped-cropped-ChatGPT-Image-Jun-16-2025-06_51_54-AM.png" width="512" height="512" />
+</a>
+</div><div class="site-branding">
+<p class="main-title" itemprop="headline">
+<a href="https://autospecsdaily.com/" rel="home">AutoSpecs</a>
+</p>
+<p class="site-description" itemprop="description">Daily</p>
+</div></div> <nav class="main-navigation mobile-menu-control-wrapper" id="mobile-menu-control-wrapper" aria-label="Mobile Toggle">
+<button data-nav="site-navigation" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="screen-reader-text">Menu</span> </button>
+</nav>
+<nav class="main-navigation sub-menu-right" id="site-navigation" aria-label="Primary" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+<div class="inside-navigation grid-container">
+<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="mobile-menu">Menu</span> </button>
+<div id="primary-menu" class="main-nav">
+<ul class="menu sf-menu">
+<li class="page_item page-item-3"><a href="https://autospecsdaily.com/privacy-policy/">Privacy Policy</a></li>
+<li class="page_item page-item-4"><a href="https://autospecsdaily.com/about/">About</a></li>
+<li class="page_item page-item-6"><a href="https://autospecsdaily.com/contact/">Contact</a></li>
+<li class="page_item page-item-14"><a href="https://autospecsdaily.com/affiliate-disclosure/">Affiliate Disclosure</a></li>
+<li class="page_item page-item-18 current-menu-item"><a href="https://autospecsdaily.com/">Home</a></li>
+<li class="page_item page-item-771 menu-item-has-children"><a href="https://autospecsdaily.com/article-topics/">Article Topics<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class='children'>
+<li class="page_item page-item-1023"><a href="https://autospecsdaily.com/article-topics/buying-guides/">Buying Guides</a></li>
+<li class="page_item page-item-1027"><a href="https://autospecsdaily.com/article-topics/car-insurance/">Car Insurance</a></li>
+<li class="page_item page-item-1030"><a href="https://autospecsdaily.com/article-topics/comparisons/">Comparisons</a></li>
+<li class="page_item page-item-1034"><a href="https://autospecsdaily.com/article-topics/evs/">EVs</a></li>
+<li class="page_item page-item-1038"><a href="https://autospecsdaily.com/article-topics/first-time-buyers/">First Time Buyers</a></li>
+<li class="page_item page-item-1041"><a href="https://autospecsdaily.com/article-topics/guides-and-tips/">Guides and Tips</a></li>
+<li class="page_item page-item-1043"><a href="https://autospecsdaily.com/article-topics/maintenance/">Maintenance</a></li>
+<li class="page_item page-item-1047"><a href="https://autospecsdaily.com/article-topics/mods-and-upgrades/">Mods and Upgrades</a></li>
+<li class="page_item page-item-1015"><a href="https://autospecsdaily.com/article-topics/accessories/">Accessories</a></li>
+<li class="page_item page-item-1012"><a href="https://autospecsdaily.com/article-topics/budget-buys/">Budget Buys</a></li>
+<li class="page_item page-item-801"><a href="https://autospecsdaily.com/article-topics/car-reviews/">Car Reviews</a></li>
+<li class="page_item page-item-1000"><a href="https://autospecsdaily.com/article-topics/fuel-economy/">Fuel Economy</a></li>
+<li class="page_item page-item-1006"><a href="https://autospecsdaily.com/article-topics/used-cars/">Used Cars</a></li>
+<li class="page_item page-item-1051"><a href="https://autospecsdaily.com/article-topics/tires/">Tires</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</header>
+
+<div class="site grid-container container hfeed" id="page">
+<div class="site-content" id="content">
+
+<div class="content-area" id="primary">
+<main class="site-main" id="main">
+
+<article id="post-18" class="post-18 page type-page status-publish" itemtype="https://schema.org/CreativeWork" itemscope>
+<div class="inside-article">
+
+<div class="entry-content" itemprop="text">
+
+<div class="wp-block-cover" style="min-height:624px;aspect-ratio:unset;"><img fetchpriority="high" decoding="async" width="720" height="405" class="wp-block-cover__image-background wp-image-405 size-full" alt="" src="https://autospecsdaily.com/wp-content/uploads/2025/06/mjtpgz6fgnvdomg5lx.gif" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#3b495b"></span><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-group alignwide" id="hero-content"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h1 class="wp-block-heading has-text-align-center has-x-large-font-size"><strong>Your Source for Car Reviews and News</strong></h1>
+
+
+
+<p class="has-text-align-center has-medium-font-size">The latest car reviews, buying guides, and maintenance tips, all in one place</p>
+
+
+<form role="search" method="get" action="https://autospecsdaily.com/" class="wp-block-search__button-outside wp-block-search__text-button aligncenter wp-block-search" ><label class="wp-block-search__label screen-reader-text" for="wp-block-search__input-1" >Search</label><div class="wp-block-search__inside-wrapper " style="width: 820px"><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="Search articles..." value="" type="search" name="s" required /><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit" >Search</button></div></form></div></div>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></div>
+
+
+
+<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-center is-style-default" style="grid-template-columns:auto 56%"><div class="wp-block-media-text__content">
+<h2 class="wp-block-heading has-text-color" style="color:#000000"><strong>Featured Car of The Week</strong></h2>
+
+
+
+<p class="has-text-color" style="color:#636363;font-size:17px;line-height:1.1">2017 &#8211; 2022 Toyota C-HR. One of the best values on the used car market</p>
+
+
+
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://autospecsdaily.com/2017-2022-toyota-c%e2%80%91hr-one-of-the-best-values-on-the-used-car-market-%f0%9f%9a%97/">Learn More</a></div>
+</div>
+</div><figure class="wp-block-media-text__media"><img decoding="async" width="1024" height="576" src="https://autospecsdaily.com/wp-content/uploads/2025/06/2022_Toyota_CHR_Supersonic-Red_011-1024x576.jpg" alt="" class="wp-image-46 size-full" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/2022_Toyota_CHR_Supersonic-Red_011-1024x576.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/06/2022_Toyota_CHR_Supersonic-Red_011-300x169.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/2022_Toyota_CHR_Supersonic-Red_011-768x432.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/06/2022_Toyota_CHR_Supersonic-Red_011-1536x864.jpg 1536w, https://autospecsdaily.com/wp-content/uploads/2025/06/2022_Toyota_CHR_Supersonic-Red_011.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+
+<div class="wp-block-group has-base-2-background-color has-background"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h1 class="wp-block-heading"><strong>Car Reviews</strong></h1>
+
+
+<ul class="wp-block-latest-posts__list is-grid columns-3 has-link-color car-thumb wp-elements-188197b0ae80a534bf2f8f0b5b3b2ec3 wp-block-latest-posts has-text-color has-contrast-2-color has-medium-font-size wp-container-content-492a994e"><li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/most-reliable-used-sedans-under-6000-for-gas-mileage/" aria-label="Most Reliable Used Sedans Under $6,000 for Gas Mileage"><img decoding="async" width="1024" height="681" src="https://autospecsdaily.com/wp-content/uploads/2025/07/58559fdd-1990-44c6-97bd-48d1964f9d19.jpg" class="attachment-large size-large wp-post-image" alt="" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/07/58559fdd-1990-44c6-97bd-48d1964f9d19.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/07/58559fdd-1990-44c6-97bd-48d1964f9d19-300x200.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/07/58559fdd-1990-44c6-97bd-48d1964f9d19-768x511.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/most-reliable-used-sedans-under-6000-for-gas-mileage/">Most Reliable Used Sedans Under $6,000 for Gas Mileage</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/toyota-corolla-hybrid-vs-honda-insight-for-commuters-which-ones-the-smarter-buy/" aria-label="Toyota Corolla Hybrid vs Honda Insight for Commuters: Which One’s the Smarter Buy?"><img loading="lazy" decoding="async" width="1024" height="683" src="https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-1024x683.jpg" class="attachment-large size-large wp-post-image" alt="a close up of the steering wheel of a car" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-1024x683.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-300x200.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-768x512.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-1536x1024.jpg 1536w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc.jpg 1600w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/toyota-corolla-hybrid-vs-honda-insight-for-commuters-which-ones-the-smarter-buy/">Toyota Corolla Hybrid vs Honda Insight for Commuters: Which One’s the Smarter Buy?</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/reliable-hatchbacks-under-5k-at-150k-miles/" aria-label="Reliable Hatchbacks Under $5k at 150k Miles"><img loading="lazy" decoding="async" width="1024" height="683" src="https://autospecsdaily.com/wp-content/uploads/2025/06/31f83a00-0a4a-415b-ba05-10a895ec90b5.jpg" class="attachment-large size-large wp-post-image" alt="" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/31f83a00-0a4a-415b-ba05-10a895ec90b5.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/06/31f83a00-0a4a-415b-ba05-10a895ec90b5-300x200.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/31f83a00-0a4a-415b-ba05-10a895ec90b5-768x512.jpg 768w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/reliable-hatchbacks-under-5k-at-150k-miles/">Reliable Hatchbacks Under $5k at 150k Miles</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/best-compact-suvs-for-teen-drivers-with-safety-under-25k/" aria-label="Best Compact SUVs for Teen Drivers with Safety Under $25k"><img loading="lazy" decoding="async" width="1024" height="683" src="https://autospecsdaily.com/wp-content/uploads/2025/06/ppkvjepa_i0-1024x683.jpg" class="attachment-large size-large wp-post-image" alt="man wearing hoodie" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/ppkvjepa_i0-1024x683.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/06/ppkvjepa_i0-300x200.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/ppkvjepa_i0-768x512.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/06/ppkvjepa_i0-1536x1024.jpg 1536w, https://autospecsdaily.com/wp-content/uploads/2025/06/ppkvjepa_i0.jpg 1600w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/best-compact-suvs-for-teen-drivers-with-safety-under-25k/">Best Compact SUVs for Teen Drivers with Safety Under $25k</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/mazda-cx%e2%80%9130-turbo-vs-vw-taos-smoothness-value/" aria-label="Mazda CX‑30 Turbo vs VW Taos: Smoothness &#038; Value"><img loading="lazy" decoding="async" width="1024" height="565" src="https://autospecsdaily.com/wp-content/uploads/2025/06/a4b8b905-7878-453d-9c19-121e15cf5acd-1024x565.jpg" class="attachment-large size-large wp-post-image" alt="" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/a4b8b905-7878-453d-9c19-121e15cf5acd-1024x565.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4b8b905-7878-453d-9c19-121e15cf5acd-300x165.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4b8b905-7878-453d-9c19-121e15cf5acd-768x423.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4b8b905-7878-453d-9c19-121e15cf5acd-1536x847.jpg 1536w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4b8b905-7878-453d-9c19-121e15cf5acd-2048x1129.jpg 2048w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/mazda-cx%e2%80%9130-turbo-vs-vw-taos-smoothness-value/">Mazda CX‑30 Turbo vs VW Taos: Smoothness &#038; Value</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/2025-chevy-trailblazer-hybrid-is-it-worth-the-price-premium/" aria-label="2025 Chevy Trailblazer Hybrid: Is It Worth the Price Premium?"><img loading="lazy" decoding="async" width="1024" height="683" src="https://autospecsdaily.com/wp-content/uploads/2025/06/4370e3bf-55c7-4f14-9f11-5922a4e108e3.jpg" class="attachment-large size-large wp-post-image" alt="" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/4370e3bf-55c7-4f14-9f11-5922a4e108e3.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/06/4370e3bf-55c7-4f14-9f11-5922a4e108e3-300x200.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/4370e3bf-55c7-4f14-9f11-5922a4e108e3-768x512.jpg 768w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/2025-chevy-trailblazer-hybrid-is-it-worth-the-price-premium/">2025 Chevy Trailblazer Hybrid: Is It Worth the Price Premium?</a></li>
+</ul></div></div>
+
+
+
+<div class="wp-block-cover"><img loading="lazy" decoding="async" width="1024" height="683" class="wp-block-cover__image-background wp-image-396" alt="a car driving on a dirt road" src="https://autospecsdaily.com/wp-content/uploads/2025/06/tzpa1l2_uq8-1-1024x683.jpg" style="object-position:48% 53%" data-object-fit="cover" data-object-position="48% 53%" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/tzpa1l2_uq8-1-1024x683.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/06/tzpa1l2_uq8-1-300x200.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/tzpa1l2_uq8-1-768x512.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/06/tzpa1l2_uq8-1-1536x1024.jpg 1536w, https://autospecsdaily.com/wp-content/uploads/2025/06/tzpa1l2_uq8-1.jpg 1600w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim"></span><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+<p class="has-text-align-center has-large-font-size"><strong>Why is the Kia Telluride So Popular</strong>?</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-16018d1d wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://autospecsdaily.com/why-the-kia-telluride-is-so-popular/">Learn More</a></div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-group has-base-2-background-color has-background"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading"><strong>Accessories</strong></h2>
+
+
+<ul class="wp-block-latest-posts__list is-grid columns-4 has-link-color wp-elements-9c17e36ea7c794e281c58a363e376549 wp-block-latest-posts has-text-color has-contrast-2-color"><li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/fuel-efficient-cars-that-hold-value-under-12000/" aria-label="Fuel-Efficient Cars That Hold Value Under $12,000"><img loading="lazy" decoding="async" width="300" height="200" src="https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-1-300x200.jpg" class="attachment-medium size-medium wp-post-image" alt="a close up of the steering wheel of a car" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-1-300x200.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-1-1024x683.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-1-768x512.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-1-1536x1024.jpg 1536w, https://autospecsdaily.com/wp-content/uploads/2025/06/a4zudetxigc-1.jpg 1600w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/fuel-efficient-cars-that-hold-value-under-12000/">Fuel-Efficient Cars That Hold Value Under $12,000</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/compact-emergency-window-hammer-for-cars/" aria-label="Compact Emergency Window Hammer for Cars"><img loading="lazy" decoding="async" width="300" height="225" src="https://autospecsdaily.com/wp-content/uploads/2025/06/2e0366af-7fa9-4af2-be17-e2e466c30ff3-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/2e0366af-7fa9-4af2-be17-e2e466c30ff3-300x225.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/2e0366af-7fa9-4af2-be17-e2e466c30ff3-768x576.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/06/2e0366af-7fa9-4af2-be17-e2e466c30ff3.jpg 1024w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/compact-emergency-window-hammer-for-cars/">Compact Emergency Window Hammer for Cars</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/magnetic-sunglasses-holder-for-visor-or-console/" aria-label="Magnetic Sunglasses Holder for Visor or Console"><img loading="lazy" decoding="async" width="300" height="225" src="https://autospecsdaily.com/wp-content/uploads/2025/06/cqasntp_fz0-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="black sunglasses on white sand" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/cqasntp_fz0-300x225.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/cqasntp_fz0-1024x768.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/06/cqasntp_fz0-768x576.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/06/cqasntp_fz0-1536x1152.jpg 1536w, https://autospecsdaily.com/wp-content/uploads/2025/06/cqasntp_fz0.jpg 1600w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/magnetic-sunglasses-holder-for-visor-or-console/">Magnetic Sunglasses Holder for Visor or Console</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/headrest-mounted-tablet-holders-that-dont-slip/" aria-label="Headrest Mounted Tablet Holders That Don&#8217;t Slip"><img loading="lazy" decoding="async" width="300" height="300" src="https://autospecsdaily.com/wp-content/uploads/2025/06/3468efa4-09cf-4f6b-88b7-a941de09131a-300x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/06/3468efa4-09cf-4f6b-88b7-a941de09131a-300x300.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/06/3468efa4-09cf-4f6b-88b7-a941de09131a-150x150.jpg 150w, https://autospecsdaily.com/wp-content/uploads/2025/06/3468efa4-09cf-4f6b-88b7-a941de09131a-768x768.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/06/3468efa4-09cf-4f6b-88b7-a941de09131a.jpg 1024w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/headrest-mounted-tablet-holders-that-dont-slip/">Headrest Mounted Tablet Holders That Don&#8217;t Slip</a></li>
+</ul></div></div>
+
+
+
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading"><strong>Buying Guides</strong></h2>
+
+
+<ul class="wp-block-latest-posts__list is-grid columns-4 has-link-color wp-elements-3301d57a71c1b951d63c40d7866e88d4 wp-block-latest-posts has-text-color has-contrast-2-color"><li><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/top-fuel-efficient-family-sedans-under-12000-2025-guide-%f0%9f%9a%97%f0%9f%92%a8/">Top Fuel-Efficient Family Sedans Under $12,000 (2025 Guide) 🚗💨</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/best-mpg-cars-for-food-delivery-under-7000-2025-guide-%f0%9f%9a%97%f0%9f%8d%95/" aria-label="Best MPG Cars for Food Delivery Under $7,000 (2025 Guide) 🚗🍕"><img loading="lazy" decoding="async" width="300" height="225" src="https://autospecsdaily.com/wp-content/uploads/2025/07/af773672-df73-4943-a254-d58902b8e7da-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/07/af773672-df73-4943-a254-d58902b8e7da-300x225.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/07/af773672-df73-4943-a254-d58902b8e7da-768x576.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/07/af773672-df73-4943-a254-d58902b8e7da.jpg 1024w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/best-mpg-cars-for-food-delivery-under-7000-2025-guide-%f0%9f%9a%97%f0%9f%8d%95/">Best MPG Cars for Food Delivery Under $7,000 (2025 Guide) 🚗🍕</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/used-hatchbacks-under-10k-with-best-fuel-economy-for-city-driving-2025-guide/" aria-label="Used Hatchbacks Under $10K with Best Fuel Economy for City Driving (2025 Guide)"><img loading="lazy" decoding="async" width="300" height="166" src="https://autospecsdaily.com/wp-content/uploads/2025/07/ffe17dd9-cb50-41eb-a407-01fa1b5f4485-300x166.jpg" class="attachment-medium size-medium wp-post-image" alt="" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/07/ffe17dd9-cb50-41eb-a407-01fa1b5f4485-300x166.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/07/ffe17dd9-cb50-41eb-a407-01fa1b5f4485-768x426.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/07/ffe17dd9-cb50-41eb-a407-01fa1b5f4485.jpg 1024w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/used-hatchbacks-under-10k-with-best-fuel-economy-for-city-driving-2025-guide/">Used Hatchbacks Under $10K with Best Fuel Economy for City Driving (2025 Guide)</a></li>
+<li><div class="wp-block-latest-posts__featured-image aligncenter"><a href="https://autospecsdaily.com/affordable-used-cars-with-35-mpg-and-apple-carplay-2025-guide/" aria-label="Affordable Used Cars with 35+ MPG and Apple CarPlay (2025 Guide)"><img loading="lazy" decoding="async" width="300" height="169" src="https://autospecsdaily.com/wp-content/uploads/2025/07/f2bac33e-2e00-4c6c-b638-7ad4a2a67c30-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="" style="" srcset="https://autospecsdaily.com/wp-content/uploads/2025/07/f2bac33e-2e00-4c6c-b638-7ad4a2a67c30-300x169.jpg 300w, https://autospecsdaily.com/wp-content/uploads/2025/07/f2bac33e-2e00-4c6c-b638-7ad4a2a67c30-1024x576.jpg 1024w, https://autospecsdaily.com/wp-content/uploads/2025/07/f2bac33e-2e00-4c6c-b638-7ad4a2a67c30-768x432.jpg 768w, https://autospecsdaily.com/wp-content/uploads/2025/07/f2bac33e-2e00-4c6c-b638-7ad4a2a67c30-1536x864.jpg 1536w, https://autospecsdaily.com/wp-content/uploads/2025/07/f2bac33e-2e00-4c6c-b638-7ad4a2a67c30-2048x1151.jpg 2048w" sizes="auto, (max-width: 300px) 100vw, 300px" /></a></div><a class="wp-block-latest-posts__post-title" href="https://autospecsdaily.com/affordable-used-cars-with-35-mpg-and-apple-carplay-2025-guide/">Affordable Used Cars with 35+ MPG and Apple CarPlay (2025 Guide)</a></li>
+</ul></div></div>
+
+
+
+<div class="wp-block-group contact-section"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h3 class="wp-block-heading"><strong>Let’s Talk Cars</strong></h3>
+
+
+
+<p>Have a question? A suggestion? Just want to say hi?<br><strong>You&#8217;re in the right place.</strong></p>
+
+
+
+<p>Use the form below to reach out to the AutoSpecs Daily team. We&#8217;re happy to hear from readers, car lovers, first-time buyers, and anyone who&#8217;s got something to share.</p>
+
+
+
+<p><strong>What can you contact us about?</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Feedback on one of our articles</li>
+
+
+
+<li>Ideas for new topics you&#8217;d like us to cover</li>
+
+
+
+<li>Questions about cars, gear, or general auto advice</li>
+
+
+
+<li>Media, partnership, or brand inquiries</li>
+
+
+
+<li>Anything else that&#8217;s on your mind</li>
+</ul>
+
+
+
+<p>We check every message that comes through and do our best to respond within <strong>2 to 3 business days</strong>.</p>
+
+
+
+<p>We don’t list an email address here to avoid spam, but the contact form is the best and fastest way to reach us.</p>
+
+
+
+<p>Thanks for stopping by. We&#8217;re glad you&#8217;re here.</p>
+</div></div>
+
+
+<div class="wpforms-container wpforms-container-full wpforms-block wpforms-block-1b4101d1-b4d5-41af-8d4a-79af0728fbb8 wpforms-render-modern" id="wpforms-1071"><form id="wpforms-form-1071" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="1071" method="post" enctype="multipart/form-data" action="/" data-token="25ec3250027c04dd7eb3d6fbf02d171a" data-token-time="1759560128"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div id="wpforms-error-noscript" style="display: none;">Please enable JavaScript in your browser to complete this form.</div><div class="wpforms-field-container"><div id="wpforms-1071-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1"><fieldset><legend class="wpforms-field-label">Name <span class="wpforms-required-label" aria-hidden="true">*</span></legend><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-1071-field_1" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][1][first]" aria-errormessage="wpforms-1071-field_1-error" required><label for="wpforms-1071-field_1" class="wpforms-field-sublabel after">First</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-1071-field_1-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][1][last]" aria-errormessage="wpforms-1071-field_1-last-error" required><label for="wpforms-1071-field_1-last" class="wpforms-field-sublabel after">Last</label></div></div></fieldset></div><div id="wpforms-1071-field_2-container" class="wpforms-field wpforms-field-email" data-field-id="2"><label class="wpforms-field-label" for="wpforms-1071-field_2">Email <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="email" id="wpforms-1071-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" spellcheck="false" aria-errormessage="wpforms-1071-field_2-error" required></div> <div id="wpforms-1071-field_4-container"
+class="wpforms-field wpforms-field-text"
+data-field-type="text"
+data-field-id="4"
+>
+<label class="wpforms-field-label" for="wpforms-1071-field_4" >or Comment Name</label>
+<input type="text" id="wpforms-1071-field_4" class="wpforms-field-medium" name="wpforms[fields][4]" >
+</div>
+<div id="wpforms-1071-field_3-container" class="wpforms-field wpforms-field-textarea" data-field-id="3"><label class="wpforms-field-label" for="wpforms-1071-field_3">Comment or Message</label><textarea id="wpforms-1071-field_3" class="wpforms-field-medium" name="wpforms[fields][3]" aria-errormessage="wpforms-1071-field_3-error" ></textarea></div><script>
+( function() {
+const style = document.createElement( 'style' );
+style.appendChild( document.createTextNode( '#wpforms-1071-field_4-container { position: absolute !important; overflow: hidden !important; display: inline !important; height: 1px !important; width: 1px !important; z-index: -1000 !important; padding: 0 !important; } #wpforms-1071-field_4-container input { visibility: hidden; } #wpforms-conversational-form-page #wpforms-1071-field_4-container label { counter-increment: none; }' ) );
+document.head.appendChild( style );
+document.currentScript?.remove();
+} )();
+</script></div><!-- .wpforms-field-container --><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="1071"> <input
+type="hidden"
+name="wpforms[nonce]"
+value="7b4958d1db"
+/>
+<input type="hidden" name="page_title" value="Home"><input type="hidden" name="page_url" value="https://autospecsdaily.com/"><input type="hidden" name="url_referer" value=""><input type="hidden" name="page_id" value="18"><input type="hidden" name="wpforms[post_id]" value="18"><button type="submit" name="wpforms[submit]" id="wpforms-submit-1071" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button><img loading="lazy" decoding="async" src="https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading"></div></form></div> <!-- .wpforms-container --></div></div>
+
+
+
+<p></p>
+</div>
+
+</div>
+</article>
+</main>
+</div>
+
+
+</div>
+</div>
+
+
+<div class="site-footer">
+<footer class="site-info" aria-label="Site" itemtype="https://schema.org/WPFooter" itemscope>
+<div class="inside-site-info grid-container">
+<div class="copyright-bar">
+<span class="copyright">&copy; 2025 AutoSpecs</span> &bull; Built with <a href="https://generatepress.com" itemprop="url">GeneratePress</a> </div>
+</div>
+</footer>
+</div>
+
+<script id="rank-math-json">
+var rankMath = {"version":"1.0.254","ajaxurl":"https:\/\/autospecsdaily.com\/wp-admin\/admin-ajax.php","adminurl":"https:\/\/autospecsdaily.com\/wp-admin\/admin.php","endpoint":"https:\/\/autospecsdaily.com\/wp-json\/rankmath\/v1","security":"4dfb7c0c54","restNonce":"69bd63703d","modules":{"0":"link-counter","1":"analytics","2":"seo-analysis","3":"sitemap","4":"rich-snippet","10":"content-ai","11":"instant-indexing"},"objectID":18,"objectType":"post"};
+</script>
+<script id="generate-a11y">
+!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("pointerdown",(function(){e.classList.add("using-mouse")}),{passive:!0}),e.addEventListener("keydown",(function(){e.classList.remove("using-mouse")}),{passive:!0})}}();
+</script>
+<style id='core-block-supports-inline-css'>
+.wp-elements-188197b0ae80a534bf2f8f0b5b3b2ec3 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast-2);}.wp-container-content-492a994e{grid-column:span 6;grid-row:span 1;}@container (max-width: 79.5rem ){.wp-container-content-492a994e{grid-column:1/-1;}}.wp-container-core-buttons-is-layout-16018d1d{justify-content:center;}.wp-elements-9c17e36ea7c794e281c58a363e376549 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast-2);}.wp-elements-3301d57a71c1b951d63c40d7866e88d4 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast-2);}
+</style>
+<link rel='stylesheet' id='wpforms-modern-full-css' href='https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/css/frontend/modern/wpforms-full.min.css?ver=1.9.8.1' media='all' />
+<style id='wpforms-modern-full-inline-css'>
+:root {
+--wpforms-field-border-radius: 3px;
+--wpforms-field-border-style: solid;
+--wpforms-field-border-size: 1px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-border-color-spare: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-field-menu-color: #ffffff;
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-border-style: none;
+--wpforms-button-border-size: 1px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-border-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-page-break-color: #066aab;
+--wpforms-background-image: none;
+--wpforms-background-position: center center;
+--wpforms-background-repeat: no-repeat;
+--wpforms-background-size: cover;
+--wpforms-background-width: 100px;
+--wpforms-background-height: 100px;
+--wpforms-background-color: rgba( 0, 0, 0, 0 );
+--wpforms-background-url: none;
+--wpforms-container-padding: 0px;
+--wpforms-container-border-style: none;
+--wpforms-container-border-width: 1px;
+--wpforms-container-border-color: #000000;
+--wpforms-container-border-radius: 3px;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+--wpforms-container-shadow-size-box-shadow: none;
+}
+</style>
+<script src="https://autospecsdaily.com/wp-includes/js/hoverintent-js.min.js?ver=2.2.1" id="hoverintent-js-js"></script>
+<script id="admin-bar-js-before">
+( function() {
+function wpforms_admin_bar_menu_init() {
+var template = document.getElementById( 'tmpl-wpforms-admin-menubar-data' ),
+notifications = document.getElementById( 'wp-admin-bar-wpforms-notifications' );
+
+if ( ! template ) {
+return;
+}
+
+if ( ! notifications ) {
+var menu = document.getElementById( 'wp-admin-bar-wpforms-menu-default' );
+
+if ( ! menu ) {
+return;
+}
+
+menu.insertAdjacentHTML( 'afterBegin', template.innerHTML );
+} else {
+notifications.insertAdjacentHTML( 'afterend', template.innerHTML );
+}
+};
+document.addEventListener( 'DOMContentLoaded', wpforms_admin_bar_menu_init );
+}() );
+</script>
+<script src="https://autospecsdaily.com/wp-includes/js/admin-bar.min.js?ver=6.8.3" id="admin-bar-js"></script>
+<script id="wpil-frontend-script-js-extra">
+var wpilFrontend = {"ajaxUrl":"\/wp-admin\/admin-ajax.php","postId":"18","postType":"post","openInternalInNewTab":"0","openExternalInNewTab":"0","disableClicks":"0","openLinksWithJS":"0","trackAllElementClicks":"0","clicksI18n":{"imageNoText":"Image in link: No Text","imageText":"Image Title: ","noText":"No Anchor Text Found"}};
+</script>
+<script src="https://autospecsdaily.com/wp-content/plugins/link-whisper/js/frontend.min.js?ver=1759234510" id="wpil-frontend-script-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/seo-by-rank-math/assets/front/js/rank-math.js?ver=1.0.254" id="rank-math-js"></script>
+<!--[if lte IE 11]>
+<script src="https://autospecsdaily.com/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.6.0" id="generate-classlist-js"></script>
+<![endif]-->
+<script id="generate-menu-js-before">
+var generatepressMenu = {"toggleOpenedSubMenus":true,"openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+</script>
+<script src="https://autospecsdaily.com/wp-content/themes/generatepress/assets/js/menu.min.js?ver=3.6.0" id="generate-menu-js"></script>
+<script id="easywp-admin-js-extra">
+var easyWP = {"ajaxurl":"https:\/\/autospecsdaily.com\/wp-admin\/admin-ajax.php","hackGuardian":"disabled","nonce":"a72e09fde2","description":{"enabled":"<p><strong>Disable HackGuardian<\/strong> to install themes, plugins, and update WordPress.<\/p>","disabled":"<p>Now you can install plugins, themes, and update WordPress. Don\u2019t forget to re-enable to keep your website secure.<\/p>"}};
+</script>
+<script src="https://autospecsdaily.com/wp-content/mu-plugins/wp-nc-easywp/public/js/easywp-admin.js?ver=2.1.1" id="easywp-admin-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-wpforms-2d1e2a896ca7befe287a.js" id="googlesitekit-events-provider-wpforms-js" defer></script>
+<script id="googlesitekit-tracking-data-js-extra">
+var _googlesitekitTrackingData = {"referenceSiteURL":"https:\/\/autospecsdaily.com\/","userIDHash":"89a47e48b6cb5c37d53ab05030889d0f","isAuthenticated":true,"userRoles":["administrator"],"activeModules":["search-console","ads","analytics-4","pagespeed-insights","sign-in-with-google"],"isSiteKitScreen":false,"trackingEnabled":true,"trackingID":"G-EQDN3BWDSD"};
+</script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/runtime-c27fe451b025347eb265.js" id="googlesitekit-runtime-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-i18n-bc6710fe480079978219.js" id="googlesitekit-i18n-js"></script>
+<script id="googlesitekit-base-data-js-extra">
+var _googlesitekitBaseData = {"homeURL":"https:\/\/autospecsdaily.com\/","referenceSiteURL":"https:\/\/autospecsdaily.com\/","adminURL":"https:\/\/autospecsdaily.com\/wp-admin\/","assetsURL":"https:\/\/autospecsdaily.com\/wp-content\/plugins\/google-site-kit\/dist\/assets\/","widgetsAdminURL":"https:\/\/autospecsdaily.com\/wp-admin\/widgets.php","blogPrefix":"wp_","ampMode":false,"isNetworkMode":false,"timezone":"","siteName":"AutoSpecs","siteLocale":"en_US","enabledFeatures":["adsPax"],"webStoriesActive":false,"postTypes":[{"slug":"post","label":"Posts"},{"slug":"page","label":"Pages"},{"slug":"attachment","label":"Media"},{"slug":"wpautoterms_page","label":"Legal Pages"}],"storagePrefix":"13a7b7781e6449e5a02a3eb27da89b91","referenceDate":null,"productPostType":null,"anyoneCanRegister":false,"isMultisite":false,"isOwner":true,"splashURL":"https:\/\/autospecsdaily.com\/wp-admin\/admin.php?page=googlesitekit-splash","proxySetupURL":"https:\/\/autospecsdaily.com\/wp-admin\/index.php?action=googlesitekit_proxy_setup_start&nonce=08b663677a","proxyPermissionsURL":"https:\/\/autospecsdaily.com\/wp-admin\/index.php?action=googlesitekit_proxy_permissions&nonce=c88610f9ef","usingProxy":true,"isAuthenticated":true,"setupErrorCode":null,"setupErrorMessage":null,"setupErrorRedoURL":null,"proxySupportLinkURL":"https:\/\/sitekit.withgoogle.com\/support","updateCoreURL":"https:\/\/autospecsdaily.com\/wp-admin\/update-core.php","wpVersion":{"version":"6.8.3","major":6,"minor":8},"pluginBasename":"google-site-kit\/google-site-kit.php","userRoles":["administrator"],"activeModules":["search-console","ads","analytics-4","pagespeed-insights","sign-in-with-google"],"keyMetricsSetupNew":false,"keyMetricsSetupCompletedBy":0,"consentModeRegions":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"]};
+</script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-polyfills-19304d1d62cad2d35bc9.js" id="googlesitekit-polyfills-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-vendor-578bfde4e99f05baa3b2.js" id="googlesitekit-vendor-js"></script>
+<script id="googlesitekit-commons-js-extra">
+var _googlesitekitLegacyData = {"admin":{"siteURL":"https:\/\/autospecsdaily.com","resetSession":null,"newSitePosts":false,"connectURL":"https:\/\/autospecsdaily.com\/wp-admin\/index.php?action=googlesitekit_connect&nonce=352d1c50be","disconnectURL":"https:\/\/autospecsdaily.com\/wp-admin\/index.php?action=googlesitekit_disconnect&nonce=4d1e8b945c"},"locale":"en_US","setup":{"isSiteKitConnected":true,"isResettable":true,"isAuthenticated":true,"requiredScopes":["openid","https:\/\/www.googleapis.com\/auth\/userinfo.profile","https:\/\/www.googleapis.com\/auth\/userinfo.email","https:\/\/www.googleapis.com\/auth\/siteverification","https:\/\/www.googleapis.com\/auth\/webmasters","https:\/\/www.googleapis.com\/auth\/analytics.readonly","https:\/\/www.googleapis.com\/auth\/tagmanager.readonly"],"grantedScopes":["https:\/\/www.googleapis.com\/auth\/userinfo.profile","https:\/\/www.googleapis.com\/auth\/webmasters","https:\/\/www.googleapis.com\/auth\/siteverification","openid","https:\/\/www.googleapis.com\/auth\/analytics.readonly","https:\/\/www.googleapis.com\/auth\/tagmanager.readonly","https:\/\/www.googleapis.com\/auth\/userinfo.email","https:\/\/www.googleapis.com\/auth\/analytics.edit"],"unsatisfiedScopes":[],"needReauthenticate":false,"isVerified":true,"hasSearchConsoleProperty":true}};
+</script>
+<script id="googlesitekit-apifetch-data-js-extra">
+var _googlesitekitAPIFetchData = {"nonce":"69bd63703d","nonceEndpoint":"https:\/\/autospecsdaily.com\/wp-admin\/admin-ajax.php?action=rest-nonce","preloadedData":{"\/google-site-kit\/v1\/core\/site\/data\/connection":{"body":{"connected":true,"resettable":true,"setupCompleted":true,"hasConnectedAdmins":true,"hasMultipleAdmins":false,"ownerID":1},"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/core\/user\/data\/authentication":{"body":{"authenticated":true,"requiredScopes":["openid","https:\/\/www.googleapis.com\/auth\/userinfo.profile","https:\/\/www.googleapis.com\/auth\/userinfo.email","https:\/\/www.googleapis.com\/auth\/siteverification","https:\/\/www.googleapis.com\/auth\/webmasters","https:\/\/www.googleapis.com\/auth\/analytics.readonly","https:\/\/www.googleapis.com\/auth\/tagmanager.readonly"],"grantedScopes":["https:\/\/www.googleapis.com\/auth\/userinfo.profile","https:\/\/www.googleapis.com\/auth\/webmasters","https:\/\/www.googleapis.com\/auth\/siteverification","openid","https:\/\/www.googleapis.com\/auth\/analytics.readonly","https:\/\/www.googleapis.com\/auth\/tagmanager.readonly","https:\/\/www.googleapis.com\/auth\/userinfo.email","https:\/\/www.googleapis.com\/auth\/analytics.edit"],"unsatisfiedScopes":[],"needsReauthentication":false,"disconnectedReason":"","connectedProxyURL":"https:\/\/autospecsdaily.com\/"},"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/core\/user\/data\/user-input-settings":{"body":{"purpose":{"scope":"site","values":[]},"postFrequency":{"scope":"user","values":[]},"goals":{"scope":"user","values":[]},"includeConversionEvents":{"scope":"site","values":[]}},"headers":{"Allow":"GET, POST"}},"\/google-site-kit\/v1\/core\/user\/data\/audience-settings":{"body":{"configuredAudiences":null,"isAudienceSegmentationWidgetHidden":false,"didSetAudiences":false},"headers":{"Allow":"GET, POST, PUT, PATCH"}},"\/google-site-kit\/v1\/core\/user\/data\/conversion-reporting-settings":{"body":{"newEventsCalloutDismissedAt":0,"lostEventsCalloutDismissedAt":0},"headers":{"Allow":"GET, POST, PUT, PATCH"}},"\/google-site-kit\/v1\/core\/modules\/data\/list":{"body":[{"slug":"site-verification","name":"Site Verification","description":"Google Site Verification allows you to manage ownership of your site.","homepage":"https:\/\/www.google.com\/webmasters\/verification\/home","internal":true,"order":0,"forceActive":true,"recoverable":false,"shareable":false,"active":true,"connected":true,"dependencies":[],"dependants":[],"owner":null},{"slug":"search-console","name":"Search Console","description":"Google Search Console and helps you understand how Google views your site and optimize its performance in search results.","homepage":"https:\/\/search.google.com\/search-console","internal":false,"order":1,"forceActive":true,"recoverable":false,"shareable":true,"active":true,"connected":true,"dependencies":[],"dependants":[],"owner":{"id":1,"login":"mqadan"}},{"slug":"ads","name":"Ads","description":"Grow sales, leads or awareness for your business by advertising with Google Ads","homepage":"https:\/\/google.com\/ads","internal":false,"order":10,"forceActive":false,"recoverable":false,"shareable":false,"active":true,"connected":false,"dependencies":[],"dependants":[],"owner":null},{"slug":"analytics-4","name":"Analytics","description":"Get a deeper understanding of your customers. Google Analytics gives you the free tools you need to analyze data for your business in one place.","homepage":"https:\/\/analytics.google.com\/analytics\/web","internal":false,"order":10,"forceActive":false,"recoverable":false,"shareable":true,"active":true,"connected":true,"dependencies":[],"dependants":[],"owner":{"id":1,"login":"mqadan"}},{"slug":"tagmanager","name":"Tag Manager","description":"Tag Manager creates an easy to manage way to create tags on your site without updating code","homepage":"https:\/\/tagmanager.google.com\/","internal":false,"order":10,"forceActive":false,"recoverable":false,"shareable":false,"active":false,"connected":false,"dependencies":[],"dependants":[],"owner":null},{"slug":"adsense","name":"AdSense","description":"Earn money by placing ads on your website. It\u2019s free and easy.","homepage":"https:\/\/adsense.google.com\/start?source=site-kit&url=https:\/\/autospecsdaily.com","internal":false,"order":10,"forceActive":false,"recoverable":false,"shareable":false,"active":false,"connected":false,"dependencies":[],"dependants":[],"owner":null},{"slug":"pagespeed-insights","name":"PageSpeed Insights","description":"Google PageSpeed Insights gives you metrics about performance, accessibility, SEO and PWA","homepage":"https:\/\/pagespeed.web.dev","internal":false,"order":10,"forceActive":false,"recoverable":false,"shareable":true,"active":true,"connected":true,"dependencies":[],"dependants":[],"owner":null},{"slug":"sign-in-with-google","name":"Sign in with Google","description":"Improve user engagement, trust and data privacy, while creating a simple, secure and personalized experience for your visitors","homepage":"https:\/\/developers.google.com\/identity\/gsi\/web\/guides\/overview","internal":false,"order":10,"forceActive":false,"recoverable":false,"shareable":false,"active":true,"connected":false,"dependencies":[],"dependants":[],"owner":null},{"slug":"reader-revenue-manager","name":"Reader Revenue Manager","description":"Reader Revenue Manager helps publishers grow, retain, and engage their audiences, creating new revenue opportunities","homepage":"https:\/\/publishercenter.google.com","internal":false,"order":10,"forceActive":false,"recoverable":false,"shareable":false,"active":false,"connected":false,"dependencies":[],"dependants":[],"owner":null}],"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/modules\/search-console\/data\/settings":{"body":{"propertyID":"https:\/\/autospecsdaily.com\/","ownerID":1},"headers":{"Allow":"GET, POST, PUT, PATCH"}},"\/google-site-kit\/v1\/modules\/ads\/data\/settings":{"body":{"conversionID":"","paxConversionID":"","customerID":"","extCustomerID":"","formattedExtCustomerID":"","userID":"","accountOverviewURL":""},"headers":{"Allow":"GET, POST, PUT, PATCH"}},"\/google-site-kit\/v1\/modules\/analytics-4\/data\/settings":{"body":{"ownerID":1,"accountID":"359140358","adsConversionID":"","propertyID":"493873384","webDataStreamID":"11367936953","measurementID":"G-KP22Y7N7HN","trackingDisabled":["loggedinUsers"],"useSnippet":true,"googleTagID":"GT-M3K79L7J","googleTagAccountID":"6300050319","googleTagContainerID":"222770962","googleTagContainerDestinationIDs":["G-KP22Y7N7HN"],"googleTagLastSyncedAtMs":1757810653621,"availableCustomDimensions":null,"propertyCreateTime":1750203536000,"adSenseLinked":false,"adSenseLinkedLastSyncedAt":0,"adsConversionIDMigratedAtMs":0,"adsLinked":false,"adsLinkedLastSyncedAt":1758415597,"detectedEvents":["submit_lead_form"],"newConversionEventsLastUpdateAt":1752110315,"lostConversionEventsLastUpdateAt":0},"headers":{"Allow":"GET, POST, PUT, PATCH"}},"\/google-site-kit\/v1\/modules\/pagespeed-insights\/data\/settings":{"body":{"ownerID":0},"headers":{"Allow":"GET, POST, PUT, PATCH"}},"\/google-site-kit\/v1\/modules\/sign-in-with-google\/data\/settings":{"body":{"clientID":"","text":"signin_with","theme":"outline","shape":"rectangular","oneTapEnabled":false,"oneTapOnAllPages":false},"headers":{"Allow":"GET, POST, PUT, PATCH"}},"\/google-site-kit\/v1\/modules\/analytics-4\/data\/audience-settings":{"body":{"availableAudiences":[{"name":"properties\/493873384\/audiences\/11368006539","displayName":"All visitors","description":"All users","audienceType":"DEFAULT_AUDIENCE","audienceSlug":"all-users"},{"name":"properties\/493873384\/audiences\/11368006540","displayName":"Purchasers","description":"Users who have purchased in the last 540 days","audienceType":"DEFAULT_AUDIENCE","audienceSlug":"purchasers"}],"availableAudiencesLastSyncedAt":1750203568,"audienceSegmentationSetupCompletedBy":null},"headers":{"Allow":"GET, POST, PUT, PATCH"}},"\/google-site-kit\/v1\/core\/user\/data\/dismissed-items":{"body":[],"headers":{"Allow":"GET, DELETE"}},"\/google-site-kit\/v1\/core\/user\/data\/expirable-items":{"body":[],"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/core\/user\/data\/permissions":{"body":{"googlesitekit_authenticate":true,"googlesitekit_setup":true,"googlesitekit_view_posts_insights":true,"googlesitekit_view_dashboard":true,"googlesitekit_manage_options":true,"googlesitekit_update_plugins":true,"googlesitekit_view_splash":true,"googlesitekit_view_authenticated_dashboard":true,"googlesitekit_view_wp_dashboard_widget":true,"googlesitekit_view_admin_bar_menu":true,"googlesitekit_view_shared_dashboard":false,"googlesitekit_read_shared_module_data::[\"search-console\"]":false,"googlesitekit_read_shared_module_data::[\"analytics-4\"]":false,"googlesitekit_read_shared_module_data::[\"pagespeed-insights\"]":false,"googlesitekit_manage_module_sharing_options::[\"search-console\"]":true,"googlesitekit_manage_module_sharing_options::[\"analytics-4\"]":true,"googlesitekit_manage_module_sharing_options::[\"pagespeed-insights\"]":true,"googlesitekit_delegate_module_sharing_management::[\"search-console\"]":true,"googlesitekit_delegate_module_sharing_management::[\"analytics-4\"]":true,"googlesitekit_delegate_module_sharing_management::[\"pagespeed-insights\"]":false},"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/core\/user\/data\/nonces":{"body":{"updates":"524c982328"},"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/core\/user\/data\/survey-timeouts":{"body":[],"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/core\/user\/data\/tracking":{"body":{"enabled":true},"headers":{"Allow":"GET, POST"}},"\/google-site-kit\/v1\/core\/site\/data\/admin-bar-settings":{"body":{"enabled":true},"headers":{"Allow":"GET, POST"}},"\/google-site-kit\/v1\/core\/user\/data\/dismissed-tours":{"body":[],"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/core\/user\/data\/key-metrics":{"body":{"widgetSlugs":[],"isWidgetHidden":false},"headers":{"Allow":"GET, POST"}},"\/google-site-kit\/v1\/core\/user\/data\/dismissed-prompts":{"body":[],"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/core\/site\/data\/consent-mode":{"body":{"enabled":false,"regions":["AT","BE","BG","CH","CY","CZ","DE","DK","EE","ES","FI","FR","GB","GR","HR","HU","IE","IS","IT","LI","LT","LU","LV","MT","NL","NO","PL","PT","RO","SE","SI","SK"]},"headers":{"Allow":"GET, POST, PUT, PATCH"}},"\/google-site-kit\/v1\/core\/site\/data\/consent-api-info":{"body":{"hasConsentAPI":false,"wpConsentPlugin":{"installed":false,"installURL":"https:\/\/autospecsdaily.com\/wp-admin\/update.php?action=install-plugin&plugin=wp-consent-api&_wpnonce=9973a7659e","activateURL":false}},"headers":{"Allow":"GET"}},"\/google-site-kit\/v1\/core\/site\/data\/conversion-tracking":{"body":{"enabled":true},"headers":{"Allow":"GET, POST, PUT, PATCH"}}},"rootURL":"https:\/\/autospecsdaily.com\/wp-json\/"};
+</script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-api-211dd5a5f4cec4400889.js" id="googlesitekit-api-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-data-a87f9407a1ffbefc8682.js" id="googlesitekit-data-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-datastore-forms-d8b11b656dbaf63ca0b2.js" id="googlesitekit-datastore-forms-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-datastore-location-da7224ad0f7ba734620e.js" id="googlesitekit-datastore-location-js"></script>
+<script id="googlesitekit-entity-data-js-extra">
+var _googlesitekitEntityData = {"currentEntityURL":"https:\/\/autospecsdaily.com\/","currentEntityType":"post","currentEntityTitle":"Home","currentEntityID":18};
+</script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-datastore-site-fd8ee487dce1936d6d77.js" id="googlesitekit-datastore-site-js"></script>
+<script id="googlesitekit-user-data-js-extra">
+var _googlesitekitUserData = {"user":{"id":1,"email":"qadanmuhammed1@gmail.com","name":"mqadan","picture":"https:\/\/lh3.googleusercontent.com\/a\/ACg8ocK19K6K5Y4EqSA-enF2G7oBMJ4sd0JhRFl4C42erQf-gxLDdlU=s100","full_name":"Moe Qadan"},"connectURL":"https:\/\/autospecsdaily.com\/wp-admin\/index.php?action=googlesitekit_connect&nonce=352d1c50be","hasMultipleAdmins":false,"initialVersion":"1.161.0","isUserInputCompleted":false,"verified":true};
+</script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-datastore-user-5667e15dbb47dad16df5.js" id="googlesitekit-datastore-user-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-datastore-ui-f70bef39a30fd710c09c.js" id="googlesitekit-datastore-ui-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-components-4fd4d5b24349b952bfe9.js" id="googlesitekit-components-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-widgets-6e28ae3fe2a03c31814e.js" id="googlesitekit-widgets-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-notifications-1a6dbda4f6737b1f2e87.js" id="googlesitekit-notifications-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-adminbar-d186945219cb93560f5d.js" id="googlesitekit-adminbar-js" defer></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-modules-c69030e789b0d41ff748.js" id="googlesitekit-modules-js"></script>
+<script id="googlesitekit-modules-data-js-extra">
+var _googlesitekitModulesData = {"ads":{"plugins":{"woocommerce":{"active":false,"installed":false},"google-listings-and-ads":{"active":false,"installed":false,"adsConnected":false,"conversionID":""}},"supportedConversionEvents":["submit_lead_form"]},"analytics-4":{"isWebDataStreamUnavailable":false,"customDimensionsDataAvailable":{"googlesitekit_post_date":false,"googlesitekit_post_author":false,"googlesitekit_post_categories":false,"googlesitekit_post_type":false},"tagIDMismatch":false,"resourceAvailabilityDates":{"audience":[],"customDimension":[],"property":[]},"newEvents":[],"lostEvents":[],"newBadgeEvents":[]},"sign-in-with-google":{"isWooCommerceActive":false,"isWooCommerceRegistrationEnabled":false},"data_available_search-console":false,"data_available_analytics-4":false};
+</script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-modules-search-console-79a6c932436e46c38049.js" id="googlesitekit-modules-search-console-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-modules-ads-376bcc528ed64ac0302c.js" id="googlesitekit-modules-ads-js"></script>
+<script id="googlesitekit-ads-pax-config-js-extra">
+var _googlesitekitPAXConfig = {"authAccess":{"oauthTokenAccess":{"token":"ya29.a0AQQ_BDQP8kNta4dx3Zzo_aaLt1id2845GhqJa5xJ6HvcsQNNFN_ZSoXj6_Bck9MMx1JRo6j6kNtr1ZEPQnMP8RMoOJH5HzAvS2Bdn_r0OfMZwY3tD5AY1EemEB06VMEtVtXk96NUPEQoZ5ac6OLw9YYP7AY_3CJiV1JQ1742Bxq5kgeciiIUNU1E_m0HDsSmoEWu5O3fmgaCgYKAUUSARMSFQHGX2MiTOx1FtH4UAF31jzRm9R7Hg0209"}},"locale":"en","debuggingConfig":{"env":"PROD"}};
+</script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-modules-analytics-4-01b087350c9abdbbe075.js" id="googlesitekit-modules-analytics-4-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-modules-tagmanager-214fe54794a20166bf04.js" id="googlesitekit-modules-tagmanager-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-modules-adsense-7be3dd970adbc67b0b5b.js" id="googlesitekit-modules-adsense-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-modules-pagespeed-insights-3321ee5a21873d686513.js" id="googlesitekit-modules-pagespeed-insights-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-modules-sign-in-with-google-1d35a8ab929b43958ea7.js" id="googlesitekit-modules-sign-in-with-google-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-modules-reader-revenue-manager-58e722e6c731c342356d.js" id="googlesitekit-modules-reader-revenue-manager-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/lib/jquery.validate.min.js?ver=1.21.0" id="wpforms-validation-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/lib/mailcheck.min.js?ver=1.1.2" id="wpforms-mailcheck-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/lib/punycode.min.js?ver=1.0.0" id="wpforms-punycode-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/js/share/utils.min.js?ver=1.9.8.1" id="wpforms-generic-utils-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/js/frontend/wpforms.min.js?ver=1.9.8.1" id="wpforms-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/js/frontend/wpforms-modern.min.js?ver=1.9.8.1" id="wpforms-modern-js"></script>
+<script src="https://autospecsdaily.com/wp-content/plugins/wpforms-lite/assets/js/frontend/fields/address.min.js?ver=1.9.8.1" id="wpforms-address-field-js"></script>
+<script>
+( function() {
+function wpforms_js_error_loading() {
+
+if ( typeof window.wpforms !== 'undefined' ) {
+return;
+}
+
+const forms = document.querySelectorAll( '.wpforms-form' );
+
+if ( ! forms.length ) {
+return;
+}
+
+const error = document.createElement( 'div' );
+
+error.classList.add( 'wpforms-error-container' );
+error.setAttribute( 'role', 'alert' );
+error.innerHTML = 'Heads up! WPForms has detected an issue with JavaScript on this page. JavaScript is required for this form to work properly, so this form may not work as expected. See our <a href="https://wpforms.com/docs/getting-support-wpforms/" target="_blank" rel="noopener noreferrer">troubleshooting guide</a> to learn more or contact support.<p>This message is only displayed to site administrators.</p>';
+
+forms.forEach( function( form ) {
+if ( form.querySelector( '.wpforms-error-container' ) ) {
+return;
+}
+
+const formError = error.cloneNode( true ),
+formErrorId = form.id + '-error';
+
+formError.setAttribute( 'id', formErrorId );
+
+form.insertBefore( formError, form.firstChild );
+form.setAttribute( 'aria-invalid', 'true' );
+form.setAttribute( 'aria-errormessage', formErrorId );
+} );
+}
+
+if ( document.readyState === 'loading' ) {
+document.addEventListener( 'DOMContentLoaded', wpforms_js_error_loading );
+} else {
+wpforms_js_error_loading();
+}
+}() );
+</script><script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_minimum_price":"Amount entered is less than the required minimum.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_min":"Please enter a value greater than or equal to {0}.","val_max":"Please enter a value less than or equal to {0}.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_turnstile_fail_msg":"Cloudflare Turnstile verification failed, please try again later.","val_inputmask_incomplete":"Please fill out the field in required format.","uuid_cookie":"","locale":"en","country":"","country_list_label":"Country list","wpforms_plugin_url":"https:\/\/autospecsdaily.com\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/autospecsdaily.com\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1","currency_code":"USD","currency_thousands":",","currency_decimals":"2","currency_decimal":".","currency_symbol":"$","currency_symbol_pos":"left","val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","css_vars":["field-border-radius","field-border-style","field-border-size","field-background-color","field-border-color","field-text-color","field-menu-color","label-color","label-sublabel-color","label-error-color","button-border-radius","button-border-style","button-border-size","button-background-color","button-border-color","button-text-color","page-break-color","background-image","background-position","background-repeat","background-size","background-width","background-height","background-color","background-url","container-padding","container-border-style","container-border-width","container-border-color","container-border-radius","field-size-input-height","field-size-input-spacing","field-size-font-size","field-size-line-height","field-size-padding-h","field-size-checkbox-size","field-size-sublabel-spacing","field-size-icon-size","label-size-font-size","label-size-line-height","label-size-sublabel-font-size","label-size-sublabel-line-height","button-size-font-size","button-size-height","button-size-padding-h","button-size-margin-top","container-shadow-size-box-shadow"],"isModernMarkupEnabled":"1","formErrorMessagePrefix":"Form error message","errorMessagePrefix":"Error message","submitBtnDisabled":"Submit button is disabled during form submission.","readOnlyDisallowedFields":["captcha","content","divider","hidden","html","entry-preview","pagebreak","payment-total"],"error_updating_token":"Error updating token. Please try again or contact support if the issue persists.","network_error":"Network error or server is unreachable. Check your connection or try again later.","token_cache_lifetime":"86400","hn_data":{"1071":4},"address_field":{"list_countries_without_states":["GB","DE","CH","NL"]}}
+/* ]]> */
+</script>
+
+<script type="text/html" id="tmpl-wpforms-admin-menubar-data">
+<li id="wp-admin-bar-wpforms-form-id-1071" class="menupop wpforms-menu-form wpforms-menu-form-last">
+<div class="ab-item ab-empty-item" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Simple Contact Form</div>
+<div class="ab-sub-wrapper">
+<ul id="wp-admin-bar-wpforms-form-id-1071-default" class="ab-submenu">
+<li id="wp-admin-bar-wpforms-form-id-1071-edit">
+<a class="ab-item" href="https://autospecsdaily.com/wp-admin/admin.php?page=wpforms-builder&#038;view=fields&#038;form_id=1071">Edit Form</a>
+</li>
+</ul>
+</div>
+</li>
+</script>
+<div class="wpautoterms-footer"><p>
+<a href="https://autospecsdaily.com/termsfeed/terms-and-conditions/">Terms and Conditions</a><span class="separator"> - </span><a href="https://autospecsdaily.com/termsfeed/privacy-policy/">Privacy Policy</a></p>
+</div>
+</body>
+</html> and here is the step 2 this is the "additional css": .entry-meta {
+display: none;
+}
+
+.site-info .copyright-bar {
+display: none;
+}
+
+
+/* Glassmorphic search bar container */
+.wp-block-search__inside-wrapper {
+backdrop-filter: blur(4px);
+background: rgba(255, 255, 255, 0.07);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 12px;
+display: flex;
+margin: 20px auto;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+input[type="search"], select {
+/* color: var(--contrast); */
+background-color: unset !important;
+border: unset !important;
+}
+
+/* Input field styling */
+.wp-block-search__input {
+flex: 1;
+padding: 14px 20px;
+border: none;
+background: transparent;
+color: white;
+font-size: 18px;
+outline: none;
+}
+
+/* Placeholder color */
+.wp-block-search__input::placeholder {
+color: rgba(255, 255, 255, 0.8);
+}
+
+.wp-block-search__input {
+color: white !important;
+}
+
+
+/* Button styling */
+.wp-block-search__button {
+background: rgba(255, 255, 255, 0.0);
+border-left: 1px solid rgba(255, 255, 255, 0.2);
+color: white;
+padding: 14px 24px;
+font-size: 16px;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.wp-block-search__button:hover {
+background: rgba(255, 255, 255, 0.4);
+}
+/*
+@media (max-width: 768px) {
+.wp-block-search__inside-wrapper {
+flex-direction: column;
+width: 90%;
+margin: 20px auto;
+}
+
+.wp-block-search__input {
+width: 100%;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+text-align: center;
+}
+
+.wp-block-search__button {
+width: 100%;
+border-left: none;
+border-top: 1px solid rgba(255, 255, 255, 0.2);
+padding: 14px;
+}
+}
+*/
+
+
+/* Grid layout for article cards */
+
+
+/* Individual card styling */
+.wp-block-latest-posts__list.is-grid li {
+background: #fff;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+display: flex;
+flex-direction: column;
+}
+
+/* Hover effect */
+.wp-block-latest-posts__list.is-grid li:hover {
+transform: translateY(-6px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Image styling */
+.wp-block-latest-posts__featured-image img {
+width: 100%;
+height: auto;
+display: block;
+object-fit: cover;
+aspect-ratio: 16 / 9;
+}
+
+.wp-block-latest-posts__featured-image.aligncenter {
+margin-bottom: unset;
+}
+/* Title styling */
+.wp-block-latest-posts__post-title {
+padding: 16px;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.3;
+color: #222;
+flex-grow: 1;
+transition: color 0.3s ease;
+text-decoration: none;
+}
+
+.wp-block-latest-posts__post-title:hover {
+color: #1e73be; /* accent color */
+}
+
+/* Optional: limit title to 2 lines */
+.wp-block-latest-posts__post-title {
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+
+.topic-page-first-image img{
+border-bottom-right-radius: 100px;
+}
+
+.topic-page-second-image img{
+border-bottom-left-radius: 100px;
+}
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+.wp-block-latest-posts__list.is-grid {
+gap: 20px;
+}
+}
+
+
+
+
+
+.contact-section {
+max-width: 800px;
+margin: 0 auto;
+padding: 2.5rem 2rem;
+background-color: #f8f9fa;
+border-radius: 12px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+font-family: 'Helvetica Neue', sans-serif;
+color: #222;
+line-height: 1.7;
+}
+
+/* Headings */
+.contact-section .wp-block-heading {
+font-size: 2rem;
+font-weight: 700;
+margin-bottom: 1rem;
+color: #111;
+}
+
+/* Paragraphs */
+.contact-section p {
+margin-bottom: 1.2rem;
+font-size: 1.1rem;
+color: #333;
+}
+
+/* Lists */
+.contact-section ul {
+list-style: disc;
+margin: 0 0 1.8rem 1.5rem;
+padding-left: 0;
+}
+
+.contact-section ul li {
+margin-bottom: 0.6rem;
+font-size: 1.05rem;
+}
+
+/* WPForms Integration */
+.contact-section .wpforms-form {
+background-color: #fff;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+margin-top: 2rem;
+}
+
+/* Field Labels */
+.contact-section .wpforms-field-label {
+display: block;
+font-weight: 600;
+margin-bottom: 0.5rem;
+font-size: 1rem;
+color: #222;
+}
+
+/* Inputs & Textareas */
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+width: 100%;
+padding: 0.75rem 1rem;
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 1rem;
+background-color: #fff;
+margin-bottom: 1.5rem;
+box-sizing: border-box;
+transition: border 0.2s ease;
+}
+
+.contact-section input[type="text"]:focus,
+.contact-section input[type="email"]:focus,
+.contact-section textarea:focus {
+border-color: #007cba;
+outline: none;
+}
+
+/* Submit Button */
+.contact-section .wpforms-submit {
+background-color: #007cba;
+color: #fff;
+border: none;
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+
+.contact-section .wpforms-submit:hover {
+background-color: #005fa3;
+}
+
+/* Spinner */
+.contact-section .wpforms-submit-spinner {
+margin-left: 1rem;
+vertical-align: middle;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 600px) {
+.contact-section {
+padding: 2rem 1.2rem;
+}
+
+.contact-section .wp-block-heading {
+font-size: 1.6rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+font-size: 1rem;
+}
+
+.contact-section .wpforms-submit {
+width: 100%;
+}
+}
+
+
+
+and this is the php (index.php): <?php
+/**
+* The main template file.
+*
+* This is the most generic template file in a WordPress theme
+* and one of the two required files for a theme (the other being style.css).
+* It is used to display a page when nothing more specific matches a query.
+* E.g., it puts together the home page when no home.php file exists.
+* Learn more: http://codex.wordpress.org/Template_Hierarchy
+*
+* @package GeneratePress
+*/
+
+if ( ! defined( 'ABSPATH' ) ) {
+exit; // Exit if accessed directly.
+}
+
+get_header(); ?>
+
+<div <?php generate_do_attr( 'content' ); ?>>
+<main <?php generate_do_attr( 'main' ); ?>>
+<?php
+/**
+* generate_before_main_content hook.
+*
+* @since 0.1
+*/
+do_action( 'generate_before_main_content' );
+
+if ( generate_has_default_loop() ) {
+if ( have_posts() ) :
+
+/**
+* generate_before_loop hook.
+*
+* @since 3.1.0
+*/
+do_action( 'generate_before_loop', 'index' );
+
+while ( have_posts() ) :
+
+the_post();
+
+generate_do_template_part( 'index' );
+
+endwhile;
+
+/**
+* generate_after_loop hook.
+*
+* @since 2.3
+*/
+do_action( 'generate_after_loop', 'index' );
+
+else :
+
+generate_do_template_part( 'none' );
+
+endif;
+}
+
+/**
+* generate_after_main_content hook.
+*
+* @since 0.1
+*/
+do_action( 'generate_after_main_content' );
+?>
+</main>
+</div>
+
+<?php
+/**
+* generate_after_primary_content_area hook.
+*
+* @since 2.0
+*/
+do_action( 'generate_after_primary_content_area' );
+
+generate_construct_sidebars();
+
+get_footer();
