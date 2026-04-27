@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qadan Travels Blog - Stories from South Bay</title>
+    <meta
+      name="description"
+      content="Read about the best local spots, hidden gems, and authentic experiences in South Bay, LA from content creator Qadan Travels."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/blog-pages.css" />
+    <script src="assets/js/navigation.js"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation Container -->
+    <div id="navigation-container"></div>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-orange-50 to-blue-50">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="logo-circle mx-auto mb-8">
+          <img src="assets/images/logo.jpg" alt="Qadan Travels Logo" />
+        </div>
+        <h1
+          class="text-5xl md:text-6xl font-serif font-bold text-gray-900 mb-6"
+        >
+          Stories from South Bay
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Real stories about real places. Discover the hidden gems, authentic
+          flavors, and local culture that make South Bay, LA special.
+        </p>
+      </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Borjstar Post -->
+          <article
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            data-aos="fade-up"
+          >
+            <div class="aspect-video">
+              <img
+                src="assets/images/Borjstar.jpg"
+                alt="Borjstar Shawarma Gardena"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8">
+              <div
+                class="flex items-center space-x-2 text-sm text-gray-500 mb-4"
+              >
+                <span>📍 Gardena, CA</span>
+                <span>•</span>
+                <span>🍽️ Middle Eastern</span>
+                <span>•</span>
+                <span>📅 Dec 2024</span>
+              </div>
+              <h2 class="text-2xl font-serif font-bold text-gray-900 mb-4">
+                Borjstar Shawarma: The Hidden Gem in Gardena That's Worth the
+                Drive
+              </h2>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                Why this unassuming spot in Gardena has become my go-to for
+                authentic Middle Eastern flavors. Discover the community-driven
+                experience that makes exploring local spots so rewarding.
+              </p>
+              <a
+                href="posts/borjstar-shawarma-gardena.html"
+                class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium"
+              >
+                Read More →
+              </a>
+            </div>
+          </article>
+
+          <!-- Awakening Bar Post -->
+          <article
+            class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="aspect-video">
+              <img
+                src="assets/images/awakening.jpg"
+                alt="Awakening Bar Inglewood"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-8">
+              <div
+                class="flex items-center space-x-2 text-sm text-gray-500 mb-4"
+              >
+                <span>📍 Inglewood, CA</span>
+                <span>•</span>
+                <span>☕ Coffee Culture</span>
+                <span>•</span>
+                <span>📅 Dec 2024</span>
+              </div>
+              <h2 class="text-2xl font-serif font-bold text-gray-900 mb-4">
+                Awakening Bar: Where Coffee Culture Meets Neon Dreams in
+                Inglewood
+              </h2>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                The story behind Inglewood's most Instagram-worthy coffee spot
+                and their legendary Yuzu Espresso Tonic. Discover how this place
+                is redefining neighborhood cafe culture.
+              </p>
+              <a
+                href="posts/awakening-bar-inglewood.html"
+                class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium"
+              >
+                Read More →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <div class="logo-circle mx-auto mb-8">
+          <img src="assets/images/logo.jpg" alt="Qadan Travels Logo" />
+        </div>
+        <h2 class="text-4xl font-serif font-bold text-gray-900 mb-6">
+          About This Blog
+        </h2>
+        <p class="text-xl text-gray-600 leading-relaxed mb-8">
+          I'm a content creator based in South Bay, LA, and I love discovering
+          the real places that make this area special. This blog is where I
+          share the stories behind the spots I feature - the community, the
+          culture, and the authentic experiences that you won't find in tourist
+          guides.
+        </p>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          Every place I write about is somewhere I've actually been, somewhere
+          I've connected with, and somewhere I think you should know about. No
+          sponsored posts, no fake reviews - just real stories about real
+          places.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
+</html>

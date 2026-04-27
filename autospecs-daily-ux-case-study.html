@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoSpecs Daily UX Case Study | Moe Qadan</title>
+  <meta name="description" content="A comprehensive UX case study covering the complete rebuild of AutoSpecs Daily - an AI-powered automotive intelligence platform.">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    .case-study-hero {
+      position: relative;
+      padding: 140px 0 80px;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+      overflow: hidden;
+    }
+    .case-study-hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 20% 80%, rgba(108, 99, 255, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(255, 107, 107, 0.15) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .case-study-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #6c63ff;
+      text-decoration: none;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .back-link:hover {
+      color: #ff6b6b;
+      transform: translateX(-5px);
+    }
+    .section-divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent);
+      margin: 4rem 0;
+      border-radius: 2px;
+    }
+    @media (max-width: 768px) {
+      .case-study-content {
+        padding: 0 1rem;
+      }
+      .case-study-hero {
+        padding: 100px 0 60px;
+      }
+      div[style*="grid-template-columns: repeat(auto-fit"] {
+        grid-template-columns: 1fr !important;
+      }
+      .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        margin: 0;
+        border-radius: 0 0 16px 16px;
+      }
+    }
+    @media (min-width: 992px) {
+      .navbar-collapse {
+        display: flex !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewBox="0 0 16 16">
+          <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zM8 9.433 1.562 6 8 2.567 14.438 6z"/>
+        </svg>&nbsp;qadan
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(84, 84, 165, 0.862);border: unset !important;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#about" onclick="closeMobileMenu()">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services" onclick="closeMobileMenu()">services</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#tools" onclick="closeMobileMenu()">tools</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#projects" onclick="closeMobileMenu()">projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#ux-user-studies" onclick="closeMobileMenu()">ux studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="./blog" onclick="closeMobileMenu()">articles</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact" onclick="closeMobileMenu()">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="case-study-hero">
+    <div class="case-study-content" style="position: relative; z-index: 2;">
+      <a href="index.html#ux-user-studies" class="back-link">
+        ← Back to UX Studies
+      </a>
+      
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 50px; padding: 10px 20px; margin-bottom: 2rem;">
+        <span style="font-size: 1.2rem;">⭐</span>
+        <span style="font-size: 0.9rem; font-weight: 600; color: #6c63ff;">Featured Case Study</span>
+      </div>
+
+      <h1 style="font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 900; margin-bottom: 1.5rem; line-height: 1.1;">
+        <span style="background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Redesigning the Car Ownership</span>
+        <br>
+        <span style="background: linear-gradient(135deg, #6c63ff 0%, #ff6b6b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">"Journeys" System</span>
+      </h1>
+
+      <p style="font-size: clamp(1.1rem, 2vw, 1.4rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; max-width: 800px; margin-bottom: 3rem;">
+        A complete UX research and redesign transforming step-by-step guides into an intuitive, motivating, and SEO-friendly Car Ownership Guides system that feels practical, confidence-building, and frictionless.
+      </p>
+
+      <!-- Quick Stats -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+        <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; text-align: center;">
+          <div style="font-size: 2.5rem; font-weight: 900; color: #6c63ff; margin-bottom: 0.5rem;">50+</div>
+          <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Interactive Tools</div>
+        </div>
+        <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; text-align: center;">
+          <div style="font-size: 2.5rem; font-weight: 900; color: #ff6b6b; margin-bottom: 0.5rem;">20-100</div>
+          <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Articles Daily</div>
+        </div>
+        <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; text-align: center;">
+          <div style="font-size: 2.5rem; font-weight: 900; color: #6c63ff; margin-bottom: 0.5rem;">24/7</div>
+          <div style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Automation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Content -->
+  <section style="padding: 80px 0; background: #0a0a0a;">
+    <div class="case-study-content">
+      
+      <!-- Overview Section -->
+      <div style="margin-bottom: 6rem;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 2rem;">
+          <span style="font-size: 2.5rem;">📋</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0; color: #ffffff;">Overview</h2>
+        </div>
+        
+        <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.1), rgba(255, 107, 107, 0.1)); border-left: 4px solid #6c63ff; border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+          <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.95); line-height: 1.8; margin: 0;">
+            The Car Ownership Journeys system was originally designed as a lightweight set of step-by-step guides to help people navigate complex automotive decisions like buying a first car, comparing lease vs. buy, or reducing monthly ownership costs. The guides integrated on-site calculators and saved progress locally without requiring login. While functional, the experience lacked <strong style="color: #6c63ff;">clarity, consistency, and emotional resonance</strong>.
+          </p>
+        </div>
+
+        <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 2rem;">
+          This case study covers my complete UX research and redesign approach, including competitive insights, language and naming strategy, interaction design improvements, tool integration, and experience flow refinements. The end goal was to transform the system into a set of intuitive, motivating, and SEO-friendly <strong style="color: #ff6b6b;">Car Ownership Guides</strong> that feel practical, confidence-building, and frictionless.
+        </p>
+
+        <!-- Hero Image -->
+        <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3); margin-top: 3rem;">
+          <img src="autospecsdailyhero.png" alt="AutoSpecs Daily Platform" style="width: 100%; height: auto; display: block;">
+        </div>
+        
+        <!-- Tool Image -->
+        <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.3); margin-top: 2rem;">
+          <img src="autospecsdailytool.png" alt="AutoSpecs Daily Interactive Tools" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Research Goals Section -->
+      <div style="margin-bottom: 6rem;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 2rem;">
+          <span style="font-size: 2.5rem;">🎯</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0; color: #ffffff;">Research Goals</h2>
+        </div>
+
+        <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 2rem;">
+          At the start of the project, I focused on understanding:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 16px; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🔍</div>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: #6c63ff; margin-bottom: 0.75rem;">User Behavior</h3>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.6; margin: 0;">
+              How users currently approach complex car-related tasks
+            </p>
+          </div>
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 16px; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🧠</div>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: #6c63ff; margin-bottom: 0.75rem;">Mental Models</h3>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.6; margin: 0;">
+              What mental models exist around "guides," "checklists," and step sequences
+            </p>
+          </div>
+          <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.3); border-radius: 16px; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: #ff6b6b; margin-bottom: 0.75rem;">Competitive Patterns</h3>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.6; margin: 0;">
+              Which patterns competitors use to simplify decision-making
+            </p>
+          </div>
+          <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.3); border-radius: 16px; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">⚠️</div>
+            <h3 style="font-size: 1.2rem; font-weight: 700; color: #ff6b6b; margin-bottom: 0.75rem;">Pain Points</h3>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.6; margin: 0;">
+              Where the existing Journeys flow created confusion or friction
+            </p>
+          </div>
+        </div>
+
+        <div style="background: rgba(108, 99, 255, 0.08); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 16px; padding: 1.5rem; margin-top: 2rem;">
+          <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin: 0;">
+            <strong style="color: #6c63ff;">Insights from this research</strong> guided the full redesign of language, structure, navigation, tool integration, and progress feedback.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Competitive Landscape Section -->
+      <div style="margin-bottom: 6rem;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 2rem;">
+          <span style="font-size: 2.5rem;">🔬</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0; color: #ffffff;">Competitive Landscape</h2>
+        </div>
+
+        <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 3rem;">
+          I conducted a comparative analysis of four established platforms: <strong style="color: #6c63ff;">NerdWallet</strong>, <strong style="color: #6c63ff;">Credit Karma</strong>, <strong style="color: #6c63ff;">Edmunds</strong>, and <strong style="color: #6c63ff;">Carvana</strong>. Each approaches car guidance differently, but all revealed patterns valuable to our redesign.
+        </p>
+
+        <!-- Competitor Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+          <!-- NerdWallet -->
+          <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(108, 99, 255, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255, 255, 255, 0.1)'">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">📝</div>
+            <h3 style="font-size: 1.4rem; font-weight: 700; color: #6c63ff; margin-bottom: 1rem;">NerdWallet</h3>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 1rem;">
+              Heavily leans on long-form, SEO-driven articles structured around numbered steps. Their guides are clear and comprehensive, but not interactive and offer no progress tracking.
+            </p>
+            <div style="background: rgba(108, 99, 255, 0.1); border-radius: 8px; padding: 0.75rem; margin-top: 1rem;">
+              <p style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin: 0; font-style: italic;">
+                Tools are linked contextually, not integrated into the flow
+              </p>
+            </div>
+          </div>
+
+          <!-- Credit Karma -->
+          <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(108, 99, 255, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255, 255, 255, 0.1)'">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">✅</div>
+            <h3 style="font-size: 1.4rem; font-weight: 700; color: #6c63ff; margin-bottom: 1rem;">Credit Karma</h3>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 1rem;">
+              Uses short, approachable checklists that mirror user decision-making stages. Like NerdWallet, these guides are static and rely on simple headings, sequential clarity, and embedded tools.
+            </p>
+            <div style="background: rgba(108, 99, 255, 0.1); border-radius: 8px; padding: 0.75rem; margin-top: 1rem;">
+              <p style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin: 0; font-style: italic;">
+                User-friendly but lacks interactivity
+              </p>
+            </div>
+          </div>
+
+          <!-- Edmunds -->
+          <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255, 107, 107, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255, 255, 255, 0.1)'">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔧</div>
+            <h3 style="font-size: 1.4rem; font-weight: 700; color: #ff6b6b; margin-bottom: 1rem;">Edmunds</h3>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 1rem;">
+              Uses deeply detailed "10-step" style guides and successfully connects key steps to their internal tools like affordability calculators and appraisal tools.
+            </p>
+            <div style="background: rgba(255, 107, 107, 0.1); border-radius: 8px; padding: 0.75rem; margin-top: 1rem;">
+              <p style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin: 0; font-style: italic;">
+                Still, no interactive states—all progress is mental, not UI-supported
+              </p>
+            </div>
+          </div>
+
+          <!-- Carvana -->
+          <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border: 2px solid rgba(108, 99, 255, 0.4); border-radius: 20px; padding: 2rem; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(108, 99, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">🚀</div>
+            <h3 style="font-size: 1.4rem; font-weight: 700; color: #6c63ff; margin-bottom: 1rem;">Carvana</h3>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.95); line-height: 1.7; margin-bottom: 1rem;">
+              Offers a completely different pattern: a true multi-step transactional flow with embedded tools, saved progress, and a clear path forward. Their process is low-friction, reassuring, and strongly guides the user from start to finish.
+            </p>
+            <div style="background: rgba(108, 99, 255, 0.2); border-radius: 8px; padding: 0.75rem; margin-top: 1rem;">
+              <p style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); margin: 0; font-weight: 600;">
+                ⭐ Best-in-class pattern for our redesign
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Takeaways -->
+        <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.12), rgba(255, 107, 107, 0.12)); border: 2px solid rgba(108, 99, 255, 0.3); border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
+          <h3 style="font-size: 1.6rem; font-weight: 800; color: #ffffff; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+            <span>💡</span>
+            <span>Key Takeaways</span>
+          </h3>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+            <div>
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: #6c63ff; margin-bottom: 1rem;">What All Competitors Offer:</h4>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="padding: 0.5rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 10px;">
+                  <span style="color: #6c63ff; font-weight: 700;">✓</span>
+                  <span>Steps are clear, numbered, and predictable</span>
+                </li>
+                <li style="padding: 0.5rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 10px;">
+                  <span style="color: #6c63ff; font-weight: 700;">✓</span>
+                  <span>Copy is actionable and user-friendly</span>
+                </li>
+                <li style="padding: 0.5rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 10px;">
+                  <span style="color: #6c63ff; font-weight: 700;">✓</span>
+                  <span>Tools are contextually introduced</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: #ff6b6b; margin-bottom: 1rem;">What No Competitor Offers:</h4>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="padding: 0.5rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 10px;">
+                  <span style="color: #ff6b6b; font-weight: 700;">✗</span>
+                  <span>Interactive tracking</span>
+                </li>
+                <li style="padding: 0.5rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 10px;">
+                  <span style="color: #ff6b6b; font-weight: 700;">✗</span>
+                  <span>Automatic step completion</span>
+                </li>
+                <li style="padding: 0.5rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 10px;">
+                  <span style="color: #ff6b6b; font-weight: 700;">✗</span>
+                  <span>A hybrid between checklist and guided planning tool</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div style="background: rgba(108, 99, 255, 0.2); border-left: 4px solid #6c63ff; border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem;">
+            <p style="font-size: 1.1rem; color: #ffffff; line-height: 1.8; margin: 0; font-weight: 600;">
+              This gap validated a core design opportunity: <strong style="color: #6c63ff;">Create a guided experience that combines the clarity of step-by-step content with the interactivity of a real planning workflow.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- UX Insights Section -->
+      <div style="margin-bottom: 6rem;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 2rem;">
+          <span style="font-size: 2.5rem;">🧠</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0; color: #ffffff;">UX Insights & Best Practices Applied</h2>
+        </div>
+
+        <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 3rem;">
+          From research, several UX principles became central to the redesign:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          <!-- Insight 1 -->
+          <div style="background: rgba(108, 99, 255, 0.08); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">1️⃣</div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: #6c63ff; margin-bottom: 1rem;">Clear Sequencing</h3>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin: 0;">
+              A structured step list reduces cognitive load. Showing all steps at a glance creates a mental model of "how long this will take."
+            </p>
+          </div>
+
+          <!-- Insight 2 -->
+          <div style="background: rgba(108, 99, 255, 0.08); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">2️⃣</div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: #6c63ff; margin-bottom: 1rem;">Actionable Copy</h3>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin: 0;">
+              Users respond better to clear verbs like "Set Your Budget" or "Estimate Monthly Payments," not vague titles.
+            </p>
+          </div>
+
+          <!-- Insight 3 -->
+          <div style="background: rgba(255, 107, 107, 0.08); border: 1px solid rgba(255, 107, 107, 0.2); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">3️⃣</div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: #ff6b6b; margin-bottom: 1rem;">Embedded Tools</h3>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin: 0;">
+              When a calculator is needed, the UI should make it incredibly obvious when to use it, why to use it, and what happens after it's used.
+            </p>
+          </div>
+
+          <!-- Insight 4 -->
+          <div style="background: rgba(255, 107, 107, 0.08); border: 1px solid rgba(255, 107, 107, 0.2); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">4️⃣</div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: #ff6b6b; margin-bottom: 1rem;">Visual Progress</h3>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin: 0;">
+              Real-time progress indicators, checkmarks, celebratory moments, and reminders all encourage follow-through.
+            </p>
+          </div>
+
+          <!-- Insight 5 -->
+          <div style="background: rgba(108, 99, 255, 0.08); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">5️⃣</div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: #6c63ff; margin-bottom: 1rem;">Zero Friction</h3>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin: 0;">
+              Requiring login for progress storage kills completion rates. The existing localStorage approach aligns with UX best practices for early-stage onboarding tools.
+            </p>
+          </div>
+
+          <!-- Insight 6 -->
+          <div style="background: rgba(108, 99, 255, 0.08); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">6️⃣</div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: #6c63ff; margin-bottom: 1rem;">Contextual Prompts</h3>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin: 0;">
+              Users rarely start journeys from landing pages—they enter through tools and articles. Prompts should appear exactly when users need structured guidance.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Renaming Section -->
+      <div style="margin-bottom: 6rem;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 2rem;">
+          <span style="font-size: 2.5rem;">🏷️</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0; color: #ffffff;">Renaming the System: Moving from "Journeys" to "Guides"</h2>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(108, 99, 255, 0.1)); border: 2px dashed rgba(108, 99, 255, 0.4); border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
+          <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.95); line-height: 1.8; margin-bottom: 1.5rem;">
+            User testing and competitor patterns revealed that the word <strong style="color: #ff6b6b;">"Journey"</strong> felt vague and unnecessarily poetic.
+          </p>
+          <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.95); line-height: 1.8; margin: 0;">
+            Users instinctively understood words like <strong style="color: #6c63ff;">Guide, Plan, or Checklist</strong>.
+          </p>
+        </div>
+
+        <div style="background: rgba(108, 99, 255, 0.1); border-left: 4px solid #6c63ff; border-radius: 16px; padding: 2rem; margin-bottom: 2rem;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; color: #6c63ff; margin-bottom: 1rem;">Outcome:</h3>
+          <p style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-bottom: 1.5rem;">
+            Primary name: <span style="color: #6c63ff; font-size: 1.3rem;">Guide</span>
+          </p>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="padding: 0.75rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 12px;">
+              <span style="color: #6c63ff; font-weight: 700; font-size: 1.2rem;">✓</span>
+              <span>Supports SEO (users search "car buying guide," not "car buying journey")</span>
+            </li>
+            <li style="padding: 0.75rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 12px;">
+              <span style="color: #6c63ff; font-weight: 700; font-size: 1.2rem;">✓</span>
+              <span>Clear, simple, and matches user expectations</span>
+            </li>
+            <li style="padding: 0.75rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 12px;">
+              <span style="color: #6c63ff; font-weight: 700; font-size: 1.2rem;">✓</span>
+              <span>Pairs well with contextual labels like "step-by-step," "interactive," or "plan"</span>
+            </li>
+          </ul>
+        </div>
+
+        <div style="background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 2rem;">
+          <h3 style="font-size: 1.2rem; font-weight: 700; color: #ffffff; margin-bottom: 1.5rem;">Examples:</h3>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <span style="background: rgba(108, 99, 255, 0.2); color: #6c63ff; padding: 10px 20px; border-radius: 50px; font-size: 1rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.4);">
+              "First-Time Car Buyer Guide"
+            </span>
+            <span style="background: rgba(108, 99, 255, 0.2); color: #6c63ff; padding: 10px 20px; border-radius: 50px; font-size: 1rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.4);">
+              "Lease or Buy Decision Guide"
+            </span>
+            <span style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; padding: 10px 20px; border-radius: 50px; font-size: 1rem; font-weight: 600; border: 1px solid rgba(255, 107, 107, 0.4);">
+              "Car Ownership Cost-Saving Guide"
+            </span>
+          </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border-radius: 16px; padding: 1.5rem; margin-top: 2rem; text-align: center;">
+          <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); margin: 0; font-style: italic;">
+            This naming shift alone dramatically improved user comprehension and click-through.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Redesigning Experience Section -->
+      <div style="margin-bottom: 6rem;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 2rem;">
+          <span style="font-size: 2.5rem;">🎨</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0; color: #ffffff;">Redesigning the End-to-End Experience</h2>
+        </div>
+
+        <!-- Homepage Discoverability -->
+        <div style="margin-bottom: 4rem;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <span style="font-size: 1.8rem;">1️⃣</span>
+            <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0; color: #6c63ff;">Homepage Discoverability</h3>
+          </div>
+          <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+            The homepage now introduces Guides as a core feature, with:
+          </p>
+          <div style="background: rgba(108, 99, 255, 0.08); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 16px; padding: 2rem;">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="padding: 0.75rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span style="color: #6c63ff; font-weight: 700; font-size: 1.1rem;">•</span>
+                <span>A broader umbrella title: <strong style="color: #6c63ff;">"Car Ownership Guides"</strong></span>
+              </li>
+              <li style="padding: 0.75rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span style="color: #6c63ff; font-weight: 700; font-size: 1.1rem;">•</span>
+                <span>Clear subtext describing exactly what users get</span>
+              </li>
+              <li style="padding: 0.75rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span style="color: #6c63ff; font-weight: 700; font-size: 1.1rem;">•</span>
+                <span>All available guides shown in a simple grid</span>
+              </li>
+              <li style="padding: 0.75rem 0; color: rgba(255, 255, 255, 0.9); display: flex; align-items: start; gap: 12px;">
+                <span style="color: #6c63ff; font-weight: 700; font-size: 1.1rem;">•</span>
+                <span><strong style="color: #ff6b6b;">Personalized states:</strong> "Continue Guide" buttons for in-progress users, progress bars directly on cards, checkmarks on completed guides</span>
+              </li>
+            </ul>
+          </div>
+          <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.8); margin-top: 1.5rem; font-style: italic;">
+            The homepage now functions as a natural entry point without overwhelming the user.
+          </p>
+        </div>
+
+        <!-- Guides Listing Page -->
+        <div style="margin-bottom: 4rem;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <span style="font-size: 1.8rem;">2️⃣</span>
+            <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0; color: #6c63ff;">Guides Listing Page</h3>
+          </div>
+          <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+            The /guides page was rebuilt to:
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 12px; padding: 1.5rem;">
+              <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">💬</div>
+              <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin: 0; line-height: 1.6;">
+                Provide a clear, humanized value proposition at the top
+              </p>
+            </div>
+            <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 12px; padding: 1.5rem;">
+              <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">📋</div>
+              <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin: 0; line-height: 1.6;">
+                Display all guides in a consistent card layout
+              </p>
+            </div>
+            <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.3); border-radius: 12px; padding: 1.5rem;">
+              <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">❓</div>
+              <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin: 0; line-height: 1.6;">
+                Introduce an educational "How it works" box that reduces anxiety about commitment
+              </p>
+            </div>
+            <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.3); border-radius: 12px; padding: 1.5rem;">
+              <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🔍</div>
+              <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin: 0; line-height: 1.6;">
+                Improve SEO through clear headings and explanatory text
+              </p>
+            </div>
+          </div>
+          <div style="background: rgba(108, 99, 255, 0.08); border-left: 3px solid #6c63ff; border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem;">
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); margin: 0; line-height: 1.7;">
+              <strong style="color: #6c63ff;">Key benefits reinforced:</strong> No login required, automatically saved progress, integrated calculators at each step
+            </p>
+          </div>
+        </div>
+
+        <!-- Guide Detail Page -->
+        <div style="margin-bottom: 4rem;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <span style="font-size: 1.8rem;">3️⃣</span>
+            <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0; color: #6c63ff;">Guide Detail Page</h3>
+          </div>
+          <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+            This page saw the most significant UX transformation.
+          </p>
+          <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.12), rgba(255, 107, 107, 0.12)); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 20px; padding: 2.5rem; margin-bottom: 2rem;">
+            <h4 style="font-size: 1.3rem; font-weight: 700; color: #ffffff; margin-bottom: 1.5rem;">Improvements included:</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="padding: 1rem 0; color: rgba(255, 255, 255, 0.95); display: flex; align-items: start; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span style="color: #6c63ff; font-weight: 700; font-size: 1.2rem;">✓</span>
+                <span><strong style="color: #6c63ff;">Stronger hero section</strong> with a title, icon, and concise explanation</span>
+              </li>
+              <li style="padding: 1rem 0; color: rgba(255, 255, 255, 0.95); display: flex; align-items: start; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span style="color: #6c63ff; font-weight: 700; font-size: 1.2rem;">✓</span>
+                <span><strong style="color: #6c63ff;">Highly scannable checklist layout</strong></span>
+              </li>
+              <li style="padding: 1rem 0; color: rgba(255, 255, 255, 0.95); display: flex; align-items: start; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span style="color: #6c63ff; font-weight: 700; font-size: 1.2rem;">✓</span>
+                <span><strong style="color: #6c63ff;">Clear distinction</strong> between required steps, optional steps, automatic completion when a linked tool is used, and manual "mark complete" functionality</span>
+              </li>
+              <li style="padding: 1rem 0; color: rgba(255, 255, 255, 0.95); display: flex; align-items: start; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <span style="color: #ff6b6b; font-weight: 700; font-size: 1.2rem;">✓</span>
+                <span><strong style="color: #ff6b6b;">Animated progress bar updates</strong> and positive reinforcement</span>
+              </li>
+              <li style="padding: 1rem 0; color: rgba(255, 255, 255, 0.95); display: flex; align-items: start; gap: 12px;">
+                <span style="color: #ff6b6b; font-weight: 700; font-size: 1.2rem;">✓</span>
+                <span><strong style="color: #ff6b6b;">Completion state</strong> with congratulatory messaging, suggestions for next steps, and optional cross-promotion of related guides</span>
+              </li>
+            </ul>
+          </div>
+          <div style="background: rgba(108, 99, 255, 0.1); border-left: 4px solid #6c63ff; border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem;">
+            <p style="font-size: 1.1rem; color: #ffffff; line-height: 1.8; margin: 0; font-weight: 600;">
+              This page now feels like a true roadmap—a personal plan rather than just content.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tool Integration -->
+        <div style="margin-bottom: 4rem;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <span style="font-size: 1.8rem;">4️⃣</span>
+            <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0; color: #6c63ff;">Tool Integration</h3>
+          </div>
+          <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+            A major design focus was making the calculators feel like part of the guide, not a detour.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+            <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.3); border-radius: 16px; padding: 1.5rem;">
+              <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: #ff6b6b; margin-bottom: 0.75rem;">Contextual Banners</h4>
+              <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
+                Tools now display contextual banners when opened from a guide
+              </p>
+            </div>
+            <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.3); border-radius: 16px; padding: 1.5rem;">
+              <div style="font-size: 2rem; margin-bottom: 1rem;">✅</div>
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: #ff6b6b; margin-bottom: 0.75rem;">Completion Toasts</h4>
+              <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
+                After completing a calculation, a completion toast appears confirming the step is done and providing a shortcut to the next step
+              </p>
+            </div>
+            <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 16px; padding: 1.5rem;">
+              <div style="font-size: 2rem; margin-bottom: 1rem;">🔗</div>
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: #6c63ff; margin-bottom: 0.75rem;">Ecosystem Links</h4>
+              <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); line-height: 1.6; margin: 0;">
+                Every tool shows relevant guides at the bottom with clear CTAs: "Continue your guide" or "Start the First-Time Buyer Guide"
+              </p>
+            </div>
+          </div>
+          <div style="background: rgba(108, 99, 255, 0.1); border-left: 4px solid #6c63ff; border-radius: 12px; padding: 1.5rem;">
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.95); margin: 0; line-height: 1.7;">
+              This tightly links tools and guides into a <strong style="color: #6c63ff;">cohesive ecosystem</strong>.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Car Guides Image -->
+        <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.3); margin-top: 2rem;">
+          <img src="autospecsdailycarguides.png" alt="Car Ownership Guides" style="width: 100%; height: auto; display: block;">
+        </div>
+
+        <!-- Progress Continuity -->
+        <div style="margin-bottom: 4rem;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+            <span style="font-size: 1.8rem;">5️⃣</span>
+            <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0; color: #6c63ff;">Progress Continuity and Re-engagement</h3>
+          </div>
+          <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+            To help users return and complete their plan:
+          </p>
+          <div style="background: rgba(108, 99, 255, 0.08); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 16px; padding: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+              <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 1.25rem;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🔔</div>
+                <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin: 0; line-height: 1.6;">
+                  The navigation now shows a badge when guides are in progress
+                </p>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 1.25rem;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🏠</div>
+                <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin: 0; line-height: 1.6;">
+                  The homepage may greet returning users with a subtle "pick up where you left off" message
+                </p>
+              </div>
+              <div style="background: rgba(255, 255, 255, 0.05); border-radius: 12px; padding: 1.25rem;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">💡</div>
+                <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); margin: 0; line-height: 1.6;">
+                  Contextual prompts appear in related articles and tools
+                </p>
+              </div>
+              <div style="background: rgba(108, 99, 255, 0.15); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 12px; padding: 1.25rem;">
+                <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🚀</div>
+                <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.95); margin: 0; line-height: 1.6; font-weight: 600;">
+                  A future extension allows a short onboarding quiz to match users with the correct guide instantly
+                </p>
+              </div>
+            </div>
+          </div>
+          <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.8); margin-top: 1.5rem; font-style: italic;">
+            This reframes the Guides system as something worth returning to—not a one-time checklist.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Outcome Section -->
+      <div style="margin-bottom: 6rem;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 2rem;">
+          <span style="font-size: 2.5rem;">🎯</span>
+          <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin: 0; color: #ffffff;">Outcome & Impact</h2>
+        </div>
+
+        <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 2rem;">
+          The redesigned Car Ownership Guides system now functions as a polished, modern, and deeply user-centric experience. It:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">✨</div>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.95); line-height: 1.7; margin: 0;">
+              Provides clarity through structured steps
+            </p>
+          </div>
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🔗</div>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.95); line-height: 1.7; margin: 0;">
+              Integrates the site's calculators in a meaningful way
+            </p>
+          </div>
+          <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.3); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">📈</div>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.95); line-height: 1.7; margin: 0;">
+              Encourages completion through intuitive progress feedback
+            </p>
+          </div>
+          <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.3); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🚫</div>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.95); line-height: 1.7; margin: 0;">
+              Removes friction by requiring no account
+            </p>
+          </div>
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🔍</div>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.95); line-height: 1.7; margin: 0;">
+              Improves SEO and discoverability with user-centered naming and headings
+            </p>
+          </div>
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 16px; padding: 2rem;">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">🧠</div>
+            <p style="font-size: 1rem; color: rgba(255, 255, 255, 0.95); line-height: 1.7; margin: 0;">
+              Matches real user mental models around planning and decision making
+            </p>
+          </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border: 2px solid rgba(108, 99, 255, 0.4); border-radius: 24px; padding: 3rem; text-align: center; margin-top: 3rem;">
+          <p style="font-size: clamp(1.2rem, 2vw, 1.5rem); color: #ffffff; line-height: 1.8; margin: 0; font-weight: 600;">
+            Most importantly, it gives people a sense of <strong style="color: #6c63ff;">control and confidence</strong> when navigating one of life's most financially significant decisions.
+          </p>
+          <p style="font-size: clamp(1.1rem, 1.8vw, 1.3rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-top: 1.5rem; margin-bottom: 0;">
+            The experience feels like a <strong style="color: #ff6b6b;">personalized roadmap</strong>, not just a collection of tools and articles.
+          </p>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div style="text-align: center; padding: 4rem 0; border-top: 1px solid rgba(255, 255, 255, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff;">Ready to Explore?</h3>
+        <p style="font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: rgba(255, 255, 255, 0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Experience the redesigned Car Ownership Guides system in action
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://autospecsdaily.com/" target="_blank" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #6c63ff 0%, #ff6b6b 100%); color: white; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 20px 40px rgba(108, 99, 255, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <span>Visit AutoSpecs Daily</span>
+            <span>↗</span>
+          </a>
+          <a href="index.html#ux-user-studies" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); text-decoration: none; backdrop-filter: blur(20px); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255, 255, 255, 0.1)'">
+            <span>View More Case Studies</span>
+            <span>←</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-light py-4" style="background-color: var(--background-color, #0a0a0a); border-top: 1px solid rgba(255, 255, 255, 0.1);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p style="color: rgba(255, 255, 255, 0.8); margin: 0;">&copy;<span id="currentYear"></span>     &nbsp; <a href="index.html" class="navbar-brand" style="font-size: unset; color: #6c63ff; text-decoration: none;">qadan</a></p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <div class="social-links" style="display: flex; gap: 1rem; justify-content: flex-end; align-items: center;">
+                    <a href="https://www.threads.net/@qadantravels" target="_blank" class="text-light" style="color: rgba(255, 255, 255, 0.8) !important; transition: all 0.3s ease;" onmouseover="this.style.color='#6c63ff'; this.style.transform='translateY(-3px)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.8)'; this.style.transform='translateY(0)'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
+                            <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161"/>
+                          </svg>
+                    </a>
+                    <a href="https://www.instagram.com/qadantravels/" target="_blank" class="text-light" style="color: rgba(255, 255, 255, 0.8) !important; transition: all 0.3s ease;" onmouseover="this.style.color='#6c63ff'; this.style.transform='translateY(-3px)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.8)'; this.style.transform='translateY(0)'"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg></a>
+                    <a href="https://www.snapchat.com/add/qadangeles" target="_blank" class="text-light" style="color: rgba(255, 255, 255, 0.8) !important; transition: all 0.3s ease;" onmouseover="this.style.color='#6c63ff'; this.style.transform='translateY(-3px)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.8)'; this.style.transform='translateY(0)'"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-snapchat" viewBox="0 0 16 16">
+                        <path d="M15.943 11.526c-.111-.303-.323-.465-.564-.599a1.416 1.416 0 0 0-.123-.064l-.219-.111c-.752-.399-1.339-.902-1.746-1.498a3.387 3.387 0 0 1-.3-.531c-.034-.1-.032-.156-.008-.207a.338.338 0 0 1 .097-.1c.129-.086.262-.173.352-.231.162-.104.289-.187.371-.245.309-.216.525-.446.66-.702a1.397 1.397 0 0 0 .069-1.16c-.205-.538-.713-.872-1.329-.872a1.829 1.829 0 0 0-.487.065c.006-.368-.002-.757-.035-1.139-.116-1.344-.587-2.048-1.077-2.61a4.294 4.294 0 0 0-1.095-.881C9.764.216 8.92 0 7.999 0c-.92 0-1.76.216-2.505.641-.412.232-.782.53-1.097.883-.49.562-.96 1.267-1.077 2.61-.033.382-.04.772-.036 1.138a1.83 1.83 0 0 0-.487-.065c-.615 0-1.124.335-1.328.873a1.398 1.398 0 0 0 .067 1.161c.136.256.352.486.66.701.082.058.21.14.371.246l.339.221a.38.38 0 0 1 .109.11c.026.053.027.11-.012.217a3.363 3.363 0 0 1-.295.52c-.398.583-.968 1.077-1.696 1.472-.385.204-.786.34-.955.8-.128.348-.044.743.28 1.075.119.125.257.23.409.31a4.43 4.43 0 0 0 1 .4.66.66 0 0 1 .202.09c.118.104.102.26.259.488.079.118.18.22.296.3.33.229.701.243 1.095.258.355.014.758.03 1.217.18.19.064.389.186.618.328.55.338 1.305.802 2.566.802 1.262 0 2.02-.466 2.576-.806.227-.14.424-.26.609-.321.46-.152.863-.168 1.218-.181.393-.015.764-.03 1.095-.258a1.14 1.14 0 0 0 .336-.368c.114-.192.11-.327.217-.42a.625.625 0 0 1 .19-.087 4.446 4.446 0 0 0 1.014-.404c.16-.087.306-.2.429-.336l.004-.005c.304-.325.38-.709.256-1.047Zm-1.121.602c-.684.378-1.139.337-1.493.565-.3.193-.122.61-.34.76-.269.186-1.061-.012-2.085.326-.845.279-1.384 1.082-2.903 1.082-1.519 0-2.045-.801-2.904-1.084-1.022-.338-1.816-.14-2.084-.325-.218-.15-.041-.568-.341-.761-.354-.228-.809-.187-1.492-.563-.436-.24-.189-.39-.044-.46 2.478-1.199 2.873-3.05 2.89-3.188.022-.166.045-.297-.138-.466-.177-.164-.962-.65-1.18-.802-.36-.252-.52-.503-.402-.812.082-.214.281-.295.49-.295a.93.93 0 0 1 .197.022c.396.086.78.285 1.002.338.027.007.054.01.082.011.118 0 .16-.06.152-.195-.026-.433-.087-1.277-.019-2.066.094-1.084.444-1.622.859-2.097.2-.229 1.137-1.22 2.93-1.22 1.792 0 2.732.987 2.931 1.215.416.475.766 1.013.859 2.098.068.788.009 1.632-.019 2.065-.01.142.034.195.152.195a.35.35 0 0 0 .082-.01c.222-.054.607-.253 1.002-.338a.912.912 0 0 1 .197-.023c.21 0 .409.082.49.295.117.309-.04.56-.401.812-.218.152-1.003.638-1.18.802-.184.169-.16.3-.139.466.018.14.413 1.991 2.89 3.189.147.073.394.222-.041.464Z"/>
+                      </svg></a>
+                    <a href="https://www.linkedin.com/in/mqadan/" target="_blank" class="text-light" style="color: rgba(255, 255, 255, 0.8) !important; transition: all 0.3s ease;" onmouseover="this.style.color='#6c63ff'; this.style.transform='translateY(-3px)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.8)'; this.style.transform='translateY(0)'"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                      </svg></a>
+                      <a href="https://github.com/qadanm" target="_blank" class="text-light" style="color: rgba(255, 255, 255, 0.8) !important; transition: all 0.3s ease;" onmouseover="this.style.color='#6c63ff'; this.style.transform='translateY(-3px)'" onmouseout="this.style.color='rgba(255, 255, 255, 0.8)'; this.style.transform='translateY(0)'"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div id="quote-container" class="text-center" style="color: rgba(255, 255, 255, 0.6); font-style: italic;">
+                    <p id="quote" style="margin: 0; font-size: 0.9rem;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script src="quotes.js" defer></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Close mobile menu when clicking outside
+    function closeMobileMenu() {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse.classList.contains('show')) {
+        document.querySelector('.navbar-toggler').click();
+      }
+    }
+    
+    // Close mobile menu when clicking on nav links
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          if (window.innerWidth < 992) {
+            closeMobileMenu();
+          }
+        });
+      });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

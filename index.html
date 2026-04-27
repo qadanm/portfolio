@@ -2,10 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Explore the world of Muhammed Qadan, a Los Angeles-based UX Designer who masterfully shapes transformative digital experiences. Leveraging innovative design principles, Muhammed consistently delivers intuitive and impactful solutions that seamlessly connect users with technology.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Muhammed Qadan (Moe), a Los Angeles-based AI-First UX Designer & Developer who masterfully shapes transformative digital experiences. Leveraging cutting-edge AI prompt engineering techniques with OpenAI GPT-4, Claude, and Gemini, I consistently deliver intuitive and impactful solutions that seamlessly connect users with technology.">
 
-  <title>Muhammed Qadan - UX Alchemist & Digital Experience Creator</title>
+  <title>Moe Qadan - Digital Experience Architect & AI-First UX Designer</title>
+  
+  <!-- Open Graph / Facebook / WhatsApp / Telegram / Discord -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qadan.co/">
+  <meta property="og:title" content="Moe Qadan - Digital Experience Architect & AI-First UX Designer">
+  <meta property="og:description" content="AI-powered UX design that transforms how people interact with technology. Creating intuitive, accessible, and delightful digital experiences.">
+  <meta property="og:image" content="https://qadan.co/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Moe Qadan - AI-First UX Designer & Developer Portfolio">
+  <meta property="og:site_name" content="qadan.co">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://qadan.co/">
+  <meta name="twitter:title" content="Moe Qadan - Digital Experience Architect & AI-First UX Designer">
+  <meta name="twitter:description" content="AI-powered UX design that transforms how people interact with technology. Creating intuitive, accessible, and delightful digital experiences.">
+  <meta name="twitter:image" content="https://qadan.co/og-image.jpg">
+  <meta name="twitter:image:alt" content="Moe Qadan - AI-First UX Designer & Developer Portfolio">
+  
+  <!-- LinkedIn -->
+  <meta property="linkedin:owner" content="mqadan">
+  
+  <!-- Additional Meta Tags for Better SEO and Sharing -->
+  <meta name="author" content="Muhammed Qadan">
+  <meta name="keywords" content="UX Design, AI Design, User Experience, Digital Design, Los Angeles, AI-First Design, UX Developer, Portfolio">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://qadan.co/">
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+  <!-- Theme Color for Mobile Browsers -->
+  <meta name="theme-color" content="#6c63ff">
+  <meta name="msapplication-TileColor" content="#6c63ff">
   
   <!-- Bootstrap CSS -->
   <link href="data:image/x-icon;base64, 
@@ -21,9 +63,75 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&family=Rajdhani:wght@500&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <!-- Mobile-specific JavaScript -->
+  <script>
+    // Mobile menu functionality
+    function closeMobileMenu() {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse.classList.contains('show')) {
+        document.querySelector('.navbar-toggler').click();
+      }
+    }
+    
+    // Touch-friendly interactions
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add touch feedback for interactive elements
+      const touchElements = document.querySelectorAll('.cta-button, .tech-icon, .about-card, .service-card, .tool-card, .project-card, .ux-study-card, .blog-card');
+      
+      touchElements.forEach(element => {
+        element.addEventListener('touchstart', function() {
+          this.style.transform = 'scale(0.98)';
+        });
+        
+        element.addEventListener('touchend', function() {
+          this.style.transform = '';
+        });
+      });
+      
+      // Smooth scrolling for mobile
+      const links = document.querySelectorAll('a[href^="#"]');
+      links.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          
+          if (targetSection) {
+            const offsetTop = targetSection.offsetTop - 80;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      
+      // Mobile performance optimization
+      if ('ontouchstart' in window) {
+        document.body.classList.add('touch-device');
+        
+        // Disable hover effects on touch devices
+        const style = document.createElement('style');
+        style.textContent = `
+          @media (hover: none) {
+            .about-card:hover,
+            .service-card:hover,
+            .tool-card:hover,
+            .project-card:hover,
+            .ux-study-card:hover,
+            .blog-card:hover {
+              transform: none !important;
+            }
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    });
+  </script>
   
 
 </head>
@@ -44,21 +152,24 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto"   >
           <li class="nav-item active">
-            <a class="nav-link" href="#about-me" onclick="closeMobileMenu()">about</a>
+            <a class="nav-link" href="#about" onclick="closeMobileMenu()">about</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#services" onclick="closeMobileMenu()">services</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#tools" onclick="closeMobileMenu()">tools</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#projects" onclick="closeMobileMenu()">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ux-user-studies" onclick="closeMobileMenu()">ux studies</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./blog" onclick="closeMobileMenu()">articles</a>
           </li>  
-          <li class="nav-item">
-<a class="nav-link" href="#qadan-fun" onclick="closeMobileMenu()">travel</a>
-
-        </li>        
+        
           <li class="nav-item">
             <a class="nav-link" href="#contact" onclick="closeMobileMenu()">contact</a>
           </li>
@@ -69,431 +180,113 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
 
   <!-- Hero Section -->
 
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-
-    :root {
-            --primary-color: #6c63ff;
-            --secondary-color: #ff6b6b;
-            --accent-color: #54a4a6;
-            --text-color: #ffffff;
-            --background-color: #121212;
-            --background-color-lighter: #191919;
-            --card-background: #282828;
-        }
-.navbar-brand, .new-home-header, .new-home-header-section-title{
-  font-family: "Comfortaa", sans-serif;
-}
-.home-hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background-color: #0f0f0f;
-  background-image: url('path/to/your/background.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  will-change: background-position; /* Hint for GPU acceleration */
-}
-
-.hero-content {
-  z-index: 2;
-  position: relative;
-  will-change: transform; /* Hint for GPU acceleration */
-}
-
-.particle {
-  will-change: transform; /* Hint for GPU acceleration */
-}
-
-
-    .new-home-header {
-      font-size: 3.5rem;
-      margin-bottom: 1rem;
-      background: linear-gradient(
-        45deg,
-        var(--primary-color),
-        var(--secondary-color)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: titleGlow 3s ease-in-out infinite alternate;
-      font-weight: 700;
-    }
-
-    .new-home-header-section-title {
-      padding: 30px 0;
-      font-size: 3.5rem;
-      margin-bottom: 1rem;
-      background: linear-gradient(
-        45deg,
-        var(--primary-color),
-        var(--secondary-color)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: titleGlow 3s ease-in-out infinite alternate;
-      font-weight: 700;
-    }
-
-    .home-hero p {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-      max-width: 600px;
-      color: white;
-    }
-
-    .home-hero .platforms {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-      color: white;
-    }
-
-    .home-hero .platform {
-      font-size: 1.2rem;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.5s ease forwards;
-    }
-
-.cta-button {
-      background: linear-gradient(
-        45deg,
-        var(--primary-color),
-        var(--secondary-color)
-      );
-      color: #ffffff;
-      text-decoration: none;
-      padding: 1rem 2rem;
-      border-radius: 50px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-
-.cta-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(84, 84, 165, 0.5);
-      text-decoration: none;
-      color: var(--text-color);
-    }
-
-  .background-animation {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      opacity: 0.2;
-    }
-
-    @keyframes titleGlow {
-      0% {
-        text-shadow: 0 0 10px rgba(84, 84, 165, 0.5);
-      }
-      100% {
-        text-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
-      }
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes floatParticle {
-      0%,
-      100% {
-        transform: translate(0, 0);
-      }
-      25% {
-        transform: translate(10px, -10px);
-      }
-      50% {
-        transform: translate(20px, 0);
-      }
-      75% {
-        transform: translate(10px, 10px);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .home-hero  h1 {
-        font-size: 2.5rem;
-      }
-
-      .home-hero  p {
-        font-size: 1.2rem;
-      }
-
-      .home-hero  .platforms {
-        flex-wrap: wrap;
-      }
-    }
-
-    #loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--background-color); /* Adjust as needed */
-  z-index: 9999; /* Ensure it's higher than other elements */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-.loader-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-
-.loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
-}
-
-.loader-circle {
-    position: absolute;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    mix-blend-mode: screen;
-}
-
-.loader-circle-1 {
-    width: 100%;
-    height: 100%;
-    border-top-color: var(--primary-color);
-    animation: spin 2s linear infinite;
-}
-
-.loader-circle-2 {
-    width: 80%;
-    height: 80%;
-    border-right-color: var(--secondary-color);
-    animation: spin 1.5s linear infinite reverse;
-}
-
-.loader-circle-3 {
-    width: 60%;
-    height: 60%;
-    border-bottom-color: var(--accent-color);
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.loading-text {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--accent-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 3s ease infinite;
-    background-size: 200% auto;
-}
-
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-.progress-bar {
-    width: 250px;
-    height: 4px;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-top: 1.5rem;
-    position: relative;
-    overflow: hidden;
-    border-radius: 2px;
-}
-
-.progress {
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: width 0.3s ease-out;
-    animation: gradientMove 2s linear infinite;
-    background-size: 200% auto;
-}
-
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-}
-
-.particle {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-  </style>
 <body class="index-page">
-  <!-- Loading Screen -->
+  <!-- Modern Loading Screen -->
   <div id="loading-screen">
-    <div class="loader-container">
-        <div class="loader">
-            <div class="loader-circle loader-circle-1"></div>
-            <div class="loader-circle loader-circle-2"></div>
-            <div class="loader-circle loader-circle-3"></div>
+    <div class="loading-container">
+      <div class="loading-logo">
+        <div class="logo-icon">
+          <svg width="60" height="60" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zM8 9.433 1.562 6 8 2.567 14.438 6z"/>
+          </svg>
         </div>
+        <div class="logo-text">qadan</div>
+      </div>
+      <div class="loading-animation">
+        <div class="loading-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="loading-status">Loading Experience</div>
     </div>
-    <div class="loading-text">Initializing</div>
-    <div class="progress-bar">
-        <div class="progress"></div>
-    </div>
-</div>
+  </div>
 
   <!-- Your existing content goes here -->
 
-  <section class="home-hero">
-    <div class="hero-content">
-      <h1 class="new-home-header">UX Alchemist</h1>
-      <p>Crafting Game-Changing Experiences</p>
-      <div class="platforms">
-        <span class="platform" style="animation-delay: 0.2s">Desktop</span>
-        <span class="platform" style="animation-delay: 0.4s">Tablet</span>
-        <span class="platform" style="animation-delay: 0.6s">Mobile</span>
-        <span class="platform" style="animation-delay: 0.8s">TVOS</span>
+  <section class="home-hero hero-section">
+    <!-- Animated Background Elements -->
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
       </div>
-      <a href="#contact" class="cta-button">Join the Journey</a>
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="mesh-gradient"></div>
+      
+      <!-- Shooting Star Container -->
+      <div class="shooting-star-container"></div>
     </div>
-    <svg
-      class="background-animation"
-      viewBox="0 0 100 100"
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <radialGradient
-          id="gradient"
-          cx="50%"
-          cy="50%"
-          r="50%"
-          fx="50%"
-          fy="50%"
-        >
-          <stop
-            offset="0%"
-            stop-color="rgb(84, 84, 165)"
-            stop-opacity="0.2"
-          />
-          <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0.1" />
-        </radialGradient>
-      </defs>
-      <rect width="100" height="100" fill="url(#gradient)" />
-      <g fill="#ffffff">
-        <path
-          d="M10 10 Q 30 50, 50 10 T 90 90"
-          fill="none"
-          stroke="#ffffff"
-          stroke-width="0.1"
-        >
-          <animate
-            attributeName="d"
-            dur="20s"
-            repeatCount="indefinite"
-            values="
-                              M10 10 Q 30 50, 50 10 T 90 90;
-                              M10 90 Q 30 10, 50 90 T 90 10;
-                              M10 10 Q 30 50, 50 10 T 90 90"
-          />
-        </path>
-        <circle cx="10" cy="10" r="0.5">
-          <animate
-            attributeName="cx"
-            values="10;90;10"
-            dur="20s"
-            repeatCount="indefinite"
-          />
-          <animate
-            attributeName="cy"
-            values="10;90;10"
-            dur="20s"
-            repeatCount="indefinite"
-          />
-          <animate
-            attributeName="r"
-            values="0.5;1;0.5"
-            dur="10s"
-            repeatCount="indefinite"
-          />
-        </circle>
-        <circle cx="90" cy="90" r="0.7">
-          <animate
-            attributeName="cx"
-            values="90;10;90"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-          <animate
-            attributeName="cy"
-            values="90;10;90"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-          <animate
-            attributeName="r"
-            values="0.7;1.2;0.7"
-            dur="12s"
-            repeatCount="indefinite"
-          />
-        </circle>
-        <circle cx="50" cy="50" r="0.3">
-          <animateMotion
-            path="M0 0 Q 25 25, 50 0 T 100 0"
-            dur="15s"
-            repeatCount="indefinite"
-          />
-          <animate
-            attributeName="r"
-            values="0.3;0.8;0.3"
-            dur="8s"
-            repeatCount="indefinite"
-          />
-        </circle>
-      </g>
-    </svg>
+
+    <!-- Main Hero Content -->
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon">✨</span>
+        <span class="badge-text">AI-First UX Design</span>
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="title-line">Digital Experience</span>
+        <span class="title-line highlight-line">Architect</span>
+      </h1>
+      
+      <p class="hero-subtitle">AI-powered UX design that transforms how people interact with technology. Creating intuitive, accessible, and delightful digital experiences.</p>
+      
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">340+</span>
+          <span class="stat-label">UX Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">User Satisfaction</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">3x</span>
+          <span class="stat-label">Faster Delivery</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#contact" class="cta-button primary">
+          <span class="button-text">Start Your Project</span>
+          <span class="button-icon">→</span>
+        </a>
+        <a href="#projects" class="cta-button secondary">
+          <span class="button-text">View Work</span>
+          <span class="button-icon">👁️</span>
+        </a>
+      </div>
+
+
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+      <div class="code-block">
+        <div class="code-line">const experience = await createUX();</div>
+        <div class="code-line">experience.transform(user);</div>
+      </div>
+      <div class="design-element">
+        <div class="circle"></div>
+        <div class="square"></div>
+        <div class="triangle"></div>
+      </div>
+    </div>
   </section>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const platforms = document.querySelectorAll(".platform");
-      platforms.forEach((platform, index) => {
+      const highlights = document.querySelectorAll(".highlight");
+      highlights.forEach((highlight, index) => {
         setTimeout(() => {
-          platform.style.animationDelay = `${index * 0.2}s`;
+          highlight.style.animationDelay = `${index * 0.2}s`;
         }, 100);
       });
 
@@ -502,6 +295,9 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
       for (let i = 0; i < 20; i++) {
         createParticle(hero);
       }
+
+      // Initialize shooting star effect
+      initShootingStars();
     });
 
     function createParticle(container) {
@@ -525,6 +321,85 @@ aria-expanded="false" aria-label="Toggle navigation" style="background-color: rg
     particle.style.transform = `translateY(${scrollPosition * 0.2}px)`;
   });
 }
+
+    // Shooting Star Effect
+    function initShootingStars() {
+      const container = document.querySelector('.shooting-star-container');
+      
+      function createShootingStar() {
+        const shootingStar = document.createElement('div');
+        shootingStar.className = 'shooting-star';
+        
+        // Random starting position (top-right area)
+        const startX = Math.random() * window.innerWidth * 0.3 + window.innerWidth * 0.7;
+        const startY = Math.random() * window.innerHeight * 0.3;
+        
+        // Random ending position (bottom-left area)
+        const endX = Math.random() * window.innerWidth * 0.3;
+        const endY = Math.random() * window.innerHeight * 0.7 + window.innerHeight * 0.3;
+        
+        // Calculate angle and distance
+        const deltaX = endX - startX;
+        const deltaY = endY - startY;
+        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+        const angle = Math.atan2(deltaY, deltaX);
+        
+        // Set initial position
+        shootingStar.style.left = startX + 'px';
+        shootingStar.style.top = startY + 'px';
+        
+        // Create the star body
+        const starBody = document.createElement('div');
+        starBody.className = 'star-body';
+        shootingStar.appendChild(starBody);
+        
+        // Create the star tail
+        const starTail = document.createElement('div');
+        starTail.className = 'star-tail';
+        shootingStar.appendChild(starTail);
+        
+        container.appendChild(shootingStar);
+        
+        // Animate the shooting star
+        const duration = 2000 + Math.random() * 1000; // 2-3 seconds
+        
+        shootingStar.animate([
+          {
+            transform: `translate(0, 0) rotate(${angle}rad)`,
+            opacity: 0
+          },
+          {
+            transform: `translate(0, 0) rotate(${angle}rad)`,
+            opacity: 1,
+            offset: 0.1
+          },
+          {
+            transform: `translate(${deltaX}px, ${deltaY}px) rotate(${angle}rad)`,
+            opacity: 0
+          }
+        ], {
+          duration: duration,
+          easing: 'ease-out'
+        }).onfinish = () => {
+          container.removeChild(shootingStar);
+        };
+      }
+      
+      // Create shooting stars periodically
+      function scheduleShootingStar() {
+        const delay = 3000 + Math.random() * 7000; // 3-10 seconds
+        setTimeout(() => {
+          createShootingStar();
+          scheduleShootingStar();
+        }, delay);
+      }
+      
+      // Start the shooting star cycle
+      scheduleShootingStar();
+      
+      // Create initial shooting star after a short delay
+      setTimeout(createShootingStar, 2000);
+    }
 
     let scrollPosition = 0;
 let ticking = false;
@@ -605,614 +480,907 @@ function applyParallaxEffect(scrollPos) {
 
 
 
-<style>
-    #btn-back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-      display: none;
-      background-color:rgba(84, 84, 165, 0.662);
-      color: #fff;
-      border: 2px solid rgba(255, 0, 0, 0);
-      border-radius: 50%;
-      /* padding: 10px; */
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
 
-    #btn-back-to-top:hover {
-        background-color:rgb(84, 84, 165);
-        border: 2px solid rgb(84, 84, 165);
-        transform: scale(1.07);
-        -webkit-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
-box-shadow: 3px 3px 13px -4px rgba(0,0,0,0.75);
-    }
-
-    /* Smooth scrolling behavior .navbar */
-    html {
-      scroll-behavior: smooth;
-    }
-/* Services Section Styles */
-.services {
-    padding: 80px 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 60px;
-    color: var(--primary-color);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.service-card {
-    background-color: var(--card-background);
-    border-radius: 15px;
-    padding: 50px 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    position: relative;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
-}
-
-.service-icon {
-    font-size: 4rem;
-    margin-bottom: 25px;
-    color: var(--primary-color);
-    transition: color 0.3s ease;
-}
-
-.service-card:hover .service-icon {
-    color: var(--hover-color);
-}
-
-.service-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.service-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-    color: var(--secondary-text-color);
-}
-
-@media (max-width: 768px) {
-    .service-card {
-        padding: 40px 20px;
-    }
-
-    .section-title {
-        font-size: 2.3rem;
-    }
-
-    .service-title {
-        font-size: 1.6rem;
-    }
-}
-
-
-
-.avatar-parent-container{
-  background-color: var(--background-color-lighter);
-}
-
-
-
-
-.avatar-container {
-  max-width: 800px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  color: var(--text-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 1rem;
-  gap: 2rem;
-}
-
-.avatar-container .avatar-section {
-  position: relative;
-  width: 200px;
-  height: 200px;
-}
-
-.avatar-container .avatar {
-  width: 100%;
-  height: 100%;
-  filter: drop-shadow(0 10px 20px rgba(108, 99, 255, 0.2));
-  transform: translate3d(0, 0, 0); /* New line for hardware acceleration */
-}
-
-.avatar-container .speech-bubble {
-  position: absolute;
-  top: -135px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--card-background);
-  border-radius: 12px;
-  padding: 0 1rem;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  text-align: center;
-  opacity: 0;
-  animation: fadeIn 0.5s ease-out 1s forwards;
-  max-width: 250px;
-}
-
-.avatar-container .speech-bubble:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 10px 10px 0;
-  border-style: solid;
-  border-color: var(--card-background) transparent transparent transparent;
-}
-
-.avatar-container .content {
-  text-align: center;
-}
-
-.avatar-container h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-.avatar-container p {
-  margin-bottom: 1.5rem;
-  opacity: 0.9;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-@keyframes wave {
-  0%, 100% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-}
-
-@media (max-width: 600px) {
-  .avatar-container .avatar-section {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .avatar-container .speech-bubble {
-    font-size: 0.8rem;
-    top: -135px;
-    max-width: 180px;
-  }
-  
-  .avatar-container h1 {
-    font-size: 1.2rem;
-  }
-  
-  .avatar-container p {
-    font-size: 0.9rem;
-  }
-}
-</style>
-<div id="about-me"></div>
-<div class="avatar-parent-container">
-<div class="container avatar-container">
-<div class="avatar-section">
-  <svg
-    class="avatar"
-    viewBox="0 0 100 100"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <!-- Body -->
-    <circle cx="50" cy="50" r="40" fill="var(--primary-color)" />
-
-    <!-- Eyes -->
-    <g id="eyes">
-      <circle cx="40" cy="45" r="5" fill="var(--text-color)" />
-      <circle cx="60" cy="45" r="5" fill="var(--text-color)" />
-    </g>
-
-    <!-- Smile -->
-    <path
-      d="M 35 60 Q 50 70 65 60"
-      stroke="var(--text-color)"
-      stroke-width="3"
-      fill="none"
-    />
-
-    <!-- Waving arm -->
-    <g id="arm">
-      <path
-        d="M 70 50 Q 85 50 90 35"
-        stroke="var(--primary-color)"
-        stroke-width="8"
-        fill="none"
-        stroke-linecap="round"
-      />
-      <circle cx="90" cy="30" r="6" fill="var(--primary-color)" />
-    </g>
-  </svg>
-
-  <div class="speech-bubble">
-    Hi there! I'm here to make your digital experience simple and
-    enjoyable.
-  </div>
-</div>
-
-<div class="content">
-  <h2 class="new-home-header-section-title">I'm Muhammed Qadan,</h2>
-  <p>
-    and I'm passionate about creating intuitive, delightful digital experiences. Through empathy, research, and innovative design, I craft seamless connections between users and technology.
-  </p>
-</div>
-</div>
-
-</div>
-
-
-              
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<script>
-const arm = document.getElementById("arm");
-arm.style.transformOrigin = "80px 40px";  // Adjusted values for better centering
-arm.style.animation = "wave 0.7s ease-in-out infinite";
-
-
-
-
-// Intersection Observer for fade-in effect
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.animation = "fadeIn 0.5s ease-out forwards";
-      }
-    });
-  },
-  { threshold: 0.1 }
-);
-
-observer.observe(document.querySelector(".avatar-container .content"));
-</script>
-
-
-
-
-
-
-
-<section id="services" class="services" style="text-align: unset;">
+<!-- About Me Section style -->
+<section id="about" class="about-section">
   <div class="container">
-      <h2 class="new-home-header-section-title">what i do</h2>
-      <div class="services-grid" data-aos="fade-up" data-aos-easing="linear"
-      data-aos-duration="500">
-          <div class="service-card">
-              <div class="service-icon">📱</div>
-              <h3 class="service-title">UX Design</h3>
-              <p>Designing smooth, user-friendly experiences.</p>
+          <div class="about-content">
+        <div class="about-hero">
+          <div class="about-badge">
+            <span class="badge-icon">👋</span>
+            <span class="badge-text">About Me</span>
           </div>
-          <div class="service-card">
-              <div class="service-icon">🎨</div>
-              <h3 class="service-title">UI Design</h3>
-              <p>Crafting visually engaging interfaces.</p>
+          
+          <h2 class="about-title">
+            I'm <span class="highlight-text">Moe</span>, an AI-First UX Designer & Developer
+          </h2>
+          
+          <p class="about-description">
+            I'm a passionate UX designer and developer who bridges the gap between human-centered design and cutting-edge technology. With expertise in user research, interaction design, and AI integration, I create digital experiences that not only look beautiful but solve real user problems.
+          </p>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-card primary">
+            <div class="card-icon">🎯</div>
+            <h3>User-Centric Design</h3>
+            <p>Empathy-driven approach with extensive user research, persona development, and usability testing to solve complex problems</p>
+            <div class="card-glow"></div>
           </div>
-          <div class="service-card">
-              <div class="service-icon">🔬</div>
-              <h3 class="service-title">User Research</h3>
-              <p>Understanding users to create better designs.</p>
+          
+          <div class="about-card">
+            <div class="card-icon">🤖</div>
+            <h3>AI-Powered Workflow</h3>
+            <p>Advanced prompt engineering for rapid prototyping, user flow optimization, and intelligent design systems</p>
           </div>
-          <div class="service-card">
-              <div class="service-icon">🚀</div>
-              <h3 class="service-title">Product Strategy</h3>
-              <p>Shaping clear paths to product success.</p>
+          
+          <div class="about-card">
+            <div class="card-icon">⚡</div>
+            <h3>Rapid Delivery</h3>
+            <p>From concept to production in record time with iterative design sprints and continuous user feedback</p>
           </div>
-
-          <!-- Additional Services -->
-          <div class="service-card">
-              <div class="service-icon">🛠️</div>
-              <h3 class="service-title">Web Development</h3>
-              <p>Building fast, responsive websites.</p>
+          
+          <div class="about-card">
+            <div class="card-icon">🔬</div>
+            <h3>Data-Driven Insights</h3>
+            <p>User behavior analytics, A/B testing, and performance metrics to optimize conversion and engagement</p>
           </div>
-          <div class="service-card">
-              <div class="service-icon">📊</div>
-              <h3 class="service-title">SEO Strategy</h3>
-              <p>Rank organically on Google.</p>
+          
+          <div class="about-card">
+            <div class="card-icon">🎨</div>
+            <h3>Design Systems</h3>
+            <p>Scalable component libraries, design tokens, and consistent visual language across platforms</p>
           </div>
-
+          
+          <div class="about-card">
+            <div class="card-icon">🚀</div>
+            <h3>Innovation Leadership</h3>
+            <p>Pioneering AI integration in UX workflows and mentoring teams on emerging design technologies</p>
+          </div>
+        </div>
+        
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-icon">📈</div>
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Years UX Experience</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">🎯</div>
+            <span class="stat-number">340+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">⚡</div>
+            <span class="stat-number">3x</span>
+            <span class="stat-label">Faster Delivery</span>
+          </div>
+        </div>
       </div>
   </div>
 </section>
 
 
-  <style>
-  .modal-content {
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-    border: none;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-  }
-  
-  .modal-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    color: white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 2rem;
-  }
-  
-  .modal-title {
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-  }
-  
-  .modal-body {
-    padding: 2rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .modal-body ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .modal-body ul li {
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 10px;
-  }
-  
-  .modal-body ul li:before {
-    content: '➤';
-    position: absolute;
-    left: 0;
-    color: #3498db;
-  }
-  
-  .modal-footer {
-    border-top: none;
-    padding: 1.5rem 2rem;
-  }
-  
-  .btn-close {
-    color: white;
-    opacity: 1;
-    text-shadow: none;
-  }
-  
-  .btn-close:hover {
-    color: #f8f9fa;
-  }
-  
-  .modal.fade .modal-dialog {
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-    transform: scale(0.9);
-    opacity: 0;
-  }
-  
-  .modal.show .modal-dialog {
-    transform: scale(1);
-    opacity: 1;
-  }
-  
-  @keyframes slideInRight {
-    from {
-      transform: translateX(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  .modal-body p, .modal-body ul {
-    animation: slideInRight 0.5s ease-out forwards;
-    opacity: 0;
-  }
-  
-  .modal-body p:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-  
-  .modal-body ul {
-    animation-delay: 0.3s;
-  }
-  
-  .modal-body p:nth-child(3) {
-    animation-delay: 0.5s;
-  }
-  
-  </style>
+              
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
+
+
+
+
+
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">
+        <span class="badge-icon">🚀</span>
+        <span class="badge-text">Services</span>
+      </div>
+      <h2 class="section-title">What I Do</h2>
+      <p class="section-subtitle">Comprehensive UX solutions powered by cutting-edge AI technology</p>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card primary">
+        <div class="service-icon">🤖</div>
+        <div class="service-content">
+          <h3>AI-Enhanced UX Design</h3>
+          <p>Creating intuitive user experiences with AI-powered insights, rapid prototyping, and data-driven optimization. From user research to final implementation, I deliver solutions that users love.</p>
+          <div class="service-features">
+            <span class="feature-tag">User Research</span>
+            <span class="feature-tag">Prototyping</span>
+            <span class="feature-tag">AI Integration</span>
+            <span class="feature-tag">Usability Testing</span>
+          </div>
+        </div>
+        <div class="service-glow"></div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-content">
+          <h3>UI Design & Development</h3>
+          <p>Building beautiful, responsive interfaces that work seamlessly across all devices and platforms. Focus on accessibility, performance, and modern design principles.</p>
+          <div class="service-features">
+            <span class="feature-tag">Responsive Design</span>
+            <span class="feature-tag">Accessibility</span>
+            <span class="feature-tag">Performance</span>
+            <span class="feature-tag">Design Systems</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <div class="service-content">
+          <h3>UX Strategy & Analytics</h3>
+          <p>Data-driven UX strategy with comprehensive analytics, A/B testing, and performance optimization to maximize user engagement and conversion rates.</p>
+          <div class="service-features">
+            <span class="feature-tag">Analytics</span>
+            <span class="feature-tag">A/B Testing</span>
+            <span class="feature-tag">Conversion</span>
+            <span class="feature-tag">Strategy</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">🔬</div>
+        <div class="service-content">
+          <h3>AI-Powered Research</h3>
+          <p>Leveraging advanced AI tools for user research, persona development, and behavioral analysis.</p>
+          <div class="service-features">
+            <span class="feature-tag">User Testing</span>
+            <span class="feature-tag">Data Analysis</span>
+            <span class="feature-tag">Insights</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <div class="service-content">
+          <h3>Product Strategy</h3>
+          <p>Developing clear product roadmaps and strategies that align business goals with user needs.</p>
+          <div class="service-features">
+            <span class="feature-tag">Roadmapping</span>
+            <span class="feature-tag">User Stories</span>
+            <span class="feature-tag">MVP Planning</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">🛠️</div>
+        <div class="service-content">
+          <h3>Web Development</h3>
+          <p>Building fast, scalable web applications with modern technologies and best practices.</p>
+          <div class="service-features">
+            <span class="feature-tag">React</span>
+            <span class="feature-tag">Node.js</span>
+            <span class="feature-tag">Performance</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <div class="service-content">
+          <h3>SEO & Analytics</h3>
+          <p>Optimizing for search engines and implementing comprehensive analytics for data-driven decisions.</p>
+          <div class="service-features">
+            <span class="feature-tag">SEO Strategy</span>
+            <span class="feature-tag">Google Analytics</span>
+            <span class="feature-tag">Conversion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tools Section -->
+<section id="tools" class="tools-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">
+        <span class="badge-icon">🛠️</span>
+        <span class="badge-text">Tools</span>
+      </div>
+      <h2 class="section-title">Tools & Technologies</h2>
+      <p class="section-subtitle">Comprehensive 2025 tech stack including AI tools, modern frameworks, and emerging web technologies</p>
+    </div>
+    <div class="tools-showcase">
+      
+
+
+
+
+      <!-- AI Tools Row -->
+      <div class="tool-row featured">
+        <div class="tool-card ai-tool">
+          <div class="tool-header">
+            <div class="tool-icon">🤖</div>
+            <div class="tool-badge">AI-First</div>
+          </div>
+          <h3>ChatGPT-5</h3>
+          <p>Latest OpenAI model for advanced code generation, UX design, and intelligent assistance</p>
+          <div class="tool-stats">
+            <span class="stat">Latest Model</span>
+            <span class="stat">Multi-modal</span>
+          </div>
+        </div>
+        
+        <div class="tool-card ai-tool">
+          <div class="tool-header">
+            <div class="tool-icon">🧠</div>
+            <div class="tool-badge">Research</div>
+          </div>
+          <h3>Claude 3.5 Sonnet</h3>
+          <p>Advanced AI for user research synthesis, accessibility compliance, and content strategy</p>
+          <div class="tool-stats">
+            <span class="stat">Deep Analysis</span>
+            <span class="stat">Ethical AI</span>
+          </div>
+        </div>
+        
+        <div class="tool-card ai-tool">
+          <div class="tool-header">
+            <div class="tool-icon">🔮</div>
+            <div class="tool-badge">Optimization</div>
+          </div>
+          <h3>Gemini 2.0</h3>
+          <p>Google's latest AI for SEO optimization, technical content, and user flow analysis</p>
+          <div class="tool-stats">
+            <span class="stat">Multi-modal</span>
+            <span class="stat">Fast Processing</span>
+          </div>
+        </div>
+        
+        <div class="tool-card ai-tool">
+          <div class="tool-header">
+            <div class="tool-icon">💻</div>
+            <div class="tool-badge">Coding</div>
+          </div>
+          <h3>GitHub Copilot</h3>
+          <p>AI-powered code completion and pair programming for faster development</p>
+          <div class="tool-stats">
+            <span class="stat">Real-time</span>
+            <span class="stat">Multi-language</span>
+          </div>
+        </div>
+        
+        <div class="tool-card ai-tool">
+          <div class="tool-header">
+            <div class="tool-icon">🌐</div>
+            <div class="tool-badge">Simulation</div>
+          </div>
+          <h3>WebSim</h3>
+          <p>AI-powered web development simulation and testing environment</p>
+          <div class="tool-stats">
+            <span class="stat">Interactive</span>
+            <span class="stat">Real-time Testing</span>
+          </div>
+        </div>
+        
+        <div class="tool-card ai-tool">
+          <div class="tool-header">
+            <div class="tool-icon">🔍</div>
+            <div class="tool-badge">Search</div>
+          </div>
+          <h3>DeepSeek</h3>
+          <p>Advanced AI search and reasoning for complex problem-solving and research</p>
+          <div class="tool-stats">
+            <span class="stat">Deep Reasoning</span>
+            <span class="stat">Code Focused</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Core Development Row -->
+      <div class="tool-row">
+        <div class="tool-card dev-tool">
+          <div class="tool-header">
+            <div class="tool-icon">⚛️</div>
+            <div class="tool-badge">Framework</div>
+          </div>
+          <h3>React 19</h3>
+          <p>Latest React with concurrent features, server components, and improved performance</p>
+        </div>
+        
+        <div class="tool-card dev-tool">
+          <div class="tool-header">
+            <div class="tool-icon">🟦</div>
+            <div class="tool-badge">Backend</div>
+          </div>
+          <h3>ASP.NET Core 8</h3>
+          <p>Modern .NET web framework with Blazor, SignalR, and cloud-native capabilities</p>
+        </div>
+        
+        <div class="tool-card dev-tool">
+          <div class="tool-header">
+            <div class="tool-icon">📝</div>
+            <div class="tool-badge">CMS</div>
+          </div>
+          <h3>WordPress 6.5+</h3>
+          <p>Latest WordPress with Gutenberg blocks, custom themes, and headless capabilities</p>
+        </div>
+      </div>
+      
+      <!-- Essential Tools Row -->
+      <div class="tool-row">
+        <div class="tool-card design-tool">
+          <div class="tool-header">
+            <div class="tool-icon">🎨</div>
+            <div class="tool-badge">Design</div>
+          </div>
+          <h3>Figma</h3>
+          <p>Collaborative design, prototyping, and comprehensive design systems</p>
+        </div>
+        
+        <div class="tool-card dev-tool">
+          <div class="tool-header">
+            <div class="tool-icon">⚡</div>
+            <div class="tool-badge">Build</div>
+          </div>
+          <h3>Vite 5</h3>
+          <p>Lightning-fast build tool with HMR and modern ES modules</p>
+        </div>
+        
+        <div class="tool-card dev-tool">
+          <div class="tool-header">
+            <div class="tool-icon">🔧</div>
+            <div class="tool-badge">CSS</div>
+          </div>
+          <h3>Tailwind CSS 4</h3>
+          <p>Utility-first CSS framework with CSS variables and improved performance</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Featured Project: AutoSpecs Daily -->
+<section class="featured-project-section" style="position: relative; padding: 120px 0; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%); overflow: hidden;">
+  <!-- Background Effects -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;">
+    <div style="position: absolute; top: -150px; left: -150px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(108, 99, 255, 0.2) 0%, transparent 70%); filter: blur(40px); border-radius: 50%;"></div>
+    <div style="position: absolute; bottom: -100px; right: -100px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(255, 107, 107, 0.2) 0%, transparent 70%); filter: blur(40px); border-radius: 50%;"></div>
+  </div>
+
+  <div class="container" style="position: relative; z-index: 2;">
+    <!-- Section Header -->
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 50px; padding: 10px 20px; margin-bottom: 1.5rem;">
+        <span style="font-size: 1.2rem;">⭐</span>
+        <span style="font-size: 0.9rem; font-weight: 600; color: #6c63ff;">Featured Project</span>
+      </div>
+      <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; margin-bottom: 1rem; line-height: 1.1;">
+        <span style="background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">AutoSpecs Daily</span>
+        <br>
+        <span style="background: linear-gradient(135deg, #6c63ff 0%, #ff6b6b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">AI-Powered Automotive Intelligence</span>
+      </h2>
+      <p style="font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255, 255, 255, 0.8); line-height: 1.7; max-width: 700px; margin: 0 auto;">
+        A full-stack automotive intelligence platform built from scratch with modern web technologies and AI automation
+      </p>
+    </div>
+
+    <!-- Row 1: Text Left, Image Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          Built From the Ground Up
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          I built AutoSpecs Daily from scratch as a full-stack automotive intelligence platform. It's running on <strong style="color: #6c63ff;">Next.js 16</strong>, <strong style="color: #6c63ff;">React 19</strong>, <strong style="color: #6c63ff;">TypeScript</strong>, and <strong style="color: #6c63ff;">Tailwind</strong>—the modern web stack I actually enjoy working with. Every page and component was designed from the ground up to feel clean and intentional, not just functional.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3);">Next.js 16</span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3);">React 19</span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3);">TypeScript</span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3);">Supabase</span>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="autospecsdailyhero.png" alt="AutoSpecs Daily Platform" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Image Left, Text Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="autospecsdailytool.png" alt="AutoSpecs Daily Interactive Tools" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          Growing Collection of Interactive Tools
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          Launched with <strong style="color: #6c63ff;">50+ interactive tools</strong> and the count climbs weekly as I add more. Each new tool enables more car guides, creating a compounding content strategy. They cover everything from car financing calculators to fuel economy estimators, maintenance schedules, ownership cost trackers, and insurance comparisons.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+          <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; text-align: center;">
+            <div style="font-size: 2rem; font-weight: 900; color: #6c63ff; margin-bottom: 0.5rem; line-height: 1;">50+</div>
+            <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Tools</div>
+            <div style="font-size: 0.7rem; color: rgba(255, 255, 255, 0.6); margin-top: 0.25rem;">Growing Weekly</div>
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.25rem; text-align: center;">
+            <div style="font-size: 2rem; font-weight: 900; color: #ff6b6b; margin-bottom: 0.5rem; line-height: 1;">24/7</div>
+            <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.8); font-weight: 600;">Automation</div>
+            <div style="font-size: 0.7rem; color: rgba(255, 255, 255, 0.6); margin-top: 0.25rem;">Self-Hosted</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3: Text Left, Image Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          AI That Actually Works
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          I set up an <strong style="color: #ff6b6b;">n8n automation system</strong> connected to <strong style="color: #ff6b6b;">Claude Haiku</strong> that runs the content side on autopilot. The system publishes <strong style="color: #ff6b6b;">20-100 articles per day</strong> for reach, SEO growth, and monetization. All monetization—including <strong style="color: #ff6b6b;">Ezoic ads</strong>, <strong style="color: #ff6b6b;">CarVertical</strong>, and <strong style="color: #ff6b6b;">Amazon Affiliates</strong>—is managed through a central, context-aware config.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+          <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📝</div>
+            <div style="font-weight: 600; color: #ffffff; margin-bottom: 0.25rem; font-size: 0.95rem;">Content Generation</div>
+            <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.7);">AI-powered articles</div>
+          </div>
+          <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+            <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🚀</div>
+            <div style="font-weight: 600; color: #ffffff; margin-bottom: 0.25rem; font-size: 0.95rem;">Auto Publishing</div>
+            <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.7);">20-100 daily</div>
+          </div>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="n8n.png" alt="n8n Automation Workflow" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 4: Image Left, Text Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="autospecsdailycarguides.png" alt="AutoSpecs Daily Car Guides" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          Comprehensive Car Guides
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          Each interactive tool enables the creation of detailed, SEO-optimized car guides. The AI system automatically generates comprehensive content covering specifications, comparisons, buying guides, and maintenance tips—all optimized for search engines and monetization.
+        </p>
+        <div style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.5rem; text-align: center;">
+          <div style="font-size: 2.5rem; font-weight: 900; color: #ff6b6b; margin-bottom: 0.5rem; line-height: 1;">20-100</div>
+          <div style="font-size: 1rem; color: rgba(255, 255, 255, 0.9); font-weight: 600; margin-bottom: 0.25rem;">Articles Published Daily</div>
+          <div style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7);">AI-Generated & Optimized</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 5: Text Left, Image Right -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem;">
+      <div>
+        <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 1.5rem; color: #ffffff; line-height: 1.2;">
+          Mission Control Dashboard
+        </h3>
+        <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.8; margin-bottom: 1.5rem;">
+          A custom <strong style="color: #6c63ff;">Supabase-powered admin portal</strong> gives complete control over tools, articles, categories, SEO health, analytics, and automation logs. It includes role management, API utilities, performance dashboards, and controls to scale content workflows as the site grows.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem;">
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>📊</span> Analytics
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>🔍</span> SEO Health
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>⚡</span> Cache Control
+          </span>
+        </div>
+        <!-- CTA Buttons -->
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="autospecs-daily-ux-case-study.html" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #6c63ff 0%, #ff6b6b 100%); color: white; border: none; text-decoration: none; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 20px 40px rgba(108, 99, 255, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <span>View UX Case Study</span>
+            <span>→</span>
+          </a>
+          <button type="button" class="cta-button primary" data-bs-toggle="modal" data-bs-target="#autospecsModal" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); cursor: pointer; transition: all 0.3s ease; backdrop-filter: blur(20px);" onmouseover="this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.15)'; this.style.borderColor='rgba(255, 255, 255, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255, 255, 255, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.3)'">
+            <span>View Full Details</span>
+            <span>→</span>
+          </button>
+          <a href="https://autospecsdaily.com/" target="_blank" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 36px; border-radius: 50px; font-size: 1.1rem; font-weight: 600; background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); text-decoration: none; backdrop-filter: blur(20px); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.background='rgba(255, 255, 255, 0.15)'; this.style.borderColor='rgba(255, 255, 255, 0.5)'" onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255, 255, 255, 0.1)'; this.style.borderColor='rgba(255, 255, 255, 0.3)'">
+            <span>Visit Site</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div style="position: relative; border-radius: 24px; overflow: hidden; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3);" onmouseover="this.style.transform='scale(1.02)'; this.style.transition='transform 0.3s ease'" onmouseout="this.style.transform='scale(1)'; this.style.transition='transform 0.3s ease'">
+          <img src="autospecsdashboard.png" alt="AutoSpecs Daily Admin Dashboard" style="width: 100%; height: auto; display: block;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <style>
-
-  
-  .card {
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  }
-
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
-
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-
-  .card-body {
-    background-color: #fff;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .card-title {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #2c3e50;
-    text-align: center;
-  }
-
-  .row {
-    row-gap: 1.5rem;
-  }
-  .projects{
-    background-color: var(--background-color);
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .project-a .blog-post{
-    background-color: var(--card-background);
-  }
-  .projects .blog-post img{
-    margin-top: unset;
-  }
-
-  .projects .blog-post h2{
-    padding: 10px 20px;
-    font-size: large;
-    color: var(--text-color);
-  }
-  .projects .blog-post{
-    border-radius: 15px;
-  }
-  .section-divider {
-      height: 50px;
-      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-      transform: skewY(3deg);
+  @media (max-width: 992px) {
+    .featured-project-section .container > div[style*="grid-template-columns: 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+      gap: 3rem !important;
     }
-    .projects .row{
-      margin: 20px;
+    .featured-project-section .container > div[style*="grid-template-columns: 1fr 1fr"]:nth-child(even) > div:first-child {
+      order: 2;
     }
+    .featured-project-section .container > div[style*="grid-template-columns: 1fr 1fr"]:nth-child(even) > div:last-child {
+      order: 1;
+    }
+  }
+  @media (max-width: 768px) {
+    .featured-project-section {
+      padding: 80px 0 !important;
+    }
+    .featured-project-section .container > div[style*="grid-template-columns: 1fr 1fr"] {
+      margin-bottom: 4rem !important;
+    }
+    .featured-project-section .container > div[style*="grid-template-columns: repeat(2, 1fr)"] {
+      grid-template-columns: 1fr !important;
+      gap: 1rem !important;
+    }
+  }
 </style>
 
-<div class="projects" id="projects">
-  <div class="section-divider"></div>
-<div class="container blog-posts" data-aos="fade-up" data-aos-easing="linear"
-data-aos-duration="500">
-  <h2 class="new-home-header-section-title" data-aos="fade-up" data-aos-easing="linear"
-  data-aos-duration="500" >projects</h2>
-  <div class="row">
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">
+        <span class="badge-icon">🚀</span>
+        <span class="badge-text">Projects</span>
+      </div>
+      <h2 class="section-title">Featured Work</h2>
+      <p class="section-subtitle">A showcase of innovative digital experiences and transformative solutions</p>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Sawa Project -->
+      <div class="project-card" data-bs-toggle="modal" data-bs-target="#sawaModal">
+        <div class="project-image">
+          <img src="get-sawa.png" alt="Sawa App">
+          <div class="project-overlay">
+            <span class="project-category">Mobile App</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Sawa</h3>
+          <p>Social dining app marketing website and blog built with Eleventy</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">AI-Powered</span>
+            <span class="tag">UX Design</span>
+          </div>
+        </div>
+      </div>
 
-    <!--Sawa -->
-    <a href="javascript:void(0)" class="col-md-4 project-a" data-bs-toggle="modal" data-bs-target="#sawaModal">
-      <div class="blog-post">
-        <img src="get-sawa.png" alt="iphone app">
-        <h2>Sawa</h2>
+      <!-- AutoSpecs Daily Project -->
+      <div class="project-card" data-bs-toggle="modal" data-bs-target="#autospecsModal">
+        <div class="project-image">
+          <img src="autospecsdailyhero.png" alt="AutoSpecs Daily">
+          <div class="project-overlay">
+            <span class="project-category">Content Platform</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>AutoSpecs Daily</h3>
+          <p>AI-powered automotive content platform with 800+ SEO-optimized articles</p>
+          <div class="project-tags">
+            <span class="tag">WordPress</span>
+            <span class="tag">AI Content</span>
+            <span class="tag">SEO</span>
+          </div>
+        </div>
       </div>
-    </a>
-    <!-- Roku Application Card -->
-    <a href="javascript:void(0)" class="col-md-4 project-a" data-bs-toggle="modal" data-bs-target="#rokuModal">
-      <div class="blog-post">
-        <img src="lrg.png" alt="Roku Application icon">
-        <h2>Internal Lead Report Generator</h2>
-      </div>
-    </a>
 
-    <!-- Long Beach Transit Project Card -->
-    <a href="javascript:void(0)" class="col-md-4 project-a" data-bs-toggle="modal" data-bs-target="#lbtModal">
-      <div class="blog-post">
-        <img src="lbt.png" alt="Long Beach Transit Project icon">
-        <h2>Long Beach Transit Project</h2>
+      <!-- Long Beach Transit Project -->
+      <div class="project-card" data-bs-toggle="modal" data-bs-target="#lbtModal">
+        <div class="project-image">
+          <img src="lbt.png" alt="Long Beach Transit">
+          <div class="project-overlay">
+            <span class="project-category">Web Platform</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Long Beach Transit</h3>
+          <p>Web-based platform enhancing public transportation experiences</p>
+          <div class="project-tags">
+            <span class="tag">WordPress</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
       </div>
-    </a>
 
-    <!-- MagTek Online Shop Card -->
-    <a href="javascript:void(0)" class="col-md-4 project-a" data-bs-toggle="modal" data-bs-target="#magtekShopModal">
-      <div class="blog-post">
-        <img src="online-shop.png" alt="MagTek Shop icon">
-        <h2>MagTek Online Shop</h2>
+      <!-- Voya Financial Dashboard -->
+      <div class="project-card" data-bs-toggle="modal" data-bs-target="#voyaModal">
+        <div class="project-image">
+          <img src="voya.png" alt="Voya Financial Dashboard">
+          <div class="project-overlay">
+            <span class="project-category">Dashboard</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Voya Financial Advisor Dashboard</h3>
+          <p>Robust multi-tenant architecture using proprietary CMS</p>
+          <div class="project-tags">
+            <span class="tag">Multi-tenant</span>
+            <span class="tag">CMS</span>
+            <span class="tag">Financial</span>
+          </div>
+        </div>
       </div>
-    </a>
 
-    <!-- Voya Financial Advisor Dashboard Card -->
-    <a href="javascript:void(0)" class="col-md-4 project-a" data-bs-toggle="modal" data-bs-target="#voyaModal">
-      <div class="blog-post">
-        <img src="voya.png" alt="Voya Dashboard icon">
-        <h2>Voya Financial Advisor Dashboard</h2>
+      <!-- MagTek Home Page -->
+      <div class="project-card" data-bs-toggle="modal" data-bs-target="#magtekHomeModal">
+        <div class="project-image">
+          <img src="homepage.png" alt="MagTek Home Page">
+          <div class="project-overlay">
+            <span class="project-category">Website</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>MagTek Home Page Rebuild</h3>
+          <p>AI-powered UX optimization and modern interface redesign</p>
+          <div class="project-tags">
+            <span class="tag">UX Design</span>
+            <span class="tag">AI Integration</span>
+            <span class="tag">Modernization</span>
+          </div>
+        </div>
       </div>
-    </a>
 
-    <!-- MagTek Home Page Rebuilding Card -->
-    <a href="javascript:void(0)" class="col-md-4 project-a" data-bs-toggle="modal" data-bs-target="#magtekHomeModal">
-      <div class="blog-post">
-        <img src="homepage.jpg" alt="MagTek Home Page icon">
-        <h2>Rebuilding of MagTek Home Page</h2>
+      <!-- React SPA Portfolio -->
+      <div class="project-card" data-bs-toggle="modal" data-bs-target="#reactSPAModal">
+        <div class="project-image">
+          <img src="ashrf.png" alt="React SPA Portfolio">
+          <div class="project-overlay">
+            <span class="project-category">Portfolio</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>React SPA Portfolio</h3>
+          <p>Modern React application for structural engineering portfolio</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">SPA</span>
+            <span class="tag">Portfolio</span>
+          </div>
+        </div>
       </div>
-    </a>
 
-    <!-- React SPA Structural Engineering Portfolio Card -->
-    <a href="javascript:void(0)" class="col-md-4 project-a" data-bs-toggle="modal" data-bs-target="#reactSPAModal">
-      <div class="blog-post">
-        <img src="ashrf.png" alt="React SPA icon">
-        <h2>React SPA Structural Engineering Portfolio</h2>
+      <!-- East West Bank Dashboard -->
+      <div class="project-card" data-bs-toggle="modal" data-bs-target="#eastWestBankModal">
+        <div class="project-image">
+          <img src="eastwest.png" alt="East West Bank Dashboard">
+          <div class="project-overlay">
+            <span class="project-category">Dashboard</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>East West Bank Advisor Dashboard</h3>
+          <p>Sophisticated multi-tenant architecture for financial advisors</p>
+          <div class="project-tags">
+            <span class="tag">Multi-tenant</span>
+            <span class="tag">Financial</span>
+            <span class="tag">CMS</span>
+          </div>
+        </div>
       </div>
-    </a>
 
-    <!-- East West Bank Advisor Dashboard Card -->
-    <a href="javascript:void(0)" class="col-md-4 project-a" data-bs-toggle="modal" data-bs-target="#eastWestBankModal">
-      <div class="blog-post">
-        <img src="eastwest.png" alt="East West Bank Advisor Dashboard icon">
-        <h2>East West Bank Advisor Dashboard</h2>
+      <!-- MagTek Support Portal -->
+      <div class="project-card" data-bs-toggle="modal" data-bs-target="#magtekSupportModal">
+        <div class="project-image">
+          <img src="magteksupport.jpg" alt="MagTek Support Portal">
+          <div class="project-overlay">
+            <span class="project-category">Support Portal</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>MagTek Support Portal</h3>
+          <p>Data-driven UX overhaul with AI-powered optimization</p>
+          <div class="project-tags">
+            <span class="tag">UX Research</span>
+            <span class="tag">Data-Driven</span>
+            <span class="tag">AI-Powered</span>
+          </div>
+        </div>
       </div>
-    </a>
 
-    <!-- Westwood Group Website Development Card -->
-    <a href="javascript:void(0)" class="col-md-4 project-a" data-bs-toggle="modal" data-bs-target="#westwoodModal">
-      <div class="blog-post">
-        <img src="westwood.png" alt="Westwood Group Website icon">
-        <h2>Westwood Group Website Development</h2>
+      <!-- Westwood Group Website -->
+      <div class="project-card" data-bs-toggle="modal" data-bs-target="#westwoodModal">
+        <div class="project-image">
+          <img src="westwood.png" alt="Westwood Group Website">
+          <div class="project-overlay">
+            <span class="project-category">Website</span>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Westwood Group Website</h3>
+          <p>Modern website development with multi-tenant architecture</p>
+          <div class="project-tags">
+            <span class="tag">Web Development</span>
+            <span class="tag">Multi-tenant</span>
+            <span class="tag">CMS</span>
+          </div>
+        </div>
       </div>
-    </a>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- Modern Section Divider -->
+
+
+<!-- UX Case Studies Section -->
+<section id="ux-user-studies" class="ux-studies-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">
+        <span class="badge-icon">🔬</span>
+        <span class="badge-text">UX Research</span>
+      </div>
+      <h2 class="section-title">UX Case Studies</h2>
+      <p class="section-subtitle">Deep-dive research showcasing user research, persona development, and data-driven design decisions</p>
+    </div>
+    
+    <div class="ux-studies-grid">
+      <!-- AutoSpecs Daily Featured UX Study -->
+      <div class="ux-study-card featured-study" style="grid-column: 1 / -1; background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border: 2px solid rgba(108, 99, 255, 0.4); border-radius: 24px; overflow: hidden; position: relative; box-shadow: 0 20px 60px rgba(108, 99, 255, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 30px 80px rgba(108, 99, 255, 0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 20px 60px rgba(108, 99, 255, 0.2)'">
+        <a href="autospecs-daily-ux-case-study.html" style="text-decoration: none; color: inherit; display: block;">
+          <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 0; align-items: stretch;">
+            <div class="study-image" style="position: relative; overflow: hidden;">
+              <img src="autospecsdailyhero.png" alt="AutoSpecs Daily UX Case Study" style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="study-overlay" style="position: absolute; top: 20px; left: 20px; background: rgba(108, 99, 255, 0.95); backdrop-filter: blur(20px); color: white; padding: 10px 20px; border-radius: 50px; font-size: 0.85rem; font-weight: 700; box-shadow: 0 10px 30px rgba(108, 99, 255, 0.4); border: 1px solid rgba(255, 255, 255, 0.2);">
+                ⭐ Featured Case Study
+              </div>
+              <div style="position: absolute; bottom: 20px; right: 20px; background: rgba(255, 107, 107, 0.95); backdrop-filter: blur(20px); color: white; padding: 8px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);">
+                Full Case Study →
+              </div>
+            </div>
+            <div class="study-content" style="padding: 2.5rem; background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(20px);">
+              <h3 style="font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 900; margin-bottom: 1rem; line-height: 1.2; background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                AutoSpecs Daily UX Case Study
+              </h3>
+              <p style="font-size: clamp(1rem, 1.5vw, 1.2rem); color: rgba(255, 255, 255, 0.9); line-height: 1.7; margin-bottom: 2rem;">
+                A comprehensive UX research and design case study covering the complete rebuild of an automotive intelligence platform—from user research and persona development to AI-powered content strategy and self-hosted automation infrastructure.
+              </p>
+              <div class="study-metrics" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+                <div class="metric" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 16px; padding: 1.25rem; text-align: center;">
+                  <span class="metric-number" style="display: block; font-size: 2rem; font-weight: 900; color: #6c63ff; margin-bottom: 0.5rem;">50+</span>
+                  <span class="metric-label" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); font-weight: 600;">Interactive Tools</span>
+                </div>
+                <div class="metric" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 16px; padding: 1.25rem; text-align: center;">
+                  <span class="metric-number" style="display: block; font-size: 2rem; font-weight: 900; color: #ff6b6b; margin-bottom: 0.5rem;">20-100</span>
+                  <span class="metric-label" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); font-weight: 600;">Articles Daily</span>
+                </div>
+                <div class="metric" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 16px; padding: 1.25rem; text-align: center;">
+                  <span class="metric-number" style="display: block; font-size: 2rem; font-weight: 900; color: #6c63ff; margin-bottom: 0.5rem;">24/7</span>
+                  <span class="metric-label" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); font-weight: 600;">Automation</span>
+                </div>
+              </div>
+              <div class="study-tags" style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                <span class="tag" style="background: rgba(108, 99, 255, 0.2); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.4);">Full-Stack UX</span>
+                <span class="tag" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255, 107, 107, 0.4);">AI Automation</span>
+                <span class="tag" style="background: rgba(108, 99, 255, 0.2); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.4);">Product Strategy</span>
+                <span class="tag" style="background: rgba(255, 107, 107, 0.2); color: #ff6b6b; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(255, 107, 107, 0.4);">Self-Hosted</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- East West Bank UX Study -->
+      <div class="ux-study-card" data-bs-toggle="modal" data-bs-target="#eastWestBankUXModal">
+        <div class="study-image">
+          <img src="eastwest.png" alt="East West Bank UX Study">
+          <div class="study-overlay">
+            <span class="study-type">Case Study</span>
+          </div>
+        </div>
+        <div class="study-content">
+          <h3>East West Bank Dashboard UX</h3>
+          <p>Multi-tenant architecture user experience optimization through comprehensive research</p>
+          <div class="study-metrics">
+            <div class="metric">
+              <span class="metric-number">18%</span>
+              <span class="metric-label">Time Reduction</span>
+            </div>
+            <div class="metric">
+              <span class="metric-number">3.7/5</span>
+              <span class="metric-label">User Satisfaction</span>
+            </div>
+          </div>
+          <div class="study-tags">
+            <span class="tag">User Research</span>
+            <span class="tag">Persona Development</span>
+            <span class="tag">Multi-tenant</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Support Hub UX Study -->
+      <div class="ux-study-card" data-bs-toggle="modal" data-bs-target="#supportHubUXModal">
+        <div class="study-image">
+          <img src="magteksupport.jpg" alt="Support Hub UX Study">
+          <div class="study-overlay">
+            <span class="study-type">Case Study</span>
+          </div>
+        </div>
+        <div class="study-content">
+          <h3>Support Hub User Research</h3>
+          <p>Data-driven portal redesign and user flow optimization for MagTek support</p>
+          <div class="study-metrics">
+            <div class="metric">
+              <span class="metric-number">14%</span>
+              <span class="metric-label">Bounce Rate Reduction</span>
+            </div>
+            <div class="metric">
+              <span class="metric-number">19%</span>
+              <span class="metric-label">Interaction Increase</span>
+            </div>
+          </div>
+          <div class="study-tags">
+            <span class="tag">Data Analysis</span>
+            <span class="tag">UX Research</span>
+            <span class="tag">Portal Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sawa UX Study -->
+      <div class="ux-study-card" data-bs-toggle="modal" data-bs-target="#sawaUXModal">
+        <div class="study-image">
+          <img src="get-sawa.png" alt="Sawa UX Study">
+          <div class="study-overlay">
+            <span class="study-type">Case Study</span>
+          </div>
+        </div>
+        <div class="study-content">
+          <h3>Sawa App User Experience</h3>
+          <p>Social dining app onboarding and user journey mapping for group decision-making</p>
+          <div class="study-metrics">
+            <div class="metric">
+              <span class="metric-number">17%</span>
+              <span class="metric-label">Retention Increase</span>
+            </div>
+            <div class="metric">
+              <span class="metric-number">15%</span>
+              <span class="metric-label">Conversion Rate</span>
+            </div>
+          </div>
+          <div class="study-tags">
+            <span class="tag">Onboarding</span>
+            <span class="tag">User Journey</span>
+            <span class="tag">Group UX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="container my-5" style="display: none;">
   <div class="row">
     <div class="col-lg-8 mx-auto">
@@ -1236,7 +1404,7 @@ data-aos-duration="500">
         <p>Conducted in-depth user interviews and persona creation, focusing on key user roles such as small business owners, IT managers, and start-up entrepreneurs. Based on findings, the site was redesigned for a modern digital presence with streamlined reseller interaction.</p>
         
         <h4 class="mb-3">Results</h4>
-        <p>Successfully improved user retention and satisfaction through a more modern interface and direct access to support. User engagement increased by 25%, and support inquiries were streamlined through better integration.</p>
+        <p>Successfully improved user retention and satisfaction through a more modern interface and direct access to support. User engagement increased by about 12%, and support inquiries were streamlined through better integration.</p>
       </div>
     </div>
   </div>
@@ -1259,7 +1427,7 @@ data-aos-duration="500">
       <div class="modal-body">
         <h3>Overview</h3>
         <p>
-          I designed and developed the marketing website for Get Sawa, a social dining app that helps groups decide where to eat. The website serves as the primary landing page for new users, highlighting the app’s features, benefits, and download links for iOS and Android. Additionally, I built the Get Sawa blog using Eleventy (11ty), a fast and flexible static site generator.
+          I designed and developed the marketing website for Get Sawa, a social dining app that helps groups decide where to eat. Leveraging cutting-edge AI prompt engineering techniques with OpenAI GPT-4, Claude, and Gemini, I created compelling UX microcopy and optimized user flows. The website serves as the primary landing page for new users, highlighting the app’s features, benefits, and download links for iOS and Android. Additionally, I built the Get Sawa blog using Eleventy (11ty), a fast and flexible static site generator.
         </p>
         
         <h3>Features</h3>
@@ -1309,6 +1477,15 @@ data-aos-duration="500">
           <li>Lazy loading for images to improve site speed</li>
         </ul>
 
+        <h4>AI & Prompt Engineering Tools</h4>
+        <ul>
+          <li>OpenAI GPT-4 for compelling UX microcopy and user flow optimization</li>
+          <li>Claude for content strategy, accessibility compliance, and user experience analysis</li>
+          <li>Gemini for SEO metadata optimization and technical content refinement</li>
+          <li>Advanced prompt engineering frameworks for consistent brand voice and messaging</li>
+          <li>AI-assisted content creation and optimization for maximum user engagement</li>
+        </ul>
+
         <h3>Implementation Highlights</h3>
         <ul>
           <li>Custom CSS styling to maintain brand consistency</li>
@@ -1319,6 +1496,261 @@ data-aos-duration="500">
       </div>
       <div class="modal-footer">
         <button type="button" class="cta-button" onclick="window.open('https://getsawa.app/', '_blank')">Visit Site</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="autospecsModal" tabindex="-1" aria-labelledby="autospecsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="autospecsModalLabel">AutoSpecs Daily – AI-Powered Automotive Intelligence Platform</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: none; padding: 0; font-size: 1.5rem; background: none; border-radius: 50%; font-weight: 700; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body" style="position: relative;">
+        <!-- Hero Badge -->
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, rgba(108, 99, 255, 0.15), rgba(255, 107, 107, 0.15)); border: 1px solid rgba(108, 99, 255, 0.3); border-radius: 50px; padding: 10px 20px; margin-bottom: 1.5rem; font-size: 0.9rem; font-weight: 600; color: #6c63ff;">
+          <span style="font-size: 1.2rem;">🚀</span>
+          <span>Built From the Ground Up</span>
+        </div>
+
+        <h3 style="display: flex; align-items: center; gap: 12px; margin-top: 0; color: #2c3e50;">
+          <span style="font-size: 2rem;">⚡</span>
+          <span>What I Built</span>
+        </h3>
+        <p style="font-size: 1.05rem; line-height: 1.7; color: #34495e;">
+          I built AutoSpecs Daily from scratch as a full-stack automotive intelligence platform. It's running on <strong style="color: #6c63ff;">Next.js 16</strong>, <strong style="color: #6c63ff;">React 19</strong>, <strong style="color: #6c63ff;">TypeScript</strong>, and <strong style="color: #6c63ff;">Tailwind</strong>—basically the modern web stack I actually enjoy working with. I wanted something that would be fast, easy to maintain, and wouldn't make me want to pull my hair out when I need to add new features. Every page and component was designed from the ground up to feel clean and intentional, not just functional.
+        </p>
+
+        <!-- Hero Image -->
+        <div style="margin: 2rem 0; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3);">
+          <img src="autospecsdailyhero.png" alt="AutoSpecs Daily Hero Page" style="width: 100%; height: auto; display: block; border-radius: 14px;">
+        </div>
+
+        <!-- Tech Stack Badges -->
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0 2rem 0;">
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">Next.js 16</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">React 19</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">TypeScript</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">Tailwind CSS</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">Supabase</span>
+          <span style="background: rgba(108, 99, 255, 0.1); color: #6c63ff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.2);">Vercel</span>
+        </div>
+
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
+
+        <!-- Feature Card -->
+        <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.08), rgba(255, 107, 107, 0.08)); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0;">
+          <h3 style="display: flex; align-items: center; gap: 12px; margin-top: 0; color: #6c63ff;">
+            <span style="font-size: 2rem;">🛠️</span>
+            <span>Growing Collection of Interactive Tools</span>
+          </h3>
+          <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1rem; color: #34495e;">
+            One of the coolest parts is the collection of interactive tools I built—<strong style="color: #6c63ff;">launched with 50 tools</strong> and the count climbs weekly as I add more. Each new tool enables more car guides, creating a compounding content strategy. They cover everything from car financing calculators to fuel economy estimators, maintenance schedules, ownership cost trackers, and insurance comparisons.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1.25rem;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">💰</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Financing</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">⛽</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Fuel Economy</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">🔧</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Maintenance</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">📊</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Ownership Costs</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.5rem;">🛡️</span>
+              <span style="font-size: 0.9rem; font-weight: 600; color: #2c3e50;">Insurance</span>
+            </div>
+          </div>
+          <p style="font-size: 0.95rem; color: #34495e; margin-top: 1rem; margin-bottom: 0;">
+            I built each one with a modular setup so when I need to add a new tool or tweak an existing one, it doesn't turn into a nightmare. Everything renders fast using server components and smart caching, so users get instant results without waiting around.
+          </p>
+
+          <!-- Tool Image -->
+          <div style="margin: 1.5rem 0 0 0; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.25);">
+            <img src="autospecsdailytool.png" alt="AutoSpecs Daily Interactive Tool" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+          </div>
+        </div>
+
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
+
+        <!-- AI Section -->
+        <div style="background: linear-gradient(135deg, rgba(255, 107, 107, 0.08), rgba(108, 99, 255, 0.08)); border: 1px solid rgba(255, 107, 107, 0.2); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0;">
+          <h3 style="display: flex; align-items: center; gap: 12px; margin-top: 0; color: #ff6b6b;">
+            <span style="font-size: 2rem;">🤖</span>
+            <span>AI That Actually Works</span>
+          </h3>
+          <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.25rem; color: #34495e;">
+            Here's where it gets interesting. I set up an <strong style="color: #ff6b6b;">n8n automation system</strong> that connects to <strong style="color: #ff6b6b;">Claude Haiku</strong> and basically runs the content side of things on autopilot.
+          </p>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1.25rem 0;">
+            <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+              <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">🔍</div>
+              <div style="font-weight: 600; margin-bottom: 0.25rem; color: #2c3e50;">Keyword Research</div>
+              <div style="font-size: 0.85rem; color: #5a6c7d;">Automated discovery & analysis</div>
+            </div>
+            <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+              <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">📝</div>
+              <div style="font-weight: 600; margin-bottom: 0.25rem; color: #2c3e50;">Content Generation</div>
+              <div style="font-size: 0.85rem; color: #5a6c7d;">AI-powered article creation</div>
+            </div>
+            <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+              <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">🔗</div>
+              <div style="font-weight: 600; margin-bottom: 0.25rem; color: #2c3e50;">Internal Linking</div>
+              <div style="font-size: 0.85rem; color: #5a6c7d;">Smart structure building</div>
+            </div>
+            <div style="background: rgba(255, 107, 107, 0.1); border-left: 3px solid #ff6b6b; padding: 1rem; border-radius: 8px;">
+              <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">🚀</div>
+              <div style="font-weight: 600; margin-bottom: 0.25rem; color: #2c3e50;">Auto Publishing</div>
+              <div style="font-size: 0.85rem; color: #5a6c7d;">Full workflow automation</div>
+            </div>
+          </div>
+
+          <!-- Nerdy Side Note -->
+          <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.12), rgba(255, 107, 107, 0.12)); border: 2px dashed rgba(108, 99, 255, 0.4); border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; position: relative;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 0.75rem;">
+              <span style="font-size: 1.5rem;">💡</span>
+              <h4 style="margin: 0; color: #6c63ff; font-size: 1rem; font-weight: 700; font-style: italic;">Nerdy Side Note</h4>
+            </div>
+            <p style="font-size: 0.9rem; color: #34495e; line-height: 1.6; margin: 0;">
+              The n8n server is running on my <strong style="color: #6c63ff;">8-year-old MacBook Pro</strong> that's been repurposed as a dedicated automation server. It just sits on my bookshelf, looking like a pretty aluminum decoration, but it's actually running a production-grade setup with process management, secure networking, and all the reliability features you'd expect from a proper server. It's basically a zero-cost, self-hosted automation infrastructure that runs 24/7 without breaking the bank. Sometimes the best infrastructure is the hardware you already have.
+            </p>
+          </div>
+
+          <!-- n8n Workflow Image -->
+          <div style="margin: 1.5rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.25); position: relative;">
+            <div style="position: absolute; top: 12px; left: 12px; background: rgba(255, 107, 107, 0.9); color: white; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; z-index: 10; backdrop-filter: blur(10px);">
+              🤖 n8n Workflow
+            </div>
+            <img src="n8n.png" alt="n8n Automation Workflow" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+          </div>
+
+          <p style="font-size: 0.95rem; color: #34495e; margin-top: 1rem; margin-bottom: 0;">
+            It handles keyword research, groups related topics together, writes metadata, builds internal linking structures, creates schema markup, and even generates the actual articles. The system publishes <strong style="color: #ff6b6b;">20-100 articles per day</strong> for reach, SEO growth, and monetization. All monetization—including <strong style="color: #ff6b6b;">Ezoic ads</strong>, <strong style="color: #ff6b6b;">CarVertical</strong>, and <strong style="color: #ff6b6b;">Amazon Affiliates</strong>—is managed through a central, context-aware config that intelligently places revenue opportunities where they make the most sense. Then it automatically generates OG images, validates everything, publishes posts, updates the sitemap, and preps social media assets. The whole thing runs itself based on real data and search intent, not just throwing content at the wall and hoping something sticks.
+          </p>
+
+          <!-- Car Guides Image -->
+          <div style="margin: 1.5rem 0 0 0; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 107, 107, 0.2); border: 2px solid rgba(255, 107, 107, 0.25);">
+            <img src="autospecsdailycarguides.png" alt="AutoSpecs Daily Car Guides" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+          </div>
+        </div>
+
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
+
+        <!-- Control Center -->
+        <h3 style="display: flex; align-items: center; gap: 12px; color: #2c3e50;">
+          <span style="font-size: 2rem;">🎛️</span>
+          <span>My Control Center</span>
+        </h3>
+        <p style="font-size: 1.05rem; line-height: 1.7; color: #34495e;">
+          I built a custom <strong style="color: #6c63ff;">Supabase-powered admin portal</strong> that gives me complete control over everything—tools, articles, categories, redirects, SEO health, indexing status, cache management, analytics, and all the automation logs. It's got role management for when I eventually bring on help, API utilities for custom integrations, performance dashboards to see what's actually working, and controls to scale the content workflows as the site grows. It's basically my mission control for the entire platform.
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0;">
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>📊</span> Analytics
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>🔍</span> SEO Health
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>⚡</span> Cache Control
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>👥</span> Role Management
+          </span>
+          <span style="background: rgba(108, 99, 255, 0.15); color: #6c63ff; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(108, 99, 255, 0.3); display: inline-flex; align-items: center; gap: 6px;">
+            <span>📈</span> Performance Dashboards
+          </span>
+        </div>
+
+        <!-- Dashboard Image -->
+        <div style="margin: 2rem 0; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(108, 99, 255, 0.2); border: 2px solid rgba(108, 99, 255, 0.3); position: relative;">
+          <div style="position: absolute; top: 12px; left: 12px; background: rgba(108, 99, 255, 0.9); color: white; padding: 6px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; z-index: 10; backdrop-filter: blur(10px);">
+            🎛️ Admin Dashboard
+          </div>
+          <img src="autospecsdashboard.png" alt="AutoSpecs Daily Admin Dashboard" style="width: 100%; height: auto; display: block; border-radius: 14px;">
+        </div>
+
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
+
+        <!-- Tech Stack -->
+        <h3 style="display: flex; align-items: center; gap: 12px; color: #2c3e50;">
+          <span style="font-size: 2rem;">⚙️</span>
+          <span>What's Under the Hood</span>
+        </h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0;">
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 12px; padding: 1.25rem;">
+            <h4 style="display: flex; align-items: center; gap: 8px; margin-top: 0; color: #6c63ff; font-size: 1.1rem;">
+              <span>🎨</span> Frontend
+            </h4>
+            <ul style="margin: 0.75rem 0 0 0; padding-left: 1.5rem; color: #34495e;">
+              <li style="margin-bottom: 0.5rem;">Next.js 16 with React 19</li>
+              <li style="margin-bottom: 0.5rem;">TypeScript (because I like catching bugs before they happen)</li>
+              <li style="margin-bottom: 0.5rem;">Tailwind CSS (for styling that doesn't make me cry)</li>
+              <li style="margin-bottom: 0;">Custom design system (built to scale)</li>
+            </ul>
+          </div>
+
+          <div style="background: rgba(108, 99, 255, 0.1); border: 1px solid rgba(108, 99, 255, 0.2); border-radius: 12px; padding: 1.25rem;">
+            <h4 style="display: flex; align-items: center; gap: 8px; margin-top: 0; color: #6c63ff; font-size: 1.1rem;">
+              <span>🖥️</span> Backend & Infrastructure
+            </h4>
+            <ul style="margin: 0.75rem 0 0 0; padding-left: 1.5rem; color: #34495e;">
+              <li style="margin-bottom: 0.5rem;">Supabase (database and auth, all in one)</li>
+              <li style="margin-bottom: 0.5rem;">Vercel (hosting that just works)</li>
+              <li style="margin-bottom: 0.5rem;">Cloudflare (for that global speed boost)</li>
+              <li style="margin-bottom: 0;">Server Components & ISR (because fast is better than slow)</li>
+            </ul>
+          </div>
+
+          <div style="background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.2); border-radius: 12px; padding: 1.25rem;">
+            <h4 style="display: flex; align-items: center; gap: 8px; margin-top: 0; color: #ff6b6b; font-size: 1.1rem;">
+              <span>🤖</span> Automation
+            </h4>
+            <ul style="margin: 0.75rem 0 0 0; padding-left: 1.5rem; color: #34495e;">
+              <li style="margin-bottom: 0.5rem;">n8n (workflow automation that doesn't break)</li>
+              <li style="margin-bottom: 0.5rem;">Claude Haiku (AI that's actually affordable)</li>
+              <li style="margin-bottom: 0.5rem;">Automated keyword research and topic clustering</li>
+              <li style="margin-bottom: 0;">Content pipelines that run themselves</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="height: 2px; background: linear-gradient(90deg, transparent, rgba(108, 99, 255, 0.4), rgba(255, 107, 107, 0.4), transparent); margin: 2.5rem 0; border-radius: 2px;"></div>
+
+        <!-- Big Picture -->
+        <div style="background: linear-gradient(135deg, rgba(108, 99, 255, 0.12), rgba(255, 107, 107, 0.12)); border: 2px solid rgba(108, 99, 255, 0.3); border-radius: 16px; padding: 2rem; margin: 1.5rem 0; text-align: center;">
+          <h3 style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 0; color: #6c63ff;">
+            <span style="font-size: 2.5rem;">🌟</span>
+            <span>The Big Picture</span>
+          </h3>
+          <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 0; max-width: 700px; margin-left: auto; margin-right: auto; color: #34495e;">
+            At the end of the day, I wanted to build something that runs like a real product—fast, automated, and built for long-term growth. AutoSpecs Daily combines solid UX, modern web development, smart AI automation, and actual product strategy into one cohesive system. It feels like something a big company would build, but it's just me running the show. And honestly? <strong style="color: #6c63ff;">That's the way I like it.</strong>
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; padding: 1.5rem; border-top: 1px solid rgba(108, 99, 255, 0.2);">
+        <a href="autospecs-daily-ux-case-study.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 50px; font-size: 1rem; font-weight: 600; background: linear-gradient(135deg, #6c63ff 0%, #ff6b6b 100%); color: white; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 10px 30px rgba(108, 99, 255, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+          <span>View UX Case Study</span>
+          <span>→</span>
+        </a>
+        <button type="button" class="cta-button" onclick="window.open('https://autospecsdaily.com/', '_blank')" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 50px; font-size: 1rem; font-weight: 600; background: rgba(108, 99, 255, 0.1); color: #6c63ff; border: 1px solid rgba(108, 99, 255, 0.3); transition: all 0.3s ease;" onmouseover="this.style.background='rgba(108, 99, 255, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(108, 99, 255, 0.1)'; this.style.transform='translateY(0)'">Visit Site</button>
       </div>
     </div>
   </div>
@@ -1403,6 +1835,8 @@ data-aos-duration="500">
   </div>
 </div>
 
+
+
   
   <!-- Long Beach Transit Project Modal -->
   <div class="modal fade" id="lbtModal" tabindex="-1" aria-labelledby="lbtModalLabel" aria-hidden="true">
@@ -1461,6 +1895,84 @@ data-aos-duration="500">
     </div>
   </div>
   
+
+<div class="modal fade" id="magtekSupportModal" tabindex="-1" aria-labelledby="magtekSupportModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="magtekSupportModalLabel">MagTek Support Portal Rebuild – Data-Driven UX Overhaul</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: none; padding: 0; font-size: 1.5rem; background: none; border-radius: 50%; font-weight: 700; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="path-to-your-screenshot.png" alt="MagTek Support Page Screenshot" class="img-fluid mb-3">
+
+        <h3>Overview</h3>
+        <p>
+          I led the complete front-end rebuild of MagTek’s most-visited webpage — the Support Portal — using data-driven UX strategy. Drawing insights from Google Analytics, heatmaps, and stakeholder interviews, I reimagined the structure, interaction flow, and content prioritization to reduce user friction and increase self-service resolution. This was a core initiative to reduce support overhead while improving developer and customer satisfaction.
+        </p>
+
+        <h3>Features</h3>
+        <ul>
+          <li>Redesigned the entire page structure for better information architecture</li>
+          <li>Dynamic dropdown search tool for rapid product and category lookup</li>
+          <li>Optimized for developers with Magensa API documentation and working JS samples</li>
+          <li>Interactive terminal animation and syntax-highlighted code blocks for developer onboarding</li>
+          <li>Device carousel showcasing most-accessed product support links</li>
+          <li>Smooth anchor-based navigation and responsive grid system</li>
+          <li>Dual contact areas for MagTek and Magensa with clickable phone/email</li>
+        </ul>
+
+        <h3>UX & Research Approach</h3>
+        <ul>
+          <li>Reviewed 18 months of GA4 traffic data to identify top devices and service touchpoints</li>
+          <li>Conducted stakeholder interviews with the Support and Engineering teams</li>
+          <li>Used Hotjar and internal session replays to identify UX pain points</li>
+          <li>Created prioritized user stories across 3 core user groups: engineers, merchants, and OEM clients</li>
+        </ul>
+
+        <h3>Technologies Used</h3>
+        <h4>Frontend</h4>
+        <ul>
+          <li>ASP.NET Razor Views (C#) for templating and server-side logic</li>
+          <li>Custom CSS + Bootstrap 3 (legacy system compatibility)</li>
+          <li>jQuery-based dropdown logic and search interactivity</li>
+          <li>Prism.js for developer code highlighting</li>
+          <li>Typed.js for animated keyword display</li>
+        </ul>
+
+        <h4>Hosting & Analytics</h4>
+        <ul>
+          <li>Hosted within MagTek's secure Azure environment</li>
+          <li>Integrated GA4, StatusPage.io, and Mailchimp CTA tracking</li>
+        </ul>
+
+        <h4>AI & Prompt Engineering Tools</h4>
+        <ul>
+          <li>OpenAI GPT-4 for UX microcopy generation and content optimization</li>
+          <li>Claude for accessibility compliance checks and user flow analysis</li>
+          <li>Gemini for SEO metadata optimization and technical content refinement</li>
+          <li>AI-assisted user research synthesis and persona development</li>
+        </ul>
+
+        <h3>Impact Highlights</h3>
+        <ul>
+          <li>Improved bounce rate by 14% within the first three months of launch</li>
+          <li>Increased successful product lookup interactions by about 19%</li>
+          <li>Reduced support ticket volume for common products like DynaProx and Dynamag by a modest but meaningful amount</li>
+          <li>Enabled faster API adoption with embedded, copy-ready JS snippets</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="cta-button" onclick="window.open('https://www.magtek.com/support', '_blank')">Visit Page</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   <!-- Voya Financial Advisor Dashboard Modal -->
   <div class="modal fade" id="voyaModal" tabindex="-1" aria-labelledby="voyaModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -1502,13 +2014,23 @@ data-aos-duration="500">
 
         </div>
         <div class="modal-body">
-          <p>I spearheaded the redesign of MagTek's homepage, prioritizing a user-centric approach to enhance navigation and engagement. Guided by a strategic UX strategy I implemented, every aspect of the interface was meticulously crafted for intuitive usability. The result is a contemporary and polished homepage that reflects MagTek's commitment to innovation and user satisfaction.</p>
+          <p>I spearheaded the redesign of MagTek's homepage, prioritizing a user-centric approach to enhance navigation and engagement. Leveraging advanced AI prompt engineering techniques with OpenAI GPT-4, Claude, and Gemini, I created compelling UX microcopy, accessibility compliance checks, and SEO-optimized content. Guided by a strategic UX strategy I implemented, every aspect of the interface was meticulously crafted for intuitive usability. The result is a contemporary and polished homepage that reflects MagTek's commitment to innovation and user satisfaction through AI-powered user experience optimization.</p>
           <ul>
             <li>HTML5 and CSS3</li>
             <li>JavaScript (jQuery)</li>
             <li>Bootstrap Framework</li>
             <li>ASP.NET MVC</li>
           </ul>
+
+          <h4>AI & Prompt Engineering Tools</h4>
+          <ul>
+            <li>OpenAI GPT-4 for compelling UX microcopy and content optimization</li>
+            <li>Claude for accessibility compliance checks and user experience analysis</li>
+            <li>Gemini for SEO metadata optimization and technical content refinement</li>
+            <li>Advanced prompt engineering frameworks for consistent brand messaging</li>
+            <li>AI-assisted user flow optimization and conversion rate improvement</li>
+          </ul>
+
           <p>In addition to enhancing user experience, the homepage redesign was a strategic move to reinforce MagTek's brand identity. From color schemes to imagery, every element was meticulously chosen to embody the company's values of excellence and innovation. The result is a homepage that not only functions seamlessly but also serves as a powerful branding asset, communicating MagTek's ethos with clarity and impact.</p>
         </div>
         <div class="modal-footer">
@@ -1604,6 +2126,213 @@ data-aos-duration="500">
     </div>
   </div>
   
+  <!-- East West Bank UX Study Modal -->
+  <div class="modal fade" id="eastWestBankUXModal" tabindex="-1" aria-labelledby="eastWestBankUXModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="eastWestBankUXModalLabel">East West Bank Dashboard UX Study</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: none; padding: 0; font-size: 1.5rem; background: none; border-radius: 50%; font-weight: 700; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>Project Overview</h3>
+          <p>
+            As the product owner for East West Bank's sister institutions, I led a comprehensive UX study to understand how financial advisors interact with their dashboard across different user groups. This wasn't just about building features—it was about understanding the complex web of user needs, workflows, and pain points that financial professionals face daily.
+          </p>
+
+          <h3>The Challenge</h3>
+          <p>
+            East West Bank serves multiple sister institutions, each with their own unique user base, compliance requirements, and business processes. The existing dashboard was a one-size-fits-all solution that left users frustrated and inefficient. We needed to understand how to create a truly multi-tenant experience that felt personalized for each user group.
+          </p>
+
+          <h3>Research Approach</h3>
+          <p>
+            I conducted extensive user research across three key areas: stakeholder interviews, user journey mapping, and usability testing. I spent time shadowing financial advisors in their natural environment, watching how they navigated between different tools and systems throughout their day. This gave me insights that no survey or interview could capture.
+          </p>
+
+          <h3>Key Findings</h3>
+          <ul>
+            <li><strong>Workflow Fragmentation:</strong> Advisors were constantly switching between 5-7 different systems to complete a single client interaction</li>
+            <li><strong>Information Silos:</strong> Critical client data was scattered across multiple platforms, forcing users to piece together information manually</li>
+            <li><strong>Compliance Complexity:</strong> Different institutions had varying regulatory requirements that weren't reflected in the interface</li>
+            <li><strong>Mobile Usage Patterns:</strong> Advisors frequently accessed information on mobile devices during client meetings, but the mobile experience was severely lacking</li>
+          </ul>
+
+          <h3>Persona Development</h3>
+          <p>
+            I developed three primary personas based on my research. There was Sarah, the experienced advisor who knew the system inside and out but was frustrated by inefficiencies. Then there was Michael, the newer advisor who struggled with the learning curve and often had to ask colleagues for help. And finally, there was Lisa, the branch manager who needed quick access to team performance metrics and compliance reports.
+          </p>
+
+          <h3>Design Solutions</h3>
+          <ul>
+            <li><strong>Unified Dashboard:</strong> Created a single, customizable interface that brought together the most critical information from all systems</li>
+            <li><strong>Smart Notifications:</strong> Implemented intelligent alerts that surfaced relevant information based on user role and current task</li>
+            <li><strong>Mobile-First Approach:</strong> Redesigned the mobile experience to support advisors during client meetings</li>
+            <li><strong>Role-Based Customization:</strong> Built flexible layouts that adapt to different user needs and compliance requirements</li>
+          </ul>
+
+          <h3>Impact & Results</h3>
+          <p>
+            The new dashboard reduced the average time to complete common tasks by 18%. User satisfaction scores improved from 2.8 to 3.7 out of 5. We also saw a modest reduction in support tickets related to navigation and information finding. The multi-tenant architecture now better serves each institution's unique needs while maintaining consistency where it matters most.
+          </p>
+
+          <h3>Key Learnings</h3>
+          <p>
+            This project taught me that great UX isn't just about making things look pretty—it's about deeply understanding user workflows and finding ways to eliminate friction. When you're dealing with complex financial systems, every second counts, and every click matters. The most successful solutions come from spending time with users in their environment, not just asking them what they want.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="cta-button" onclick="window.open('https://www.eastwestbank.com/', '_blank')">Visit Site</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Support Hub UX Study Modal -->
+  <div class="modal fade" id="supportHubUXModal" tabindex="-1" aria-labelledby="supportHubUXModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="supportHubUXModalLabel">Support Hub User Research & Portal Redesign</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: none; padding: 0; font-size: 1.5rem; background: none; border-radius: 50%; font-weight: 700; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>Project Overview</h3>
+          <p>
+            When I took on the Support Hub redesign at MagTek, I knew this wasn't going to be your typical website refresh. This was MagTek's most-visited webpage, serving thousands of developers, merchants, and OEM clients every day. The existing portal was functional but frustrating—users were spending way too much time hunting for information they needed.
+          </p>
+
+          <h3>The Research Challenge</h3>
+          <p>
+            My first step was to understand who was actually using this portal and why they were struggling. I dove deep into 18 months of Google Analytics data, but the numbers only told part of the story. I needed to see the human side—the frustration, the workarounds, the moments when users just gave up and called support instead.
+          </p>
+
+          <h3>User Research Methodology</h3>
+          <p>
+            I conducted a mix of quantitative and qualitative research. I spent hours watching Hotjar session recordings, seeing exactly where users got stuck. I interviewed support team members to understand the most common pain points they heard about. And I talked directly with developers who were trying to integrate MagTek's products into their systems.
+          </p>
+
+          <h3>Key User Insights</h3>
+          <ul>
+            <li><strong>Developer Frustration:</strong> API documentation was buried and hard to find, with no working code examples</li>
+            <li><strong>Merchant Confusion:</strong> Product support was scattered across multiple pages with no clear hierarchy</li>
+            <li><strong>OEM Client Needs:</strong> Technical specifications were available but not easily comparable between products</li>
+            <li><strong>Support Team Pain:</strong> About 38% of support calls were about finding information that was already on the website</li>
+          </ul>
+
+          <h3>Persona Development</h3>
+          <p>
+            I developed three distinct personas based on my research. There was Alex, the software developer who needed quick access to API docs and working code samples. Then there was Maria, the merchant services manager who needed to understand product capabilities and support options. And finally, there was David, the OEM engineer who needed detailed technical specifications and integration guides.
+          </p>
+
+          <h3>Design Solutions & Implementation</h3>
+          <ul>
+            <li><strong>Information Architecture Overhaul:</strong> Completely restructured the content hierarchy based on user research findings</li>
+            <li><strong>Dynamic Search Implementation:</strong> Built a smart search tool that understands user intent and surfaces relevant results</li>
+            <li><strong>Developer Experience Focus:</strong> Created dedicated sections with working code examples and interactive API documentation</li>
+            <li><strong>Mobile-First Approach:</strong> Redesigned the mobile experience since about 35% of users were accessing support on mobile devices</li>
+          </ul>
+
+          <h3>Testing & Iteration</h3>
+          <p>
+            I didn't just build and launch—I tested every major change with real users. I ran A/B tests on the search functionality, conducted usability sessions with the new navigation, and gathered feedback from the support team on whether the changes were actually reducing their workload.
+          </p>
+
+          <h3>Results & Impact</h3>
+          <p>
+            The new Support Hub reduced bounce rate by 14% in the first three months. Product lookup interactions increased by about 19%. Support ticket volume for common products saw a noticeable decrease, though not as dramatic as initially hoped. The support team appreciated the improvements—they were able to spend more time on complex technical issues instead of basic information requests.
+          </p>
+
+          <h3>Key Learnings</h3>
+          <p>
+            This project reinforced something I've always believed: great UX research isn't about asking users what they want—it's about understanding what they're trying to accomplish and removing the obstacles in their way. When you're dealing with technical documentation, clarity and findability are everything. The best solutions come from watching users struggle and then systematically eliminating those pain points.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="cta-button" onclick="window.open('https://www.magtek.com/support', '_blank')">Visit Support Hub</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sawa UX Study Modal -->
+  <div class="modal fade" id="sawaUXModal" tabindex="-1" aria-labelledby="sawaUXModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sawaUXModalLabel">Sawa App User Experience & Onboarding Study</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="border: none; padding: 0; font-size: 1.5rem; background: none; border-radius: 50%; font-weight: 700; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease;">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>Project Overview</h3>
+          <p>
+            Sawa is a social dining app that helps groups decide where to eat—sounds simple, right? But when you're dealing with group decision-making, nothing is ever simple. I led the UX research and design for both the app's onboarding experience and the marketing website that introduces new users to the concept. This was about understanding how people make group decisions and designing an experience that makes that process actually enjoyable.
+          </p>
+
+          <h3>The User Research Challenge</h3>
+          <p>
+            The biggest challenge was understanding the psychology of group decision-making. I needed to figure out why people get frustrated when trying to decide where to eat with friends, what makes them give up and just go with whatever someone suggests, and how to design an experience that keeps everyone engaged in the decision-making process.
+          </p>
+
+          <h3>Research Methodology</h3>
+          <p>
+            I conducted a mix of user interviews, diary studies, and usability testing. I spent time with different types of groups—friends, families, coworkers—watching how they naturally make decisions about food. I also analyzed existing apps in the space to understand what was working and what wasn't. The key insight came from understanding that group decision-making isn't just about the final choice—it's about the journey and the social experience.
+          </p>
+
+          <h3>Key User Insights</h3>
+          <ul>
+            <li><strong>Decision Fatigue:</strong> Groups often get tired of debating and settle for mediocre choices just to end the discussion</li>
+            <li><strong>Social Dynamics:</strong> People are reluctant to veto others' suggestions, leading to unsatisfying compromises</li>
+            <li><strong>Time Pressure:</strong> When people are hungry, they make decisions quickly and often regret them later</li>
+            <li><strong>Information Overload:</strong> Too many restaurant options can paralyze decision-making rather than help it</li>
+          </ul>
+
+          <h3>Persona Development</h3>
+          <p>
+            I developed personas based on decision-making styles rather than demographics. There was "The Decisive One" who gets frustrated when others can't make up their minds. Then there was "The People Pleaser" who goes along with whatever the group wants. And finally, there was "The Foodie" who has strong opinions but doesn't want to seem pushy. Understanding these dynamics was crucial for designing the right experience.
+          </p>
+
+          <h3>Design Solutions</h3>
+          <ul>
+            <li><strong>Progressive Disclosure:</strong> Instead of overwhelming users with all options at once, I designed a step-by-step decision process</li>
+            <li><strong>Social Voting System:</strong> Created a voting mechanism that feels fun and engaging rather than confrontational</li>
+            <li><strong>Smart Defaults:</strong> Built intelligent suggestions based on group preferences and past behavior</li>
+            <li><strong>Onboarding Flow:</strong> Designed a first-time user experience that teaches the concept through doing, not just explaining</li>
+          </ul>
+
+          <h3>Marketing Website UX</h3>
+          <p>
+            The marketing website was just as important as the app itself. I needed to explain a completely new concept to people who had never heard of social dining apps. I used storytelling and interactive elements to help users understand the value proposition before they even downloaded the app.
+          </p>
+
+          <h3>Testing & Iteration</h3>
+          <p>
+            I tested the onboarding flow with real users, watching them try to understand and use the app for the first time. I iterated on the copy, the flow, and the visual design based on what I observed. The key was making the experience feel intuitive and fun, not like a chore.
+          </p>
+
+          <h3>Results & Impact</h3>
+          <p>
+            The new onboarding flow increased user retention by 17% in the first month. The marketing website conversion rate improved by about 15%. Users reported that the decision-making process felt more enjoyable and less stressful. The app was solving a real problem and making the experience of choosing where to eat more manageable.
+          </p>
+
+          <h3>Key Learnings</h3>
+          <p>
+            This project taught me that great UX isn't just about making things easy to use—it's about understanding the emotional and social aspects of the problem you're solving. When you're dealing with group dynamics, you need to design for the psychology of the group, not just the individual user. The most successful solutions come from understanding the human experience behind the technical problem.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="cta-button" onclick="window.open('https://getsawa.app/', '_blank')">Visit Sawa</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -1626,261 +2355,96 @@ data-aos-duration="500">
   </script>
 
 
-  <style>
-    .blog .service-card{
-      padding: unset;
-    }
-    .blog .service-title{
-      padding: 0 20px;
-      font-size: large;
-      color: var(--text-color);
-    }
-    .blog .service-img {
-    width: 100%;
-    height: auto;
-border-top-right-radius: 15px;
-border-top-left-radius: 15px;
-    object-fit: cover;
-}
-  </style>
 
-<section id="blog" class="services" style="text-align: unset;">
-  <div class="section-divider"></div>
-  <div class="container blog" data-aos="fade-up" data-aos-easing="linear"
-  data-aos-duration="500">
-      <h2 class="new-home-header-section-title" data-aos="fade-up" data-aos-easing="linear"
-      data-aos-duration="500">blog</h2>
-      <div class="services-grid">
-        <a href="./articles/ux-salaries-california-vs-texas" class="service-card">
-          <div class="service-icon">
-              <img src="https://images.pexels.com/photos/28316098/pexels-photo-28316098/free-photo-of-a-view-of-the-golden-gate-bridge-from-the-air.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ethics of UX" class="service-img">
-          </div>
-          <h3 class="service-title">UX Salary 2024: Comprehensive Comparison of UX Designer Salaries in California vs. Texas</h3>
-      </a>
-        <a href="./articles/future-of-the-web" class="service-card">
-            <div class="service-icon">
-                <img src="./articles/images/pexels-fauxels-3183187.jpg" alt="Future of Web Development" class="service-img">
-            </div>
-            <h3 class="service-title">Future of Web Development: Trends and Predictions</h3>
-        </a>
 
-        <a href="./articles/code-meets-design" class="service-card">
-            <div class="service-icon">
-                <img src="./articles/images/pexels-magnetme-5839461.jpg" alt="Front-End Development" class="service-img">
-            </div>
-            <h3 class="service-title">Front-End Development in UX: Code Meets Design</h3>
-        </a>
+<!-- Blog Section -->
+<section id="blog" class="blog-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-badge">
+        <span class="badge-icon">📝</span>
+        <span class="badge-text">Blog</span>
+      </div>
+      <h2 class="section-title">Latest Articles</h2>
+      <p class="section-subtitle">Insights on UX design, AI integration, and digital innovation</p>
     </div>
-    <div class="text-center" style="
-    margin-top: 55px;
-">
-      <a href="./blog" class="cta-button">See All Articles</a>
-  </div>
+    
+    <div class="blog-grid">
+      <a href="./articles/ux-salaries-california-vs-texas" class="blog-card">
+        <div class="blog-image">
+          <img src="https://images.pexels.com/photos/28316098/pexels-photo-28316098/free-photo-of-a-view-of-the-golden-gate-bridge-from-the-air.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="UX Salaries California vs Texas">
+          <div class="blog-overlay">
+            <span class="blog-category">Career</span>
+          </div>
+        </div>
+        <div class="blog-content">
+          <h3 class="blog-title">UX Salary 2024: Comprehensive Comparison of UX Designer Salaries in California vs. Texas</h3>
+          <p class="blog-excerpt">Explore the latest salary trends and cost-of-living considerations for UX designers in two of America's most dynamic tech hubs.</p>
+          <div class="blog-meta">
+            <span class="read-time">8 min read</span>
+            <span class="blog-date">Latest</span>
+          </div>
+        </div>
+      </a>
+      
+      <a href="./articles/future-of-the-web" class="blog-card">
+        <div class="blog-image">
+          <img src="./articles/images/pexels-fauxels-3183187.jpg" alt="Future of Web Development">
+          <div class="blog-overlay">
+            <span class="blog-category">Technology</span>
+          </div>
+        </div>
+        <div class="blog-content">
+          <h3 class="blog-title">Future of Web Development: Trends and Predictions</h3>
+          <p class="blog-excerpt">Discover the emerging technologies and methodologies that will shape the future of web development and user experience design.</p>
+          <div class="blog-meta">
+            <span class="read-time">12 min read</span>
+            <span class="blog-date">Featured</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="./articles/code-meets-design" class="blog-card">
+        <div class="blog-image">
+          <img src="./articles/images/pexels-magnetme-5839461.jpg" alt="Front-End Development">
+          <div class="blog-overlay">
+            <span class="blog-category">Development</span>
+          </div>
+        </div>
+        <div class="blog-content">
+          <h3 class="blog-title">Front-End Development in UX: Code Meets Design</h3>
+          <p class="blog-excerpt">Learn how front-end development skills enhance UX design capabilities and create more effective user experiences.</p>
+          <div class="blog-meta">
+            <span class="read-time">10 min read</span>
+            <span class="blog-date">Popular</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="blog-cta">
+      <a href="./blog" class="cta-button primary">
+        <span class="button-text">See All Articles</span>
+        <span class="button-icon">→</span>
+      </a>
+    </div>
   </div>
 </section>
 
-<div id="qadan-fun" style="background: var(--background-color-lighter);padding-bottom: 20px;margin-top: -50px;">
+<!-- Modern Section Divider -->
 
 
-<div class="container mt-5 instagram-images-api">
-    <div class="row" data-aos="fade-up" data-aos-easing="linear"
-    data-aos-duration="500">
-        <div class="col">
-          <h2 class="new-home-header-section-title">travel & photography</h2>
-            
-        </div>
-    </div>
-  
-    <div class="row photo-grid" data-aos="fade-up" data-aos-easing="linear"
-    data-aos-duration="500">
-        <div class="col-md-4 col-sm-6">
-            <img src="Screenshot 2023-12-28 at 1.49.26 AM.jpg" alt="Photo 1" class="img-fluid">
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <img src="Screenshot 2023-12-28 at 3.29.01 PM.jpg" alt="Photo 2" class="img-fluid">
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <img src="Screenshot 2023-12-28 at 3.29.37 PM.jpg" alt="Photo 3" class="img-fluid">
-        </div>
-        <!-- Add more columns as needed -->
-
-        <!-- Example with additional rows -->
-        <div class="col-md-4 col-sm-6">
-            <img src="Screenshot 2023-12-28 at 3.31.16 PM.jpg" alt="Photo 4" class="img-fluid">
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <img src="Screenshot 2023-12-28 at 3.32.01 PM.jpg" alt="Photo 5" class="img-fluid">
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <img src="Screenshot 2023-12-28 at 3.32.55 PM.jpg" alt="Photo 6" class="img-fluid">
-        </div>
-    </div>
-    <div class="button-container text-right" style="
-    margin-top: 55px;
-"><a target="_blank" class="cta-button"  href="https://www.instagram.com/qadantravels/">See More &nbsp; <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" style="vertical-align: middle;">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-      </svg></a></div>
-  </div>
-</div>
-  <style>
-    /* Custom styles for the photo grid */
-    .photo-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .photo-grid img:hover {
-      transform: scale(1.05);
-    }
-
- 
-  </style>
+<!-- Travel & Photography Section -->
 
 
 
-</div>
-</div>
 
-<style>
 
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
 
-.section-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
 
-.modern-img-fluid {
-    max-width: 100%;
-    height: auto;
-    border-radius: 30px;
-}
 
-.modern-heading {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #f8f9fa;
-}
-.blog-post.blog-a {
-text-decoration: none !important;
-text-decoration: unset !important;
-  color: inherit; /* Inherit text color */
-  transition: color 0.3s; /* Smooth transition for color change */
-}
 
-.blog-post{
-  background-color: var(--card-background);
-}
-
-.blog-post.blog-a:hover h2,
-.blog-post.blog-a:hover p {
-text-decoration: none !important;
-text-decoration: unset !important;
-}
-.blog-post.blog-a:hover + h2,
-.blog-post.blog-a:hover + p {
-text-decoration: none;
-}
-.blog-post.blog-a:hover {
-text-decoration: none !important;
-color: inherit !important; /* Inherit text color */
-}
-.blog-post.blog-a{
-transition: all 0.3s;
-border-radius: 15px;
-}
-.blog-post.blog-a:hover {
-background-color: white;
-text-decoration: underline; /*.blog-add underline to text on hover */
-transform: translateY(-2px); /* Move the link 2 pixels up on hover */
-transition: all 0.3s; /* Smooth transition for color, transform,.blog-and text-decoration */
-}
-.blog-post.blog-a:hover {
-transform: translateY(-3px); /* Move the link 3 pixels up on hover */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*.blog-add.blog-a subtle shadow effect */
-}
-
-.blog-post.blog-a {
-    text-decoration: none !important;
-    text-decoration: unset !important;
-      color: inherit; /* Inherit text color */
-      transition: color 0.3s; /* Smooth transition for color change */
-    }
-    
-    .blog-post.blog-a:hover h2,
-  .blog-post.blog-a:hover p {
-    text-decoration: none !important;
-    text-decoration: unset !important;
-  }
-  .blog-post.blog-a:hover + h2,
-  .blog-post.blog-a:hover + p {
-    text-decoration: none;
-  }
-  .blog-post.blog-a:hover {
-  text-decoration: none !important;
-  color: inherit !important; /* Inherit text color */
-}
-.blog-post.blog-a{
-    transition: all 0.3s;
-    border-radius: 15px;
-}
-.blog-post.blog-a:hover {
-  text-decoration: underline; /*.blog-add underline to text on hover */
-  transform: translateY(-2px); /* Move the link 2 pixels up on hover */
-  transition: all 0.3s; /* Smooth transition for color, transform,.blog-and text-decoration */
-}
-.blog-post.blog-a:hover {
-  transform: translateY(-3px); /* Move the link 3 pixels up on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*.blog-add.blog-a subtle shadow effect */
-}
-
-.blog-post.blog-a{
-  background-color: var(--card-background) !important;
-  border-radius: 15px;
-}
-
-.blog-post.blog-a {
-    text-decoration: none !important;
-    text-decoration: unset !important;
-      color: inherit; /* Inherit text color */
-      transition: color 0.3s; /* Smooth transition for color change */
-    }
-    
-    .blog-post.blog-a:hover h2,
-  .blog-post.blog-a:hover p {
-    text-decoration: none !important;
-    text-decoration: unset !important;
-  }
-  .blog-post.blog-a:hover + h2,
-  .blog-post.blog-a:hover + p {
-    text-decoration: none;
-  }
- .blog-a:hover {
-  text-decoration: none !important;
-  color: inherit !important; /* Inherit text color */
-}
-.blog-a{
-    transition: all 0.3s;
-    border-radius: 15px;
-}
-.blog-a:hover {
-  text-decoration: underline; /* Add underline to text on hover */
-  transform: translateY(-2px); /* Move the link 2 pixels up on hover */
-  transition: all 0.3s; /* Smooth transition for color, transform, and text-decoration */
-}
-.blog-a:hover {
-  transform: translateY(-3px); /* Move the link 3 pixels up on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-}
-</style>
-
-<!-- Pricing and Plans Section jquery -->
+<!-- Pricing and Plans Section jquery <style-->
 
 
 <!-- #Contact Section -->
@@ -1959,7 +2523,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*.blog-add.blog-a subtle shadow effec
 
 
 </section>
-</section>
+
 
 <footer class="text-light py-4" style="background-color: var(--background-color);"> 
     <div class="container">
@@ -2048,71 +2612,217 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*.blog-add.blog-a subtle shadow effec
   });
 
 
-  window.addEventListener("load", function () {
-    // Hide the loading screen
-    const loadingScreen = document.getElementById("loading-screen");
-    loadingScreen.style.display = "none";
+  // Modern Loading Screen - Efficient & Beautiful
+  document.addEventListener('DOMContentLoaded', function() {
+    const loadingScreen = document.getElementById('loading-screen');
+    const loadingDots = document.querySelectorAll('.loading-dots span');
+    const loadingStatus = document.querySelector('.loading-status');
+    const homeHero = document.querySelector('.home-hero');
+    
+    // Status messages for a more engaging experience
+    const statusMessages = [
+      'Crafting Experience',
+      'Loading Innovation',
+      'Preparing Magic',
+      'Almost Ready'
+    ];
+    
+    let currentMessage = 0;
+    
+    // Pre-load the main content background to prevent white flash
+    if (homeHero) {
+      homeHero.style.opacity = '0';
+      homeHero.style.visibility = 'hidden';
+    }
+    
+    // Animate dots with CSS transforms (GPU accelerated)
+    function animateDots() {
+      loadingDots.forEach((dot, index) => {
+        setTimeout(() => {
+          dot.style.transform = 'scale(1.2)';
+          setTimeout(() => {
+            dot.style.transform = 'scale(1)';
+          }, 200);
+        }, index * 200);
+      });
+    }
+    
+    // Update status messages
+    function updateStatus() {
+      if (currentMessage < statusMessages.length) {
+        loadingStatus.style.opacity = '0';
+        setTimeout(() => {
+          loadingStatus.textContent = statusMessages[currentMessage];
+          loadingStatus.style.opacity = '1';
+          currentMessage++;
+        }, 200);
+      }
+    }
+    
+    // Start animations
+    const dotInterval = setInterval(animateDots, 1000);
+    const statusInterval = setInterval(updateStatus, 1000);
+    
+    // Hide loading screen after minimum 3.5 seconds
+    setTimeout(() => {
+      clearInterval(dotInterval);
+      clearInterval(statusInterval);
+      
+      // Smooth fade out with better timing
+      loadingScreen.style.opacity = '0';
+      loadingScreen.style.transform = 'scale(0.95) rotate(5deg)';
+      
+      setTimeout(() => {
+        // Hide loading screen
+        loadingScreen.style.display = 'none';
+        
+        // Show main content with smooth transition
+        if (homeHero) {
+          homeHero.style.visibility = 'visible';
+          homeHero.style.opacity = '1';
+          homeHero.style.transition = 'opacity 0.8s ease-out';
+        }
+        
+        // Trigger entrance animations
+        document.body.classList.add('loaded');
+      }, 800);
+    }, 3500);
   });
 
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const progress = document.querySelector('.progress');
-        const loadingScreen = document.getElementById('loading-screen');
-        const loadingText = document.querySelector('.loading-text');
-        let width = 0;
+  // Navbar scroll effect for futuristic styling
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+    
+    // Update active navigation based on current section
+    updateActiveNavigation();
+  });
 
-        function simulateLoading() {
-            const interval = setInterval(() => {
-                if (width >= 100) {
-                    clearInterval(interval);
-                    setTimeout(() => {
-                        loadingScreen.style.opacity = '0';
-                        loadingScreen.style.transition = 'opacity 0.5s ease-out';
-                        setTimeout(() => {
-                            loadingScreen.style.display = 'none';
-                        }, 500);
-                    }, 500);
-                } else {
-                    width += Math.random() * 5;
-                    width = Math.min(width, 100);
-                    progress.style.width = width + '%';
-                    updateLoadingText(width);
-                }
-            }, 100);
-        }
-
-        function updateLoadingText(progress) {
-            const texts = ['Initializing', 'Configuring', 'Optimizing', 'Finalizing'];
-            const index = Math.floor(progress / 25);
-            loadingText.textContent = texts[index];
-        }
-
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            particle.style.left = Math.random() * window.innerWidth + 'px';
-            particle.style.top = Math.random() * window.innerHeight + 'px';
-            loadingScreen.appendChild(particle);
-
-            const size = Math.random() * 3 + 2;
-            particle.style.width = size + 'px';
-            particle.style.height = size + 'px';
-
-            const duration = Math.random() * 2 + 1;
-            particle.style.animation = `float ${duration}s linear infinite`;
-
-            setTimeout(() => {
-                particle.remove();
-            }, duration * 1000);
-        }
-
-        setInterval(createParticle, 200);
-
-        simulateLoading();
+  // Function to update active navigation based on scroll position
+  function updateActiveNavigation() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    let currentSection = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.clientHeight;
+      
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
     });
+    
+    navLinks.forEach(link => {
+      link.parentElement.classList.remove('active');
+      
+      const href = link.getAttribute('href');
+      
+      // Handle special case for articles link
+      if (href === './blog' && currentSection === 'blog') {
+        link.parentElement.classList.add('active');
+      }
+      // Handle regular section links
+      else if (href === `#${currentSection}`) {
+        link.parentElement.classList.add('active');
+      }
+    });
+  }
 
+  // Initialize active navigation on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    updateActiveNavigation();
+    
+    // Create floating particles effect for navbar
+    createNavbarParticles();
+  });
 
+              // Function to create floating particles for navbar
+            function createNavbarParticles() {
+              const navbar = document.querySelector('.navbar');
+              if (!navbar) return;
+              
+              function createParticle() {
+                const particle = document.createElement('div');
+                const size = Math.random() * 3 + 2; // Random size between 2-5px
+                const opacity = Math.random() * 0.4 + 0.6; // Random opacity between 0.6-1.0
+                
+                particle.style.cssText = `
+                  position: absolute;
+                  width: ${size}px;
+                  height: ${size}px;
+                  background: rgba(64, 224, 255, ${opacity});
+                  border-radius: 50%;
+                  pointer-events: none;
+                  animation: float-up 4s linear forwards;
+                  z-index: 1;
+                  box-shadow: 0 0 ${size * 2}px rgba(64, 224, 255, ${opacity * 0.8});
+                `;
+                
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = '100%';
+                
+                navbar.appendChild(particle);
+                
+                setTimeout(() => {
+                  if (particle.parentNode) {
+                    particle.parentNode.removeChild(particle);
+                  }
+                }, 4000);
+              }
+              
+              // Create particles more frequently
+              setInterval(createParticle, 1500);
+              
+              // Create additional colored particles
+              function createColoredParticle() {
+                const particle = document.createElement('div');
+                const size = Math.random() * 2 + 1.5; // Random size between 1.5-3.5px
+                const colors = [
+                  'rgba(138, 43, 226, 0.8)', // Purple
+                  'rgba(64, 224, 255, 0.8)', // Cyan
+                  'rgba(255, 255, 255, 0.6)' // White
+                ];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                particle.style.cssText = `
+                  position: absolute;
+                  width: ${size}px;
+                  height: ${size}px;
+                  background: ${randomColor};
+                  border-radius: 50%;
+                  pointer-events: none;
+                  animation: float-up 5s linear forwards;
+                  z-index: 1;
+                  box-shadow: 0 0 ${size * 3}px ${randomColor};
+                `;
+                
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = '100%';
+                
+                navbar.appendChild(particle);
+                
+                setTimeout(() => {
+                  if (particle.parentNode) {
+                    particle.parentNode.removeChild(particle);
+                  }
+                }, 5000);
+              }
+              
+              // Create colored particles less frequently
+              setInterval(createColoredParticle, 3000);
+            }
 
 </script>
 </body>
 </html>
 
+
+
+
+<!-- modern-section-divider -->

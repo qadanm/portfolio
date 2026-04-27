@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OG Image Generator</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Comfortaa", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+        background: linear-gradient(
+          135deg,
+          #0a0a0a 0%,
+          #1a1a2e 25%,
+          #16213e 50%,
+          #0f3460 75%,
+          #533483 100%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+
+      .og-container {
+        width: 1200px;
+        height: 630px;
+        background: linear-gradient(
+          135deg,
+          #0a0a0a 0%,
+          #1a1a2e 25%,
+          #16213e 50%,
+          #0f3460 75%,
+          #533483 100%
+        );
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      /* Animated background elements */
+      .og-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+            circle at 20% 80%,
+            rgba(84, 84, 165, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 20%,
+            rgba(100, 181, 246, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 40% 40%,
+            rgba(147, 51, 234, 0.05) 0%,
+            transparent 50%
+          );
+      }
+
+      .og-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(84, 84, 165, 0.8),
+          transparent
+        );
+      }
+
+      /* Floating shapes */
+      .floating-shape {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(84, 84, 165, 0.1);
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .shape-1 {
+        width: 80px;
+        height: 80px;
+        top: 15%;
+        left: 10%;
+        animation-delay: 0s;
+      }
+
+      .shape-2 {
+        width: 120px;
+        height: 120px;
+        top: 70%;
+        right: 15%;
+        animation-delay: 2s;
+      }
+
+      .shape-3 {
+        width: 60px;
+        height: 60px;
+        bottom: 20%;
+        left: 20%;
+        animation-delay: 4s;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(180deg);
+        }
+      }
+
+      /* Main content */
+      .og-content {
+        text-align: center;
+        z-index: 2;
+        position: relative;
+      }
+
+      .og-logo {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(135deg, #64b5f6, #9333ea);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        filter: drop-shadow(0 0 20px rgba(100, 181, 246, 0.5));
+      }
+
+      .og-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #ffffff, #e0e7ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1.2;
+      }
+
+      .og-subtitle {
+        font-size: 1.8rem;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 2rem;
+        font-weight: 300;
+        max-width: 800px;
+        line-height: 1.4;
+      }
+
+      .og-badge {
+        display: inline-block;
+        background: rgba(84, 84, 165, 0.2);
+        border: 1px solid rgba(84, 84, 165, 0.5);
+        border-radius: 50px;
+        padding: 0.8rem 2rem;
+        font-size: 1.2rem;
+        color: #64b5f6;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(84, 84, 165, 0.3);
+      }
+
+      /* Bottom branding */
+      .og-brand {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-weight: 600;
+      }
+
+      /* Grid pattern overlay */
+      .grid-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(
+            rgba(84, 84, 165, 0.03) 1px,
+            transparent 1px
+          ),
+          linear-gradient(90deg, rgba(84, 84, 165, 0.03) 1px, transparent 1px);
+        background-size: 50px 50px;
+        opacity: 0.5;
+      }
+
+      /* Instructions for screenshot */
+      .instructions {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        max-width: 300px;
+        z-index: 1000;
+      }
+
+      .instructions h3 {
+        margin-top: 0;
+        color: #64b5f6;
+      }
+
+      .instructions ul {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+
+      .instructions li {
+        margin: 5px 0;
+      }
+
+      .highlight {
+        background: rgba(100, 181, 246, 0.2);
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="instructions">
+      <h3>📸 How to Generate OG Image:</h3>
+      <ul>
+        <li>1. Open this page in your browser</li>
+        <li>
+          2. Take a screenshot at <span class="highlight">1200x630 pixels</span>
+        </li>
+        <li>3. Save as <span class="highlight">og-image.jpg</span></li>
+        <li>4. Upload to your website root</li>
+        <li>5. Update meta tags with your actual domain</li>
+      </ul>
+      <p>
+        <strong>Note:</strong> Make sure the image is exactly 1200x630 pixels
+        for optimal social media display.
+      </p>
+    </div>
+
+    <div class="og-container">
+      <div class="grid-overlay"></div>
+
+      <!-- Floating shapes -->
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+
+      <!-- Main content -->
+      <div class="og-content">
+        <div class="og-logo">✨</div>
+        <h1 class="og-title">Digital Experience<br />Architect</h1>
+        <p class="og-subtitle">
+          AI-powered UX design that transforms how people interact with
+          technology
+        </p>
+        <div class="og-badge">AI-First UX Design</div>
+      </div>
+
+      <!-- Bottom branding -->
+      <div class="og-brand">qadan.co</div>
+    </div>
+  </body>
+</html>
